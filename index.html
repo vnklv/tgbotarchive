@@ -135,42 +135,73 @@ header p { color: var(--text-dim); font-size: 0.9rem; }
     margin-bottom: 0.8rem;
 }
 
-/* ── Tags ── */
-.tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    justify-content: center;
-    margin-bottom: 0.2rem;
-    max-height: 78px;
+/* ── Tag Search ── */
+.tag-search-wrap {
+    max-width: 380px;
+    margin: 0 auto 0.2rem;
+    position: relative;
+}
+.tag-search-wrap input {
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.85rem;
+    outline: none;
+    transition: border 0.2s;
+}
+.tag-search-wrap input:focus { border-color: var(--accent); }
+.tag-search-wrap input::placeholder { color: var(--text-dim); font-size: 0.8rem; }
+.tag-suggestions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    max-height: 200px;
     overflow-y: auto;
+    z-index: 50;
     scrollbar-width: thin;
     scrollbar-color: var(--accent) var(--tag-bg);
+    margin-top: 2px;
 }
-.tag {
-    padding: 0.2rem 0.5rem;
-    border-radius: 12px;
-    background: var(--tag-bg);
+.tag-suggestion-item {
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
     color: var(--text-dim);
-    font-size: 0.75rem;
-    cursor: pointer;
-    transition: all 0.15s;
-    border: 1px solid transparent;
-    user-select: none;
+    font-size: 0.82rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.tag:hover { background: var(--tag-hover); color: #fff; }
-.tag.active { background: var(--tag-hover); color: #fff; border-color: var(--accent); }
-.tag-clear {
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    background: transparent;
-    color: #e94560;
-    font-size: 0.75rem;
-    cursor: pointer;
-    border: 1px solid #e94560;
+.tag-suggestion-item:last-child { border-bottom: none; }
+.tag-suggestion-item:hover { background: var(--tag-bg); }
+.tag-suggestion-tag { color: var(--accent); }
+.tag-suggestion-count { color: var(--text-dim); font-size: 0.72rem; }
+.tag-active-label {
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--accent);
+    margin: 0.1rem 0 0.3rem;
     display: none;
 }
-.tag-clear.show { display: inline-block; }
+.tag-active-label.show { display: block; }
+.tag-clear-btn {
+    background: transparent;
+    border: 1px solid #e94560;
+    color: #e94560;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.72rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
 
 /* ── Bot Cards Grid ── */
 .grid {
@@ -401,7 +432,13 @@ footer a { color: var(--accent); }
                 <option value="name">Name A-Z</option>
             </select>
         </div>
-        <div class="tag-list" id="tagList"></div>
+        <div id="tagArea">
+            <div class="tag-search-wrap">
+                <input type="text" id="tagSearch" placeholder="Search tags..." oninput="searchTag()" autocomplete="off">
+                <div class="tag-suggestions" id="tagSuggestions"></div>
+            </div>
+            <div class="tag-active-label" id="tagActiveLabel"></div>
+        </div>
         <div class="stats" id="stats">Loading...</div>
     </div>
 </header>
@@ -456,29 +493,71 @@ function switchLang(l) {
     filterBots();
 }
 
-// ── Tags ──
+// ── Tag Search ──
 function renderTags() {
-    const tags = window.allTags || [];
-    const container = document.getElementById('tagList');
-    container.innerHTML = '<span class="tag-clear" id="tagClear" onclick="clearTag()">✕ Clear</span>' +
-        tags.slice(0, 30).map(t => `<span class="tag" data-tag="${t}" onclick="toggleTag('${t}')">#${t}</span>`).join('');
+    // Build tag frequency map
+    window.tagFreq = {};
+    for (const bot of data) {
+        for (const t of (bot.t || [])) {
+            window.tagFreq[t] = (window.tagFreq[t] || 0) + 1;
+        }
+    }
+    // Show active tag label if one is set
+    updateTagLabel();
 }
 
-function toggleTag(tag) {
+function searchTag() {
+    const q = document.getElementById('tagSearch').value.toLowerCase().trim();
+    const suggestions = document.getElementById('tagSuggestions');
+    if (!q || q.length < 1) {
+        suggestions.style.display = 'none';
+        return;
+    }
+    let matches = Object.entries(window.tagFreq || {})
+        .filter(([tag]) => tag.toLowerCase().includes(q))
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 12);
+    if (matches.length === 0) {
+        suggestions.style.display = 'none';
+        return;
+    }
+    suggestions.style.display = 'block';
+    suggestions.innerHTML = matches.map(([tag, count]) =>
+        `<div class="tag-suggestion-item" onclick="selectTag('${esc(tag)}')">
+            <span class="tag-suggestion-tag">#${esc(tag)}</span>
+            <span class="tag-suggestion-count">${count} bots</span>
+        </div>`
+    ).join('');
+}
+
+function selectTag(tag) {
+    // Toggle: if already active, clear
     if (activeTag === tag) {
         clearTag();
     } else {
         activeTag = tag;
-        document.querySelectorAll('.tag').forEach(t => t.classList.toggle('active', t.dataset.tag === tag));
-        document.getElementById('tagClear').classList.add('show');
+        document.getElementById('tagSearch').value = '#' + tag;
+        updateTagLabel();
         filterBots();
+    }
+    document.getElementById('tagSuggestions').style.display = 'none';
+}
+
+function updateTagLabel() {
+    const label = document.getElementById('tagActiveLabel');
+    if (activeTag) {
+        label.innerHTML = `Filtered by tag: <strong>#${esc(activeTag)}</strong> <button class="tag-clear-btn" onclick="clearTag()">✕ Clear</button>`;
+        label.classList.add('show');
+    } else {
+        label.classList.remove('show');
+        label.innerHTML = '';
+        document.getElementById('tagSearch').value = '';
     }
 }
 
 function clearTag() {
     activeTag = null;
-    document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
-    document.getElementById('tagClear').classList.remove('show');
+    updateTagLabel();
     filterBots();
 }
 
@@ -554,7 +633,7 @@ function renderGrid(bots) {
                 <div class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : '—'}</div>
             </div>
             <div class="card-desc">${esc(shortDesc)}</div>
-            ${tags.length ? '<div class="card-tags">' + tags.map(t => '<span class="card-tag" onclick="event.stopPropagation();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
+            ${tags.length ? '<div class="card-tags">' + tags.map(t => '<span class="card-tag" onclick="event.stopPropagation();selectTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
             <div class="card-meta">
                 ${bot.v ? `🗳 ${bot.v} votes` : ''}
                 ${bot.w ? `👁 ${bot.w.toLocaleString()}` : ''}
@@ -603,7 +682,7 @@ function showDetail(username) {
             <div>👁 Views: <span>${bot.w ? bot.w.toLocaleString() : '—'}</span></div>
         </div>
         
-        ${(bot.t || []).length ? '<div class="card-tags" style="margin:0.5rem 0;">' + bot.t.map(t => '<span class="card-tag" onclick="event.stopPropagation();closeDetail();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
+        ${(bot.t || []).length ? '<div class="card-tags" style="margin:0.5rem 0;">' + bot.t.map(t => '<span class="card-tag" onclick="event.stopPropagation();closeDetail();selectTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
         
         <a class="open-bot-btn" href="https://t.me/${esc(bot.u)}" target="_blank">
             🤖 Open @${esc(bot.u)}
@@ -642,7 +721,12 @@ function esc(s) {
 
 // ── ESC key to close detail ──
 document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeDetail();
+    if (e.key === 'Escape') { closeDetail(); document.getElementById('tagSuggestions').style.display = 'none'; }
+});
+// ── Close tag suggestions on outside click ──
+document.addEventListener('click', function(e) {
+    const s = document.getElementById('tagSuggestions');
+    if (s && !e.target.closest('.tag-search-wrap')) s.style.display = 'none';
 });
 
 // ── Init ──
