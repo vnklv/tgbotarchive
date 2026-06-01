@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T2JST9VG');</script>
-<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BotsArchive — 2085 Telegram Bots Catalog | Search by Tags, Rating, Languages</title>
 <meta name="description" content="The most powerful archive of Telegram bots. Browse 2085 bots in English, Russian and Persian. Search by tags, rating, languages, and category.">
@@ -138,9 +139,13 @@ header p { color: var(--text-dim); font-size: 0.9rem; }
 .tag-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.25rem;
     justify-content: center;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
+    max-height: 78px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--tag-bg);
 }
 .tag {
     padding: 0.2rem 0.5rem;
@@ -383,6 +388,7 @@ footer a { color: var(--accent); }
         <button class="lang-btn" data-lang="en" onclick="switchLang('en')">🇬🇧 English</button>
         <button class="lang-btn" data-lang="ru" onclick="switchLang('ru')">🇷🇺 Русский</button>
         <button class="lang-btn" data-lang="fa" onclick="switchLang('fa')">🇮🇷 فارسی</button>
+        <a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="color:#6c63ff;font-size:0.82rem;text-decoration:none;margin-left:0.8rem;white-space:nowrap;">💬 Feedback</a>
     </div>
     <div class="controls">
         <div class="search-wrap">
@@ -455,7 +461,7 @@ function renderTags() {
     const tags = window.allTags || [];
     const container = document.getElementById('tagList');
     container.innerHTML = '<span class="tag-clear" id="tagClear" onclick="clearTag()">✕ Clear</span>' +
-        tags.slice(0, 80).map(t => `<span class="tag" data-tag="${t}" onclick="toggleTag('${t}')">#${t}</span>`).join('');
+        tags.slice(0, 30).map(t => `<span class="tag" data-tag="${t}" onclick="toggleTag('${t}')">#${t}</span>`).join('');
 }
 
 function toggleTag(tag) {
