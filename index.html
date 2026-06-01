@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2JST9VG');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BotsArchive — 2085 Telegram Bots Catalog | Search by Tags, Rating, Languages</title>
 <meta name="description" content="The most powerful archive of Telegram bots. Browse 2085 bots in English, Russian and Persian. Search by tags, rating, languages, and category.">
@@ -14,69 +21,411 @@
 <meta property="og:description" content="Browse and search 2085 Telegram bots with descriptions in 3 languages.">
 <meta property="og:url" content="https://tgbotarchive.com/">
 <meta property="og:type" content="website">
-<meta name="robots" content="index, follow"></head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2JST9VG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<meta name="robots" content="index, follow"><style>
+:root {
+    --bg: #0f0f1a;
+    --card: #1a1a2e;
+    --card-hover: #23234a;
+    --accent: #6c63ff;
+    --accent-glow: rgba(108, 99, 255, 0.3);
+    --text: #e8e8f0;
+    --text-dim: #8888aa;
+    --star: #ffd700;
+    --tag-bg: #2a2a4a;
+    --tag-hover: #6c63ff;
+    --lang-btn: #2a2a4a;
+    --lang-active: #6c63ff;
+    --border: #2a2a4a;
+    --shadow: rgba(0,0,0,0.4);
+    --radius: 12px;
+    --radius-sm: 8px;
+    font-size: 15px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-<div class="hero">
-    <div class="hero-logo">🤖</div>
-    <h1>BotsArchive</h1>
-    <p>2000+ Telegram bots · 3 languages · Search & discover</p>
-    <a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="display:inline-block;margin-top:0.6rem;padding:0.35rem 0.9rem;border-radius:20px;border:1px solid var(--accent);color:var(--accent);font-size:0.82rem;font-weight:500;text-decoration:none;transition:all .2s;background:var(--accent-soft);" onmouseover="this.style.background='var(--accent)';this.style.color='#fff'" onmouseout="this.style.background='var(--accent-soft)';this.style.color='var(--accent)'">💬 Feedback & Suggest a bot</a>
+/* ── Header ── */
+header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header h1 {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--accent), #e94560);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.3rem;
+}
+header p { color: var(--text-dim); font-size: 0.9rem; }
+
+/* ── Language switcher ── */
+.lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0 0.8rem;
+}
+.lang-btn {
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--lang-btn);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+.lang-btn.active {
+    background: var(--lang-active);
+    color: #fff;
+    border-color: var(--lang-active);
+}
+
+/* ── Search & Controls ── */
+.controls {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.search-wrap {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.search-wrap input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.2s;
+}
+.search-wrap input:focus { border-color: var(--accent); }
+.sort-select {
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    outline: none;
+}
+.stats {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+/* ── Tags ── */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+}
+.tag {
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    background: var(--tag-bg);
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: 1px solid transparent;
+    user-select: none;
+}
+.tag:hover { background: var(--tag-hover); color: #fff; }
+.tag.active { background: var(--tag-hover); color: #fff; border-color: var(--accent); }
+.tag-clear {
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    background: transparent;
+    color: #e94560;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: 1px solid #e94560;
+    display: none;
+}
+.tag-clear.show { display: inline-block; }
+
+/* ── Bot Cards Grid ── */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 0 1rem 3rem;
+}
+@media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.3rem; }
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.card:hover {
+    background: var(--card-hover);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px var(--shadow);
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.4rem;
+}
+.card-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text);
+    word-break: break-word;
+    line-height: 1.3;
+}
+.card-username {
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    color: var(--star);
+}
+.card-desc {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0.4rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.4rem;
+}
+.card-tag {
+    padding: 0.1rem 0.4rem;
+    border-radius: 10px;
+    background: var(--tag-bg);
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.card-tag:hover { background: var(--tag-hover); color: #fff; }
+.card-meta {
+    display: flex;
+    gap: 0.8rem;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+/* ── Detail View ── */
+.detail-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    backdrop-filter: blur(4px);
+}
+.detail-overlay.open { display: flex; }
+.detail-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    max-width: 600px;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+.detail-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+}
+.detail-close:hover { background: var(--tag-bg); color: var(--text); }
+.detail-card .card-name { font-size: 1.3rem; }
+.detail-card .card-desc {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    font-size: 0.95rem;
+    margin: 0.6rem 0;
+}
+.detail-card .card-desc + .card-desc { 
+    border-top: 1px solid var(--border);
+    padding-top: 0.6rem;
+}
+.detail-lang-label {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+.detail-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}
+.detail-info div {
+    color: var(--text-dim);
+}
+.detail-info span {
+    color: var(--text);
+    font-weight: 500;
+}
+.open-bot-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.open-bot-btn:hover {
+    background: #7c73ff;
+    transform: translateY(-1px);
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+footer a { color: var(--accent); }
+
+/* ── Loading ── */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-dim);
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🤖 BotsArchive</h1>
+    <p>The most powerful archive of Telegram bots</p>
     <div class="lang-switch">
         <button class="lang-btn" data-lang="en" onclick="switchLang('en')">🇬🇧 English</button>
         <button class="lang-btn" data-lang="ru" onclick="switchLang('ru')">🇷🇺 Русский</button>
         <button class="lang-btn" data-lang="fa" onclick="switchLang('fa')">🇮🇷 فارسی</button>
     </div>
-</div>
-
-<div class="controls-wrap">
     <div class="controls">
-        <div class="search-row">
-            <input type="text" id="search" placeholder="Search by name, description, or tag..." oninput="filterBots()" autocomplete="off">
+        <div class="search-wrap">
+            <input type="text" id="search" placeholder="Search bots..." oninput="filterBots()" autocomplete="off">
             <select class="sort-select" id="sort" onchange="filterBots()">
-                <option value="date">📅 Newest</option>
-                <option value="rating">⭐ Best Rating</option>
-                <option value="votes">🗳 Most Votes</option>
-                <option value="views">👁 Most Viewed</option>
-                <option value="name">🔤 A–Z</option>
+                <option value="date">Newest</option>
+                <option value="rating">Best Rating</option>
+                <option value="votes">Most Votes</option>
+                <option value="views">Most Views</option>
+                <option value="name">Name A-Z</option>
             </select>
         </div>
-        <div class="stats-bar">
-            <span id="stats">Loading...</span>
-            <button class="clear-btn" id="clearBtn" onclick="clearFilters()">✕ Clear filters</button>
-        </div>
+        <div class="tag-list" id="tagList"></div>
+        <div class="stats" id="stats">Loading...</div>
     </div>
-</div>
-
-<div class="tag-bar"><div class="tag-list" id="tagList"></div></div>
+</header>
 
 <div class="grid" id="grid">
-    <div class="loading"><div class="spinner"></div><div>Loading bots...</div></div>
+    <div class="loading"><div class="spinner"></div>Loading bots...</div>
 </div>
-
-<footer>
-    Powered by <a href="https://t.me/tgbotarchive">@TGBotArchive</a> ·
-    <a href="https://t.me/tgbotarchivesupportbot" target="_blank">💬 Feedback / Suggest a bot</a>
-</footer>
 
 <div class="detail-overlay" id="detailOverlay" onclick="closeDetail(event)">
     <div class="detail-card" id="detailCard"></div>
 </div>
 
+<footer>
+    Powered by <a href="https://t.me/BotsArchive">@BotsArchive</a> |
+    <a href="https://t.me/BotsArchiveSupportbot" target="_blank">💬 Feedback / Suggest a bot</a>
+</footer>
+
 <script>
+// ── Data ──
 let data = [];
 let filteredData = [];
 let lang = localStorage.getItem('botsarchive-lang') || 'en';
 let activeTag = null;
 
+// ── Load ──
 async function loadData() {
     try {
         const resp = await fetch('data.json');
         data = await resp.json();
+        // Try loading tags separately
         try {
             const tagResp = await fetch('tags.json');
             window.allTags = await tagResp.json();
@@ -91,71 +440,80 @@ async function loadData() {
     }
 }
 
+// ── Language ──
 function switchLang(l) {
     lang = l;
     localStorage.setItem('botsarchive-lang', l);
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+    document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === l);
+    });
     filterBots();
 }
 
+// ── Tags ──
 function renderTags() {
     const tags = window.allTags || [];
     const container = document.getElementById('tagList');
-    container.innerHTML = tags.slice(0, 60).map(t =>
-        `<button class="tag-pill" data-tag="${esc(t)}" onclick="toggleTag('${esc(t)}')">#${esc(t)}</button>`
-    ).join('');
+    container.innerHTML = '<span class="tag-clear" id="tagClear" onclick="clearTag()">✕ Clear</span>' +
+        tags.slice(0, 80).map(t => `<span class="tag" data-tag="${t}" onclick="toggleTag('${t}')">#${t}</span>`).join('');
 }
 
 function toggleTag(tag) {
-    if (activeTag === tag) { clearTag(); return; }
-    activeTag = tag;
-    document.querySelectorAll('.tag-pill').forEach(t => t.classList.toggle('active', t.dataset.tag === tag));
-    document.getElementById('clearBtn').classList.add('show');
-    filterBots();
+    if (activeTag === tag) {
+        clearTag();
+    } else {
+        activeTag = tag;
+        document.querySelectorAll('.tag').forEach(t => t.classList.toggle('active', t.dataset.tag === tag));
+        document.getElementById('tagClear').classList.add('show');
+        filterBots();
+    }
 }
 
 function clearTag() {
     activeTag = null;
-    document.querySelectorAll('.tag-pill').forEach(t => t.classList.remove('active'));
-    document.getElementById('clearBtn').classList.remove('show');
+    document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
+    document.getElementById('tagClear').classList.remove('show');
     filterBots();
 }
 
-function clearFilters() {
-    document.getElementById('search').value = '';
-    clearTag();
-}
-
+// ── Get description for current language ──
 function getDesc(bot) {
     if (lang === 'ru') return bot.dr || bot.d;
     if (lang === 'fa') return bot.df || bot.d;
     return bot.d;
 }
 
+// ── Filter & Sort ──
 function filterBots() {
-    const q = document.getElementById('search').value.toLowerCase().trim();
+    const q = document.getElementById('search').value.toLowerCase();
     const sort = document.getElementById('sort').value;
     
     let visible = data.filter(bot => {
+        // Text search across all fields
         if (q) {
-            const searchable = [bot.u, bot.n, bot.d, bot.dr, bot.df, ...(bot.t || []), bot.l].join(' ').toLowerCase();
+            const searchable = [
+                bot.u, bot.n, bot.d, bot.dr, bot.df,
+                ...(bot.t || []),
+                bot.l,
+            ].join(' ').toLowerCase();
             if (!searchable.includes(q)) return false;
         }
-        if (activeTag && (!bot.t || !bot.t.includes(activeTag))) return false;
+        // Tag filter
+        if (activeTag) {
+            if (!bot.t || !bot.t.includes(activeTag)) return false;
+        }
         return true;
     });
     
+    // Sort
     visible.sort((a, b) => {
-        let cmp;
         switch(sort) {
-            case 'rating': cmp = (b.r || 0) - (a.r || 0); break;
-            case 'votes': cmp = (b.v || 0) - (a.v || 0); break;
-            case 'views': cmp = (b.w || 0) - (a.w || 0); break;
-            case 'name': cmp = (a.n || '').localeCompare(b.n || ''); break;
-            default: cmp = (b.dt || '').localeCompare(a.dt || ''); break;
+            case 'rating': return (b.r || 0) - (a.r || 0);
+            case 'votes': return (b.v || 0) - (a.v || 0);
+            case 'views': return (b.w || 0) - (a.w || 0);
+            case 'name': return (a.n || '').localeCompare(b.n || '');
+            default: return (b.dt || '').localeCompare(a.dt || ''); // date
         }
-        if (cmp !== 0) return cmp;
-        return (b.v || 0) - (a.v || 0); // tiebreaker
     });
     
     filteredData = visible;
@@ -163,90 +521,94 @@ function filterBots() {
     renderGrid(visible);
 }
 
+// ── Stars rendering ──
 function renderStars(n) {
-    n = Math.min(Math.max(Math.round(n), 0), 5);
-    return '⭐'.repeat(n) + '☆'.repeat(5 - n);
+    return '⭐'.repeat(Math.min(Math.round(n), 5));
 }
 
-function formatNumber(n) {
-    if (!n) return '';
-    if (n >= 1000) return (n/1000).toFixed(1).replace('.0','') + 'k';
-    return n.toLocaleString();
-}
-
+// ── Render Grid ──
 function renderGrid(bots) {
     const grid = document.getElementById('grid');
     if (bots.length === 0) {
-        grid.innerHTML = '<div class="loading"><div style="font-size:2rem;margin-bottom:0.5rem;">🔍</div><div>No bots found</div></div>';
+        grid.innerHTML = '<div style="text-align:center;padding:3rem;color:var(--text-dim);grid-column:1/-1;">No bots found</div>';
         return;
     }
     
     grid.innerHTML = bots.map(bot => {
         const desc = getDesc(bot);
-        const shortDesc = desc.length > 130 ? desc.slice(0, 130) + '…' : desc;
-        const tags = (bot.t || []).slice(0, 4);
+        const shortDesc = desc.length > 150 ? desc.slice(0, 150) + '...' : desc;
+        const tags = (bot.t || []).slice(0, 5);
         
-        return `<div class="card" onclick="showDetail('${esc(bot.u)}')">
-            <img class="card-avatar" src="https://t.me/i/userpic/320/${esc(bot.u)}.jpg" alt="" loading="lazy" onerror="this.style.display='none'" onload="this.style.opacity=1">
-            <div class="card-body">
-            <div class="card-top">
+        return `<div class="card" onclick="showDetail('${bot.u}')">
+            <div class="card-header">
                 <div>
                     <div class="card-name">${esc(bot.n)}</div>
                     <div class="card-username">@${esc(bot.u)}</div>
                 </div>
-                <div class="card-rating">${renderStars(bot.s)} <span>${bot.r ? bot.r.toFixed(1) : '—'}</span></div>
+                <div class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : '—'}</div>
             </div>
             <div class="card-desc">${esc(shortDesc)}</div>
-            ${tags.length ? '<div class="card-tags">' + tags.map(t => '<button class="card-tag" onclick="event.stopPropagation();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</button>').join('') + '</div>' : ''}
+            ${tags.length ? '<div class="card-tags">' + tags.map(t => '<span class="card-tag" onclick="event.stopPropagation();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
             <div class="card-meta">
-                ${bot.v ? '<span>🗳 ' + formatNumber(bot.v) + '</span>' : ''}
-                ${bot.w ? '<span>👁 ' + formatNumber(bot.w) + '</span>' : ''}
-                ${bot.l ? '<span>🌐 ' + esc(bot.l.split(' ')[0]) + (bot.l.includes(' ') ? ' +' + (bot.l.split(' ').length-1) : '') + '</span>' : ''}
-                ${bot.dt ? '<span>' + dateAgo(bot.dt) + '</span>' : ''}
-            </div>
+                ${bot.v ? `🗳 ${bot.v} votes` : ''}
+                ${bot.w ? `👁 ${bot.w.toLocaleString()}` : ''}
+                ${bot.l ? `🌐 ${bot.l.split(' ')[0]}${bot.l.includes(' ') ? ' +' + (bot.l.split(' ').length-1) : ''}` : ''}
+                ${dateAgo(bot.dt)}
             </div>
         </div>`;
     }).join('');
 }
 
+// ── Detail View ──
 function showDetail(username) {
     const bot = data.find(b => b.u === username);
     if (!bot) return;
+    
+    const desc = getDesc(bot);
+    const descRu = getLangDesc(bot, 'ru');
+    const descFa = getLangDesc(bot, 'fa');
+    const descEn = getLangDesc(bot, 'en');
     
     const overlay = document.getElementById('detailOverlay');
     overlay.classList.add('open');
     
     document.getElementById('detailCard').innerHTML = `
         <button class="detail-close" onclick="closeDetail()">✕</button>
-        <div class="detail-img-wrap"><img class="detail-img" src="https://t.me/i/userpic/320/${esc(bot.u)}.jpg" alt="" onerror="this.style.display='none'"></div>
         <div class="card-name">${esc(bot.n)}</div>
         <div class="card-username">@${esc(bot.u)}</div>
-        <div class="detail-rating">
-            <span style="color:var(--star);font-size:1.1rem;">${renderStars(bot.s)}</span>
-            <span style="color:var(--text-dim);font-size:0.9rem;">${bot.r ? bot.r.toFixed(1) : '—'}</span>
-            ${bot.v ? '<span style="color:var(--text-muted);font-size:0.8rem;">· ' + formatNumber(bot.v) + ' votes</span>' : ''}
+        <div style="display:flex;gap:0.5rem;margin:0.3rem 0;">
+            <span class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : ''}</span>
+            ${bot.v ? `<span style="color:var(--text-dim);font-size:0.85rem;">🗳 ${bot.v} votes</span>` : ''}
         </div>
         
-        <div class="detail-lang-section">
-            <div class="detail-lang-label">🇬🇧 English</div>
-            <div class="detail-desc">${esc(bot.d)}</div>
-        </div>
-        ${bot.dr && bot.dr !== bot.d ? '<div class="detail-lang-section"><div class="detail-lang-label">🇷🇺 Русский</div><div class="detail-desc">' + esc(bot.dr) + '</div></div>' : ''}
-        ${bot.df && bot.df !== bot.d ? '<div class="detail-lang-section"><div class="detail-lang-label">🇮🇷 فارسی</div><div class="detail-desc fa" dir="rtl">' + esc(bot.df) + '</div></div>' : ''}
+        <div class="detail-lang-label">🇬🇧 English</div>
+        <div class="card-desc">${esc(descEn)}</div>
         
-        <div class="detail-grid">
+        <div class="detail-lang-label">🇷🇺 Русский</div>
+        <div class="card-desc">${esc(descRu)}</div>
+        
+        <div class="detail-lang-label">🇮🇷 فارسی</div>
+        <div class="card-desc" dir="rtl">${esc(descFa)}</div>
+        
+        <div class="detail-info">
             <div>🌐 Languages: <span>${esc(bot.l || '—')}</span></div>
             <div>💬 Inline: <span>${bot.i || 'no'}</span></div>
             <div>👥 Groups: <span>${bot.g || 'no'}</span></div>
-            <div>👁 Views: <span>${bot.w ? formatNumber(bot.w) : '—'}</span></div>
+            <div>👁 Views: <span>${bot.w ? bot.w.toLocaleString() : '—'}</span></div>
         </div>
         
-        ${(bot.t || []).length ? '<div class="detail-tags">' + bot.t.map(t => '<button class="card-tag" onclick="event.stopPropagation();closeDetail();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</button>').join('') + '</div>' : ''}
+        ${(bot.t || []).length ? '<div class="card-tags" style="margin:0.5rem 0;">' + bot.t.map(t => '<span class="card-tag" onclick="event.stopPropagation();closeDetail();toggleTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
         
-        <a class="open-btn" href="https://t.me/${esc(bot.u)}" target="_blank">
+        <a class="open-bot-btn" href="https://t.me/${esc(bot.u)}" target="_blank">
             🤖 Open @${esc(bot.u)}
         </a>
     `;
+}
+
+function getLangDesc(bot, l) {
+    if (l === 'ru') return bot.dr || bot.d;
+    if (l === 'fa') return bot.df || bot.d;
+    return bot.d;
 }
 
 function closeDetail(e) {
@@ -254,30 +616,30 @@ function closeDetail(e) {
     document.getElementById('detailOverlay').classList.remove('open');
 }
 
+// ── Date helper ──
 function dateAgo(iso) {
     if (!iso) return '';
     const d = new Date(iso);
     const now = new Date();
-    const diff = (now - d) / 86400000;
+    const diff = (now - d) / (1000 * 86400);
     if (diff < 1) return 'today';
     if (diff < 30) return Math.round(diff) + 'd ago';
     if (diff < 365) return Math.round(diff / 30) + 'mo ago';
     return Math.round(diff / 365) + 'y ago';
 }
 
+// ── Escape HTML ──
 function esc(s) {
     if (!s) return '';
-    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// ── ESC key to close detail ──
 document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeDetail(); }
-    if (e.key === '/' && document.activeElement !== document.getElementById('search')) {
-        e.preventDefault();
-        document.getElementById('search').focus();
-    }
+    if (e.key === 'Escape') closeDetail();
 });
 
+// ── Init ──
 loadData();
 </script>
 </body>
