@@ -101,7 +101,7 @@
   <url><loc>https://tgbotarchive.com/tag/feedback.html</loc><priority>0.8</priority></url>
   <url><loc>https://tgbotarchive.com/tag/weather.html</loc><priority>0.8</priority></url>
   <url><loc>https://tgbotarchive.com/tag/web.html</loc><priority>0.8</priority></url>
-  <url><loc>https://tgbotarchive.com/b/NutritionCheckerBot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/NutritionCheckerBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/SocialBooster_aibot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/SpyTrackedBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/stranger_cupid_bot.html</loc><priority>0.9</priority></url>
@@ -402,7 +402,7 @@
   <url><loc>https://tgbotarchive.com/b/NoctisImperivmBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/WebMConverter_Bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/HyperTAG_bot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://tgbotarchive.com/b/Vechile_Info_Finder_bot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/Vechile_Info_Finder_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/No_PmsRoBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/Syncgrambot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/CalendryBot.html</loc><priority>0.6</priority></url>
@@ -564,7 +564,7 @@
   <url><loc>https://tgbotarchive.com/b/wordcounterbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/pdfifyBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/StackOverFIowBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/resume_checker_ai_bot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/resume_checker_ai_bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/ConnectThisBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/AnimeWatcherXBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/translategrambot‌.html</loc><priority>0.9</priority></url>
@@ -715,9 +715,9 @@
   <url><loc>https://tgbotarchive.com/b/MobodbBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/CalculixBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/MetaQuizBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/TruecallerR0Bot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/TruecallerR0Bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/anumsgbot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/patrosub_bot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/patrosub_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/autocaptionbuttonbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/goingdutchbro_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/caixinha_de_perguntas_bot.html</loc><priority>0.9</priority></url>
@@ -842,7 +842,7 @@
   <url><loc>https://tgbotarchive.com/b/AceRequestsBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/mediauploadertelegraphbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/SomniumBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/translatefastbot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/translatefastbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/railtrackerbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/spotifydownloadrobot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/antida2bot.html</loc><priority>0.9</priority></url>
@@ -988,7 +988,7 @@
   <url><loc>https://tgbotarchive.com/b/BRScan_Bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/daily_remind_me_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/trivia_robot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/DungonBot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/DungonBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/AnyShareBOT.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/MediaLoadBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/TwitterProfileBot.html</loc><priority>0.9</priority></url>
@@ -1154,7 +1154,7 @@
   <url><loc>https://tgbotarchive.com/b/yotBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/ChannelNextBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/AJviewCounter_bot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/stats_trackerbot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/stats_trackerbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/PyLyricsBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/MahmudsBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/WhyTubeBot.html</loc><priority>0.6</priority></url>
@@ -1240,7 +1240,7 @@
   <url><loc>https://tgbotarchive.com/b/dating_livebot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/NoGCommentsBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/allutilitybot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/nnbbot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/nnbbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/TuriBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/File2LinkPro_Robot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/ymtebakgambarbot.html</loc><priority>0.6</priority></url>
@@ -1381,7 +1381,7 @@
   <url><loc>https://tgbotarchive.com/b/SilencerGroupBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/QRGeneratorRoBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/GTradBot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://tgbotarchive.com/b/ocr_free_bot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/ocr_free_bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/instabot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/banofbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/Twitter4gramBot.html</loc><priority>0.6</priority></url>
@@ -1517,7 +1517,7 @@
   <url><loc>https://tgbotarchive.com/b/PallaMagica_Bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/link_expertBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/AximoBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/TalkMe_chat_bot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/TalkMe_chat_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/ThingsAddBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/forward_cobot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/AntiArabicScriptBot.html</loc><priority>0.6</priority></url>
@@ -1608,7 +1608,7 @@
   <url><loc>https://tgbotarchive.com/b/RavenMusBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/DualsBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/EveryoneGroupBot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://tgbotarchive.com/b/DevToolsForBot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/DevToolsForBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/MinecraftCardGame_Bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/SighRadarBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/MarkerRobot.html</loc><priority>0.6</priority></url>
@@ -1678,7 +1678,7 @@
   <url><loc>https://tgbotarchive.com/b/mp3_tag_bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/YoutubeAudioDownloadBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/FindMusicPleaseBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/spotifybot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/spotifybot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/MrDenver_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/TextMagicBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/coronavirustrentinobot.html</loc><priority>0.9</priority></url>
@@ -1839,7 +1839,7 @@
   <url><loc>https://tgbotarchive.com/b/urluprobot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/ChatSocketBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/ForwardsCoverBot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/ConfluxBot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/ConfluxBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/PatrontoBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/WelcomeChannelBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/ThirtyOneBot.html</loc><priority>0.6</priority></url>
@@ -1929,9 +1929,9 @@
   <url><loc>https://tgbotarchive.com/b/campeggio_bot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/justplants_bot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/instautobeta_bot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/facedlldownloaderbot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/facedlldownloaderbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/dotobot.html</loc><priority>0.6</priority></url>
-  <url><loc>https://tgbotarchive.com/b/audiocutterbot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/audiocutterbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/imentionbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/filestolinkbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/archewikibot.html</loc><priority>0.9</priority></url>
@@ -1952,7 +1952,7 @@
   <url><loc>https://tgbotarchive.com/b/bmbstagingbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/MusicLinkBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/TrackAzonBot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://tgbotarchive.com/b/ChattaCheTiPassabot.html</loc><priority>0.6</priority></url>
+  <url><loc>https://tgbotarchive.com/b/ChattaCheTiPassabot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/slgbot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/StickerCatalogBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/jh0ker_welcomebot.html</loc><priority>0.9</priority></url>
@@ -2109,7 +2109,7 @@
   <url><loc>https://tgbotarchive.com/b/megachatbot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/music.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/bgcolorbot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://tgbotarchive.com/b/TheFeedReaderBot.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tgbotarchive.com/b/TheFeedReaderBot.html</loc><priority>0.6</priority></url>
   <url><loc>https://tgbotarchive.com/b/gamebot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/JsonDumpBot.html</loc><priority>0.9</priority></url>
   <url><loc>https://tgbotarchive.com/b/QuanBot.html</loc><priority>0.6</priority></url>
