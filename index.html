@@ -626,7 +626,7 @@ function renderGrid(bots) {
         const shortDesc = desc.length > 150 ? desc.slice(0, 150) + '...' : desc;
         const tags = (bot.t || []).slice(0, 5);
         
-        return `<div class="card" onclick="showDetail('${bot.u}')">
+        return `<div class="card" onclick="window.location.href='/b/${bot.u}.html'">
             <div class="card-header">
                 <div>
                     <div class="card-name">${esc(bot.n)}</div>
