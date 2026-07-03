@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,14 +130,120 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Phone-Focused Telegram Bots: A Practical Comparison</h2><p>Telegram bots in the &quot;phone&quot; category serve various purposes – from caller ID lookups and device specs to carrier account management. While many aim to simplify phone-related tasks, their quality and usefulness vary widely. This article compares **Iliad Info Bot** (@iliadinfobot) with three other bots in this space, highlighting their strengths and limitations.</p><p>### Overview of Phone Telegram Bots</p><ul><li>Phone bots typically help users:</li><li>Look up phone numbers (caller ID, operator, location)</li><li>Retrieve smartphone specifications (RAM, camera, battery)</li><li>Manage carrier accounts (balance, plans, SIM details)</li><li>Generate phone-related content (wallpapers, ringtones)</li></ul><p>The category suffers from many low-quality or abandoned bots, with user ratings often below 2/5. Only a few deliver consistent, reliable results.</p><p>### How @iliadinfobot Stands Out</p><p>Iliad Info Bot is a specialized tool for Italian Iliad mobile customers. Unlike generic number lookup bots, it focuses on a single carrier – providing deep, accurate account management features. It connects to Iliad&#x27;s official systems to show:</p><ul><li>**Profile info**: Name, address, tax code</li><li>**SIM details**: ICCID, IMSI, number, activation date</li><li>**Contract data**: Plan name, remaining data, expiration</li><li>**Usage history**: Call, SMS, and internet consumption</li></ul><p>This bot is highly targeted – it only works for Iliad Italy users – but within that niche, it offers unmatched precision. Competitors like @truecaller_legalbot claim to identify Indian numbers but often fail due to outdated databases, earning a 1.0/5 rating from over 40,000 users.</p><p>### Key Strengths of Iliad Info Bot</p><ul><li>**Official integration**: Works directly with Iliad&#x27;s API, ensuring real-time, accurate data</li><li>**Privacy-focused**: No data storage – all information is fetched on demand and not logged</li><li>**User-friendly**: Simple commands like `/profile`, `/sim`, `/contract` provide instant results</li><li>**No ads or spam**: Unlike some bots, it doesn&#x27;t promote third-party services</li><li>**Regular updates**: Actively maintained to match Iliad&#x27;s system changes</li></ul><p>### Comparison Table</p><p>| Feature | @iliadinfobot | @truecaller_legalbot | @SmartphoneDBot | @WallpaperGenerator_bot |
-|---------|---------------|----------------------|-----------------|-------------------------|
-| **Purpose** | Carrier account management | Caller ID (India) | Smartphone specs | Wallpaper generation |
-| **Accuracy** | Very high (official data) | Low (outdated databases) | Moderate (user-contributed) | N/A (subjective quality) |
-| **Target audience** | Iliad Italy users | Indian mobile users | General public | General public |
-| **User rating** | Not rated (newer) | 1.0/5 (40k votes) | 1.0/5 (11k votes) | 1.0/5 (1 vote) |
-| **Data freshness** | Real-time | Delayed/incorrect | Often outdated | Static images |
-| **Privacy** | Strong (no storage) | Weak (collects numbers) | Moderate (search history) | Minimal (no personal data) |</p><p>### When to Choose Each Bot</p><ul><li>**Choose @iliadinfobot if:**</li><li>You&#x27;re an Iliad Italy customer needing instant account access</li><li>You want real-time SIM/contract details without logging into a web portal</li><li>You value privacy and official data reliability</li></ul><p>**Avoid @truecaller_legalbot –** its low rating and privacy concerns make it unreliable for caller ID needs. Consider alternatives like @number_verify_bot instead.</p><ul><li>**Use @SmartphoneDBot for:**</li><li>Quick specs lookup when comparing devices (but verify with official sources)</li><li>Basic smartphone info when you don&#x27;t need 100% accuracy</li></ul><p>**Skip @WallpaperGenerator_bot –** its single vote and low quality output make it practically useless. Better options exist (e.g., @wallpapersbot).</p><p>### Final Verdict</p><p>Iliad Info Bot excels in its niche, offering a rare combination of official integration, privacy, and ease of use. While it won&#x27;t help non-Iliad users, it sets a high standard for carrier-specific bots. The other bots in this comparison suffer from poor maintenance, low accuracy, or limited scope – making them less trustworthy for everyday use. For Italian Iliad customers, @iliadinfobot is a must-have tool; for others, look elsewhere in the phone bot category.</p>
+    <h2>Phone-Focused Telegram Bots: A Practical Comparison</h2>
+
+<p>Telegram bots in the "phone" category serve various purposes – from caller ID lookups and device specs to carrier account management. While many aim to simplify phone-related tasks, their quality and usefulness vary widely. This article compares <strong>Iliad Info Bot</strong> (@iliadinfobot) with three other bots in this space, highlighting their strengths and limitations.</p>
+
+<h3>Overview of Phone Telegram Bots</h3>
+
+<p>Phone bots typically help users:
+- Look up phone numbers (caller ID, operator, location)
+- Retrieve smartphone specifications (RAM, camera, battery)
+- Manage carrier accounts (balance, plans, SIM details)
+- Generate phone-related content (wallpapers, ringtones)</p>
+
+<p>The category suffers from many low-quality or abandoned bots, with user ratings often below 2/5. Only a few deliver consistent, reliable results.</p>
+
+<h3>How @iliadinfobot Stands Out</h3>
+
+<p>Iliad Info Bot is a specialized tool for Italian Iliad mobile customers. Unlike generic number lookup bots, it focuses on a single carrier – providing deep, accurate account management features. It connects to Iliad's official systems to show:</p>
+
+<ul>
+<li><strong>Profile info</strong>: Name, address, tax code</li>
+<li><strong>SIM details</strong>: ICCID, IMSI, number, activation date</li>
+<li><strong>Contract data</strong>: Plan name, remaining data, expiration</li>
+<li><strong>Usage history</strong>: Call, SMS, and internet consumption</li>
+</ul>
+
+<p>This bot is highly targeted – it only works for Iliad Italy users – but within that niche, it offers unmatched precision. Competitors like @truecaller_legalbot claim to identify Indian numbers but often fail due to outdated databases, earning a 1.0/5 rating from over 40,000 users.</p>
+
+<h3>Key Strengths of Iliad Info Bot</h3>
+
+<ul>
+<li><strong>Official integration</strong>: Works directly with Iliad's API, ensuring real-time, accurate data</li>
+<li><strong>Privacy-focused</strong>: No data storage – all information is fetched on demand and not logged</li>
+<li><strong>User-friendly</strong>: Simple commands like <code>/profile</code>, <code>/sim</code>, <code>/contract</code> provide instant results</li>
+<li><strong>No ads or spam</strong>: Unlike some bots, it doesn't promote third-party services</li>
+<li><strong>Regular updates</strong>: Actively maintained to match Iliad's system changes</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@iliadinfobot</th>
+  <th>@truecaller_legalbot</th>
+  <th>@SmartphoneDBot</th>
+  <th>@WallpaperGenerator_bot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Purpose</strong></td>
+  <td>Carrier account management</td>
+  <td>Caller ID (India)</td>
+  <td>Smartphone specs</td>
+  <td>Wallpaper generation</td>
+</tr>
+<tr>
+  <td><strong>Accuracy</strong></td>
+  <td>Very high (official data)</td>
+  <td>Low (outdated databases)</td>
+  <td>Moderate (user-contributed)</td>
+  <td>N/A (subjective quality)</td>
+</tr>
+<tr>
+  <td><strong>Target audience</strong></td>
+  <td>Iliad Italy users</td>
+  <td>Indian mobile users</td>
+  <td>General public</td>
+  <td>General public</td>
+</tr>
+<tr>
+  <td><strong>User rating</strong></td>
+  <td>Not rated (newer)</td>
+  <td>1.0/5 (40k votes)</td>
+  <td>1.0/5 (11k votes)</td>
+  <td>1.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Data freshness</strong></td>
+  <td>Real-time</td>
+  <td>Delayed/incorrect</td>
+  <td>Often outdated</td>
+  <td>Static images</td>
+</tr>
+<tr>
+  <td><strong>Privacy</strong></td>
+  <td>Strong (no storage)</td>
+  <td>Weak (collects numbers)</td>
+  <td>Moderate (search history)</td>
+  <td>Minimal (no personal data)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<p><strong>Choose @iliadinfobot if:</strong>
+- You're an Iliad Italy customer needing instant account access
+- You want real-time SIM/contract details without logging into a web portal
+- You value privacy and official data reliability</p>
+
+<p><strong>Avoid @truecaller_legalbot –</strong> its low rating and privacy concerns make it unreliable for caller ID needs. Consider alternatives like @number_verify_bot instead.</p>
+
+<p><strong>Use @SmartphoneDBot for:</strong>
+- Quick specs lookup when comparing devices (but verify with official sources)
+- Basic smartphone info when you don't need 100% accuracy</p>
+
+<p><strong>Skip @WallpaperGenerator_bot –</strong> its single vote and low quality output make it practically useless. Better options exist (e.g., @wallpapersbot).</p>
+
+<h3>Final Verdict</h3>
+
+<p>Iliad Info Bot excels in its niche, offering a rare combination of official integration, privacy, and ease of use. While it won't help non-Iliad users, it sets a high standard for carrier-specific bots. The other bots in this comparison suffer from poor maintenance, low accuracy, or limited scope – making them less trustworthy for everyday use. For Italian Iliad customers, @iliadinfobot is a must-have tool; for others, look elsewhere in the phone bot category.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-13</div>
 </div>

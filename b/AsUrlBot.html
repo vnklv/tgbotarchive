@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -118,14 +129,83 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>URL Shortener Bots on Telegram: @AsUrlBot vs. the Competition</h2><p>URL shortener bots on Telegram are specialized tools that allow users to condense long, unwieldy links into compact, shareable formats. They often come with additional features like link tracking, custom aliases, and the ability to extract the original URL from shortened links. These bots are invaluable for social media managers, marketers, and anyone who needs to share links cleanly in chats or posts. Among them, @AsUrlBot stands out, but it&#x27;s not the only player in the field.</p><p>### How @AsUrlBot Compares to Similar Bots</p><p>The primary competitor in the same &quot;urlshortner&quot; category is @AsPasteBot, though it serves a slightly different function (pastes vs. links). @AsUrlBot focuses exclusively on URL shortening and extraction, while @AsPasteBot is designed for creating and retrieving text pastes from DelDog. Both bots are currently flagged as offline, which is a significant limitation for users. However, when they are operational, their core utilities differ:</p><ul><li>**@AsUrlBot** simplifies link management with two core actions: shortening any URL and expanding any shortened URL back to its original form.</li><li>**@AsPasteBot** is tailored for text snippets, not URLs, making it less relevant for direct link shortening needs.</li></ul><p>### Key Strengths and Unique Features of @AsUrlBot</p><p>Despite its offline status, @AsUrlBot offers distinct advantages when functional:</p><ul><li>**Dual Functionality**: It handles both shortening and extraction in one bot, eliminating the need for multiple tools.</li><li>**Simplicity**: No account creation or complex settings—just send a link and get a short version, or send a shortened link to reveal the original.</li><li>**No Ads or Tracking**: Unlike many commercial shorteners, it doesn&#x27;t inject ads or track user data (based on its description).</li><li>**Lightweight**: Works instantly without extra commands or menus, ideal for quick sharing.</li></ul><p>### Comparison Table: @AsUrlBot vs. @AsPasteBot</p><p>| Feature | @AsUrlBot | @AsPasteBot |
-|---------|-----------|-------------|
-| **Primary Function** | URL shortening &amp; extraction | Paste creation &amp; retrieval (DelDog) |
-| **Current Status** | 🔴 Flagged as offline | 🔴 Flagged as offline |
-| **Rating** | Not rated | 5.0/5 (1 vote) |
-| **User Interface** | Minimal, command-free | Simple but paste-focused |
-| **Unique Selling Point** | Two-in-one link tool | Text paste storage |
-| **Best For** | Link sharing &amp; verification | Sharing code or notes |</p><p>### Recommendations on When to Choose Each Bot</p><ul><li>**Choose @AsUrlBot** if you need a straightforward, no-frills URL shortener and expander. It&#x27;s perfect for quickly condensing links for social media, messaging, or verifying the destination of a shortened URL. However, its offline status means it&#x27;s currently unreliable—look for alternatives like @URLShortenerBot or @LinkShortenerBot if you need immediate service.</li></ul><ul><li>**Choose @AsPasteBot** if your primary need is to share text snippets (code, instructions, or long messages) via DelDog. Its high rating suggests it works well, but it&#x27;s not designed for URL shortening. Again, its offline status makes it unusable for now.</li></ul><p>**Final Takeaway**: @AsUrlBot offers a clean, dual-purpose solution for URL management, ideal for users who value simplicity. However, given that both bots are flagged as offline, you may want to explore active alternatives such as @ShortLinkBot or @TinyURLBot for reliable service. Until @AsUrlBot returns online, its core strengths remain theoretical—but for those who remember its utility, it was a gem in the urlshortner niche.</p>
+    <h2>URL Shortener Bots on Telegram: @AsUrlBot vs. the Competition</h2>
+
+<p>URL shortener bots on Telegram are specialized tools that allow users to condense long, unwieldy links into compact, shareable formats. They often come with additional features like link tracking, custom aliases, and the ability to extract the original URL from shortened links. These bots are invaluable for social media managers, marketers, and anyone who needs to share links cleanly in chats or posts. Among them, @AsUrlBot stands out, but it's not the only player in the field.</p>
+
+<h3>How @AsUrlBot Compares to Similar Bots</h3>
+
+<p>The primary competitor in the same "urlshortner" category is @AsPasteBot, though it serves a slightly different function (pastes vs. links). @AsUrlBot focuses exclusively on URL shortening and extraction, while @AsPasteBot is designed for creating and retrieving text pastes from DelDog. Both bots are currently flagged as offline, which is a significant limitation for users. However, when they are operational, their core utilities differ:</p>
+
+<ul>
+<li><strong>@AsUrlBot</strong> simplifies link management with two core actions: shortening any URL and expanding any shortened URL back to its original form.</li>
+<li><strong>@AsPasteBot</strong> is tailored for text snippets, not URLs, making it less relevant for direct link shortening needs.</li>
+</ul>
+
+<h3>Key Strengths and Unique Features of @AsUrlBot</h3>
+
+<p>Despite its offline status, @AsUrlBot offers distinct advantages when functional:</p>
+
+<ul>
+<li><strong>Dual Functionality</strong>: It handles both shortening and extraction in one bot, eliminating the need for multiple tools.</li>
+<li><strong>Simplicity</strong>: No account creation or complex settings—just send a link and get a short version, or send a shortened link to reveal the original.</li>
+<li><strong>No Ads or Tracking</strong>: Unlike many commercial shorteners, it doesn't inject ads or track user data (based on its description).</li>
+<li><strong>Lightweight</strong>: Works instantly without extra commands or menus, ideal for quick sharing.</li>
+</ul>
+
+<h3>Comparison Table: @AsUrlBot vs. @AsPasteBot</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@AsUrlBot</th>
+  <th>@AsPasteBot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>URL shortening &amp; extraction</td>
+  <td>Paste creation &amp; retrieval (DelDog)</td>
+</tr>
+<tr>
+  <td><strong>Current Status</strong></td>
+  <td>🔴 Flagged as offline</td>
+  <td>🔴 Flagged as offline</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>Not rated</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>User Interface</strong></td>
+  <td>Minimal, command-free</td>
+  <td>Simple but paste-focused</td>
+</tr>
+<tr>
+  <td><strong>Unique Selling Point</strong></td>
+  <td>Two-in-one link tool</td>
+  <td>Text paste storage</td>
+</tr>
+<tr>
+  <td><strong>Best For</strong></td>
+  <td>Link sharing &amp; verification</td>
+  <td>Sharing code or notes</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><p><strong>Choose @AsUrlBot</strong> if you need a straightforward, no-frills URL shortener and expander. It's perfect for quickly condensing links for social media, messaging, or verifying the destination of a shortened URL. However, its offline status means it's currently unreliable—look for alternatives like @URLShortenerBot or @LinkShortenerBot if you need immediate service.</p></li>
+<li><p><strong>Choose @AsPasteBot</strong> if your primary need is to share text snippets (code, instructions, or long messages) via DelDog. Its high rating suggests it works well, but it's not designed for URL shortening. Again, its offline status makes it unusable for now.</p></li>
+</ul>
+
+<p><strong>Final Takeaway</strong>: @AsUrlBot offers a clean, dual-purpose solution for URL management, ideal for users who value simplicity. However, given that both bots are flagged as offline, you may want to explore active alternatives such as @ShortLinkBot or @TinyURLBot for reliable service. Until @AsUrlBot returns online, its core strengths remain theoretical—but for those who remember its utility, it was a gem in the urlshortner niche.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-27</div>
 </div>

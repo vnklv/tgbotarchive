@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -121,14 +132,105 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Comparison of Telegram Protector Bots: i Boto vs. The Competition</h2><p>Telegram group management bots in the &quot;protector&quot; category serve a crucial role: they automate security, moderation, and user verification to keep communities safe from spam, bots, and unwanted content. While many bots offer overlapping features, their approaches and specialties vary widely. This article compares **i Boto** (@i_boto_main_bot) with five other popular protector bots, highlighting their unique strengths and limitations.</p><p>### What Protector Bots Do</p><ul><li>Protector bots typically include:</li><li>**User verification** (CAPTCHA, button clicks, or image recognition) to block automated joiners.</li><li>**Content filtering** (blocking links, media, phone numbers, or regex patterns).</li><li>**Scheduled messaging** for recurring announcements or reminders.</li><li>**Anti-spam measures** (banning scammers, preventing group closure).</li><li>**Customizable welcome messages** with media and buttons.</li></ul><p>### i Boto Overview</p><p>i Boto (@i_boto_main_bot) is a clone-friendly group manager that focuses on flexibility and content control. Its standout feature is the ability to **schedule up to 50 recurring texts, media, and buttons**, making it ideal for communities that need regular reminders or promotions. It also offers **custom welcomes with CAPTCHA** and granular blocking of links, phone numbers, media, regex patterns, and even bios containing links (including &quot;t.co&quot; shorteners). The bot is designed to be lightweight and easy to clone for private use.</p><p>### Comparison with Similar Bots</p><p>| Bot Name | Rating (Votes) | Key Features | Best For |
-|----------|----------------|--------------|----------|
-| **i Boto** (@i_boto_main_bot) | Not rated | Schedule 50 recurring messages, custom welcomes + CAPTCHA, link/media/phone blocking, regex filtering, bio link blocking | Groups needing heavy content control and recurring posts |
-| **iboto_main_bot** (iboto_GP_bot) | 5.0/5 (1 vote) | Clone-friendly, similar features to i Boto but with less documentation | Users wanting a simpler clone of i Boto |
-| **Join Captcha Bot** (@join_captcha_bot) | 5.0/5 (19M votes) | Image-based CAPTCHA verification, simple setup | Large public groups needing robust human verification |
-| **unified/ban** (@unifiedban_bot) | 5.0/5 (342K votes) | Anti-scammer and anti-spammer protection, cross-group banning | Communities facing persistent spam attacks |
-| **No Group Close** (@AntiGroupCloseBot) | 2.62/5 (1 vote) | Prevents group closure by deleting edited media and blocked channel forwards | Groups at risk of being closed by Telegram (currently offline) |
-| **AntiUserbotsBot** (@AntiUserbotsBot) | 1.0/5 (1 vote) | Forces users to click a button before writing | Small groups with minimal spam (low rating) |</p><p>### Key Strengths of i Boto</p><ul><li>**Massive Scheduling Capabilities** – No other bot in this list offers up to 50 recurring messages with media and buttons. This is a game-changer for communities with daily events, announcements, or automated content.</li><li>**Comprehensive Content Filtering** – Beyond standard link blocking, i Boto can block phone numbers, media, regex patterns, and even bios containing links. This level of control is rare.</li><li>**Clone-Friendly** – Users can clone i Boto for private use, giving full customization without relying on a public bot.</li><li>**Custom Welcomes + CAPTCHA** – Combines user verification with branded welcome messages, improving both security and user experience.</li></ul><p>### Weaknesses of i Boto</p><ul><li>**No Rating Yet** – Unlike veteran bots like Join Captcha Bot (19M votes), i Boto lacks a proven track record.</li><li>**Limited Anti-Spam** – While it blocks content, it doesn’t have advanced anti-scammer features like unified/ban.</li><li>**No Group Closure Prevention** – Unlike AntiGroupCloseBot (though offline), i Boto doesn’t protect against forced group closure.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose i Boto if:** You need heavy content filtering (especially bio links), recurring scheduled messages, or want a cloneable bot for private groups.</li><li>**Choose Join Captcha Bot if:** You run a large public group and need reliable image-based CAPTCHA with millions of users trusting it.</li><li>**Choose unified/ban if:** Your group is under constant spam or scam attacks and needs cross-group banning.</li><li>**Choose AntiGroupCloseBot only if:** You’re desperate to prevent group closure (but note it’s currently offline).</li><li>**Choose AntiUserbotsBot if:** You want a simple button-click verification for a small, low-traffic group.</li></ul><p>### Final Verdict</p><p>i Boto stands out for its **scheduling and content control**, filling a niche that other protector bots ignore. While it lacks the massive user base of Join Captcha Bot or the anti-spam power of unified/ban, its unique features make it a strong choice for community managers who prioritize automated content delivery and granular blocking. For groups that need both protection and regular engagement, i Boto is a solid, versatile option.</p>
+    <h2>Comparison of Telegram Protector Bots: i Boto vs. The Competition</h2>
+
+<p>Telegram group management bots in the "protector" category serve a crucial role: they automate security, moderation, and user verification to keep communities safe from spam, bots, and unwanted content. While many bots offer overlapping features, their approaches and specialties vary widely. This article compares <strong>i Boto</strong> (@i_boto_main_bot) with five other popular protector bots, highlighting their unique strengths and limitations.</p>
+
+<h3>What Protector Bots Do</h3>
+
+<p>Protector bots typically include:
+- <strong>User verification</strong> (CAPTCHA, button clicks, or image recognition) to block automated joiners.
+- <strong>Content filtering</strong> (blocking links, media, phone numbers, or regex patterns).
+- <strong>Scheduled messaging</strong> for recurring announcements or reminders.
+- <strong>Anti-spam measures</strong> (banning scammers, preventing group closure).
+- <strong>Customizable welcome messages</strong> with media and buttons.</p>
+
+<h3>i Boto Overview</h3>
+
+<p>i Boto (@i_boto_main_bot) is a clone-friendly group manager that focuses on flexibility and content control. Its standout feature is the ability to <strong>schedule up to 50 recurring texts, media, and buttons</strong>, making it ideal for communities that need regular reminders or promotions. It also offers <strong>custom welcomes with CAPTCHA</strong> and granular blocking of links, phone numbers, media, regex patterns, and even bios containing links (including "t.co" shorteners). The bot is designed to be lightweight and easy to clone for private use.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Rating (Votes)</th>
+  <th>Key Features</th>
+  <th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>i Boto</strong> (@i_boto_main_bot)</td>
+  <td>Not rated</td>
+  <td>Schedule 50 recurring messages, custom welcomes + CAPTCHA, link/media/phone blocking, regex filtering, bio link blocking</td>
+  <td>Groups needing heavy content control and recurring posts</td>
+</tr>
+<tr>
+  <td><strong>iboto_main_bot</strong> (iboto_GP_bot)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Clone-friendly, similar features to i Boto but with less documentation</td>
+  <td>Users wanting a simpler clone of i Boto</td>
+</tr>
+<tr>
+  <td><strong>Join Captcha Bot</strong> (@join_captcha_bot)</td>
+  <td>5.0/5 (19M votes)</td>
+  <td>Image-based CAPTCHA verification, simple setup</td>
+  <td>Large public groups needing robust human verification</td>
+</tr>
+<tr>
+  <td><strong>unified/ban</strong> (@unifiedban_bot)</td>
+  <td>5.0/5 (342K votes)</td>
+  <td>Anti-scammer and anti-spammer protection, cross-group banning</td>
+  <td>Communities facing persistent spam attacks</td>
+</tr>
+<tr>
+  <td><strong>No Group Close</strong> (@AntiGroupCloseBot)</td>
+  <td>2.62/5 (1 vote)</td>
+  <td>Prevents group closure by deleting edited media and blocked channel forwards</td>
+  <td>Groups at risk of being closed by Telegram (currently offline)</td>
+</tr>
+<tr>
+  <td><strong>AntiUserbotsBot</strong> (@AntiUserbotsBot)</td>
+  <td>1.0/5 (1 vote)</td>
+  <td>Forces users to click a button before writing</td>
+  <td>Small groups with minimal spam (low rating)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of i Boto</h3>
+
+<ol>
+<li><strong>Massive Scheduling Capabilities</strong> – No other bot in this list offers up to 50 recurring messages with media and buttons. This is a game-changer for communities with daily events, announcements, or automated content.</li>
+<li><strong>Comprehensive Content Filtering</strong> – Beyond standard link blocking, i Boto can block phone numbers, media, regex patterns, and even bios containing links. This level of control is rare.</li>
+<li><strong>Clone-Friendly</strong> – Users can clone i Boto for private use, giving full customization without relying on a public bot.</li>
+<li><strong>Custom Welcomes + CAPTCHA</strong> – Combines user verification with branded welcome messages, improving both security and user experience.</li>
+</ol>
+
+<h3>Weaknesses of i Boto</h3>
+
+<ul>
+<li><strong>No Rating Yet</strong> – Unlike veteran bots like Join Captcha Bot (19M votes), i Boto lacks a proven track record.</li>
+<li><strong>Limited Anti-Spam</strong> – While it blocks content, it doesn’t have advanced anti-scammer features like unified/ban.</li>
+<li><strong>No Group Closure Prevention</strong> – Unlike AntiGroupCloseBot (though offline), i Boto doesn’t protect against forced group closure.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose i Boto if:</strong> You need heavy content filtering (especially bio links), recurring scheduled messages, or want a cloneable bot for private groups.</li>
+<li><strong>Choose Join Captcha Bot if:</strong> You run a large public group and need reliable image-based CAPTCHA with millions of users trusting it.</li>
+<li><strong>Choose unified/ban if:</strong> Your group is under constant spam or scam attacks and needs cross-group banning.</li>
+<li><strong>Choose AntiGroupCloseBot only if:</strong> You’re desperate to prevent group closure (but note it’s currently offline).</li>
+<li><strong>Choose AntiUserbotsBot if:</strong> You want a simple button-click verification for a small, low-traffic group.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>i Boto stands out for its <strong>scheduling and content control</strong>, filling a niche that other protector bots ignore. While it lacks the massive user base of Join Captcha Bot or the anti-spam power of unified/ban, its unique features make it a strong choice for community managers who prioritize automated content delivery and granular blocking. For groups that need both protection and regular engagement, i Boto is a solid, versatile option.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-26</div>
 </div>

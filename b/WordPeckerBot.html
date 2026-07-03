@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -121,14 +132,108 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Dictionary Telegram Bots: Learning Words with @WordPeckerBot and Competitors</h2><p>### What Dictionary Bots Do</p><p>Dictionary Telegram bots serve as quick reference tools for word definitions, translations, and language learning. They eliminate the need to open separate apps or websites, providing instant access to lexical data within Telegram&#x27;s interface. Most bots in this category focus on specific languages or dictionaries, while a few offer broader functionality like memorization aids or multi-language support.</p><p>### @WordPeckerBot: A Versatile Learning Companion</p><p>@WordPeckerBot stands out from traditional dictionary bots by focusing on **active memorization** rather than passive definition lookup. It allows users to store and review foreign words, Latin phrases, scientific terms, or any custom content. Unlike simple translation bots, it helps you build a personal vocabulary bank with spaced repetition features, making it ideal for long-term language acquisition.</p><p>### Comparison with Similar Bots</p><p>The table below highlights key differences between @WordPeckerBot and other dictionary bots:</p><p>| Bot | Primary Function | Language Focus | Unique Feature | Status |
-|-----|-----------------|----------------|----------------|--------|
-| **@WordPeckerBot** | Memorization &amp; review | Any language | Custom word lists, spaced repetition | Active |
-| **@dlebot** | Spanish definitions | Spanish | Official RAE dictionary | Active |
-| **@LatinDictionaryBot** | Latin translation | Latin | Multi-language translation | Offline |
-| **@DizionarioItaliano_bot** | Italian definitions | Italian | Example usage | Offline |
-| **@DictionBot** | English definitions | English | Massive user base (2.3B votes) | Active |
-| **@EnIdnBot** | English-Indonesian translation | English/Indonesian | Simple translation | Offline |</p><p>### Key Strengths of @WordPeckerBot</p><ul><li>**Customizable content**: Add any text you want to learn—not just words but quotes, formulas, or facts.</li><li>**Active recall system**: The bot prompts you to remember items, reinforcing memory better than passive lookup.</li><li>**Multi-language support**: Unlike @dlebot (only Spanish) or @DictionBot (only English), it works with any language.</li><li>**No offline status**: While several bots are flagged as offline, @WordPeckerBot remains fully operational.</li><li>**Lightweight**: No need for complex dictionaries—just your own data.</li></ul><p>### Weaknesses Compared to Competitors</p><ul><li>**No built-in definitions**: You must supply your own word-meaning pairs; it doesn&#x27;t fetch from external dictionaries.</li><li>**Smaller user base**: @DictionBot has millions of votes, indicating broader adoption.</li><li>**No translation feature**: Unlike @LatinDictionaryBot or @EnIdnBot, it doesn&#x27;t translate automatically.</li><li>**Simpler interface**: Lacks example sentences or phonetic transcriptions found in specialized bots.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose @WordPeckerBot** if you want to actively learn vocabulary (e.g., for exams, language courses, or memorizing technical terms) and prefer a customizable system over predefined dictionaries.</li><li>**Choose @dlebot** for quick Spanish word definitions from the authoritative RAE dictionary.</li><li>**Choose @DictionBot** for fast English definitions with massive community validation (2.3 billion votes ensure reliability).</li><li>**Avoid offline bots** (@LatinDictionaryBot, @DizionarioItaliano_bot, @EnIdnBot) unless they come back online—they currently offer no functionality.</li></ul><p>### Final Verdict</p><p>@WordPeckerBot fills a unique niche in the dictionary bot ecosystem. While most bots are passive reference tools, it turns vocabulary acquisition into an active, personalized process. It&#x27;s not a replacement for dedicated dictionary bots like @dlebot or @DictionBot, but rather a complementary tool for learners who want to retain information long-term. If you&#x27;re tired of just looking up words and want to actually remember them, @WordPeckerBot is worth adding to your Telegram toolkit. For quick definitions, stick with the specialized bots that remain active.</p>
+    <h2>Dictionary Telegram Bots: Learning Words with @WordPeckerBot and Competitors</h2>
+
+<h3>What Dictionary Bots Do</h3>
+
+<p>Dictionary Telegram bots serve as quick reference tools for word definitions, translations, and language learning. They eliminate the need to open separate apps or websites, providing instant access to lexical data within Telegram's interface. Most bots in this category focus on specific languages or dictionaries, while a few offer broader functionality like memorization aids or multi-language support.</p>
+
+<h3>@WordPeckerBot: A Versatile Learning Companion</h3>
+
+<p>@WordPeckerBot stands out from traditional dictionary bots by focusing on <strong>active memorization</strong> rather than passive definition lookup. It allows users to store and review foreign words, Latin phrases, scientific terms, or any custom content. Unlike simple translation bots, it helps you build a personal vocabulary bank with spaced repetition features, making it ideal for long-term language acquisition.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The table below highlights key differences between @WordPeckerBot and other dictionary bots:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Language Focus</th>
+  <th>Unique Feature</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>@WordPeckerBot</strong></td>
+  <td>Memorization &amp; review</td>
+  <td>Any language</td>
+  <td>Custom word lists, spaced repetition</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td><strong>@dlebot</strong></td>
+  <td>Spanish definitions</td>
+  <td>Spanish</td>
+  <td>Official RAE dictionary</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td><strong>@LatinDictionaryBot</strong></td>
+  <td>Latin translation</td>
+  <td>Latin</td>
+  <td>Multi-language translation</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td><strong>@DizionarioItaliano_bot</strong></td>
+  <td>Italian definitions</td>
+  <td>Italian</td>
+  <td>Example usage</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td><strong>@DictionBot</strong></td>
+  <td>English definitions</td>
+  <td>English</td>
+  <td>Massive user base (2.3B votes)</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td><strong>@EnIdnBot</strong></td>
+  <td>English-Indonesian translation</td>
+  <td>English/Indonesian</td>
+  <td>Simple translation</td>
+  <td>Offline</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of @WordPeckerBot</h3>
+
+<ul>
+<li><strong>Customizable content</strong>: Add any text you want to learn—not just words but quotes, formulas, or facts.</li>
+<li><strong>Active recall system</strong>: The bot prompts you to remember items, reinforcing memory better than passive lookup.</li>
+<li><strong>Multi-language support</strong>: Unlike @dlebot (only Spanish) or @DictionBot (only English), it works with any language.</li>
+<li><strong>No offline status</strong>: While several bots are flagged as offline, @WordPeckerBot remains fully operational.</li>
+<li><strong>Lightweight</strong>: No need for complex dictionaries—just your own data.</li>
+</ul>
+
+<h3>Weaknesses Compared to Competitors</h3>
+
+<ul>
+<li><strong>No built-in definitions</strong>: You must supply your own word-meaning pairs; it doesn't fetch from external dictionaries.</li>
+<li><strong>Smaller user base</strong>: @DictionBot has millions of votes, indicating broader adoption.</li>
+<li><strong>No translation feature</strong>: Unlike @LatinDictionaryBot or @EnIdnBot, it doesn't translate automatically.</li>
+<li><strong>Simpler interface</strong>: Lacks example sentences or phonetic transcriptions found in specialized bots.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @WordPeckerBot</strong> if you want to actively learn vocabulary (e.g., for exams, language courses, or memorizing technical terms) and prefer a customizable system over predefined dictionaries.</li>
+<li><strong>Choose @dlebot</strong> for quick Spanish word definitions from the authoritative RAE dictionary.</li>
+<li><strong>Choose @DictionBot</strong> for fast English definitions with massive community validation (2.3 billion votes ensure reliability).</li>
+<li><strong>Avoid offline bots</strong> (@LatinDictionaryBot, @DizionarioItaliano_bot, @EnIdnBot) unless they come back online—they currently offer no functionality.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>@WordPeckerBot fills a unique niche in the dictionary bot ecosystem. While most bots are passive reference tools, it turns vocabulary acquisition into an active, personalized process. It's not a replacement for dedicated dictionary bots like @dlebot or @DictionBot, but rather a complementary tool for learners who want to retain information long-term. If you're tired of just looking up words and want to actually remember them, @WordPeckerBot is worth adding to your Telegram toolkit. For quick definitions, stick with the specialized bots that remain active.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-30</div>
 </div>

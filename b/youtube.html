@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -120,14 +131,109 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Content and Information</h2><p>Search bots are a popular category on Telegram, designed to help users locate specific content—videos, music, user data, or even hidden messages. They range from simple utility tools to advanced data-mining assistants. Among them, the official **YouTube bot** (@youtube) stands out as a dedicated video search and sharing tool, but it competes with a diverse set of bots offering different search capabilities.</p><h2>Overview of @youtube</h2><p>The YouTube bot, with the username @youtube, is a straightforward search assistant focused on YouTube videos. Its primary function is to help users find and share videos directly within Telegram chats. You can send it a query (e.g., &quot;funny cat videos&quot;), and it returns relevant results with titles, thumbnails, and links. It’s a lightweight, no-frills tool that integrates seamlessly with Telegram’s interface, making video discovery quick and easy.</p><h2>How @youtube Compares to Other Search Bots</h2><p>Unlike the other bots in this list, @youtube is narrowly specialized: it only searches YouTube videos. In contrast, bots like @SpyFreeRobot and @idstracebot focus on Telegram-specific data—monitoring edits, deleted messages, or user IDs. @tgdb_search_bot (TgDB Search Lite) digs into public group activity and user insights, while @Melodinbot combines music search with Instagram downloads. @youtube is the only bot that exclusively targets video content from a single platform, making it a niche tool rather than a general-purpose search engine.</p><h2>Key Strengths and Unique Features of @youtube</h2><ul><li>**Official and reliable**: As the official YouTube bot, it’s maintained by Telegram/YouTube, ensuring uptime and accuracy.</li><li>**Simple interface**: No commands or settings needed; just type a query and get results.</li><li>**Direct sharing**: Results can be shared instantly with other chat participants without leaving Telegram.</li><li>**No registration**: Works immediately for any user.</li><li>**Lightweight**: Does not request permissions or collect personal data.</li></ul><p>However, it lacks advanced features like filtering, playlist search, or download options—common in other search bots.</p><h2>Comparison Table</h2><p>| Feature | @youtube | @SpyFreeRobot | @idstracebot | @tgdb_search_bot | @Melodinbot |
-|---------|----------|---------------|--------------|-------------------|-------------|
-| **Primary search** | YouTube videos | Deleted/edited messages | Telegram user info | Public group activity | Music &amp; Instagram |
-| **Ease of use** | Very easy (no commands) | Moderate (requires setup) | Easy (forward message) | Moderate (uses /Where) | Easy (search queries) |
-| **Data privacy** | Minimal data collected | Monitors chats | Public info only | Aggregates public data | Depends on usage |
-| **Unique feature** | Official YouTube integration | Save self-destructing media | Retrieve account creation date | Reveal group membership | Download music/Instagram |
-| **Rating** | N/A | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (1 vote) |
-| **Best for** | Video discovery | Chat monitoring | User lookup | Group analytics | Media downloads |</p><h2>When to Choose Each Bot</h2><ul><li>**Choose @youtube** if you need to quickly find and share YouTube videos within Telegram, especially in group chats or with friends. It’s ideal for casual video browsing.</li><li>**Choose @SpyFreeRobot** if you want to monitor Telegram chats for deleted or edited messages, or save disappearing media. Useful for moderators or security-conscious users.</li><li>**Choose @idstracebot** for verifying Telegram user identities, such as checking account creation dates or retrieving public user info—handy for admins or researchers.</li><li>**Choose @tgdb_search_bot** if you need to discover which public groups a user is active in, or want deep analytics on Telegram communities.</li><li>**Choose @Melodinbot** for downloading music or Instagram content directly via Telegram, combining two media sources in one bot.</li></ul><h2>Final Thoughts</h2><p>While @youtube is a reliable, user-friendly tool for video searches, it’s limited in scope compared to other search bots that offer broader data mining or media downloading. For most casual users, @youtube suffices for video discovery. However, if you need to track user activity, monitor chats, or download content, the other bots provide specialized functionality that @youtube cannot match. Choose based on your primary need—video search or deeper Telegram data exploration.</p>
+    <h2>Search Bots on Telegram: Finding Content and Information</h2>
+
+<p>Search bots are a popular category on Telegram, designed to help users locate specific content—videos, music, user data, or even hidden messages. They range from simple utility tools to advanced data-mining assistants. Among them, the official <strong>YouTube bot</strong> (@youtube) stands out as a dedicated video search and sharing tool, but it competes with a diverse set of bots offering different search capabilities.</p>
+
+<h2>Overview of @youtube</h2>
+
+<p>The YouTube bot, with the username @youtube, is a straightforward search assistant focused on YouTube videos. Its primary function is to help users find and share videos directly within Telegram chats. You can send it a query (e.g., "funny cat videos"), and it returns relevant results with titles, thumbnails, and links. It’s a lightweight, no-frills tool that integrates seamlessly with Telegram’s interface, making video discovery quick and easy.</p>
+
+<h2>How @youtube Compares to Other Search Bots</h2>
+
+<p>Unlike the other bots in this list, @youtube is narrowly specialized: it only searches YouTube videos. In contrast, bots like @SpyFreeRobot and @idstracebot focus on Telegram-specific data—monitoring edits, deleted messages, or user IDs. @tgdb_search_bot (TgDB Search Lite) digs into public group activity and user insights, while @Melodinbot combines music search with Instagram downloads. @youtube is the only bot that exclusively targets video content from a single platform, making it a niche tool rather than a general-purpose search engine.</p>
+
+<h2>Key Strengths and Unique Features of @youtube</h2>
+
+<ul>
+<li><strong>Official and reliable</strong>: As the official YouTube bot, it’s maintained by Telegram/YouTube, ensuring uptime and accuracy.</li>
+<li><strong>Simple interface</strong>: No commands or settings needed; just type a query and get results.</li>
+<li><strong>Direct sharing</strong>: Results can be shared instantly with other chat participants without leaving Telegram.</li>
+<li><strong>No registration</strong>: Works immediately for any user.</li>
+<li><strong>Lightweight</strong>: Does not request permissions or collect personal data.</li>
+</ul>
+
+<p>However, it lacks advanced features like filtering, playlist search, or download options—common in other search bots.</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@youtube</th>
+  <th>@SpyFreeRobot</th>
+  <th>@idstracebot</th>
+  <th>@tgdb_search_bot</th>
+  <th>@Melodinbot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary search</strong></td>
+  <td>YouTube videos</td>
+  <td>Deleted/edited messages</td>
+  <td>Telegram user info</td>
+  <td>Public group activity</td>
+  <td>Music &amp; Instagram</td>
+</tr>
+<tr>
+  <td><strong>Ease of use</strong></td>
+  <td>Very easy (no commands)</td>
+  <td>Moderate (requires setup)</td>
+  <td>Easy (forward message)</td>
+  <td>Moderate (uses /Where)</td>
+  <td>Easy (search queries)</td>
+</tr>
+<tr>
+  <td><strong>Data privacy</strong></td>
+  <td>Minimal data collected</td>
+  <td>Monitors chats</td>
+  <td>Public info only</td>
+  <td>Aggregates public data</td>
+  <td>Depends on usage</td>
+</tr>
+<tr>
+  <td><strong>Unique feature</strong></td>
+  <td>Official YouTube integration</td>
+  <td>Save self-destructing media</td>
+  <td>Retrieve account creation date</td>
+  <td>Reveal group membership</td>
+  <td>Download music/Instagram</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Best for</strong></td>
+  <td>Video discovery</td>
+  <td>Chat monitoring</td>
+  <td>User lookup</td>
+  <td>Group analytics</td>
+  <td>Media downloads</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @youtube</strong> if you need to quickly find and share YouTube videos within Telegram, especially in group chats or with friends. It’s ideal for casual video browsing.</li>
+<li><strong>Choose @SpyFreeRobot</strong> if you want to monitor Telegram chats for deleted or edited messages, or save disappearing media. Useful for moderators or security-conscious users.</li>
+<li><strong>Choose @idstracebot</strong> for verifying Telegram user identities, such as checking account creation dates or retrieving public user info—handy for admins or researchers.</li>
+<li><strong>Choose @tgdb_search_bot</strong> if you need to discover which public groups a user is active in, or want deep analytics on Telegram communities.</li>
+<li><strong>Choose @Melodinbot</strong> for downloading music or Instagram content directly via Telegram, combining two media sources in one bot.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>While @youtube is a reliable, user-friendly tool for video searches, it’s limited in scope compared to other search bots that offer broader data mining or media downloading. For most casual users, @youtube suffices for video discovery. However, if you need to track user activity, monitor chats, or download content, the other bots provide specialized functionality that @youtube cannot match. Choose based on your primary need—video search or deeper Telegram data exploration.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-28</div>
 </div>

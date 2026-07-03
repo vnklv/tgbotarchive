@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -128,13 +139,96 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Content, Users, and Data</h2><p>Telegram search bots come in many flavors. Some help you find movies and TV shows, others track user activity or retrieve public information. The category is broad, but each bot serves a specific niche. In this article, we compare **FilmAffinity Bot** (@faffinitybot) with similar search-oriented bots to see where it fits.</p><h2>What Search Bots Do</h2><p>Search bots on Telegram automate information retrieval. They can look up media databases, scrape public data, monitor messages, or download content. The common thread is saving you time by delivering results directly in chat. Some are free, others require payment or have limited features.</p><h2>FilmAffinity Bot: Overview</h2><p>@faffinitybot focuses exclusively on the FilmAffinity database—a Spanish-language platform for movies, series, miniseries, shorts, and documentaries. It returns detailed information: synopsis, ratings, cast, release year, and genre. It’s straightforward: send a title, get a card with key data.</p><h2>Comparison with Similar Bots</h2><p>The other bots in this list are not direct competitors—they serve different search needs. Here’s how they stack up:</p><p>| Bot | Primary Function | Unique Feature | Rating |
-|-----|------------------|----------------|--------|
-| @faffinitybot | Movie/TV search via FilmAffinity | Spanish-language database with detailed cards | N/A (new) |
-| @SpyFreeRobot | Monitor deleted/edited messages | Saves self-destructible media | 5.0/5 (1 vote) |
-| @idstracebot | Retrieve public Telegram user info | Shows ID, username, estimated account creation date | 5.0/5 (1 vote) |
-| @tgdb_search_bot | Reveal public groups a user is active in | Exclusive /Where command for group discovery | 5.0/5 (35 votes) |
-| @Melodinbot | Music search and Instagram downloader | Combines music lookup with media downloading | 5.0/5 (1 vote) |</p><h2>Key Strengths of FilmAffinity Bot</h2><ul><li>**Niche focus**: Perfect for Spanish-speaking users or those who prefer FilmAffinity’s curation over IMDb or TMDB.</li><li>**Comprehensive data**: Covers movies, series, shorts, documentaries—not just mainstream content.</li><li>**Simple interface**: No commands needed—just type a title.</li><li>**Lightweight**: No registration or payment required.</li></ul><h2>Weaknesses</h2><ul><li>**Language barrier**: Results are in Spanish, limiting non-Spanish speakers.</li><li>**Limited scope**: Only FilmAffinity—no alternative databases if a title isn’t found.</li><li>**No advanced features**: Unlike @tgdb_search_bot, it doesn’t track user activity or offer analytics.</li></ul><h2>When to Choose Each Bot</h2><ul><li>**Choose @faffinitybot if**: You’re a Spanish-language film buff wanting quick, reliable info from FilmAffinity. Ideal for checking ratings, cast, and synopses without leaving Telegram.</li><li>**Choose @SpyFreeRobot if**: You need to monitor edited or deleted messages in groups, or recover self-destructing media. Great for privacy-conscious users.</li><li>**Choose @idstracebot if**: You want to know basic public info about a Telegram user, like their ID or account age. Useful for moderation or verification.</li><li>**Choose @tgdb_search_bot if**: You need to discover public groups where a user is active. Powerful for community management or research, with high user trust (35+ votes).</li><li>**Choose @Melodinbot if**: You’re looking for music downloads or Instagram video/song saving. A niche tool for media hoarders.</li></ul><h2>Final Thoughts</h2><p>FilmAffinity Bot fills a specific gap: it’s a no-frills search tool for a particular database. While it lacks the versatility of bots like @tgdb_search_bot or @SpyFreeRobot, it excels in its niche. For Spanish-speaking movie lovers, it’s a must-have. For others, the broader search bots offer more functionality—but at the cost of specialization.</p>
+    <h2>Search Bots on Telegram: Finding Content, Users, and Data</h2>
+
+<p>Telegram search bots come in many flavors. Some help you find movies and TV shows, others track user activity or retrieve public information. The category is broad, but each bot serves a specific niche. In this article, we compare <strong>FilmAffinity Bot</strong> (@faffinitybot) with similar search-oriented bots to see where it fits.</p>
+
+<h2>What Search Bots Do</h2>
+
+<p>Search bots on Telegram automate information retrieval. They can look up media databases, scrape public data, monitor messages, or download content. The common thread is saving you time by delivering results directly in chat. Some are free, others require payment or have limited features.</p>
+
+<h2>FilmAffinity Bot: Overview</h2>
+
+<p>@faffinitybot focuses exclusively on the FilmAffinity database—a Spanish-language platform for movies, series, miniseries, shorts, and documentaries. It returns detailed information: synopsis, ratings, cast, release year, and genre. It’s straightforward: send a title, get a card with key data.</p>
+
+<h2>Comparison with Similar Bots</h2>
+
+<p>The other bots in this list are not direct competitors—they serve different search needs. Here’s how they stack up:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Unique Feature</th>
+  <th>Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@faffinitybot</td>
+  <td>Movie/TV search via FilmAffinity</td>
+  <td>Spanish-language database with detailed cards</td>
+  <td>N/A (new)</td>
+</tr>
+<tr>
+  <td>@SpyFreeRobot</td>
+  <td>Monitor deleted/edited messages</td>
+  <td>Saves self-destructible media</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>Retrieve public Telegram user info</td>
+  <td>Shows ID, username, estimated account creation date</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td>@tgdb_search_bot</td>
+  <td>Reveal public groups a user is active in</td>
+  <td>Exclusive /Where command for group discovery</td>
+  <td>5.0/5 (35 votes)</td>
+</tr>
+<tr>
+  <td>@Melodinbot</td>
+  <td>Music search and Instagram downloader</td>
+  <td>Combines music lookup with media downloading</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Key Strengths of FilmAffinity Bot</h2>
+
+<ul>
+<li><strong>Niche focus</strong>: Perfect for Spanish-speaking users or those who prefer FilmAffinity’s curation over IMDb or TMDB.</li>
+<li><strong>Comprehensive data</strong>: Covers movies, series, shorts, documentaries—not just mainstream content.</li>
+<li><strong>Simple interface</strong>: No commands needed—just type a title.</li>
+<li><strong>Lightweight</strong>: No registration or payment required.</li>
+</ul>
+
+<h2>Weaknesses</h2>
+
+<ul>
+<li><strong>Language barrier</strong>: Results are in Spanish, limiting non-Spanish speakers.</li>
+<li><strong>Limited scope</strong>: Only FilmAffinity—no alternative databases if a title isn’t found.</li>
+<li><strong>No advanced features</strong>: Unlike @tgdb_search_bot, it doesn’t track user activity or offer analytics.</li>
+</ul>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @faffinitybot if</strong>: You’re a Spanish-language film buff wanting quick, reliable info from FilmAffinity. Ideal for checking ratings, cast, and synopses without leaving Telegram.</li>
+<li><strong>Choose @SpyFreeRobot if</strong>: You need to monitor edited or deleted messages in groups, or recover self-destructing media. Great for privacy-conscious users.</li>
+<li><strong>Choose @idstracebot if</strong>: You want to know basic public info about a Telegram user, like their ID or account age. Useful for moderation or verification.</li>
+<li><strong>Choose @tgdb_search_bot if</strong>: You need to discover public groups where a user is active. Powerful for community management or research, with high user trust (35+ votes).</li>
+<li><strong>Choose @Melodinbot if</strong>: You’re looking for music downloads or Instagram video/song saving. A niche tool for media hoarders.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>FilmAffinity Bot fills a specific gap: it’s a no-frills search tool for a particular database. While it lacks the versatility of bots like @tgdb_search_bot or @SpyFreeRobot, it excels in its niche. For Spanish-speaking movie lovers, it’s a must-have. For others, the broader search bots offer more functionality—but at the cost of specialization.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-22</div>
 </div>

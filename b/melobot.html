@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -122,14 +133,115 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Music, People, and More</h2><p>Search bots on Telegram serve a variety of purposes, from locating media files to retrieving user information and monitoring activity. While some focus on music discovery, others specialize in data extraction or group surveillance. This article compares **melobot** (@melobot) with similar search-oriented bots, highlighting their unique strengths and use cases.</p><p>### Overview of Telegram Search Bots</p><ul><li>Telegram search bots typically help users find specific content or information within the platform. They can:</li><li>Search for and download music or media</li><li>Retrieve public user data (ID, username, account age)</li><li>Monitor group activity (deleted messages, self-destructing media)</li><li>Identify which public groups a user is active in</li></ul><p>### How melobot Compares to Competitors</p><p>**melobot** (@melobot) is a dedicated music search and download bot. It allows users to find, share, and download songs directly within Telegram. Its primary focus is simplicity and speed for music lovers.</p><ul><li>In contrast, other bots in this category serve different niches:</li><li>**@SpyFreeRobot** – Focuses on monitoring deleted/edited messages and saving self-destructing media.</li><li>**@idstracebot** – Retrieves public Telegram user info like ID, name, and account creation date.</li><li>**@tgdb_search_bot** – Provides advanced data insights, including the ` /Where` command to find which public groups a user is active in.</li><li>**@Melodinbot** – Also offers music search and Instagram downloads, overlapping with melobot.</li></ul><p>### Key Strengths and Unique Features of melobot</p><ul><li>**Music-focused**: melobot is purpose-built for music search and download, not cluttered with unrelated features.</li><li>**Shareable**: Allows easy sharing of found tracks with other Telegram users.</li><li>**Simple interface**: No complex commands – just search and download.</li><li>**No data tracking**: Unlike @tgdb_search_bot, melobot does not expose user activity or group memberships.</li></ul><p>### Comparison Table</p><p>| Feature | melobot (@melobot) | @SpyFreeRobot | @idstracebot | @tgdb_search_bot | @Melodinbot |
-|---------|-------------------|---------------|--------------|------------------|-------------|
-| **Primary function** | Music search &amp; download | Message monitoring | User info retrieval | User group activity | Music search &amp; Instagram download |
-| **Music download** | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes |
-| **User privacy risk** | Low | Medium (monitors groups) | Low (public info only) | High (reveals group activity) | Low |
-| **Commands** | Simple search | /monitor, /saves | /trace | /Where, /search | /music, /instagram |
-| **Rating** | N/A | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (11 votes) | 5.0/5 (1 vote) |
-| **Best for** | Music lovers | Group admins | Account lookups | Data researchers | Music &amp; Instagram users |</p><p>### When to Choose Each Bot</p><ul><li>**Choose melobot or @Melodinbot** if you primarily want to search and download music. melobot is simpler for pure music, while @Melodinbot adds Instagram download capability.</li><li>**Choose @SpyFreeRobot** if you manage a group and need to track deleted messages or save disappearing media.</li><li>**Choose @idstracebot** if you need to quickly find public info about a Telegram user (e.g., account age).</li><li>**Choose @tgdb_search_bot** if you need to investigate which public groups a user participates in – useful for research but raises privacy concerns.</li></ul><p>### Conclusion</p><p>melobot stands out as a straightforward, no-frills music search bot in a category dominated by data surveillance and user tracking tools. While @tgdb_search_bot offers powerful but invasive features, and @SpyFreeRobot targets group admins, melobot remains the best choice for users who simply want to find and share music without added complexity or privacy trade-offs. For those needing Instagram downloads, @Melodinbot provides a useful alternative. Choose based on your primary need – music, data, or monitoring – and always consider the privacy implications of each bot.</p>
+    <h2>Search Bots on Telegram: Finding Music, People, and More</h2>
+
+<p>Search bots on Telegram serve a variety of purposes, from locating media files to retrieving user information and monitoring activity. While some focus on music discovery, others specialize in data extraction or group surveillance. This article compares <strong>melobot</strong> (@melobot) with similar search-oriented bots, highlighting their unique strengths and use cases.</p>
+
+<h3>Overview of Telegram Search Bots</h3>
+
+<p>Telegram search bots typically help users find specific content or information within the platform. They can:
+- Search for and download music or media
+- Retrieve public user data (ID, username, account age)
+- Monitor group activity (deleted messages, self-destructing media)
+- Identify which public groups a user is active in</p>
+
+<h3>How melobot Compares to Competitors</h3>
+
+<p><strong>melobot</strong> (@melobot) is a dedicated music search and download bot. It allows users to find, share, and download songs directly within Telegram. Its primary focus is simplicity and speed for music lovers.</p>
+
+<p>In contrast, other bots in this category serve different niches:
+- <strong>@SpyFreeRobot</strong> – Focuses on monitoring deleted/edited messages and saving self-destructing media.
+- <strong>@idstracebot</strong> – Retrieves public Telegram user info like ID, name, and account creation date.
+- <strong>@tgdb_search_bot</strong> – Provides advanced data insights, including the <code>/Where</code> command to find which public groups a user is active in.
+- <strong>@Melodinbot</strong> – Also offers music search and Instagram downloads, overlapping with melobot.</p>
+
+<h3>Key Strengths and Unique Features of melobot</h3>
+
+<ul>
+<li><strong>Music-focused</strong>: melobot is purpose-built for music search and download, not cluttered with unrelated features.</li>
+<li><strong>Shareable</strong>: Allows easy sharing of found tracks with other Telegram users.</li>
+<li><strong>Simple interface</strong>: No complex commands – just search and download.</li>
+<li><strong>No data tracking</strong>: Unlike @tgdb_search_bot, melobot does not expose user activity or group memberships.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>melobot (@melobot)</th>
+  <th>@SpyFreeRobot</th>
+  <th>@idstracebot</th>
+  <th>@tgdb_search_bot</th>
+  <th>@Melodinbot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary function</strong></td>
+  <td>Music search &amp; download</td>
+  <td>Message monitoring</td>
+  <td>User info retrieval</td>
+  <td>User group activity</td>
+  <td>Music search &amp; Instagram download</td>
+</tr>
+<tr>
+  <td><strong>Music download</strong></td>
+  <td>✅ Yes</td>
+  <td>❌ No</td>
+  <td>❌ No</td>
+  <td>❌ No</td>
+  <td>✅ Yes</td>
+</tr>
+<tr>
+  <td><strong>User privacy risk</strong></td>
+  <td>Low</td>
+  <td>Medium (monitors groups)</td>
+  <td>Low (public info only)</td>
+  <td>High (reveals group activity)</td>
+  <td>Low</td>
+</tr>
+<tr>
+  <td><strong>Commands</strong></td>
+  <td>Simple search</td>
+  <td>/monitor, /saves</td>
+  <td>/trace</td>
+  <td>/Where, /search</td>
+  <td>/music, /instagram</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (11 votes)</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Best for</strong></td>
+  <td>Music lovers</td>
+  <td>Group admins</td>
+  <td>Account lookups</td>
+  <td>Data researchers</td>
+  <td>Music &amp; Instagram users</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose melobot or @Melodinbot</strong> if you primarily want to search and download music. melobot is simpler for pure music, while @Melodinbot adds Instagram download capability.</li>
+<li><strong>Choose @SpyFreeRobot</strong> if you manage a group and need to track deleted messages or save disappearing media.</li>
+<li><strong>Choose @idstracebot</strong> if you need to quickly find public info about a Telegram user (e.g., account age).</li>
+<li><strong>Choose @tgdb_search_bot</strong> if you need to investigate which public groups a user participates in – useful for research but raises privacy concerns.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>melobot stands out as a straightforward, no-frills music search bot in a category dominated by data surveillance and user tracking tools. While @tgdb_search_bot offers powerful but invasive features, and @SpyFreeRobot targets group admins, melobot remains the best choice for users who simply want to find and share music without added complexity or privacy trade-offs. For those needing Instagram downloads, @Melodinbot provides a useful alternative. Choose based on your primary need – music, data, or monitoring – and always consider the privacy implications of each bot.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-26</div>
 </div>

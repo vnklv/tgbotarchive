@@ -29,11 +29,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .tag-intro { color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
 .count { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
-.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-.tag-article h2 { color: #6c63ff; font-size: 1.1rem; margin-bottom: 0.8rem; }
-.tag-article p { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.5rem; }
-.tag-article ul { margin: 0.4rem 0 0.4rem 1.2rem; }
-.tag-article li { color: #c0c0d0; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.tag-layout { display: flex; gap: 1.5rem; align-items: flex-start; }
+.tag-layout-left { flex: 0 0 340px; min-width: 280px; max-width: 100%; }
+.tag-layout-left:empty { display: none; }
+.tag-layout-right { flex: 1; min-width: 0; }
+.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1rem; }
+.tag-article h2 { color: #6c63ff; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tag-article-content { color: #c0c0d0; font-size: 0.85rem; line-height: 1.7; }
+.tag-article-content p { margin-bottom: 0.5rem; }
+.tag-article-content h2 { color: #d0d0e0; font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+.tag-article-content h3 { color: #c8c8d8; font-size: 0.92rem; margin: 0.5rem 0 0.3rem; }
+.tag-article-content ul { margin: 0.3rem 0 0.3rem 1rem; }
+.tag-article-content ol { margin: 0.3rem 0 0.3rem 1.2rem; }
+.tag-article-content li { margin-bottom: 0.15rem; }
+.tag-article-content table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.78rem; }
+.tag-article-content th, .tag-article-content td { border: 1px solid #3a3a5a; padding: 0.3rem 0.4rem; text-align: left; }
+.tag-article-content th { background: #2a2a4a; color: #d0d0e0; font-weight: 600; }
+.tag-article-content tr:nth-child(even) td { background: #1e1e32; }
+.tag-article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.25rem; border-radius: 3px; font-size: 0.85em; }
+.tag-article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.6rem; overflow-x: auto; margin: 0.5rem 0; }
+@media (max-width: 768px) {
+  .tag-layout { flex-direction: column; gap: 1rem; }
+  .tag-layout-left { flex: none; width: 100%; min-width: 0; }
+}
 .bot-item { background: #1a1a2e; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; border: 1px solid #2a2a4a; }
 .bot-item:hover { border-color: #6c63ff; }
 .bot-name { color: #e8e8f0; font-size: 1rem; font-weight: 600; text-decoration: none; }
@@ -49,14 +67,20 @@ a { color: #6c63ff; }
 <h1>🤖 #ai</h1>
 <div class="tag-intro">Telegram bots related to <strong>artificial intelligence and machine learning</strong>. Browse <strong>68</strong> bots in this category, compare ratings, features, and languages.</div>
 
-
+<div class="tag-layout">
+  <div class="tag-layout-left">
+    
 <div class="tag-article">
   <h2>📖 About artificial intelligence and machine learning Bots</h2>
-  <p>AI Telegram bots represent the cutting edge of automated assistance on the messaging platform, integrating artificial intelligence to perform tasks that typically require human intelligence. These bots use machine learning, deep learning, and natural language processing to understand, generate, and respond to user inputs in a conversational or task-oriented manner. Unlike simple rule-based bots, AI bots can learn from interactions, adapt to user preferences, and handle complex queries that involve reasoning, creativity, or contextual understanding. Common examples include lessontranscriberbot, which uses speech recognition and AI to transcribe audio, MetaphoreBot, which generates poetic metaphors and creative text, and creative_image_edit_bot, which applies AI to modify images based on text descriptions. The capabilities of AI bots are broad: they can simulate human conversation, answer questions, write essays, create art, translate languages, analyze sentiment, recommend products, and even play games with strategic depth. Many of these bots are powered by large language models like GPT or open-source alternatives, and they often connect to external APIs for specialized functions such as image generation or data analysis. Users interact with AI bots by sending text, voice, or media, and the bot processes the input using its AI engine to produce a relevant output. The key advantage is the ability to handle ambiguous or unstructured requests, making them feel more natural and helpful. However, AI bots also raise important considerations regarding data privacy, as they may store user inputs for training or improvement. Users should be cautious about sharing sensitive information and check the bot&#x27;s privacy policy. Despite these concerns, AI bots are transforming how people use Telegram, offering personalized assistance, creative inspiration, and efficient task automation. They are popular among developers, content creators, students, and businesses looking to leverage AI without building custom solutions. As AI technology evolves, these bots will become even more sophisticated, blurring the line between human and machine interaction.</p>
-</div>
+  <div class="tag-article-content">
+    <p>AI Telegram bots represent the cutting edge of automated assistance on the messaging platform, integrating artificial intelligence to perform tasks that typically require human intelligence. These bots use machine learning, deep learning, and natural language processing to understand, generate, and respond to user inputs in a conversational or task-oriented manner. Unlike simple rule-based bots, AI bots can learn from interactions, adapt to user preferences, and handle complex queries that involve reasoning, creativity, or contextual understanding. Common examples include lessontranscriberbot, which uses speech recognition and AI to transcribe audio, MetaphoreBot, which generates poetic metaphors and creative text, and creative_image_edit_bot, which applies AI to modify images based on text descriptions. The capabilities of AI bots are broad: they can simulate human conversation, answer questions, write essays, create art, translate languages, analyze sentiment, recommend products, and even play games with strategic depth. Many of these bots are powered by large language models like GPT or open-source alternatives, and they often connect to external APIs for specialized functions such as image generation or data analysis. Users interact with AI bots by sending text, voice, or media, and the bot processes the input using its AI engine to produce a relevant output. The key advantage is the ability to handle ambiguous or unstructured requests, making them feel more natural and helpful. However, AI bots also raise important considerations regarding data privacy, as they may store user inputs for training or improvement. Users should be cautious about sharing sensitive information and check the bot's privacy policy. Despite these concerns, AI bots are transforming how people use Telegram, offering personalized assistance, creative inspiration, and efficient task automation. They are popular among developers, content creators, students, and businesses looking to leverage AI without building custom solutions. As AI technology evolves, these bots will become even more sophisticated, blurring the line between human and machine interaction.</p>
 
-<div class="count">68 bots tagged #ai</div>
-<div class="bot-item">
+  </div>
+</div>
+  </div>
+  <div class="tag-layout-right">
+    <div class="count">68 bots tagged #ai</div>
+    <div class="bot-item">
   <a href="/b/GenixAIStudioBot.html" class="bot-name">🤖 GenixAIStudioBot</a>
   <div class="bot-username">@GenixAIStudioBot</div>
   <div class="bot-desc">Genix AI creates AI photos from prompts, edits images, and turns pictures into short videos inside Telegram. It supports</div>
@@ -465,6 +489,8 @@ a { color: #6c63ff; }
   <div class="bot-rating">⭐⭐⭐⭐ 1.0</div>
 </div>
 
+  </div>
+</div>
 <a class="back" href="/">← Back to catalog</a>
 </body>
 </html>

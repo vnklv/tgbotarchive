@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -124,15 +135,103 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Audio Telegram Bots: A Comparative Look at @tlgurbot and Its Rivals</h2><p>Telegram bots in the audio category serve a wide range of functions—from file hosting and transcription to media downloading and voice cloning. They simplify tasks like sharing large audio files, converting voice messages to text, or extracting audio from videos. Among these, @tlgurbot (tlgur) stands out as a file-uploading bot, but it’s currently flagged as offline, raising questions about its reliability compared to active alternatives.</p><p>### How @tlgurbot Compares to Other Bots</p><p>@tlgurbot is designed to generate public URLs for any file type, including audio, voice, photos, and videos. Unlike most audio-focused bots, it doesn’t transcribe, download, or manipulate media—it simply hosts and shares files. This makes it a niche tool for quick sharing, but its offline status limits its utility. In contrast, bots like @SlyshuPishuBot and @voicetranscriberobot specialize in transcription, while @khdownvideobot focuses on downloading from social platforms. @MotherSearchBot and @vocitalianeaibot are more specialized (search and voice cloning, respectively), offering different value propositions.</p><p>### Key Strengths and Unique Features of @tlgurbot</p><ul><li>**Universal file support**: Accepts audio, video, GIFs, voice messages, and documents—no format restrictions.</li><li>**Public URL generation**: Creates shareable links without requiring file downloads or external hosting.</li><li>**Simplicity**: No commands or configuration needed; just send a file and get a link.</li><li>**Potential for audio sharing**: Ideal for distributing voice notes or music files in group chats or channels.</li></ul><p>However, its offline status is a critical weakness. When active, it’s a lightweight tool for ephemeral sharing, but it lacks advanced features like transcription, summarization, or platform download support.</p><p>### Comparison Table</p><p>| Feature | @tlgurbot | @khdownvideobot | @SlyshuPishuBot | @voicetranscriberobot |
-|---------|-----------|-----------------|-----------------|-----------------------|
-| **Primary Function** | File hosting/URL generation | Media downloading | Audio transcription | Voice transcription |
-| **Supported Media** | All file types (audio, video, photo, etc.) | TikTok, Facebook, Instagram, YouTube, Twitter | Audio files up to 400 MB | Voice messages only |
-| **Transcription** | No | No | Yes (OpenAI/Deepgram models) | Yes (simple) |
-| **Summarization** | No | No | Yes (with GPT-4) | No |
-| **Download from Platforms** | No | Yes | No | No |
-| **Rating** | Not rated (offline) | 5.0/5 (23,370 votes) | 5.0/5 (7,251 votes) | 5.0/5 (17,526 votes) |
-| **Current Status** | 🔴 Offline | 🟢 Active | 🟢 Active | 🟢 Active |</p><p>### Recommendations on When to Choose Each Bot</p><ul><li>**Choose @tlgurbot** (if it returns online) for quick, anonymous file sharing—especially for audio files you want to embed in websites or share with non-Telegram users. Avoid it if you need reliability or advanced features.</li><li>**Opt for @khdownvideobot** when you need to download audio or video from social media platforms like YouTube, TikTok, or Instagram. Its high rating and active development make it a top choice.</li><li>**Pick @SlyshuPishuBot** for professional transcription needs—it handles large files, offers GPT-4 summarization, and supports translation. Perfect for podcasters or researchers.</li><li>**Use @voicetranscriberobot** for quick voice message-to-text conversion in Telegram chats. It’s simple and highly rated for everyday use.</li><li>**Consider @MotherSearchBot** for searching audio or documents across Telegram channels, though its low vote count suggests limited adoption.</li><li>**Try @vocitalianeaibot** for fun voice cloning of Italian actors, but it’s a novelty with minimal utility.</li></ul><p>In summary, while @tlgurbot fills a unique niche for file hosting, its offline status makes it a risky choice. For audio tasks, active bots like @SlyshuPishuBot and @khdownvideobot offer proven reliability and higher user satisfaction. Always check bot availability before relying on them for critical workflows.</p>
+    <h2>Audio Telegram Bots: A Comparative Look at @tlgurbot and Its Rivals</h2>
+
+<p>Telegram bots in the audio category serve a wide range of functions—from file hosting and transcription to media downloading and voice cloning. They simplify tasks like sharing large audio files, converting voice messages to text, or extracting audio from videos. Among these, @tlgurbot (tlgur) stands out as a file-uploading bot, but it’s currently flagged as offline, raising questions about its reliability compared to active alternatives.</p>
+
+<h3>How @tlgurbot Compares to Other Bots</h3>
+
+<p>@tlgurbot is designed to generate public URLs for any file type, including audio, voice, photos, and videos. Unlike most audio-focused bots, it doesn’t transcribe, download, or manipulate media—it simply hosts and shares files. This makes it a niche tool for quick sharing, but its offline status limits its utility. In contrast, bots like @SlyshuPishuBot and @voicetranscriberobot specialize in transcription, while @khdownvideobot focuses on downloading from social platforms. @MotherSearchBot and @vocitalianeaibot are more specialized (search and voice cloning, respectively), offering different value propositions.</p>
+
+<h3>Key Strengths and Unique Features of @tlgurbot</h3>
+
+<ul>
+<li><strong>Universal file support</strong>: Accepts audio, video, GIFs, voice messages, and documents—no format restrictions.</li>
+<li><strong>Public URL generation</strong>: Creates shareable links without requiring file downloads or external hosting.</li>
+<li><strong>Simplicity</strong>: No commands or configuration needed; just send a file and get a link.</li>
+<li><strong>Potential for audio sharing</strong>: Ideal for distributing voice notes or music files in group chats or channels.</li>
+</ul>
+
+<p>However, its offline status is a critical weakness. When active, it’s a lightweight tool for ephemeral sharing, but it lacks advanced features like transcription, summarization, or platform download support.</p>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@tlgurbot</th>
+  <th>@khdownvideobot</th>
+  <th>@SlyshuPishuBot</th>
+  <th>@voicetranscriberobot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>File hosting/URL generation</td>
+  <td>Media downloading</td>
+  <td>Audio transcription</td>
+  <td>Voice transcription</td>
+</tr>
+<tr>
+  <td><strong>Supported Media</strong></td>
+  <td>All file types (audio, video, photo, etc.)</td>
+  <td>TikTok, Facebook, Instagram, YouTube, Twitter</td>
+  <td>Audio files up to 400 MB</td>
+  <td>Voice messages only</td>
+</tr>
+<tr>
+  <td><strong>Transcription</strong></td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes (OpenAI/Deepgram models)</td>
+  <td>Yes (simple)</td>
+</tr>
+<tr>
+  <td><strong>Summarization</strong></td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes (with GPT-4)</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Download from Platforms</strong></td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>Not rated (offline)</td>
+  <td>5.0/5 (23,370 votes)</td>
+  <td>5.0/5 (7,251 votes)</td>
+  <td>5.0/5 (17,526 votes)</td>
+</tr>
+<tr>
+  <td><strong>Current Status</strong></td>
+  <td>🔴 Offline</td>
+  <td>🟢 Active</td>
+  <td>🟢 Active</td>
+  <td>🟢 Active</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @tlgurbot</strong> (if it returns online) for quick, anonymous file sharing—especially for audio files you want to embed in websites or share with non-Telegram users. Avoid it if you need reliability or advanced features.</li>
+<li><strong>Opt for @khdownvideobot</strong> when you need to download audio or video from social media platforms like YouTube, TikTok, or Instagram. Its high rating and active development make it a top choice.</li>
+<li><strong>Pick @SlyshuPishuBot</strong> for professional transcription needs—it handles large files, offers GPT-4 summarization, and supports translation. Perfect for podcasters or researchers.</li>
+<li><strong>Use @voicetranscriberobot</strong> for quick voice message-to-text conversion in Telegram chats. It’s simple and highly rated for everyday use.</li>
+<li><strong>Consider @MotherSearchBot</strong> for searching audio or documents across Telegram channels, though its low vote count suggests limited adoption.</li>
+<li><strong>Try @vocitalianeaibot</strong> for fun voice cloning of Italian actors, but it’s a novelty with minimal utility.</li>
+</ul>
+
+<p>In summary, while @tlgurbot fills a unique niche for file hosting, its offline status makes it a risky choice. For audio tasks, active bots like @SlyshuPishuBot and @khdownvideobot offer proven reliability and higher user satisfaction. Always check bot availability before relying on them for critical workflows.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-11</div>
 </div>

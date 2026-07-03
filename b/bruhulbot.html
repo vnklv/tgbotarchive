@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -116,14 +127,109 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>OCR Telegram Bots: Turning Images into Editable Text</h2><p>Optical Character Recognition (OCR) bots for Telegram allow users to extract text from images, photos, and scanned documents directly within the messaging app. They are essential tools for digitizing printed materials, copying text from screenshots, and enabling further processing like translation or note-taking. While many bots offer OCR as a primary or secondary feature, their accuracy, speed, and additional capabilities vary significantly.</p><h2>Scan Text - BruhulBot (@bruhulbot) Overview</h2><p>Scan Text - BruhulBot is a dedicated OCR bot focused on recognizing text in photos. Its core value proposition is simplicity: send an image, receive the extracted text. It does not clutter the experience with translation, voice conversion, or mapping features, making it a straightforward choice for users who only need text recognition.</p><h2>How @bruhulbot Compares to Competitors</h2><p>Compared to other bots in the OCR category, @bruhulbot occupies a niche of minimalism. Bots like @bacakubot and @TranslateIDrobot combine OCR with translation, while @nekotransbot and @lingvanexbot focus more on language services. Voicy (@voicybot) is entirely different, converting audio to text rather than images. BruhulBot’s strength lies in its no-frills approach, but it lacks the multi-language support and additional utilities that competitors offer.</p><h2>Key Strengths and Unique Features of @bruhulbot</h2><ul><li>**Simplicity:** No extra commands or menus. Just send a photo and get text.</li><li>**Speed:** Quick processing for single images, ideal for on-the-go use.</li><li>**Focus:** No distractions from translation or other features, which can be a pro for users who only need OCR.</li><li>**Lightweight:** Works without requiring account setup or complex configuration.</li></ul><p>However, it does not support batch processing, document PDFs, or language translation, which are common in other bots.</p><h2>Comparison Table: OCR Bot Features</h2><p>| Bot | Primary Function | OCR Quality | Translation | Extra Features | Rating |
-|------|-----------------|-------------|-------------|----------------|--------|
-| @bruhulbot | Text from photos | Good (basic) | No | None | Unrated |
-| @bacakubot | OCR + Translation | Excellent | Yes (many languages) | Document support | 5.0 (1360 votes) |
-| @TranslateIDrobot | Google services OCR | Very Good | Yes (Google Translate) | Maps, PDF OCR | 5.0 (1 vote) |
-| @nekotransbot | Translation + OCR | Good | Yes (Google/Bing/Mymemory) | Photo translation | 5.0 (74 votes) |
-| @voicybot | Audio to text | N/A | No | Voice message conversion | 5.0 (6745 votes) |
-| @lingvanexbot | Translation + TTS | No OCR | Yes | Text-to-speech, definitions | 4.7 (1100 votes) |</p><h2>When to Choose Each Bot</h2><ul><li>**Choose @bruhulbot if:** You need a quick, no-nonsense OCR for occasional use. Perfect for extracting text from a single photo without wanting translation or extra steps.</li><li>**Choose @bacakubot if:** You frequently work with images in multiple languages or need to extract text from documents and PDFs. Its high rating and large user base indicate reliability.</li><li>**Choose @TranslateIDrobot if:** You want an all-in-one Google service bot combining OCR, translation, and maps. However, its low vote count suggests limited testing.</li><li>**Choose @nekotransbot if:** You need translation with multiple engine options (Google, Bing, MyMemory) and occasional OCR for images.</li><li>**Choose @voicybot if:** Your need is audio-to-text conversion, not image OCR.</li><li>**Choose @lingvanexbot if:** You require translation, text-to-speech, and word definitions, but OCR is not a priority.</li></ul><h2>Final Verdict</h2><p>Scan Text - BruhulBot serves a clear purpose but is limited in scope. For users who want a dedicated, lightweight OCR tool without extra features, it is a viable option. However, for most practical scenarios—especially when dealing with multiple languages or documents—@bacakubot offers superior functionality and proven reliability. The choice ultimately depends on whether you value simplicity or versatility.</p>
+    <h2>OCR Telegram Bots: Turning Images into Editable Text</h2>
+
+<p>Optical Character Recognition (OCR) bots for Telegram allow users to extract text from images, photos, and scanned documents directly within the messaging app. They are essential tools for digitizing printed materials, copying text from screenshots, and enabling further processing like translation or note-taking. While many bots offer OCR as a primary or secondary feature, their accuracy, speed, and additional capabilities vary significantly.</p>
+
+<h2>Scan Text - BruhulBot (@bruhulbot) Overview</h2>
+
+<p>Scan Text - BruhulBot is a dedicated OCR bot focused on recognizing text in photos. Its core value proposition is simplicity: send an image, receive the extracted text. It does not clutter the experience with translation, voice conversion, or mapping features, making it a straightforward choice for users who only need text recognition.</p>
+
+<h2>How @bruhulbot Compares to Competitors</h2>
+
+<p>Compared to other bots in the OCR category, @bruhulbot occupies a niche of minimalism. Bots like @bacakubot and @TranslateIDrobot combine OCR with translation, while @nekotransbot and @lingvanexbot focus more on language services. Voicy (@voicybot) is entirely different, converting audio to text rather than images. BruhulBot’s strength lies in its no-frills approach, but it lacks the multi-language support and additional utilities that competitors offer.</p>
+
+<h2>Key Strengths and Unique Features of @bruhulbot</h2>
+
+<ul>
+<li><strong>Simplicity:</strong> No extra commands or menus. Just send a photo and get text.</li>
+<li><strong>Speed:</strong> Quick processing for single images, ideal for on-the-go use.</li>
+<li><strong>Focus:</strong> No distractions from translation or other features, which can be a pro for users who only need OCR.</li>
+<li><strong>Lightweight:</strong> Works without requiring account setup or complex configuration.</li>
+</ul>
+
+<p>However, it does not support batch processing, document PDFs, or language translation, which are common in other bots.</p>
+
+<h2>Comparison Table: OCR Bot Features</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>OCR Quality</th>
+  <th>Translation</th>
+  <th>Extra Features</th>
+  <th>Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@bruhulbot</td>
+  <td>Text from photos</td>
+  <td>Good (basic)</td>
+  <td>No</td>
+  <td>None</td>
+  <td>Unrated</td>
+</tr>
+<tr>
+  <td>@bacakubot</td>
+  <td>OCR + Translation</td>
+  <td>Excellent</td>
+  <td>Yes (many languages)</td>
+  <td>Document support</td>
+  <td>5.0 (1360 votes)</td>
+</tr>
+<tr>
+  <td>@TranslateIDrobot</td>
+  <td>Google services OCR</td>
+  <td>Very Good</td>
+  <td>Yes (Google Translate)</td>
+  <td>Maps, PDF OCR</td>
+  <td>5.0 (1 vote)</td>
+</tr>
+<tr>
+  <td>@nekotransbot</td>
+  <td>Translation + OCR</td>
+  <td>Good</td>
+  <td>Yes (Google/Bing/Mymemory)</td>
+  <td>Photo translation</td>
+  <td>5.0 (74 votes)</td>
+</tr>
+<tr>
+  <td>@voicybot</td>
+  <td>Audio to text</td>
+  <td>N/A</td>
+  <td>No</td>
+  <td>Voice message conversion</td>
+  <td>5.0 (6745 votes)</td>
+</tr>
+<tr>
+  <td>@lingvanexbot</td>
+  <td>Translation + TTS</td>
+  <td>No OCR</td>
+  <td>Yes</td>
+  <td>Text-to-speech, definitions</td>
+  <td>4.7 (1100 votes)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @bruhulbot if:</strong> You need a quick, no-nonsense OCR for occasional use. Perfect for extracting text from a single photo without wanting translation or extra steps.</li>
+<li><strong>Choose @bacakubot if:</strong> You frequently work with images in multiple languages or need to extract text from documents and PDFs. Its high rating and large user base indicate reliability.</li>
+<li><strong>Choose @TranslateIDrobot if:</strong> You want an all-in-one Google service bot combining OCR, translation, and maps. However, its low vote count suggests limited testing.</li>
+<li><strong>Choose @nekotransbot if:</strong> You need translation with multiple engine options (Google, Bing, MyMemory) and occasional OCR for images.</li>
+<li><strong>Choose @voicybot if:</strong> Your need is audio-to-text conversion, not image OCR.</li>
+<li><strong>Choose @lingvanexbot if:</strong> You require translation, text-to-speech, and word definitions, but OCR is not a priority.</li>
+</ul>
+
+<h2>Final Verdict</h2>
+
+<p>Scan Text - BruhulBot serves a clear purpose but is limited in scope. For users who want a dedicated, lightweight OCR tool without extra features, it is a viable option. However, for most practical scenarios—especially when dealing with multiple languages or documents—@bacakubot offers superior functionality and proven reliability. The choice ultimately depends on whether you value simplicity or versatility.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-10</div>
 </div>

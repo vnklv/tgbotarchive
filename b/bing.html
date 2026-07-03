@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -123,12 +134,105 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Searching Smarter: A Look at Telegram Search Bots and @bing</h2><p>Telegram bots have transformed the platform into a versatile tool for everything from productivity to entertainment. Among them, search bots stand out as essential utilities, helping users find images, music, user information, and even hidden data. These bots range from simple image finders to powerful investigative tools. In this article, we compare **Bing Image Search** (@bing) with other notable search bots, exploring their strengths, weaknesses, and ideal use cases.</p><p>### What Search Bots Do on Telegram</p><ul><li>Search bots automate the process of retrieving information from external sources or Telegram itself. They can:</li><li>Fetch images, videos, or music from the web.</li><li>Reveal Telegram user details like ID, username, or account age.</li><li>Monitor chats for deleted or edited messages.</li><li>Find public groups where a user is active.</li><li>Download media from social platforms.</li></ul><p>While some bots focus on a single task (e.g., image search), others offer multi-functional data mining capabilities.</p><p>### Bing Image Search (@bing) – Focused and Fast</p><p>**@bing** is a dedicated image search bot powered by Microsoft’s Bing engine. Its standout feature is seamless inline operation – you don’t need to add it to a chat. Just type `@bing [query]` in any conversation, and it instantly displays image results. This makes it incredibly convenient for sharing visuals on the fly.</p><ul><li>**Key Strengths:**</li><li>**Zero setup**: Works automatically via inline mode.</li><li>**High-quality results**: Leverages Bing’s image index, which is robust for general queries.</li><li>**Privacy-friendly**: No need to join groups or share personal data.</li><li>**Simple interface**: Just type a keyword and pick an image.</li></ul><ul><li>**Limitations:**</li><li>Only searches images – no video, news, or web results.</li><li>No advanced filters (size, color, license) beyond Bing’s defaults.</li><li>Relies on an external service, so occasional downtime may occur.</li></ul><p>### Other Search Bots in Comparison</p><p>| Bot Name | Username | Primary Function | Rating | Unique Feature |
-|----------|----------|-----------------|--------|----------------|
-| SpyFreeRobot | @SpyFreeRobot | Monitor deleted/edited messages, save self-destructing media | 5.0/5 (1 vote) | Real-time chat surveillance |
-| IDsTrace Bot | @idstracebot | Retrieve Telegram user info (ID, username, account creation date) | 5.0/5 (1 vote) | Forward a message to get user details |
-| TgDB Search Lite | @tgdb_search_bot | Find public groups a user is active in | 5.0/5 (75 votes) | Exclusive /Where command |
-| Melodinbot | @Melodinbot | Music search and Instagram downloader | 5.0/5 (1 vote) | Dual music + Instagram functionality |</p><p>**Note:** TgDB Search Lite appears twice with slightly different vote counts (75 and 65), likely due to separate instances or version updates.</p><p>### How @bing Compares</p><ul><li>**Ease of Use**: @bing wins hands-down. Its inline mode requires no setup, while others like SpyFreeRobot or IDsTrace need you to add them to a chat or forward messages.</li><li>**Scope**: @bing is narrowly focused on images. In contrast, TgDB Search Lite offers deep social data (group membership), and Melodinbot covers music and Instagram.</li><li>**Privacy**: @bing doesn’t access your Telegram activity (no message monitoring). SpyFreeRobot, however, actively tracks deleted content, which raises privacy concerns.</li><li>**Reliability**: @bing depends on Bing’s uptime. TgDB Search Lite, with 75 votes, appears well-tested, while others have minimal feedback.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose @bing if**: You need quick, inline image sharing in conversations – for example, sending a meme, a product photo, or a reference image without leaving Telegram.</li><li>**Choose SpyFreeRobot if**: You want to monitor chat activity (e.g., in a group you admin) or recover deleted media.</li><li>**Choose IDsTrace Bot if**: You need to verify a user’s identity or find their account creation date for moderation purposes.</li><li>**Choose TgDB Search Lite if**: You’re investigating a user’s public group presence – useful for community managers or researchers.</li><li>**Choose Melodinbot if**: You frequently search for music or download Instagram content.</li></ul><p>### Final Verdict</p><p>**Bing Image Search** excels at what it does: fast, effortless image retrieval. It’s perfect for casual users who value simplicity and speed. However, if your needs extend beyond images – into user tracking, chat monitoring, or multimedia downloads – the other bots offer specialized features. For a balanced toolkit, keep @bing for images, TgDB Search Lite for social insights, and SpyFreeRobot for chat surveillance. Each serves a distinct niche, and together they cover most search needs on Telegram.</p>
+    <h2>Searching Smarter: A Look at Telegram Search Bots and @bing</h2>
+
+<p>Telegram bots have transformed the platform into a versatile tool for everything from productivity to entertainment. Among them, search bots stand out as essential utilities, helping users find images, music, user information, and even hidden data. These bots range from simple image finders to powerful investigative tools. In this article, we compare <strong>Bing Image Search</strong> (@bing) with other notable search bots, exploring their strengths, weaknesses, and ideal use cases.</p>
+
+<h3>What Search Bots Do on Telegram</h3>
+
+<p>Search bots automate the process of retrieving information from external sources or Telegram itself. They can:
+- Fetch images, videos, or music from the web.
+- Reveal Telegram user details like ID, username, or account age.
+- Monitor chats for deleted or edited messages.
+- Find public groups where a user is active.
+- Download media from social platforms.</p>
+
+<p>While some bots focus on a single task (e.g., image search), others offer multi-functional data mining capabilities.</p>
+
+<h3>Bing Image Search (@bing) – Focused and Fast</h3>
+
+<p><strong>@bing</strong> is a dedicated image search bot powered by Microsoft’s Bing engine. Its standout feature is seamless inline operation – you don’t need to add it to a chat. Just type <code>@bing [query]</code> in any conversation, and it instantly displays image results. This makes it incredibly convenient for sharing visuals on the fly.</p>
+
+<p><strong>Key Strengths:</strong>
+- <strong>Zero setup</strong>: Works automatically via inline mode.
+- <strong>High-quality results</strong>: Leverages Bing’s image index, which is robust for general queries.
+- <strong>Privacy-friendly</strong>: No need to join groups or share personal data.
+- <strong>Simple interface</strong>: Just type a keyword and pick an image.</p>
+
+<p><strong>Limitations:</strong>
+- Only searches images – no video, news, or web results.
+- No advanced filters (size, color, license) beyond Bing’s defaults.
+- Relies on an external service, so occasional downtime may occur.</p>
+
+<h3>Other Search Bots in Comparison</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Username</th>
+  <th>Primary Function</th>
+  <th>Rating</th>
+  <th>Unique Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>SpyFreeRobot</td>
+  <td>@SpyFreeRobot</td>
+  <td>Monitor deleted/edited messages, save self-destructing media</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Real-time chat surveillance</td>
+</tr>
+<tr>
+  <td>IDsTrace Bot</td>
+  <td>@idstracebot</td>
+  <td>Retrieve Telegram user info (ID, username, account creation date)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Forward a message to get user details</td>
+</tr>
+<tr>
+  <td>TgDB Search Lite</td>
+  <td>@tgdb_search_bot</td>
+  <td>Find public groups a user is active in</td>
+  <td>5.0/5 (75 votes)</td>
+  <td>Exclusive /Where command</td>
+</tr>
+<tr>
+  <td>Melodinbot</td>
+  <td>@Melodinbot</td>
+  <td>Music search and Instagram downloader</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Dual music + Instagram functionality</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Note:</strong> TgDB Search Lite appears twice with slightly different vote counts (75 and 65), likely due to separate instances or version updates.</p>
+
+<h3>How @bing Compares</h3>
+
+<ul>
+<li><strong>Ease of Use</strong>: @bing wins hands-down. Its inline mode requires no setup, while others like SpyFreeRobot or IDsTrace need you to add them to a chat or forward messages.</li>
+<li><strong>Scope</strong>: @bing is narrowly focused on images. In contrast, TgDB Search Lite offers deep social data (group membership), and Melodinbot covers music and Instagram.</li>
+<li><strong>Privacy</strong>: @bing doesn’t access your Telegram activity (no message monitoring). SpyFreeRobot, however, actively tracks deleted content, which raises privacy concerns.</li>
+<li><strong>Reliability</strong>: @bing depends on Bing’s uptime. TgDB Search Lite, with 75 votes, appears well-tested, while others have minimal feedback.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @bing if</strong>: You need quick, inline image sharing in conversations – for example, sending a meme, a product photo, or a reference image without leaving Telegram.</li>
+<li><strong>Choose SpyFreeRobot if</strong>: You want to monitor chat activity (e.g., in a group you admin) or recover deleted media.</li>
+<li><strong>Choose IDsTrace Bot if</strong>: You need to verify a user’s identity or find their account creation date for moderation purposes.</li>
+<li><strong>Choose TgDB Search Lite if</strong>: You’re investigating a user’s public group presence – useful for community managers or researchers.</li>
+<li><strong>Choose Melodinbot if</strong>: You frequently search for music or download Instagram content.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p><strong>Bing Image Search</strong> excels at what it does: fast, effortless image retrieval. It’s perfect for casual users who value simplicity and speed. However, if your needs extend beyond images – into user tracking, chat monitoring, or multimedia downloads – the other bots offer specialized features. For a balanced toolkit, keep @bing for images, TgDB Search Lite for social insights, and SpyFreeRobot for chat surveillance. Each serves a distinct niche, and together they cover most search needs on Telegram.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-16</div>
 </div>

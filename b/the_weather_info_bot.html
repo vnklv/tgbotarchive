@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,14 +130,106 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Weather Telegram Bots: A Comparison</h2><p>Weather Telegram bots have become a convenient way to get quick forecasts without leaving your chat app. They range from simple inline tools to full-featured mini-apps, often with regional specialization. This article compares one such bot, **Weather** (@the_weather_info_bot), with other popular weather bots to help you choose the right one.</p><p>### Overview of Weather Telegram Bots</p><p>Most weather bots provide current conditions, hourly or daily forecasts, and sometimes alerts. They vary in geographic coverage, user interface, and extra features like moderation or flood warnings. The best bot for you depends on whether you need global data, regional accuracy, or a polished visual experience.</p><p>### How @the_weather_info_bot Compares</p><p>@the_weather_info_bot focuses on the Italy region, offering current weather and daily forecasts for specific localities. It stands out for its targeted coverage, but its description suggests it may also handle locations outside Italy, albeit with less detail. In contrast, other bots like @WeatherAppRobot provide global real-time data with an attractive UI, while @climatologiabot is a simple inline bot for any city. @allertameteoidro_bot is hyper-local to Piemonte, Italy, adding flood alerts from Arpa Piemonte.</p><p>### Key Strengths and Unique Features of @the_weather_info_bot</p><ul><li>**Regional Focus**: Tailored for Italy, likely offering more accurate local data than generic bots.</li><li>**Simplicity**: No frills—just current weather and daily forecast, ideal for quick checks.</li><li>**Potential for Dual Use**: May work for non-Italian locations, giving flexibility.</li><li>**No Rating Yet**: Unlike many competitors with 5.0 ratings, this bot hasn&#x27;t been rated, which could be a trust issue.</li></ul><p>### Comparison Table</p><p>| Bot Name | Username | Coverage | Key Features | Rating | Notes |
-|----------|----------|----------|--------------|--------|-------|
-| Weather | @the_weather_info_bot | Italy (possibly global) | Current weather, daily forecast | N/A | Simple, regional |
-| WeatherAppRobot | @WeatherAppRobot | Global | Real-time updates, hourly data, amazing UI | 5.0 (1 vote) | Mini-app, polished |
-| climatologiabot | @climatologiabot | Global (inline) | Forecast for any city | 5.0 (1 vote) | Inline, minimal |
-| PinWeatherBot | @PinWeatherBot | Global | Meteorologic info | 5.0 (1 vote) | Flagged offline |
-| allertameteoidro_bot | @allertameteoidro_bot | Piemonte, Italy | Weather + flood alerts | 5.0 (46M votes) | Official, highly trusted |
-| AllDoBot | @AllDoBot | N/A | Group moderation, leisure commands | 5.0 (1 vote) | Not primarily weather |</p><p>### Recommendations</p><ul><li>**Choose @the_weather_info_bot** if you live in Italy and want a no-nonsense, local weather bot without extra clutter. It&#x27;s best for quick daily checks.</li><li>**Choose @WeatherAppRobot** for a visually rich, global experience with hourly updates—great for travelers or those who enjoy interactive UIs.</li><li>**Choose @climatologiabot** for a lightweight, inline solution that works everywhere, especially if you prefer typing commands.</li><li>**Choose @allertameteoidro_bot** if you are in Piemonte and need official flood alerts alongside weather data—its massive vote count shows reliability.</li><li>**Avoid @PinWeatherBot** and @AllDoBot as they are flagged offline or not weather-focused.</li></ul><p>### Final Thoughts</p><p>@the_weather_info_bot fills a niche for Italy-focused users but lacks the polish or trust of some competitors. For global needs, @WeatherAppRobot wins on UI, while @allertameteoidro_bot is unbeatable for Piemonte safety. Consider your location and whether you value simplicity, visuals, or alerts when choosing.</p>
+    <h2>Weather Telegram Bots: A Comparison</h2>
+
+<p>Weather Telegram bots have become a convenient way to get quick forecasts without leaving your chat app. They range from simple inline tools to full-featured mini-apps, often with regional specialization. This article compares one such bot, <strong>Weather</strong> (@the_weather_info_bot), with other popular weather bots to help you choose the right one.</p>
+
+<h3>Overview of Weather Telegram Bots</h3>
+
+<p>Most weather bots provide current conditions, hourly or daily forecasts, and sometimes alerts. They vary in geographic coverage, user interface, and extra features like moderation or flood warnings. The best bot for you depends on whether you need global data, regional accuracy, or a polished visual experience.</p>
+
+<h3>How @the_weather_info_bot Compares</h3>
+
+<p>@the_weather_info_bot focuses on the Italy region, offering current weather and daily forecasts for specific localities. It stands out for its targeted coverage, but its description suggests it may also handle locations outside Italy, albeit with less detail. In contrast, other bots like @WeatherAppRobot provide global real-time data with an attractive UI, while @climatologiabot is a simple inline bot for any city. @allertameteoidro_bot is hyper-local to Piemonte, Italy, adding flood alerts from Arpa Piemonte.</p>
+
+<h3>Key Strengths and Unique Features of @the_weather_info_bot</h3>
+
+<ul>
+<li><strong>Regional Focus</strong>: Tailored for Italy, likely offering more accurate local data than generic bots.</li>
+<li><strong>Simplicity</strong>: No frills—just current weather and daily forecast, ideal for quick checks.</li>
+<li><strong>Potential for Dual Use</strong>: May work for non-Italian locations, giving flexibility.</li>
+<li><strong>No Rating Yet</strong>: Unlike many competitors with 5.0 ratings, this bot hasn't been rated, which could be a trust issue.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Username</th>
+  <th>Coverage</th>
+  <th>Key Features</th>
+  <th>Rating</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Weather</td>
+  <td>@the_weather_info_bot</td>
+  <td>Italy (possibly global)</td>
+  <td>Current weather, daily forecast</td>
+  <td>N/A</td>
+  <td>Simple, regional</td>
+</tr>
+<tr>
+  <td>WeatherAppRobot</td>
+  <td>@WeatherAppRobot</td>
+  <td>Global</td>
+  <td>Real-time updates, hourly data, amazing UI</td>
+  <td>5.0 (1 vote)</td>
+  <td>Mini-app, polished</td>
+</tr>
+<tr>
+  <td>climatologiabot</td>
+  <td>@climatologiabot</td>
+  <td>Global (inline)</td>
+  <td>Forecast for any city</td>
+  <td>5.0 (1 vote)</td>
+  <td>Inline, minimal</td>
+</tr>
+<tr>
+  <td>PinWeatherBot</td>
+  <td>@PinWeatherBot</td>
+  <td>Global</td>
+  <td>Meteorologic info</td>
+  <td>5.0 (1 vote)</td>
+  <td>Flagged offline</td>
+</tr>
+<tr>
+  <td>allertameteoidro_bot</td>
+  <td>@allertameteoidro_bot</td>
+  <td>Piemonte, Italy</td>
+  <td>Weather + flood alerts</td>
+  <td>5.0 (46M votes)</td>
+  <td>Official, highly trusted</td>
+</tr>
+<tr>
+  <td>AllDoBot</td>
+  <td>@AllDoBot</td>
+  <td>N/A</td>
+  <td>Group moderation, leisure commands</td>
+  <td>5.0 (1 vote)</td>
+  <td>Not primarily weather</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations</h3>
+
+<ul>
+<li><strong>Choose @the_weather_info_bot</strong> if you live in Italy and want a no-nonsense, local weather bot without extra clutter. It's best for quick daily checks.</li>
+<li><strong>Choose @WeatherAppRobot</strong> for a visually rich, global experience with hourly updates—great for travelers or those who enjoy interactive UIs.</li>
+<li><strong>Choose @climatologiabot</strong> for a lightweight, inline solution that works everywhere, especially if you prefer typing commands.</li>
+<li><strong>Choose @allertameteoidro_bot</strong> if you are in Piemonte and need official flood alerts alongside weather data—its massive vote count shows reliability.</li>
+<li><strong>Avoid @PinWeatherBot</strong> and @AllDoBot as they are flagged offline or not weather-focused.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@the_weather_info_bot fills a niche for Italy-focused users but lacks the polish or trust of some competitors. For global needs, @WeatherAppRobot wins on UI, while @allertameteoidro_bot is unbeatable for Piemonte safety. Consider your location and whether you value simplicity, visuals, or alerts when choosing.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-30</div>
 </div>

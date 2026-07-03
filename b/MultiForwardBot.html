@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -120,16 +131,101 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegram Bots for Message Forwarding: @MultiForwardBot vs. @AddChanBot</h2><p>In the Telegram ecosystem, &quot;Subscribers&quot; category bots are designed to automate the redistribution of content across channels and groups. They allow channel owners to instantly forward new posts to multiple destinations, saving time and ensuring consistent delivery. Two prominent bots in this space are @MultiForwardBot and @AddChanBot, each offering distinct approaches to message forwarding. This article compares their features, strengths, and ideal use cases.</p><p>### How @MultiForwardBot Works</p><p>@MultiForwardBot focuses on simplicity and reliability. After adding the bot to your channel as an administrator, you connect it to target groups or channels. Every time you send a post in your source channel, the bot automatically forwards it to each connected chat. The process is seamless—no manual triggers or complex setups. The bot supports both public and private groups/channels, and it maintains the original message formatting, including media and captions.</p><p>### How @AddChanBot Works</p><p>@AddChanBot operates on a similar premise but with a twist: it primarily forwards messages *from* other channels (public or private) *to* your chosen chats. You configure a list of source channels, and the bot copies their new posts into your selected groups or channels. This makes it ideal for content curation or aggregating feeds from multiple sources. With a perfect 5.0/5 rating from 1 vote, it is highly regarded for its reliability and ease of use.</p><p>### Key Strengths and Unique Features of @MultiForwardBot</p><ul><li>**Outbound focus**: Designed to broadcast your own content outward, rather than importing from others.</li><li>**Instant forwarding**: Posts are sent immediately upon publication in your channel, with minimal delay.</li><li>**No message limits**: The bot handles unlimited forwarding, making it suitable for high-volume channels.</li><li>**Privacy-friendly**: Only requires admin rights in the source channel and membership in target chats—no message reading permissions needed.</li><li>**Multi-destination support**: Connect dozens of groups or channels simultaneously without performance issues.</li><li>**No configuration complexity**: Simple add-and-go workflow, ideal for non-technical users.</li></ul><p>### Comparison Table</p><p>| Feature | @MultiForwardBot | @AddChanBot |
-|---------|-----------------|-------------|
-| **Primary function** | Forward from your channel to others | Forward from other channels to your chats |
-| **Source control** | You publish in your own channel | You subscribe to external channels |
-| **Private channel support** | Yes | Yes |
-| **Forward direction** | Outbound (your content → others) | Inbound (others&#x27; content → yours) |
-| **Setup steps** | Add bot to channel, connect targets | Add source channels, select destinations |
-| **Message format** | Preserved (media, text, links) | Preserved |
-| **Rating** | Not yet rated | 5.0/5 (1 vote) |
-| **Best for** | Channel owners sharing original content | Curators aggregating multiple feeds |</p><p>### When to Choose Each Bot</p><ul><li>**Choose @MultiForwardBot if:**</li><li>You run a channel and want to automatically share your posts across multiple groups or channels.</li><li>You need a straightforward, no-fuss solution for broadcasting your own content.</li><li>You want to maintain control over what gets forwarded (only your channel&#x27;s posts).</li><li>You manage a high-frequency channel and need reliable, instant forwarding.</li></ul><ul><li>**Choose @AddChanBot if:**</li><li>You want to aggregate content from various channels into one group or channel.</li><li>You curate news, memes, or updates from external sources for your audience.</li><li>You prefer a tool that pulls content inward rather than pushing it outward.</li><li>You value a well-established bot with a proven track record (5-star rating).</li></ul><p>### Conclusion</p><p>Both bots serve the &quot;Subscribers&quot; category but from opposite directions. @MultiForwardBot excels at outward broadcasting of your own channel&#x27;s content, while @AddChanBot is a powerhouse for inward content aggregation. Your choice depends on your workflow: if you are a content creator sharing original posts, @MultiForwardBot offers simplicity and speed. If you are a curator pulling together diverse sources, @AddChanBot is the better fit. For maximum flexibility, some power users even combine both—using @MultiForwardBot to distribute their channel and @AddChanBot to bring in external content.</p>
+    <h2>Telegram Bots for Message Forwarding: @MultiForwardBot vs. @AddChanBot</h2>
+
+<p>In the Telegram ecosystem, "Subscribers" category bots are designed to automate the redistribution of content across channels and groups. They allow channel owners to instantly forward new posts to multiple destinations, saving time and ensuring consistent delivery. Two prominent bots in this space are @MultiForwardBot and @AddChanBot, each offering distinct approaches to message forwarding. This article compares their features, strengths, and ideal use cases.</p>
+
+<h3>How @MultiForwardBot Works</h3>
+
+<p>@MultiForwardBot focuses on simplicity and reliability. After adding the bot to your channel as an administrator, you connect it to target groups or channels. Every time you send a post in your source channel, the bot automatically forwards it to each connected chat. The process is seamless—no manual triggers or complex setups. The bot supports both public and private groups/channels, and it maintains the original message formatting, including media and captions.</p>
+
+<h3>How @AddChanBot Works</h3>
+
+<p>@AddChanBot operates on a similar premise but with a twist: it primarily forwards messages <em>from</em> other channels (public or private) <em>to</em> your chosen chats. You configure a list of source channels, and the bot copies their new posts into your selected groups or channels. This makes it ideal for content curation or aggregating feeds from multiple sources. With a perfect 5.0/5 rating from 1 vote, it is highly regarded for its reliability and ease of use.</p>
+
+<h3>Key Strengths and Unique Features of @MultiForwardBot</h3>
+
+<ul>
+<li><strong>Outbound focus</strong>: Designed to broadcast your own content outward, rather than importing from others.</li>
+<li><strong>Instant forwarding</strong>: Posts are sent immediately upon publication in your channel, with minimal delay.</li>
+<li><strong>No message limits</strong>: The bot handles unlimited forwarding, making it suitable for high-volume channels.</li>
+<li><strong>Privacy-friendly</strong>: Only requires admin rights in the source channel and membership in target chats—no message reading permissions needed.</li>
+<li><strong>Multi-destination support</strong>: Connect dozens of groups or channels simultaneously without performance issues.</li>
+<li><strong>No configuration complexity</strong>: Simple add-and-go workflow, ideal for non-technical users.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@MultiForwardBot</th>
+  <th>@AddChanBot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary function</strong></td>
+  <td>Forward from your channel to others</td>
+  <td>Forward from other channels to your chats</td>
+</tr>
+<tr>
+  <td><strong>Source control</strong></td>
+  <td>You publish in your own channel</td>
+  <td>You subscribe to external channels</td>
+</tr>
+<tr>
+  <td><strong>Private channel support</strong></td>
+  <td>Yes</td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Forward direction</strong></td>
+  <td>Outbound (your content → others)</td>
+  <td>Inbound (others' content → yours)</td>
+</tr>
+<tr>
+  <td><strong>Setup steps</strong></td>
+  <td>Add bot to channel, connect targets</td>
+  <td>Add source channels, select destinations</td>
+</tr>
+<tr>
+  <td><strong>Message format</strong></td>
+  <td>Preserved (media, text, links)</td>
+  <td>Preserved</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>Not yet rated</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Best for</strong></td>
+  <td>Channel owners sharing original content</td>
+  <td>Curators aggregating multiple feeds</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<p><strong>Choose @MultiForwardBot if:</strong>
+- You run a channel and want to automatically share your posts across multiple groups or channels.
+- You need a straightforward, no-fuss solution for broadcasting your own content.
+- You want to maintain control over what gets forwarded (only your channel's posts).
+- You manage a high-frequency channel and need reliable, instant forwarding.</p>
+
+<p><strong>Choose @AddChanBot if:</strong>
+- You want to aggregate content from various channels into one group or channel.
+- You curate news, memes, or updates from external sources for your audience.
+- You prefer a tool that pulls content inward rather than pushing it outward.
+- You value a well-established bot with a proven track record (5-star rating).</p>
+
+<h3>Conclusion</h3>
+
+<p>Both bots serve the "Subscribers" category but from opposite directions. @MultiForwardBot excels at outward broadcasting of your own channel's content, while @AddChanBot is a powerhouse for inward content aggregation. Your choice depends on your workflow: if you are a content creator sharing original posts, @MultiForwardBot offers simplicity and speed. If you are a curator pulling together diverse sources, @AddChanBot is the better fit. For maximum flexibility, some power users even combine both—using @MultiForwardBot to distribute their channel and @AddChanBot to bring in external content.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-12</div>
 </div>

@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -121,13 +132,120 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegram Translator Bots Compared: Yandex Translate vs. the Competition</h2><p>Translator bots are among the most practical tools in Telegram’s ecosystem. They allow users to instantly convert messages, texts, and sometimes even images between languages without leaving the chat. Whether you&#x27;re communicating with international colleagues, learning a new language, or just reading foreign content, these bots eliminate the friction of manual translation. Most translator bots support over 100 languages, offer inline mode, and work in groups and channels. However, they differ in translation engines, extra features, and ease of use. This article focuses on **Yandex Translate (@YTranslateBot)** and compares it with five other popular bots in the category.</p><h2>How @YTranslateBot Works</h2><p>Yandex Translate is a straightforward bot: you send it any message, and it automatically translates that message into your own language using Yandex’s translation engine. The bot detects your language based on your Telegram interface settings (or you can set it manually). It supports over 100 languages and works in private chats, groups, and inline mode. Its key selling point is simplicity—no need to specify source or target languages every time. Just send a text, and the translation appears instantly.</p><h2>Comparing @YTranslateBot to Similar Bots</h2><p>The translator category is crowded, but most bots offer similar core functionality. The main differences lie in language support, extra features (like image translation), and configuration options. Here’s how Yandex Translate stacks up against its peers.</p><ul><li>### Key Strengths of @YTranslateBot</li><li>**Automatic language detection**: You don’t need to set source or target languages manually. The bot uses your Telegram language setting as the target, making it ideal for quick, hands-free translations.</li><li>**Yandex Translate engine**: Known for good accuracy in Slavic and Eurasian languages, and offers a clean, reliable translation for common language pairs.</li><li>**Minimalist interface**: No menus, no commands—just send text and get a translation. This makes it perfect for users who want zero friction.</li><li>**Works in groups and inline**: You can use it in any chat by typing @YTranslateBot followed by your message.</li></ul><ul><li>### Weaknesses</li><li>**No image or document translation**: Unlike some competitors, it only handles plain text.</li><li>**Limited customization**: You cannot set a preferred source language or switch engines. The bot always uses Yandex.</li><li>**Fewer languages than some rivals**: Supports around 100 languages, while others claim 130+.</li></ul><p>### Comparison Table</p><p>| Bot | Languages | Engines | Image Translation | Inline | Group/Channel | Customization |
-|-----|-----------|---------|------------------|--------|--------------|---------------|
-| @YTranslateBot | ~100 | Yandex only | No | Yes | Yes | Minimal (auto-detect) |
-| @translategrambot | 130+ | Unknown | No | Yes | Yes | Set source/target languages |
-| @nekotransbot | Limited | Google, Bing, MyMemory | Yes (text in photos) | Yes | Yes | Choose engine per request |
-| @xlatebot | 130+ | Unknown | No | Yes | Yes | Set source/target or only target |
-| @translatefastbot | ~100 | Unknown | No | Yes | Yes | Basic |</p><p>### Deeper Look at Competitors</p><ul><li>**@translategrambot**: Offers the widest language coverage (130+). You can set both source and target languages, or just the target, giving more control. It works in channels and groups, but lacks image translation. Its rating is a perfect 5.0, but with only 1 vote, so take that with a grain of salt.</li><li>**@nekotransbot**: Unique for supporting image translation—it can extract and translate text from photos using Google, Bing, or MyMemory engines. This is a major advantage if you often encounter text in images (e.g., screenshots, signs). However, its language list is smaller because it relies on multiple engines.</li><li>**@xlatebot**: Similar to translategrambot in language count and features. You can set both source and target, or only target, and it works inline. No standout unique features, but solid and reliable.</li><li>**@translatefastbot**: A simpler, fast bot for basic translations. It lacks the language breadth of translategrambot but is easy to use. Suitable for casual users.</li></ul><h2>Recommendations: When to Choose Each Bot</h2><ul><li>**Choose @YTranslateBot if** you want a no-setup, automatic translation experience. It’s best for users who primarily need quick, one-way translations (e.g., reading messages in a foreign language) and don’t need to control source languages. Also ideal if you prefer Yandex’s translation quality.</li><li>**Choose @translategrambot or @xlatebot if** you need the widest language support (130+ languages) and want to manually set source and target languages. They are better for bilingual conversations where you need to translate both ways.</li><li>**Choose @nekotransbot if** you frequently deal with text embedded in images. Its multi-engine support (Google, Bing, MyMemory) also gives you flexibility to compare translations or choose the best engine for a given language pair.</li><li>**Choose @translatefastbot if** you want a lightweight, no-frills bot for occasional translations and don’t care about extra features.</li></ul><h2>Final Verdict</h2><p>Yandex Translate (@YTranslateBot) excels in simplicity and automatic detection, making it a top choice for passive translation needs. However, it lags behind in language count and lacks image translation. For power users who need control or work with images, @translategrambot or @nekotransbot are better fits. All bots have perfect ratings (though based on very few votes), so real-world performance may vary. Try a couple to see which engine and workflow suits you best.</p>
+    <h2>Telegram Translator Bots Compared: Yandex Translate vs. the Competition</h2>
+
+<p>Translator bots are among the most practical tools in Telegram’s ecosystem. They allow users to instantly convert messages, texts, and sometimes even images between languages without leaving the chat. Whether you're communicating with international colleagues, learning a new language, or just reading foreign content, these bots eliminate the friction of manual translation. Most translator bots support over 100 languages, offer inline mode, and work in groups and channels. However, they differ in translation engines, extra features, and ease of use. This article focuses on <strong>Yandex Translate (@YTranslateBot)</strong> and compares it with five other popular bots in the category.</p>
+
+<h2>How @YTranslateBot Works</h2>
+
+<p>Yandex Translate is a straightforward bot: you send it any message, and it automatically translates that message into your own language using Yandex’s translation engine. The bot detects your language based on your Telegram interface settings (or you can set it manually). It supports over 100 languages and works in private chats, groups, and inline mode. Its key selling point is simplicity—no need to specify source or target languages every time. Just send a text, and the translation appears instantly.</p>
+
+<h2>Comparing @YTranslateBot to Similar Bots</h2>
+
+<p>The translator category is crowded, but most bots offer similar core functionality. The main differences lie in language support, extra features (like image translation), and configuration options. Here’s how Yandex Translate stacks up against its peers.</p>
+
+<h3>Key Strengths of @YTranslateBot</h3>
+
+<ul>
+<li><strong>Automatic language detection</strong>: You don’t need to set source or target languages manually. The bot uses your Telegram language setting as the target, making it ideal for quick, hands-free translations.</li>
+<li><strong>Yandex Translate engine</strong>: Known for good accuracy in Slavic and Eurasian languages, and offers a clean, reliable translation for common language pairs.</li>
+<li><strong>Minimalist interface</strong>: No menus, no commands—just send text and get a translation. This makes it perfect for users who want zero friction.</li>
+<li><strong>Works in groups and inline</strong>: You can use it in any chat by typing @YTranslateBot followed by your message.</li>
+</ul>
+
+<h3>Weaknesses</h3>
+
+<ul>
+<li><strong>No image or document translation</strong>: Unlike some competitors, it only handles plain text.</li>
+<li><strong>Limited customization</strong>: You cannot set a preferred source language or switch engines. The bot always uses Yandex.</li>
+<li><strong>Fewer languages than some rivals</strong>: Supports around 100 languages, while others claim 130+.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Languages</th>
+  <th>Engines</th>
+  <th>Image Translation</th>
+  <th>Inline</th>
+  <th>Group/Channel</th>
+  <th>Customization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@YTranslateBot</td>
+  <td>~100</td>
+  <td>Yandex only</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Minimal (auto-detect)</td>
+</tr>
+<tr>
+  <td>@translategrambot</td>
+  <td>130+</td>
+  <td>Unknown</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Set source/target languages</td>
+</tr>
+<tr>
+  <td>@nekotransbot</td>
+  <td>Limited</td>
+  <td>Google, Bing, MyMemory</td>
+  <td>Yes (text in photos)</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Choose engine per request</td>
+</tr>
+<tr>
+  <td>@xlatebot</td>
+  <td>130+</td>
+  <td>Unknown</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Set source/target or only target</td>
+</tr>
+<tr>
+  <td>@translatefastbot</td>
+  <td>~100</td>
+  <td>Unknown</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Basic</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Deeper Look at Competitors</h3>
+
+<ul>
+<li><strong>@translategrambot</strong>: Offers the widest language coverage (130+). You can set both source and target languages, or just the target, giving more control. It works in channels and groups, but lacks image translation. Its rating is a perfect 5.0, but with only 1 vote, so take that with a grain of salt.</li>
+<li><strong>@nekotransbot</strong>: Unique for supporting image translation—it can extract and translate text from photos using Google, Bing, or MyMemory engines. This is a major advantage if you often encounter text in images (e.g., screenshots, signs). However, its language list is smaller because it relies on multiple engines.</li>
+<li><strong>@xlatebot</strong>: Similar to translategrambot in language count and features. You can set both source and target, or only target, and it works inline. No standout unique features, but solid and reliable.</li>
+<li><strong>@translatefastbot</strong>: A simpler, fast bot for basic translations. It lacks the language breadth of translategrambot but is easy to use. Suitable for casual users.</li>
+</ul>
+
+<h2>Recommendations: When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @YTranslateBot if</strong> you want a no-setup, automatic translation experience. It’s best for users who primarily need quick, one-way translations (e.g., reading messages in a foreign language) and don’t need to control source languages. Also ideal if you prefer Yandex’s translation quality.</li>
+<li><strong>Choose @translategrambot or @xlatebot if</strong> you need the widest language support (130+ languages) and want to manually set source and target languages. They are better for bilingual conversations where you need to translate both ways.</li>
+<li><strong>Choose @nekotransbot if</strong> you frequently deal with text embedded in images. Its multi-engine support (Google, Bing, MyMemory) also gives you flexibility to compare translations or choose the best engine for a given language pair.</li>
+<li><strong>Choose @translatefastbot if</strong> you want a lightweight, no-frills bot for occasional translations and don’t care about extra features.</li>
+</ul>
+
+<h2>Final Verdict</h2>
+
+<p>Yandex Translate (@YTranslateBot) excels in simplicity and automatic detection, making it a top choice for passive translation needs. However, it lags behind in language count and lacks image translation. For power users who need control or work with images, @translategrambot or @nekotransbot are better fits. All bots have perfect ratings (though based on very few votes), so real-world performance may vary. Try a couple to see which engine and workflow suits you best.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-27</div>
 </div>

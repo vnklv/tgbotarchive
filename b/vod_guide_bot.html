@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -125,13 +136,86 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2><p>Search bots are a versatile category on Telegram, designed to help users quickly locate specific content, data, or user information. From movie details to group activity, these bots streamline discovery within the platform. Among them, @vod_guide_bot stands out for its focus on VOD (Video on Demand) content, offering a specialized service compared to more general-purpose search tools.</p><p>### Overview of @vod_guide_bot</p><p>@vod_guide_bot is a dedicated VOD-content search bot that provides comprehensive information about movies and series worldwide. Using the `/vod_search` command followed by a movie or series name, users receive release dates, cast details, and global availability. It’s tailored for entertainment enthusiasts who want quick, reliable data without leaving Telegram.</p><p>### How @vod_guide_bot Compares to Similar Bots</p><p>While @vod_guide_bot focuses on media search, other bots in this category serve different niches. For example, @SpyFreeRobot monitors deleted messages and self-destructible media, @idstracebot retrieves public Telegram user info, @tgdb_search_bot (with two high-rated instances) reveals group activity via the `/Where` command, and @Melodinbot handles music search and Instagram downloads. The diversity shows that &quot;search&quot; bots can range from privacy tools to entertainment helpers.</p><p>### Key Strengths and Unique Features of @vod_guide_bot</p><ul><li>**Targeted VOD Search**: Unlike general search bots, @vod_guide_bot specializes in movies and series, providing structured data like release dates and cast.</li><li>**Global Coverage**: It searches across all regions, making it useful for finding content availability worldwide.</li><li>**Simple Interface**: The `/vod_search` command is straightforward, requiring just a name to deliver results.</li><li>**No Personal Data Tracking**: It focuses on media metadata, not user information, which respects privacy.</li></ul><p>### Comparison Table</p><p>| Bot | Primary Function | Key Feature | Rating (Votes) |
-|-----|-----------------|-------------|----------------|
-| @vod_guide_bot | Movie/series search | Global VOD info, cast, dates | Not rated |
-| @SpyFreeRobot | Message monitoring | Track deleted/edited messages | 5.0 (1) |
-| @idstracebot | User info lookup | ID, username, creation date | 5.0 (1) |
-| @tgdb_search_bot | Group activity search | `/Where` command for user groups | 5.0 (75 &amp; 65) |
-| @Melodinbot | Music/Instagram search | Music downloads, Instagram content | 5.0 (1) |</p><p>### Recommendations on When to Choose Each Bot</p><ul><li>**Choose @vod_guide_bot** if you’re a movie or series buff wanting quick details on release dates, cast, or where to watch globally. It’s ideal for planning your next watch.</li><li>**Choose @SpyFreeRobot** if you need to monitor group activity, such as tracking deleted messages or saving self-destructing media in chats.</li><li>**Choose @idstracebot** for retrieving basic public info (ID, username) about Telegram users, useful for verification or moderation.</li><li>**Choose @tgdb_search_bot** for advanced insights into which public groups a user is active in, helpful for community management or research.</li><li>**Choose @Melodinbot** for music search and Instagram content downloads, perfect for entertainment beyond movies.</li></ul><p>### Final Thoughts</p><p>@vod_guide_bot carves a clear niche in the search bot category by focusing on VOD content, while its counterparts offer diverse utilities from privacy to music. Its simplicity and global scope make it a valuable tool for media lovers, though it lacks the user tracking or monitoring features of other bots. For a balanced toolkit, consider pairing it with @tgdb_search_bot for group insights or @SpyFreeRobot for message monitoring. Ultimately, the best choice depends on your specific search needs—whether for entertainment, data, or security.</p>
+    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2>
+
+<p>Search bots are a versatile category on Telegram, designed to help users quickly locate specific content, data, or user information. From movie details to group activity, these bots streamline discovery within the platform. Among them, @vod_guide_bot stands out for its focus on VOD (Video on Demand) content, offering a specialized service compared to more general-purpose search tools.</p>
+
+<h3>Overview of @vod_guide_bot</h3>
+
+<p>@vod_guide_bot is a dedicated VOD-content search bot that provides comprehensive information about movies and series worldwide. Using the <code>/vod_search</code> command followed by a movie or series name, users receive release dates, cast details, and global availability. It’s tailored for entertainment enthusiasts who want quick, reliable data without leaving Telegram.</p>
+
+<h3>How @vod_guide_bot Compares to Similar Bots</h3>
+
+<p>While @vod_guide_bot focuses on media search, other bots in this category serve different niches. For example, @SpyFreeRobot monitors deleted messages and self-destructible media, @idstracebot retrieves public Telegram user info, @tgdb_search_bot (with two high-rated instances) reveals group activity via the <code>/Where</code> command, and @Melodinbot handles music search and Instagram downloads. The diversity shows that "search" bots can range from privacy tools to entertainment helpers.</p>
+
+<h3>Key Strengths and Unique Features of @vod_guide_bot</h3>
+
+<ul>
+<li><strong>Targeted VOD Search</strong>: Unlike general search bots, @vod_guide_bot specializes in movies and series, providing structured data like release dates and cast.</li>
+<li><strong>Global Coverage</strong>: It searches across all regions, making it useful for finding content availability worldwide.</li>
+<li><strong>Simple Interface</strong>: The <code>/vod_search</code> command is straightforward, requiring just a name to deliver results.</li>
+<li><strong>No Personal Data Tracking</strong>: It focuses on media metadata, not user information, which respects privacy.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Key Feature</th>
+  <th>Rating (Votes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@vod_guide_bot</td>
+  <td>Movie/series search</td>
+  <td>Global VOD info, cast, dates</td>
+  <td>Not rated</td>
+</tr>
+<tr>
+  <td>@SpyFreeRobot</td>
+  <td>Message monitoring</td>
+  <td>Track deleted/edited messages</td>
+  <td>5.0 (1)</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>User info lookup</td>
+  <td>ID, username, creation date</td>
+  <td>5.0 (1)</td>
+</tr>
+<tr>
+  <td>@tgdb_search_bot</td>
+  <td>Group activity search</td>
+  <td><code>/Where</code> command for user groups</td>
+  <td>5.0 (75 &amp; 65)</td>
+</tr>
+<tr>
+  <td>@Melodinbot</td>
+  <td>Music/Instagram search</td>
+  <td>Music downloads, Instagram content</td>
+  <td>5.0 (1)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @vod_guide_bot</strong> if you’re a movie or series buff wanting quick details on release dates, cast, or where to watch globally. It’s ideal for planning your next watch.</li>
+<li><strong>Choose @SpyFreeRobot</strong> if you need to monitor group activity, such as tracking deleted messages or saving self-destructing media in chats.</li>
+<li><strong>Choose @idstracebot</strong> for retrieving basic public info (ID, username) about Telegram users, useful for verification or moderation.</li>
+<li><strong>Choose @tgdb_search_bot</strong> for advanced insights into which public groups a user is active in, helpful for community management or research.</li>
+<li><strong>Choose @Melodinbot</strong> for music search and Instagram content downloads, perfect for entertainment beyond movies.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@vod_guide_bot carves a clear niche in the search bot category by focusing on VOD content, while its counterparts offer diverse utilities from privacy to music. Its simplicity and global scope make it a valuable tool for media lovers, though it lacks the user tracking or monitoring features of other bots. For a balanced toolkit, consider pairing it with @tgdb_search_bot for group insights or @SpyFreeRobot for message monitoring. Ultimately, the best choice depends on your specific search needs—whether for entertainment, data, or security.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-16</div>
 </div>

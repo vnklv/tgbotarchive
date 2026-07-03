@@ -29,11 +29,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .tag-intro { color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
 .count { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
-.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-.tag-article h2 { color: #6c63ff; font-size: 1.1rem; margin-bottom: 0.8rem; }
-.tag-article p { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.5rem; }
-.tag-article ul { margin: 0.4rem 0 0.4rem 1.2rem; }
-.tag-article li { color: #c0c0d0; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.tag-layout { display: flex; gap: 1.5rem; align-items: flex-start; }
+.tag-layout-left { flex: 0 0 340px; min-width: 280px; max-width: 100%; }
+.tag-layout-left:empty { display: none; }
+.tag-layout-right { flex: 1; min-width: 0; }
+.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1rem; }
+.tag-article h2 { color: #6c63ff; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tag-article-content { color: #c0c0d0; font-size: 0.85rem; line-height: 1.7; }
+.tag-article-content p { margin-bottom: 0.5rem; }
+.tag-article-content h2 { color: #d0d0e0; font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+.tag-article-content h3 { color: #c8c8d8; font-size: 0.92rem; margin: 0.5rem 0 0.3rem; }
+.tag-article-content ul { margin: 0.3rem 0 0.3rem 1rem; }
+.tag-article-content ol { margin: 0.3rem 0 0.3rem 1.2rem; }
+.tag-article-content li { margin-bottom: 0.15rem; }
+.tag-article-content table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.78rem; }
+.tag-article-content th, .tag-article-content td { border: 1px solid #3a3a5a; padding: 0.3rem 0.4rem; text-align: left; }
+.tag-article-content th { background: #2a2a4a; color: #d0d0e0; font-weight: 600; }
+.tag-article-content tr:nth-child(even) td { background: #1e1e32; }
+.tag-article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.25rem; border-radius: 3px; font-size: 0.85em; }
+.tag-article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.6rem; overflow-x: auto; margin: 0.5rem 0; }
+@media (max-width: 768px) {
+  .tag-layout { flex-direction: column; gap: 1rem; }
+  .tag-layout-left { flex: none; width: 100%; min-width: 0; }
+}
 .bot-item { background: #1a1a2e; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; border: 1px solid #2a2a4a; }
 .bot-item:hover { border-color: #6c63ff; }
 .bot-name { color: #e8e8f0; font-size: 1rem; font-weight: 600; text-decoration: none; }
@@ -49,14 +67,20 @@ a { color: #6c63ff; }
 <h1>🤖 #instagram</h1>
 <div class="tag-intro">Telegram bots related to <strong>instagram</strong>. Browse <strong>42</strong> bots in this category, compare ratings, features, and languages.</div>
 
-
+<div class="tag-layout">
+  <div class="tag-layout-left">
+    
 <div class="tag-article">
   <h2>📖 About instagram Bots</h2>
-  <p>Instagram Telegram bots are specialized tools designed to interact with Instagram content directly from the Telegram messaging platform. Their main purpose is to provide users with a convenient way to download Instagram media, such as photos, videos, reels, and stories, without needing to use the Instagram app or third-party downloaders. These bots act as bridges, allowing users to simply share an Instagram link and receive the corresponding media file in their Telegram chat. The core functionality of an Instagram bot typically involves extracting the media URL from a shared Instagram post, accessing the content through Instagram&#x27;s backend or public APIs, and then delivering the file to the user in a downloadable format. Some bots also support downloading from other social media platforms like TikTok, Twitter, and Facebook, making them versatile multimedia tools. Users can accomplish a wide range of tasks with Instagram bots, including saving high-quality photos and videos from public profiles, downloading Instagram Stories before they disappear, and archiving Reels for offline viewing. They can also download content from multiple sources in one go, without being bombarded by ads or scams. The variations within this category include bots that focus exclusively on Instagram, multi-platform downloaders that handle several social networks, and bots that offer additional features like removing watermarks or extracting audio from videos. Some bots also provide options to choose the quality of the download or to batch download multiple items from a single link. When choosing the best Instagram bot, users should consider factors such as the range of supported content types, download speed, file size limits, privacy practices, and whether the bot requires any personal information or login credentials. It is also crucial to check user reviews and the bot&#x27;s update frequency to ensure it remains functional as Instagram changes its platform. A good Instagram bot should be reliable, fast, and ad-free, with clear instructions and responsive support. Users should avoid bots that request access to their Instagram account or ask for sensitive data. Ultimately, the best Instagram bot is one that consistently delivers high-quality downloads with minimal hassle and respects user privacy.</p>
-</div>
+  <div class="tag-article-content">
+    <p>Instagram Telegram bots are specialized tools designed to interact with Instagram content directly from the Telegram messaging platform. Their main purpose is to provide users with a convenient way to download Instagram media, such as photos, videos, reels, and stories, without needing to use the Instagram app or third-party downloaders. These bots act as bridges, allowing users to simply share an Instagram link and receive the corresponding media file in their Telegram chat. The core functionality of an Instagram bot typically involves extracting the media URL from a shared Instagram post, accessing the content through Instagram's backend or public APIs, and then delivering the file to the user in a downloadable format. Some bots also support downloading from other social media platforms like TikTok, Twitter, and Facebook, making them versatile multimedia tools. Users can accomplish a wide range of tasks with Instagram bots, including saving high-quality photos and videos from public profiles, downloading Instagram Stories before they disappear, and archiving Reels for offline viewing. They can also download content from multiple sources in one go, without being bombarded by ads or scams. The variations within this category include bots that focus exclusively on Instagram, multi-platform downloaders that handle several social networks, and bots that offer additional features like removing watermarks or extracting audio from videos. Some bots also provide options to choose the quality of the download or to batch download multiple items from a single link. When choosing the best Instagram bot, users should consider factors such as the range of supported content types, download speed, file size limits, privacy practices, and whether the bot requires any personal information or login credentials. It is also crucial to check user reviews and the bot's update frequency to ensure it remains functional as Instagram changes its platform. A good Instagram bot should be reliable, fast, and ad-free, with clear instructions and responsive support. Users should avoid bots that request access to their Instagram account or ask for sensitive data. Ultimately, the best Instagram bot is one that consistently delivers high-quality downloads with minimal hassle and respects user privacy.</p>
 
-<div class="count">42 bots tagged #instagram</div>
-<div class="bot-item">
+  </div>
+</div>
+  </div>
+  <div class="tag-layout-right">
+    <div class="count">42 bots tagged #instagram</div>
+    <div class="bot-item">
   <a href="/b/ig_watch_bot.html" class="bot-name">🤖 IG Watch — see your GF/BF&#x27;s activity on Instagram</a>
   <div class="bot-username">@ig_watch_bot</div>
   <div class="bot-desc">See who your GF or BF follows &amp; unfollows on IG — plus anyone&#x27;s unfollowers, anonymous stories &amp; posts</div>
@@ -309,6 +333,8 @@ a { color: #6c63ff; }
   <div class="bot-rating">⭐⭐⭐ 5.0</div>
 </div>
 
+  </div>
+</div>
 <a class="back" href="/">← Back to catalog</a>
 </body>
 </html>

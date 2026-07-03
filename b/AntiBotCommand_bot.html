@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -118,15 +129,95 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Clean Telegram Bots: Keeping Your Groups Tidy and Functional</h2><p>Messy group chats can quickly become unmanageable, especially when users spam commands, share unwanted content, or post in foreign languages. Clean Telegram bots are designed to automate moderation, remove clutter, and enforce group rules. They help admins maintain order without constant manual oversight. In this article, we compare three bots in this category: @AntiBotCommand_bot, @GeminiWRBot, and @Language_Blockbot.</p><h2>How @AntiBotCommand_bot Stands Out</h2><p>@AntiBotCommand_bot focuses specifically on cleaning up user-submitted command messages in groups. Unlike general-purpose moderation bots, it targets a narrow but persistent problem: users posting commands (e.g., `/start`, `/help`, or custom bot commands) that clutter the chat and confuse participants. The bot automatically detects and removes these messages, keeping the conversation clean and relevant.</p><p>This bot is ideal for groups where multiple bots are active, or where members frequently test commands. It operates silently in the background, requiring minimal configuration. The key advantage is its laser focus—no extra features to distract from the primary task.</p><h2>Key Strengths and Unique Features of @AntiBotCommand_bot</h2><ul><li>**Specialized function**: Removes only command messages, leaving other content untouched.</li><li>**Automatic operation**: No need to manually flag or report commands—works in real time.</li><li>**Lightweight**: Minimal impact on group performance; no complex setup.</li><li>**Privacy-friendly**: Does not store message content or user data beyond immediate deletion.</li><li>**User-friendly**: Simple commands to enable/disable; works with any bot prefix.</li></ul><h2>Comparison Table: @AntiBotCommand_bot vs. Similar Bots</h2><p>| Feature | @AntiBotCommand_bot | @GeminiWRBot | @Language_Blockbot |
-|---------|---------------------|--------------|---------------------|
-| Primary function | Remove command messages | Remove watermarks from Gemini images | Block messages in specific languages |
-| Target audience | Groups with active bots or command spam | Users sharing AI-generated images | Multilingual groups needing language control |
-| Automation level | Fully automatic | Manual (user sends file) | Automatic (AI language detection) |
-| Accuracy | 100% (command detection is straightforward) | Not specified; watermark removal varies | 87%+ language detection accuracy |
-| User rating | No rating yet (new bot) | 1.0/5 (32 votes) | 1.0/5 (1 vote) |
-| Complexity | Very low | Low | Medium (requires language setup) |
-| Privacy impact | Minimal (deletes messages) | Moderate (processes images) | Moderate (analyzes message text) |</p><h2>When to Choose Each Bot</h2><ul><li>**@AntiBotCommand_bot**: Best for groups where command spam is a recurring issue. If your chat has multiple bots and members often type `/command` by accident or habit, this bot keeps the feed clean without affecting normal conversation. It&#x27;s also ideal for beginners who want a simple, no-fuss solution.</li></ul><ul><li>**@GeminiWRBot**: Useful if your group frequently shares Gemini-generated images and wants to remove watermarks. However, the low rating (1.0/5) suggests reliability or quality issues. Consider alternatives or test thoroughly before relying on it.</li></ul><ul><li>**@Language_Blockbot**: Suitable for multilingual groups where you want to block posts in specific languages (e.g., Russian). The 87% accuracy is decent but not perfect, so you may need to supplement with manual moderation. The low rating and single vote indicate limited user feedback.</li></ul><h2>Final Thoughts</h2><p>While @AntiBotCommand_bot fills a specific niche—command cleanup—it does so effectively and without bloat. The other bots address different problems (watermark removal and language blocking) but suffer from low ratings and limited adoption. For groups plagued by command clutter, @AntiBotCommand_bot is a straightforward, reliable choice. For broader moderation needs, consider combining it with a more comprehensive bot like @GroupHelpBot or @Combot. Always test any bot in a small group first to ensure it meets your expectations.</p>
+    <h2>Clean Telegram Bots: Keeping Your Groups Tidy and Functional</h2>
+
+<p>Messy group chats can quickly become unmanageable, especially when users spam commands, share unwanted content, or post in foreign languages. Clean Telegram bots are designed to automate moderation, remove clutter, and enforce group rules. They help admins maintain order without constant manual oversight. In this article, we compare three bots in this category: @AntiBotCommand_bot, @GeminiWRBot, and @Language_Blockbot.</p>
+
+<h2>How @AntiBotCommand_bot Stands Out</h2>
+
+<p>@AntiBotCommand_bot focuses specifically on cleaning up user-submitted command messages in groups. Unlike general-purpose moderation bots, it targets a narrow but persistent problem: users posting commands (e.g., <code>/start</code>, <code>/help</code>, or custom bot commands) that clutter the chat and confuse participants. The bot automatically detects and removes these messages, keeping the conversation clean and relevant.</p>
+
+<p>This bot is ideal for groups where multiple bots are active, or where members frequently test commands. It operates silently in the background, requiring minimal configuration. The key advantage is its laser focus—no extra features to distract from the primary task.</p>
+
+<h2>Key Strengths and Unique Features of @AntiBotCommand_bot</h2>
+
+<ul>
+<li><strong>Specialized function</strong>: Removes only command messages, leaving other content untouched.</li>
+<li><strong>Automatic operation</strong>: No need to manually flag or report commands—works in real time.</li>
+<li><strong>Lightweight</strong>: Minimal impact on group performance; no complex setup.</li>
+<li><strong>Privacy-friendly</strong>: Does not store message content or user data beyond immediate deletion.</li>
+<li><strong>User-friendly</strong>: Simple commands to enable/disable; works with any bot prefix.</li>
+</ul>
+
+<h2>Comparison Table: @AntiBotCommand_bot vs. Similar Bots</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@AntiBotCommand_bot</th>
+  <th>@GeminiWRBot</th>
+  <th>@Language_Blockbot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Primary function</td>
+  <td>Remove command messages</td>
+  <td>Remove watermarks from Gemini images</td>
+  <td>Block messages in specific languages</td>
+</tr>
+<tr>
+  <td>Target audience</td>
+  <td>Groups with active bots or command spam</td>
+  <td>Users sharing AI-generated images</td>
+  <td>Multilingual groups needing language control</td>
+</tr>
+<tr>
+  <td>Automation level</td>
+  <td>Fully automatic</td>
+  <td>Manual (user sends file)</td>
+  <td>Automatic (AI language detection)</td>
+</tr>
+<tr>
+  <td>Accuracy</td>
+  <td>100% (command detection is straightforward)</td>
+  <td>Not specified; watermark removal varies</td>
+  <td>87%+ language detection accuracy</td>
+</tr>
+<tr>
+  <td>User rating</td>
+  <td>No rating yet (new bot)</td>
+  <td>1.0/5 (32 votes)</td>
+  <td>1.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td>Complexity</td>
+  <td>Very low</td>
+  <td>Low</td>
+  <td>Medium (requires language setup)</td>
+</tr>
+<tr>
+  <td>Privacy impact</td>
+  <td>Minimal (deletes messages)</td>
+  <td>Moderate (processes images)</td>
+  <td>Moderate (analyzes message text)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><p><strong>@AntiBotCommand_bot</strong>: Best for groups where command spam is a recurring issue. If your chat has multiple bots and members often type <code>/command</code> by accident or habit, this bot keeps the feed clean without affecting normal conversation. It's also ideal for beginners who want a simple, no-fuss solution.</p></li>
+<li><p><strong>@GeminiWRBot</strong>: Useful if your group frequently shares Gemini-generated images and wants to remove watermarks. However, the low rating (1.0/5) suggests reliability or quality issues. Consider alternatives or test thoroughly before relying on it.</p></li>
+<li><p><strong>@Language_Blockbot</strong>: Suitable for multilingual groups where you want to block posts in specific languages (e.g., Russian). The 87% accuracy is decent but not perfect, so you may need to supplement with manual moderation. The low rating and single vote indicate limited user feedback.</p></li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>While @AntiBotCommand_bot fills a specific niche—command cleanup—it does so effectively and without bloat. The other bots address different problems (watermark removal and language blocking) but suffer from low ratings and limited adoption. For groups plagued by command clutter, @AntiBotCommand_bot is a straightforward, reliable choice. For broader moderation needs, consider combining it with a more comprehensive bot like @GroupHelpBot or @Combot. Always test any bot in a small group first to ensure it meets your expectations.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-15</div>
 </div>

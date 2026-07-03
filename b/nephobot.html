@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -127,14 +138,118 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Data, Media, and People</h2><p>Telegram bots in the &quot;search&quot; category serve a wide range of purposes, from finding media files and retrieving user information to monitoring activity in chats. While some focus on data mining or privacy tools, others aim to organize and share your personal content. Among them, **Nepho (@nephobot)** stands out as a personal database manager, offering a unique approach to storing and searching your own files.</p><p>### Overview of Search Telegram Bots</p><ul><li>Search bots typically help users locate specific information within Telegram&#x27;s ecosystem. They can:</li><li>Retrieve public data about users (IDs, names, account age).</li><li>Search for media (music, videos, images) from external sources.</li><li>Monitor edited or deleted messages in groups.</li><li>Index and retrieve content from public groups or channels.</li><li>Manage personal libraries of files with tagging and search capabilities.</li></ul><p>### How Nepho Compares to Other Search Bots</p><p>Unlike bots that scrape public data or external content, Nepho focuses on **your own personal database**. You can store contacts, images, videos, or any file type, assign tags, and search through them using inline queries. This makes it more of a **personal knowledge base** than a typical search tool.</p><ul><li>In contrast:</li><li>**SpyFreeRobot (@SpyFreeRobot)** monitors deleted/edited messages and self-destructing media in groups—a privacy/security tool.</li><li>**idstracebot (@idstracebot)** retrieves public Telegram user info (ID, name, creation date) from forwarded messages.</li><li>**TgDB Search Lite (@tgdb_search_bot)** reveals which public groups a user is active in, using a community-driven database.</li><li>**Melodinbot (@Melodinbot)** is a music search and Instagram downloader, focused on external media.</li></ul><p>### Key Strengths and Unique Features of Nepho</p><ul><li>**Personal storage**: You control what goes into your database—no reliance on public data.</li><li>**Tagging system**: Assign custom tags to files for organized search.</li><li>**Inline sharing**: Quickly share stored content in any chat via inline mode.</li><li>**Multi-format support**: Accepts contacts, images, videos, documents, and more.</li><li>**Privacy-first**: Your data stays within your database; no monitoring or public scraping.</li></ul><p>### Comparison Table</p><p>| Feature | Nepho (@nephobot) | SpyFreeRobot | idstracebot | TgDB Search Lite | Melodinbot |
-|---------|-------------------|--------------|-------------|------------------|------------|
-| **Primary function** | Personal file storage &amp; search | Message monitoring | User info lookup | Group activity search | Music &amp; media download |
-| **Data source** | Your own uploads | Group messages | Public Telegram data | Community database | External sources |
-| **Inline search** | Yes | No | No | No | No |
-| **Tagging** | Yes | No | No | No | No |
-| **Privacy focus** | High (your data only) | Medium (monitors groups) | Low (public data) | Low (public data) | Medium (external) |
-| **Rating** | N/A | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (64 votes) | 5.0/5 (1 vote) |</p><p>### When to Choose Each Bot</p><ul><li>**Choose Nepho** if you want a personal, searchable library for files, contacts, or notes that you can share inline. Ideal for productivity or organizing frequent resources.</li><li>**Choose SpyFreeRobot** if you need to monitor group chats for deleted/edited messages or save self-destructing media—useful for group admins or privacy enthusiasts.</li><li>**Choose idstracebot** for quick lookups of basic public info about any Telegram user (ID, name, account age).</li><li>**Choose TgDB Search Lite** if you want to discover which public groups a user is active in—great for research or networking.</li><li>**Choose Melodinbot** for downloading music or Instagram content from external sources.</li></ul><p>### Final Thoughts</p><p>While most search bots focus on external data or monitoring, Nepho offers a refreshingly personal approach. Its strength lies in giving you control over your own content with powerful tagging and inline search. If you need to organize and quickly access your own files within Telegram, Nepho is a standout choice. For those looking to explore public data or monitor activity, the other bots serve specific niches well.</p>
+    <h2>Search Bots on Telegram: Finding Data, Media, and People</h2>
+
+<p>Telegram bots in the "search" category serve a wide range of purposes, from finding media files and retrieving user information to monitoring activity in chats. While some focus on data mining or privacy tools, others aim to organize and share your personal content. Among them, <strong>Nepho (@nephobot)</strong> stands out as a personal database manager, offering a unique approach to storing and searching your own files.</p>
+
+<h3>Overview of Search Telegram Bots</h3>
+
+<p>Search bots typically help users locate specific information within Telegram's ecosystem. They can:
+- Retrieve public data about users (IDs, names, account age).
+- Search for media (music, videos, images) from external sources.
+- Monitor edited or deleted messages in groups.
+- Index and retrieve content from public groups or channels.
+- Manage personal libraries of files with tagging and search capabilities.</p>
+
+<h3>How Nepho Compares to Other Search Bots</h3>
+
+<p>Unlike bots that scrape public data or external content, Nepho focuses on <strong>your own personal database</strong>. You can store contacts, images, videos, or any file type, assign tags, and search through them using inline queries. This makes it more of a <strong>personal knowledge base</strong> than a typical search tool.</p>
+
+<p>In contrast:
+- <strong>SpyFreeRobot (@SpyFreeRobot)</strong> monitors deleted/edited messages and self-destructing media in groups—a privacy/security tool.
+- <strong>idstracebot (@idstracebot)</strong> retrieves public Telegram user info (ID, name, creation date) from forwarded messages.
+- <strong>TgDB Search Lite (@tgdb_search_bot)</strong> reveals which public groups a user is active in, using a community-driven database.
+- <strong>Melodinbot (@Melodinbot)</strong> is a music search and Instagram downloader, focused on external media.</p>
+
+<h3>Key Strengths and Unique Features of Nepho</h3>
+
+<ul>
+<li><strong>Personal storage</strong>: You control what goes into your database—no reliance on public data.</li>
+<li><strong>Tagging system</strong>: Assign custom tags to files for organized search.</li>
+<li><strong>Inline sharing</strong>: Quickly share stored content in any chat via inline mode.</li>
+<li><strong>Multi-format support</strong>: Accepts contacts, images, videos, documents, and more.</li>
+<li><strong>Privacy-first</strong>: Your data stays within your database; no monitoring or public scraping.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>Nepho (@nephobot)</th>
+  <th>SpyFreeRobot</th>
+  <th>idstracebot</th>
+  <th>TgDB Search Lite</th>
+  <th>Melodinbot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary function</strong></td>
+  <td>Personal file storage &amp; search</td>
+  <td>Message monitoring</td>
+  <td>User info lookup</td>
+  <td>Group activity search</td>
+  <td>Music &amp; media download</td>
+</tr>
+<tr>
+  <td><strong>Data source</strong></td>
+  <td>Your own uploads</td>
+  <td>Group messages</td>
+  <td>Public Telegram data</td>
+  <td>Community database</td>
+  <td>External sources</td>
+</tr>
+<tr>
+  <td><strong>Inline search</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Tagging</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Privacy focus</strong></td>
+  <td>High (your data only)</td>
+  <td>Medium (monitors groups)</td>
+  <td>Low (public data)</td>
+  <td>Low (public data)</td>
+  <td>Medium (external)</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (64 votes)</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose Nepho</strong> if you want a personal, searchable library for files, contacts, or notes that you can share inline. Ideal for productivity or organizing frequent resources.</li>
+<li><strong>Choose SpyFreeRobot</strong> if you need to monitor group chats for deleted/edited messages or save self-destructing media—useful for group admins or privacy enthusiasts.</li>
+<li><strong>Choose idstracebot</strong> for quick lookups of basic public info about any Telegram user (ID, name, account age).</li>
+<li><strong>Choose TgDB Search Lite</strong> if you want to discover which public groups a user is active in—great for research or networking.</li>
+<li><strong>Choose Melodinbot</strong> for downloading music or Instagram content from external sources.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>While most search bots focus on external data or monitoring, Nepho offers a refreshingly personal approach. Its strength lies in giving you control over your own content with powerful tagging and inline search. If you need to organize and quickly access your own files within Telegram, Nepho is a standout choice. For those looking to explore public data or monitor activity, the other bots serve specific niches well.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-17</div>
 </div>

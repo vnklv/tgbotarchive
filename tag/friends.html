@@ -29,11 +29,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .tag-intro { color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
 .count { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
-.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-.tag-article h2 { color: #6c63ff; font-size: 1.1rem; margin-bottom: 0.8rem; }
-.tag-article p { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.5rem; }
-.tag-article ul { margin: 0.4rem 0 0.4rem 1.2rem; }
-.tag-article li { color: #c0c0d0; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.tag-layout { display: flex; gap: 1.5rem; align-items: flex-start; }
+.tag-layout-left { flex: 0 0 340px; min-width: 280px; max-width: 100%; }
+.tag-layout-left:empty { display: none; }
+.tag-layout-right { flex: 1; min-width: 0; }
+.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1rem; }
+.tag-article h2 { color: #6c63ff; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tag-article-content { color: #c0c0d0; font-size: 0.85rem; line-height: 1.7; }
+.tag-article-content p { margin-bottom: 0.5rem; }
+.tag-article-content h2 { color: #d0d0e0; font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+.tag-article-content h3 { color: #c8c8d8; font-size: 0.92rem; margin: 0.5rem 0 0.3rem; }
+.tag-article-content ul { margin: 0.3rem 0 0.3rem 1rem; }
+.tag-article-content ol { margin: 0.3rem 0 0.3rem 1.2rem; }
+.tag-article-content li { margin-bottom: 0.15rem; }
+.tag-article-content table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.78rem; }
+.tag-article-content th, .tag-article-content td { border: 1px solid #3a3a5a; padding: 0.3rem 0.4rem; text-align: left; }
+.tag-article-content th { background: #2a2a4a; color: #d0d0e0; font-weight: 600; }
+.tag-article-content tr:nth-child(even) td { background: #1e1e32; }
+.tag-article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.25rem; border-radius: 3px; font-size: 0.85em; }
+.tag-article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.6rem; overflow-x: auto; margin: 0.5rem 0; }
+@media (max-width: 768px) {
+  .tag-layout { flex-direction: column; gap: 1rem; }
+  .tag-layout-left { flex: none; width: 100%; min-width: 0; }
+}
 .bot-item { background: #1a1a2e; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; border: 1px solid #2a2a4a; }
 .bot-item:hover { border-color: #6c63ff; }
 .bot-name { color: #e8e8f0; font-size: 1rem; font-weight: 600; text-decoration: none; }
@@ -49,14 +67,28 @@ a { color: #6c63ff; }
 <h1>🤖 #friends</h1>
 <div class="tag-intro">Telegram bots related to <strong>friends</strong>. Browse <strong>30</strong> bots in this category, compare ratings, features, and languages.</div>
 
-
+<div class="tag-layout">
+  <div class="tag-layout-left">
+    
 <div class="tag-article">
   <h2>📖 About friends Bots</h2>
-  <p>Friends Telegram bots are automated programs that facilitate social interaction, helping users meet new people, make friends, or engage in anonymous conversations within the Telegram ecosystem. Their main purpose is to overcome the limitations of traditional messaging by connecting users who share similar interests, provide a platform for casual chat, or offer structured ways to socialize without revealing personal information. These bots are especially popular among people looking to expand their social circle, practice languages, or simply have fun conversations with strangers from around the world.</p><p>How they work typically involves a matching or room-based system. For instance, stranger_cupid_bot connects two random users for an anonymous one-on-one chat. When a user initiates a session, the bot finds another person also looking to chat and pairs them. Conversations are usually text-based, and users can end the chat at any time to be matched with someone new. Other bots, like ChattingRoomsBot, create persistent chat rooms where multiple users can join and talk simultaneously. These rooms might be topic-based, such as gaming, music, or travel, allowing users to find like-minded individuals. Some bots require users to set preferences like age range or location to improve matching accuracy.</p><p>Users can do many things with friends bots. They can meet strangers for fun, lighthearted conversations without the pressure of sharing their identity. They can join topic-specific rooms to discuss hobbies or interests with a community. Some bots allow users to create their own chat rooms and invite others, giving them control over the group dynamic. Additionally, users can practice foreign languages by chatting with native speakers, find study partners, or even seek emotional support in a non-judgmental environment. The anonymous nature of many bots reduces social anxiety and encourages openness.</p><p>Different types of friends bots include random chat bots, which pair users one-on-one; group chat bots, which create or manage public rooms; interest-based matching bots, which use algorithms to connect people with similar profiles; and icebreaker bots, which provide conversation starters or games to make interactions easier. Some bots also incorporate multimedia sharing, allowing users to exchange photos, voice messages, or stickers. There are even bots that focus on specific demographics, such as students or professionals, to foster more relevant connections.</p><p>Tips for choosing the best friends bot begin with considering your comfort level with anonymity. If you prefer full anonymity, choose bots that do not require registration or profile creation. For more meaningful connections, look for bots that allow you to set interests or filters. Check the bot&#x27;s moderation policies; good bots have systems to report or block abusive users. Read reviews to see if the bot has a healthy user base, as empty rooms or slow matching can be frustrating. Also, consider whether you want persistent chat rooms or ephemeral one-on-one sessions. Finally, test a few bots to see which interface and community vibe suits you best, as the social experience can vary widely.</p>
-</div>
+  <div class="tag-article-content">
+    <p>Friends Telegram bots are automated programs that facilitate social interaction, helping users meet new people, make friends, or engage in anonymous conversations within the Telegram ecosystem. Their main purpose is to overcome the limitations of traditional messaging by connecting users who share similar interests, provide a platform for casual chat, or offer structured ways to socialize without revealing personal information. These bots are especially popular among people looking to expand their social circle, practice languages, or simply have fun conversations with strangers from around the world.</p>
 
-<div class="count">30 bots tagged #friends</div>
-<div class="bot-item">
+<p>How they work typically involves a matching or room-based system. For instance, stranger_cupid_bot connects two random users for an anonymous one-on-one chat. When a user initiates a session, the bot finds another person also looking to chat and pairs them. Conversations are usually text-based, and users can end the chat at any time to be matched with someone new. Other bots, like ChattingRoomsBot, create persistent chat rooms where multiple users can join and talk simultaneously. These rooms might be topic-based, such as gaming, music, or travel, allowing users to find like-minded individuals. Some bots require users to set preferences like age range or location to improve matching accuracy.</p>
+
+<p>Users can do many things with friends bots. They can meet strangers for fun, lighthearted conversations without the pressure of sharing their identity. They can join topic-specific rooms to discuss hobbies or interests with a community. Some bots allow users to create their own chat rooms and invite others, giving them control over the group dynamic. Additionally, users can practice foreign languages by chatting with native speakers, find study partners, or even seek emotional support in a non-judgmental environment. The anonymous nature of many bots reduces social anxiety and encourages openness.</p>
+
+<p>Different types of friends bots include random chat bots, which pair users one-on-one; group chat bots, which create or manage public rooms; interest-based matching bots, which use algorithms to connect people with similar profiles; and icebreaker bots, which provide conversation starters or games to make interactions easier. Some bots also incorporate multimedia sharing, allowing users to exchange photos, voice messages, or stickers. There are even bots that focus on specific demographics, such as students or professionals, to foster more relevant connections.</p>
+
+<p>Tips for choosing the best friends bot begin with considering your comfort level with anonymity. If you prefer full anonymity, choose bots that do not require registration or profile creation. For more meaningful connections, look for bots that allow you to set interests or filters. Check the bot's moderation policies; good bots have systems to report or block abusive users. Read reviews to see if the bot has a healthy user base, as empty rooms or slow matching can be frustrating. Also, consider whether you want persistent chat rooms or ephemeral one-on-one sessions. Finally, test a few bots to see which interface and community vibe suits you best, as the social experience can vary widely.</p>
+
+  </div>
+</div>
+  </div>
+  <div class="tag-layout-right">
+    <div class="count">30 bots tagged #friends</div>
+    <div class="bot-item">
   <a href="/b/DefiantChatBot.html" class="bot-name">🤖 DefiantChatBot</a>
   <div class="bot-username">@DefiantChatBot</div>
   <div class="bot-desc">Get matched with random people instantly and anonymously. Chat, skip, and meet someone new in seconds. Users can set sim</div>
@@ -237,6 +269,8 @@ a { color: #6c63ff; }
   <div class="bot-rating">⭐⭐⭐ 1.0</div>
 </div>
 
+  </div>
+</div>
 <a class="back" href="/">← Back to catalog</a>
 </body>
 </html>

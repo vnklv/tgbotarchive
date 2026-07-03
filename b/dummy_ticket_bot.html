@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,15 +130,111 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Flight Telegram Bots: A Comparative Look at @dummy_ticket_bot and Its Peers</h2><p>Telegram bots in the &quot;flight&quot; category serve a variety of purposes, from booking tickets and tracking prices to providing travel assistance and generating documents. Most aim to simplify air travel, but their specific functions differ widely. This article compares @dummy_ticket_bot with three other notable bots in this space, focusing on features, usability, and unique value.</p><p>### Overview of the Bots</p><ul><li>**@dummy_ticket_bot** (Dummy Flight Ticket Bot): Generates realistic PDF flight tickets based on real flight data. Not for actual booking, but for creating convincing dummy documents.</li><li>**@EddyTravels_bot** (Eddy Travels): AI-powered travel assistant with voice understanding, helps plan trips, find flights, and book accommodations. Rating: 5.0/5 (1 vote).</li><li>**@track_flight_bot** (FlightBot): Tracks flight prices and notifies users of cheap fares or price errors. Currently flagged as offline. Rating: 4.5/5 (1 vote).</li><li>**@NextF1racebot** (NextF1racebot): Provides upcoming F1 race dates, cities, and links to hotel bookings and merch. Rating: 1.0/5 (438 votes).</li></ul><p>### How @dummy_ticket_bot Stands Out</p><p>@dummy_ticket_bot occupies a niche that no other bot in this comparison fully covers: generating realistic-looking flight tickets for demonstration, pranks, or proof-of-concept purposes. While other bots focus on real travel logistics, this bot creates fake but convincing PDFs using real flight data. Its key differentiator is that it does not require actual booking or payment—it&#x27;s purely a document generator.</p><p>### Key Strengths and Unique Features of @dummy_ticket_bot</p><ul><li>**Realistic Output**: Generates PDFs that mimic real airline tickets, including flight numbers, dates, airports, and passenger details.</li><li>**Real Data Integration**: Uses live flight data to ensure tickets look authentic (e.g., actual routes, times).</li><li>**Simplicity**: No complex setup—just send a few details and receive a PDF.</li><li>**Privacy-Focused**: No need to share personal booking info; it&#x27;s a disposable tool.</li><li>**Novelty Use**: Ideal for jokes, travel planning mockups, or testing systems.</li></ul><p>### Comparison Table</p><p>| Feature / Bot | @dummy_ticket_bot | @EddyTravels_bot | @track_flight_bot | @NextF1racebot |
-|---------------|-------------------|------------------|-------------------|----------------|
-| Primary Function | Generate dummy flight tickets | AI travel assistant &amp; booking | Track flight prices | F1 race info &amp; bookings |
-| Real Booking | No | Yes | No (price tracking) | No (hotel links) |
-| Voice Support | No | Yes | No | No |
-| Real-Time Data | Yes (flight data for tickets) | Yes (travel info) | Yes (price alerts) | Yes (race dates) |
-| Price Tracking | No | No | Yes | No |
-| User Rating | N/A | 5.0/5 (1 vote) | 4.5/5 (1 vote) | 1.0/5 (438 votes) |
-| Offline Status | Active | Active | Flagged offline | Active |</p><p>### When to Choose Each Bot</p><ul><li>**@dummy_ticket_bot**: Choose this if you need a convincing fake ticket for a prank, a travel simulation, or testing document validation. It&#x27;s not for actual travel.</li><li>**@EddyTravels_bot**: Best for travelers who want an AI assistant to plan trips, book flights, and get voice-activated help. High rating but few votes.</li><li>**@track_flight_bot**: Ideal for budget-conscious travelers seeking price drop alerts. However, its offline status makes it unreliable currently.</li><li>**@NextF1racebot**: Only for F1 fans who want race schedules and hotel deals. Low rating and niche focus limit its broader appeal.</li></ul><p>### Final Thoughts</p><p>@dummy_ticket_bot fills a unique gap in the flight bot ecosystem—it&#x27;s not a travel tool but a document generator. Its strength lies in its simplicity and realism, making it a standout for specific use cases. Meanwhile, other bots like Eddy Travels offer broader travel assistance, but with limited user feedback. For those seeking a quick, fun, or practical dummy ticket, @dummy_ticket_bot is the clear winner. For actual travel planning, consider alternatives—but check their activity and ratings first.</p>
+    <h2>Flight Telegram Bots: A Comparative Look at @dummy_ticket_bot and Its Peers</h2>
+
+<p>Telegram bots in the "flight" category serve a variety of purposes, from booking tickets and tracking prices to providing travel assistance and generating documents. Most aim to simplify air travel, but their specific functions differ widely. This article compares @dummy_ticket_bot with three other notable bots in this space, focusing on features, usability, and unique value.</p>
+
+<h3>Overview of the Bots</h3>
+
+<ul>
+<li><strong>@dummy_ticket_bot</strong> (Dummy Flight Ticket Bot): Generates realistic PDF flight tickets based on real flight data. Not for actual booking, but for creating convincing dummy documents.</li>
+<li><strong>@EddyTravels_bot</strong> (Eddy Travels): AI-powered travel assistant with voice understanding, helps plan trips, find flights, and book accommodations. Rating: 5.0/5 (1 vote).</li>
+<li><strong>@track_flight_bot</strong> (FlightBot): Tracks flight prices and notifies users of cheap fares or price errors. Currently flagged as offline. Rating: 4.5/5 (1 vote).</li>
+<li><strong>@NextF1racebot</strong> (NextF1racebot): Provides upcoming F1 race dates, cities, and links to hotel bookings and merch. Rating: 1.0/5 (438 votes).</li>
+</ul>
+
+<h3>How @dummy_ticket_bot Stands Out</h3>
+
+<p>@dummy_ticket_bot occupies a niche that no other bot in this comparison fully covers: generating realistic-looking flight tickets for demonstration, pranks, or proof-of-concept purposes. While other bots focus on real travel logistics, this bot creates fake but convincing PDFs using real flight data. Its key differentiator is that it does not require actual booking or payment—it's purely a document generator.</p>
+
+<h3>Key Strengths and Unique Features of @dummy_ticket_bot</h3>
+
+<ul>
+<li><strong>Realistic Output</strong>: Generates PDFs that mimic real airline tickets, including flight numbers, dates, airports, and passenger details.</li>
+<li><strong>Real Data Integration</strong>: Uses live flight data to ensure tickets look authentic (e.g., actual routes, times).</li>
+<li><strong>Simplicity</strong>: No complex setup—just send a few details and receive a PDF.</li>
+<li><strong>Privacy-Focused</strong>: No need to share personal booking info; it's a disposable tool.</li>
+<li><strong>Novelty Use</strong>: Ideal for jokes, travel planning mockups, or testing systems.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature / Bot</th>
+  <th>@dummy_ticket_bot</th>
+  <th>@EddyTravels_bot</th>
+  <th>@track_flight_bot</th>
+  <th>@NextF1racebot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Primary Function</td>
+  <td>Generate dummy flight tickets</td>
+  <td>AI travel assistant &amp; booking</td>
+  <td>Track flight prices</td>
+  <td>F1 race info &amp; bookings</td>
+</tr>
+<tr>
+  <td>Real Booking</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No (price tracking)</td>
+  <td>No (hotel links)</td>
+</tr>
+<tr>
+  <td>Voice Support</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>Real-Time Data</td>
+  <td>Yes (flight data for tickets)</td>
+  <td>Yes (travel info)</td>
+  <td>Yes (price alerts)</td>
+  <td>Yes (race dates)</td>
+</tr>
+<tr>
+  <td>Price Tracking</td>
+  <td>No</td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>User Rating</td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>4.5/5 (1 vote)</td>
+  <td>1.0/5 (438 votes)</td>
+</tr>
+<tr>
+  <td>Offline Status</td>
+  <td>Active</td>
+  <td>Active</td>
+  <td>Flagged offline</td>
+  <td>Active</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>@dummy_ticket_bot</strong>: Choose this if you need a convincing fake ticket for a prank, a travel simulation, or testing document validation. It's not for actual travel.</li>
+<li><strong>@EddyTravels_bot</strong>: Best for travelers who want an AI assistant to plan trips, book flights, and get voice-activated help. High rating but few votes.</li>
+<li><strong>@track_flight_bot</strong>: Ideal for budget-conscious travelers seeking price drop alerts. However, its offline status makes it unreliable currently.</li>
+<li><strong>@NextF1racebot</strong>: Only for F1 fans who want race schedules and hotel deals. Low rating and niche focus limit its broader appeal.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@dummy_ticket_bot fills a unique gap in the flight bot ecosystem—it's not a travel tool but a document generator. Its strength lies in its simplicity and realism, making it a standout for specific use cases. Meanwhile, other bots like Eddy Travels offer broader travel assistance, but with limited user feedback. For those seeking a quick, fun, or practical dummy ticket, @dummy_ticket_bot is the clear winner. For actual travel planning, consider alternatives—but check their activity and ratings first.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-15</div>
 </div>

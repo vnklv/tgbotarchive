@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -122,13 +133,94 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Information in a World of Chat</h2><p>Telegram bots have evolved far beyond simple commands. In the &quot;search&quot; category, bots help users find everything from web results and user data to media and deleted messages. While some focus on general internet search, others specialize in Telegram-specific intelligence, music, or privacy monitoring. This article compares the &quot;Google&quot; bot (@ribot) with five other popular search-oriented bots to help you choose the right tool for your needs.</p><p>### Overview of Search Telegram Bots</p><p>Search bots on Telegram typically fall into two camps: those that query external services (like Google or music databases) and those that mine Telegram&#x27;s own ecosystem (user info, group activity, deleted messages). The &quot;Google&quot; bot (@ribot) belongs to the first group, offering direct web search results. Others, like @SpyFreeRobot and @tgdb_search_bot, focus on Telegram-specific data, while @Melodinbot targets media downloads.</p><p>### How @ribot Compares to Other Search Bots</p><p>@ribot is straightforward: you send a query, and it returns Google search results. It&#x27;s a no-frills tool for finding web pages, news, or images. In contrast, @SpyFreeRobot monitors message edits and deletions, @idstracebot reveals user account creation dates, and @tgdb_search_bot shows which public groups a user is active in. @Melodinbot specializes in music and Instagram media. Each bot serves a different niche, but @ribot is the only one that provides general web search directly from Google.</p><p>### Key Strengths and Unique Features of @ribot</p><ul><li>**Direct Google Integration**: @ribot uses Google&#x27;s search engine, giving you familiar, high-quality results.</li><li>**Simplicity**: No registration, no complex commands—just send a query and get links.</li><li>**Privacy-Focused**: No tracking of your search history or personal data (unlike some browser-based searches).</li><li>**Speed**: Results appear instantly in chat, without leaving Telegram.</li></ul><p>Its main limitation is that it only returns basic search results—no image previews, news snippets, or advanced filtering. For deeper Telegram-specific data, you need other bots.</p><p>### Comparison Table: @ribot vs. Similar Bots</p><p>| Bot | Primary Function | Unique Selling Point | Rating | Votes |
-|-----|------------------|----------------------|--------|-------|
-| @ribot | Google web search | Direct Google results in chat | N/A | N/A |
-| @SpyFreeRobot | Monitor deleted/edited messages | Save self-destructible media | 5.0/5 | 1 |
-| @idstracebot | Retrieve Telegram user info | Shows account creation date | 5.0/5 | 1 |
-| @tgdb_search_bot | Find user&#x27;s public groups | /Where command for group activity | 5.0/5 | 180/157 |
-| @Melodinbot | Music &amp; Instagram downloader | Search and download media | 5.0/5 | 27 |</p><p>### When to Choose Each Bot</p><ul><li>**Choose @ribot** if you need quick web search results without leaving Telegram. Ideal for finding articles, websites, or answers during conversations.</li><li>**Choose @SpyFreeRobot** if you want to monitor message edits or deletions in groups, or recover self-destructing media.</li><li>**Choose @idstracebot** for verifying user accounts—useful for moderators or investigating suspicious profiles.</li><li>**Choose @tgdb_search_bot** to discover which public groups a user participates in, helpful for community management or background checks.</li><li>**Choose @Melodinbot** for downloading music or Instagram content directly to your device.</li></ul><p>### Final Thoughts</p><p>@ribot earns its place as a simple, effective web search tool, but it&#x27;s not a Swiss Army knife. For Telegram-specific intelligence, @tgdb_search_bot and @SpyFreeRobot offer capabilities no web search can match. The best choice depends on your task: use @ribot for general web queries, and complement it with specialized bots for Telegram data or media. Together, they cover the full spectrum of search needs on the platform.</p>
+    <h2>Search Bots on Telegram: Finding Information in a World of Chat</h2>
+
+<p>Telegram bots have evolved far beyond simple commands. In the "search" category, bots help users find everything from web results and user data to media and deleted messages. While some focus on general internet search, others specialize in Telegram-specific intelligence, music, or privacy monitoring. This article compares the "Google" bot (@ribot) with five other popular search-oriented bots to help you choose the right tool for your needs.</p>
+
+<h3>Overview of Search Telegram Bots</h3>
+
+<p>Search bots on Telegram typically fall into two camps: those that query external services (like Google or music databases) and those that mine Telegram's own ecosystem (user info, group activity, deleted messages). The "Google" bot (@ribot) belongs to the first group, offering direct web search results. Others, like @SpyFreeRobot and @tgdb_search_bot, focus on Telegram-specific data, while @Melodinbot targets media downloads.</p>
+
+<h3>How @ribot Compares to Other Search Bots</h3>
+
+<p>@ribot is straightforward: you send a query, and it returns Google search results. It's a no-frills tool for finding web pages, news, or images. In contrast, @SpyFreeRobot monitors message edits and deletions, @idstracebot reveals user account creation dates, and @tgdb_search_bot shows which public groups a user is active in. @Melodinbot specializes in music and Instagram media. Each bot serves a different niche, but @ribot is the only one that provides general web search directly from Google.</p>
+
+<h3>Key Strengths and Unique Features of @ribot</h3>
+
+<ul>
+<li><strong>Direct Google Integration</strong>: @ribot uses Google's search engine, giving you familiar, high-quality results.</li>
+<li><strong>Simplicity</strong>: No registration, no complex commands—just send a query and get links.</li>
+<li><strong>Privacy-Focused</strong>: No tracking of your search history or personal data (unlike some browser-based searches).</li>
+<li><strong>Speed</strong>: Results appear instantly in chat, without leaving Telegram.</li>
+</ul>
+
+<p>Its main limitation is that it only returns basic search results—no image previews, news snippets, or advanced filtering. For deeper Telegram-specific data, you need other bots.</p>
+
+<h3>Comparison Table: @ribot vs. Similar Bots</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Unique Selling Point</th>
+  <th>Rating</th>
+  <th>Votes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@ribot</td>
+  <td>Google web search</td>
+  <td>Direct Google results in chat</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+<tr>
+  <td>@SpyFreeRobot</td>
+  <td>Monitor deleted/edited messages</td>
+  <td>Save self-destructible media</td>
+  <td>5.0/5</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>Retrieve Telegram user info</td>
+  <td>Shows account creation date</td>
+  <td>5.0/5</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>@tgdb_search_bot</td>
+  <td>Find user's public groups</td>
+  <td>/Where command for group activity</td>
+  <td>5.0/5</td>
+  <td>180/157</td>
+</tr>
+<tr>
+  <td>@Melodinbot</td>
+  <td>Music &amp; Instagram downloader</td>
+  <td>Search and download media</td>
+  <td>5.0/5</td>
+  <td>27</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @ribot</strong> if you need quick web search results without leaving Telegram. Ideal for finding articles, websites, or answers during conversations.</li>
+<li><strong>Choose @SpyFreeRobot</strong> if you want to monitor message edits or deletions in groups, or recover self-destructing media.</li>
+<li><strong>Choose @idstracebot</strong> for verifying user accounts—useful for moderators or investigating suspicious profiles.</li>
+<li><strong>Choose @tgdb_search_bot</strong> to discover which public groups a user participates in, helpful for community management or background checks.</li>
+<li><strong>Choose @Melodinbot</strong> for downloading music or Instagram content directly to your device.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@ribot earns its place as a simple, effective web search tool, but it's not a Swiss Army knife. For Telegram-specific intelligence, @tgdb_search_bot and @SpyFreeRobot offer capabilities no web search can match. The best choice depends on your task: use @ribot for general web queries, and complement it with specialized bots for Telegram data or media. Together, they cover the full spectrum of search needs on the platform.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-10</div>
 </div>

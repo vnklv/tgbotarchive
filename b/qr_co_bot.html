@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -116,14 +127,114 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>QR Code Bots on Telegram: A Comparison of Top Options</h2><p>QR code bots on Telegram allow users to generate scannable QR codes from text, links, or other data directly within the messaging app. Some also offer scanning capabilities, reading QR codes from images. This category includes both simple generators and more feature-rich tools. Below, we compare the main bot, **Qr Code Bot ~ 🔴Flagged as offline** (@qr_co_bot), with its key competitors.</p><h2>Overview of @qr_co_bot</h2><p>@qr_co_bot is a straightforward QR code generator that converts any inputted text into a QR code. However, it is currently flagged as offline, which may affect its reliability. It lacks advanced features like scanning or customization, making it a basic tool for quick generation.</p><h2>How @qr_co_bot Compares to Others</h2><ul><li>**@qrgenerobot** (5.0/5, 5874 votes) – The most popular option, offering both generation and scanning. Simply send text to generate a QR code or a photo to scan one. Highly rated and reliable.</li><li>**@QRutilityBot** (5.0/5, 1219 votes) – A dedicated generator with a focus on simplicity. No scanning feature, but consistent performance.</li><li>**@QrCodeMakerRobot** (5.0/5, 1 vote) – Similar basic generation, but with low user feedback. May lack polish.</li><li>**@QRG_Bot** (5.0/5, 40 votes) – Another dual-function bot (generate and read), currently flagged as offline like @qr_co_bot.</li><li>**@idstracebot** (5.0/5, 1 vote) – Not a QR code bot; it retrieves user info from Telegram (ID, name, etc.). Included in the category but serves a different purpose.</li></ul><h2>Key Strengths and Unique Features of @qr_co_bot</h2><ul><li>**Simplicity**: No extra steps—just input text and get a QR code.</li><li>**No frills**: Ideal for users who want a minimal interface without scanning or customization.</li><li>**Potential for offline use**: If it comes back online, it could be a reliable fallback.</li></ul><p>However, its &quot;flagged as offline&quot; status is a major drawback, and it lacks scanning, customization (colors, logos), or batch generation found in competitors.</p><h2>Comparison Table</h2><p>| Bot Name | Rating | Votes | Generation | Scanning | Offline Status |
-|----------|--------|-------|------------|----------|----------------|
-| @qr_co_bot | N/A | N/A | Yes | No | Yes (flagged) |
-| @qrgenerobot | 5.0 | 5874 | Yes | Yes | No |
-| @QRutilityBot | 5.0 | 1219 | Yes | No | No |
-| @QrCodeMakerRobot | 5.0 | 1 | Yes | No | No |
-| @QRG_Bot | 5.0 | 40 | Yes | Yes | Yes (flagged) |
-| @idstracebot | 5.0 | 1 | No | No | No (different use) |</p><h2>Recommendations</h2><ul><li>**Choose @qr_co_bot if**: It becomes online again and you need a dead-simple generator without extra features. Currently, avoid due to offline status.</li><li>**Choose @qrgenerobot for**: Best all-around tool with generation, scanning, and high user trust. Ideal for most users.</li><li>**Choose @QRutilityBot for**: Reliable generation without scanning, especially if you prefer a bot with no offline flags.</li><li>**Choose @QrCodeMakerRobot for**: A basic generator, but low feedback suggests limited testing.</li><li>**Choose @QRG_Bot for**: Dual function if it comes back online; otherwise, skip.</li><li>**Choose @idstracebot for**: Non-QR tasks like retrieving Telegram user info.</li></ul><h2>Final Thoughts</h2><p>QR code bots are simple yet useful tools, but reliability matters most. With @qr_co_bot and @QRG_Bot flagged as offline, @qrgenerobot emerges as the clear leader with robust features and community approval. For pure generation without scanning, @QRutilityBot is a solid alternative. Always check a bot&#x27;s online status before relying on it for important tasks.</p>
+    <h2>QR Code Bots on Telegram: A Comparison of Top Options</h2>
+
+<p>QR code bots on Telegram allow users to generate scannable QR codes from text, links, or other data directly within the messaging app. Some also offer scanning capabilities, reading QR codes from images. This category includes both simple generators and more feature-rich tools. Below, we compare the main bot, <strong>Qr Code Bot ~ 🔴Flagged as offline</strong> (@qr_co_bot), with its key competitors.</p>
+
+<h2>Overview of @qr_co_bot</h2>
+
+<p>@qr_co_bot is a straightforward QR code generator that converts any inputted text into a QR code. However, it is currently flagged as offline, which may affect its reliability. It lacks advanced features like scanning or customization, making it a basic tool for quick generation.</p>
+
+<h2>How @qr_co_bot Compares to Others</h2>
+
+<ul>
+<li><strong>@qrgenerobot</strong> (5.0/5, 5874 votes) – The most popular option, offering both generation and scanning. Simply send text to generate a QR code or a photo to scan one. Highly rated and reliable.</li>
+<li><strong>@QRutilityBot</strong> (5.0/5, 1219 votes) – A dedicated generator with a focus on simplicity. No scanning feature, but consistent performance.</li>
+<li><strong>@QrCodeMakerRobot</strong> (5.0/5, 1 vote) – Similar basic generation, but with low user feedback. May lack polish.</li>
+<li><strong>@QRG_Bot</strong> (5.0/5, 40 votes) – Another dual-function bot (generate and read), currently flagged as offline like @qr_co_bot.</li>
+<li><strong>@idstracebot</strong> (5.0/5, 1 vote) – Not a QR code bot; it retrieves user info from Telegram (ID, name, etc.). Included in the category but serves a different purpose.</li>
+</ul>
+
+<h2>Key Strengths and Unique Features of @qr_co_bot</h2>
+
+<ul>
+<li><strong>Simplicity</strong>: No extra steps—just input text and get a QR code.</li>
+<li><strong>No frills</strong>: Ideal for users who want a minimal interface without scanning or customization.</li>
+<li><strong>Potential for offline use</strong>: If it comes back online, it could be a reliable fallback.</li>
+</ul>
+
+<p>However, its "flagged as offline" status is a major drawback, and it lacks scanning, customization (colors, logos), or batch generation found in competitors.</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Rating</th>
+  <th>Votes</th>
+  <th>Generation</th>
+  <th>Scanning</th>
+  <th>Offline Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@qr_co_bot</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes (flagged)</td>
+</tr>
+<tr>
+  <td>@qrgenerobot</td>
+  <td>5.0</td>
+  <td>5874</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@QRutilityBot</td>
+  <td>5.0</td>
+  <td>1219</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@QrCodeMakerRobot</td>
+  <td>5.0</td>
+  <td>1</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@QRG_Bot</td>
+  <td>5.0</td>
+  <td>40</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes (flagged)</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>5.0</td>
+  <td>1</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No (different use)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Recommendations</h2>
+
+<ul>
+<li><strong>Choose @qr_co_bot if</strong>: It becomes online again and you need a dead-simple generator without extra features. Currently, avoid due to offline status.</li>
+<li><strong>Choose @qrgenerobot for</strong>: Best all-around tool with generation, scanning, and high user trust. Ideal for most users.</li>
+<li><strong>Choose @QRutilityBot for</strong>: Reliable generation without scanning, especially if you prefer a bot with no offline flags.</li>
+<li><strong>Choose @QrCodeMakerRobot for</strong>: A basic generator, but low feedback suggests limited testing.</li>
+<li><strong>Choose @QRG_Bot for</strong>: Dual function if it comes back online; otherwise, skip.</li>
+<li><strong>Choose @idstracebot for</strong>: Non-QR tasks like retrieving Telegram user info.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>QR code bots are simple yet useful tools, but reliability matters most. With @qr_co_bot and @QRG_Bot flagged as offline, @qrgenerobot emerges as the clear leader with robust features and community approval. For pure generation without scanning, @QRutilityBot is a solid alternative. Always check a bot's online status before relying on it for important tasks.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-13</div>
 </div>

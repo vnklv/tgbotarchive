@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -122,14 +133,99 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Notes Bots on Telegram: A Comparison of @CNRTbot and Its Rivals</h2><p>Telegram bots that handle notes, messages, and reminders are a popular category, helping users organize information, save snippets, or even send hidden messages. Among them, **@CNRTbot** (Can Not Read This) stands out for its unique twist: it allows you to send messages in groups that everyone except selected people can read. This article compares @CNRTbot with five similar bots, examining their features, strengths, and ideal use cases.</p><p>### Overview of Notes Bots</p><p>Notes bots typically let you save text, files, or reminders, often with inline mode for quick access in any chat. Some focus on personal organization, while others enable sharing or privacy controls. @CNRTbot takes a different approach by targeting group communication with selective visibility, making it more of a &quot;secret message&quot; tool than a classic note keeper.</p><p>### How @CNRTbot Compares</p><p>@CNRTbot’s core feature—sending messages in groups that are visible to all but a chosen few—sets it apart from traditional notes bots. While others like @pboxbot and @promemoriadccbot focus on personal storage and reminders, @CNRTbot is designed for group dynamics. However, its status is flagged as &quot;offline,&quot; which may limit reliability. In contrast, @pboxbot (with over 500,000 votes and a 5.0 rating) is highly active and trusted.</p><p>### Key Strengths and Unique Features of @CNRTbot</p><ul><li>**Selective visibility**: Messages can be hidden from specific users in a group, useful for inside jokes or sensitive info.</li><li>**Group-focused**: Unlike most notes bots that are personal, this one thrives in community settings.</li><li>**Simplicity**: No complex setup—just add it to a group and use commands.</li></ul><p>However, its offline flag is a major drawback, as it may not function reliably. Other bots offer more consistent uptime.</p><p>### Comparison Table</p><p>| Bot | Primary Use | Unique Feature | Rating | Active? |
-|-----|-------------|----------------|--------|---------|
-| @CNRTbot | Selective group messages | Hide messages from chosen users | Not rated | Offline |
-| @ntosbot | Save &amp; send via inline | Handy replies, business cards | 5.0/5 (1 vote) | Likely active |
-| @ManageNotesBot | Save &amp; manage notes | Secure and easy | 5.0/5 (1 vote) | Likely active |
-| @pboxbot | Save notes, messages, files | High popularity, reliable | 5.0/5 (503k votes) | Active |
-| @OrganizerX_Bot | Structure information | Quick access to data | 4.1/5 (1 vote) | Offline |
-| @promemoriadccbot | Notes &amp; reminders | Large user base | 3.7/5 (474k votes) | Active |</p><p>### Recommendations on When to Choose Each Bot</p><ul><li>**@CNRTbot**: Best for group admins who want to share secret messages or hide content from specific members. Only consider if it comes back online.</li><li>**@ntosbot**: Ideal for power users who need to quickly send saved notes, contacts, or media via inline mode in any chat.</li><li>**@ManageNotesBot**: Good for basic, secure note-taking without extra features. Suitable for privacy-conscious users.</li><li>**@pboxbot**: The top choice for general note and file saving, thanks to its massive user base and high rating. Reliable and versatile.</li><li>**@OrganizerX_Bot**: Useful for structuring information (e.g., to-do lists), but currently offline—check for updates.</li><li>**@promemoriadccbot**: Perfect for setting reminders alongside notes, with a proven track record from hundreds of thousands of users.</li></ul><p>In summary, @CNRTbot offers a unique concept for group secrecy, but its offline status makes it risky. For reliable note management, @pboxbot or @promemoriadccbot are safer bets. If you need selective visibility, keep an eye on @CNRTbot’s return—or explore other privacy-focused bots.</p>
+    <h2>Notes Bots on Telegram: A Comparison of @CNRTbot and Its Rivals</h2>
+
+<p>Telegram bots that handle notes, messages, and reminders are a popular category, helping users organize information, save snippets, or even send hidden messages. Among them, <strong>@CNRTbot</strong> (Can Not Read This) stands out for its unique twist: it allows you to send messages in groups that everyone except selected people can read. This article compares @CNRTbot with five similar bots, examining their features, strengths, and ideal use cases.</p>
+
+<h3>Overview of Notes Bots</h3>
+
+<p>Notes bots typically let you save text, files, or reminders, often with inline mode for quick access in any chat. Some focus on personal organization, while others enable sharing or privacy controls. @CNRTbot takes a different approach by targeting group communication with selective visibility, making it more of a "secret message" tool than a classic note keeper.</p>
+
+<h3>How @CNRTbot Compares</h3>
+
+<p>@CNRTbot’s core feature—sending messages in groups that are visible to all but a chosen few—sets it apart from traditional notes bots. While others like @pboxbot and @promemoriadccbot focus on personal storage and reminders, @CNRTbot is designed for group dynamics. However, its status is flagged as "offline," which may limit reliability. In contrast, @pboxbot (with over 500,000 votes and a 5.0 rating) is highly active and trusted.</p>
+
+<h3>Key Strengths and Unique Features of @CNRTbot</h3>
+
+<ul>
+<li><strong>Selective visibility</strong>: Messages can be hidden from specific users in a group, useful for inside jokes or sensitive info.</li>
+<li><strong>Group-focused</strong>: Unlike most notes bots that are personal, this one thrives in community settings.</li>
+<li><strong>Simplicity</strong>: No complex setup—just add it to a group and use commands.</li>
+</ul>
+
+<p>However, its offline flag is a major drawback, as it may not function reliably. Other bots offer more consistent uptime.</p>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Use</th>
+  <th>Unique Feature</th>
+  <th>Rating</th>
+  <th>Active?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@CNRTbot</td>
+  <td>Selective group messages</td>
+  <td>Hide messages from chosen users</td>
+  <td>Not rated</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@ntosbot</td>
+  <td>Save &amp; send via inline</td>
+  <td>Handy replies, business cards</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Likely active</td>
+</tr>
+<tr>
+  <td>@ManageNotesBot</td>
+  <td>Save &amp; manage notes</td>
+  <td>Secure and easy</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Likely active</td>
+</tr>
+<tr>
+  <td>@pboxbot</td>
+  <td>Save notes, messages, files</td>
+  <td>High popularity, reliable</td>
+  <td>5.0/5 (503k votes)</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@OrganizerX_Bot</td>
+  <td>Structure information</td>
+  <td>Quick access to data</td>
+  <td>4.1/5 (1 vote)</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@promemoriadccbot</td>
+  <td>Notes &amp; reminders</td>
+  <td>Large user base</td>
+  <td>3.7/5 (474k votes)</td>
+  <td>Active</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>@CNRTbot</strong>: Best for group admins who want to share secret messages or hide content from specific members. Only consider if it comes back online.</li>
+<li><strong>@ntosbot</strong>: Ideal for power users who need to quickly send saved notes, contacts, or media via inline mode in any chat.</li>
+<li><strong>@ManageNotesBot</strong>: Good for basic, secure note-taking without extra features. Suitable for privacy-conscious users.</li>
+<li><strong>@pboxbot</strong>: The top choice for general note and file saving, thanks to its massive user base and high rating. Reliable and versatile.</li>
+<li><strong>@OrganizerX_Bot</strong>: Useful for structuring information (e.g., to-do lists), but currently offline—check for updates.</li>
+<li><strong>@promemoriadccbot</strong>: Perfect for setting reminders alongside notes, with a proven track record from hundreds of thousands of users.</li>
+</ul>
+
+<p>In summary, @CNRTbot offers a unique concept for group secrecy, but its offline status makes it risky. For reliable note management, @pboxbot or @promemoriadccbot are safer bets. If you need selective visibility, keep an eye on @CNRTbot’s return—or explore other privacy-focused bots.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-28</div>
 </div>

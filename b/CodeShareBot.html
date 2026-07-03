@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -122,14 +133,109 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegraph Bots on Telegram: A Deep Dive into Code Sharing and Media Upload</h2><p>Telegram bots that utilize the Telegra.ph API have carved a unique niche, allowing users to instantly publish content—from code snippets and text to images, videos, and even lyrics—as clean, shareable web pages. These bots eliminate the need for a full blogging platform, offering a lightweight, anonymous way to share information. Among them, **CodeShare Bot** (@CodeShareBot) stands out with a focused purpose, though it currently carries a &quot;flagged as offline&quot; status. This article compares it to five other prominent telegraph bots, examining features, usability, and when each shines.</p><p>### What Do Telegraph Bots Do?</p><p>At their core, telegraph bots act as bridges between Telegram and Telegra.ph, a minimalist publishing tool by Telegram. Users send content (text, media, or links) to the bot, which then creates a formatted Telegra.ph page. The resulting link can be shared with anyone, even non-Telegram users. These bots vary in specialization: some handle code, others focus on media, and a few offer analytics or lyric extraction.</p><p>### CodeShare Bot: Features and Current Status</p><p>CodeShare Bot is designed specifically for sharing text or code. Its workflow is straightforward: start with `/start`, paste your content, then finalize with `/save`. This simplicity makes it ideal for developers or writers who need quick, uncluttered sharing. However, the bot is currently **flagged as offline**, meaning it may not respond to commands. This is a critical limitation, as users cannot reliably use it for real-time sharing.</p><ul><li>**Key strengths** of CodeShare Bot include:</li><li>**Code-friendly formatting**: Preserves indentation and syntax, unlike generic text bots.</li><li>**No frills**: No need to log in; just send and save.</li><li>**Privacy**: No account linking—perfect for one-off shares.</li></ul><p>But the offline flag significantly undermines its utility, making alternatives more attractive.</p><p>### Comparison with Similar Bots</p><p>Here’s how CodeShare Bot stacks up against its peers:</p><p>| Bot | Primary Function | Unique Feature | Rating (Votes) | Status |
-|------|------------------|----------------|----------------|--------|
-| @CodeShareBot | Share text/code | Code formatting, /save command | N/A | Offline |
-| @GetMediaLinkBot | Get Telegra.ph link from media | Direct media-to-link conversion | 5.0 (1) | Active |
-| @UploaderTelegraphBot | Upload GIFs, photos, videos | Multi-media support | 5.0 (1) | Offline |
-| @LyricsorBot | Get song lyrics as telegraph | Lyric extraction from artist/song | 5.0 (72M) | Active |
-| @TGraphProBot | Simple telegraph link uploader | Minimalist interface | 5.0 (1) | Offline |
-| @telegraph | Log in, manage articles, get stats | Full account management | 5.0 (1) | Active |</p><p>### Key Differences</p><ul><li>**CodeShare Bot vs. @GetMediaLinkBot**: CodeShare is for text/code; @GetMediaLinkBot handles media (videos, images, audio). Choose CodeShare for code snippets, @GetMediaLinkBot for sharing a funny video.</li><li>**CodeShare Bot vs. @UploaderTelegraphBot**: Both are offline, but @UploaderTelegraphBot focuses on media uploads. CodeShare is better for code, but neither is reliable now.</li><li>**CodeShare Bot vs. @LyricsorBot**: @LyricsorBot is a massive hit with 72 million votes, specializing in lyrics. CodeShare is niche—use it only for code/text, not lyrics.</li><li>**CodeShare Bot vs. @telegraph**: @telegraph offers full account integration (login, article management, stats). CodeShare is anonymous and simpler. Choose @telegraph if you need to track page views.</li></ul><p>### When to Choose Each Bot</p><ul><li>**CodeShare Bot** (if it comes back online): Best for developers or writers sharing raw code or long text without formatting issues. Avoid if you need reliability.</li><li>**@GetMediaLinkBot**: Ideal for quickly turning a photo or video into a shareable link. Works great for social media sharing.</li><li>**@UploaderTelegraphBot**: Similar to above but offline—skip until fixed.</li><li>**@LyricsorBot**: Perfect for music lovers wanting instant, clean lyrics. Its massive user base proves its reliability.</li><li>**@TGraphProBot**: Another offline media bot—choose only if it’s reactivated.</li><li>**@telegraph**: The go-to for power users who manage multiple articles or need analytics. Requires a Telegra.ph account.</li></ul><p>### Final Verdict</p><p>CodeShare Bot serves a clear, valuable purpose but is hamstrung by its offline status. For text/code sharing, it’s the best-in-class when functional—no other bot in this list offers code-specific formatting. However, until it’s restored, users should turn to @GetMediaLinkBot for media or @LyricsorBot for text-based content (though not code). The @telegraph bot remains the most versatile for long-term article management. In short, CodeShare Bot’s unique strength is its simplicity for code, but reliability issues make it a risky choice today.</p>
+    <h2>Telegraph Bots on Telegram: A Deep Dive into Code Sharing and Media Upload</h2>
+
+<p>Telegram bots that utilize the Telegra.ph API have carved a unique niche, allowing users to instantly publish content—from code snippets and text to images, videos, and even lyrics—as clean, shareable web pages. These bots eliminate the need for a full blogging platform, offering a lightweight, anonymous way to share information. Among them, <strong>CodeShare Bot</strong> (@CodeShareBot) stands out with a focused purpose, though it currently carries a "flagged as offline" status. This article compares it to five other prominent telegraph bots, examining features, usability, and when each shines.</p>
+
+<h3>What Do Telegraph Bots Do?</h3>
+
+<p>At their core, telegraph bots act as bridges between Telegram and Telegra.ph, a minimalist publishing tool by Telegram. Users send content (text, media, or links) to the bot, which then creates a formatted Telegra.ph page. The resulting link can be shared with anyone, even non-Telegram users. These bots vary in specialization: some handle code, others focus on media, and a few offer analytics or lyric extraction.</p>
+
+<h3>CodeShare Bot: Features and Current Status</h3>
+
+<p>CodeShare Bot is designed specifically for sharing text or code. Its workflow is straightforward: start with <code>/start</code>, paste your content, then finalize with <code>/save</code>. This simplicity makes it ideal for developers or writers who need quick, uncluttered sharing. However, the bot is currently <strong>flagged as offline</strong>, meaning it may not respond to commands. This is a critical limitation, as users cannot reliably use it for real-time sharing.</p>
+
+<p><strong>Key strengths</strong> of CodeShare Bot include:
+- <strong>Code-friendly formatting</strong>: Preserves indentation and syntax, unlike generic text bots.
+- <strong>No frills</strong>: No need to log in; just send and save.
+- <strong>Privacy</strong>: No account linking—perfect for one-off shares.</p>
+
+<p>But the offline flag significantly undermines its utility, making alternatives more attractive.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>Here’s how CodeShare Bot stacks up against its peers:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Unique Feature</th>
+  <th>Rating (Votes)</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@CodeShareBot</td>
+  <td>Share text/code</td>
+  <td>Code formatting, /save command</td>
+  <td>N/A</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@GetMediaLinkBot</td>
+  <td>Get Telegra.ph link from media</td>
+  <td>Direct media-to-link conversion</td>
+  <td>5.0 (1)</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@UploaderTelegraphBot</td>
+  <td>Upload GIFs, photos, videos</td>
+  <td>Multi-media support</td>
+  <td>5.0 (1)</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@LyricsorBot</td>
+  <td>Get song lyrics as telegraph</td>
+  <td>Lyric extraction from artist/song</td>
+  <td>5.0 (72M)</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@TGraphProBot</td>
+  <td>Simple telegraph link uploader</td>
+  <td>Minimalist interface</td>
+  <td>5.0 (1)</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@telegraph</td>
+  <td>Log in, manage articles, get stats</td>
+  <td>Full account management</td>
+  <td>5.0 (1)</td>
+  <td>Active</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Differences</h3>
+
+<ul>
+<li><strong>CodeShare Bot vs. @GetMediaLinkBot</strong>: CodeShare is for text/code; @GetMediaLinkBot handles media (videos, images, audio). Choose CodeShare for code snippets, @GetMediaLinkBot for sharing a funny video.</li>
+<li><strong>CodeShare Bot vs. @UploaderTelegraphBot</strong>: Both are offline, but @UploaderTelegraphBot focuses on media uploads. CodeShare is better for code, but neither is reliable now.</li>
+<li><strong>CodeShare Bot vs. @LyricsorBot</strong>: @LyricsorBot is a massive hit with 72 million votes, specializing in lyrics. CodeShare is niche—use it only for code/text, not lyrics.</li>
+<li><strong>CodeShare Bot vs. @telegraph</strong>: @telegraph offers full account integration (login, article management, stats). CodeShare is anonymous and simpler. Choose @telegraph if you need to track page views.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>CodeShare Bot</strong> (if it comes back online): Best for developers or writers sharing raw code or long text without formatting issues. Avoid if you need reliability.</li>
+<li><strong>@GetMediaLinkBot</strong>: Ideal for quickly turning a photo or video into a shareable link. Works great for social media sharing.</li>
+<li><strong>@UploaderTelegraphBot</strong>: Similar to above but offline—skip until fixed.</li>
+<li><strong>@LyricsorBot</strong>: Perfect for music lovers wanting instant, clean lyrics. Its massive user base proves its reliability.</li>
+<li><strong>@TGraphProBot</strong>: Another offline media bot—choose only if it’s reactivated.</li>
+<li><strong>@telegraph</strong>: The go-to for power users who manage multiple articles or need analytics. Requires a Telegra.ph account.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>CodeShare Bot serves a clear, valuable purpose but is hamstrung by its offline status. For text/code sharing, it’s the best-in-class when functional—no other bot in this list offers code-specific formatting. However, until it’s restored, users should turn to @GetMediaLinkBot for media or @LyricsorBot for text-based content (though not code). The @telegraph bot remains the most versatile for long-term article management. In short, CodeShare Bot’s unique strength is its simplicity for code, but reliability issues make it a risky choice today.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-07-01</div>
 </div>

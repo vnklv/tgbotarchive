@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -128,21 +139,163 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegram Bots with Buttons: A Comparison of Five Tools</h2><p>Telegram bots that utilize buttons (inline keyboards, custom keypads, or reaction buttons) are designed to enhance user interaction by providing clickable options, navigation, or quick actions within chats. These bots are popular for creating polls, menus, automated responses, or even complex bot frameworks. They vary widely in purpose—from simple post creation to full-fledged bot building. Below, we compare five bots in this category, with a focus on the offline but unique `@plant_based_food_bot`.</p><p>### Overview of the Five Bots</p><p>| Bot Name | Username | Status | Description | Rating | Votes |
-|----------|----------|--------|-------------|--------|-------|
-| Plant Based Food Bot | @plant_based_food_bot | 🔴 Offline | Helps decide what to cook with available ingredients | N/A | N/A |
-| PostOffBot | @PostOffBot | 🔴 Offline | Create posts with buttons and share in any chat | 5.0/5 | 2,105 |
-| Botoneras | @AJbuttons_bot | 🔴 Offline | Create and store keypads easily | 5.0/5 | 1 |
-| Menu Builder Bot | @menubuilderbot | Online | Create advanced bots with captcha, keyboards, variables | 5.0/5 | 16,132,998 |
-| Channel Buttons | @ChannelButtonsBot | 🔴 Offline | Create buttons for reactions, comments, links in channels | 5.0/5 | 1 |
-| ComenBot | @ComenBot | Online | Create messages with comments for channels or chats | 5.0/5 | 30,077 |</p><p>### How @plant_based_food_bot Compares</p><p>Unlike most bots in this category, `@plant_based_food_bot` is not a general-purpose button creator. Instead, it uses buttons as a means to an end: helping users decide what to cook based on ingredients they have. This makes it a niche tool for plant-based cooking enthusiasts. While other bots focus on building interactive posts, keypads, or complex bot features, this bot applies buttons to a specific real-world problem—meal planning.</p><p>The bot is currently flagged as offline, which limits its usefulness. However, its concept stands out because it integrates buttons with a decision-making algorithm, rather than just serving as a template for user-created buttons.</p><p>### Key Strengths and Unique Features of @plant_based_food_bot</p><ul><li>**Purpose-driven buttons**: Buttons are used to select ingredients or navigate cooking options, not just to create generic posts.</li><li>**Niche appeal**: Targets a specific audience (plant-based diet) with a practical utility.</li><li>**Simplicity**: Likely easy to use—input ingredients, get recipe suggestions via buttons.</li><li>**Potential for personalization**: Could be adapted for different dietary needs or ingredient databases.</li></ul><p>### Comparison Table: Core Differences</p><p>| Feature | @plant_based_food_bot | PostOffBot | Menu Builder Bot | ComenBot |
-|---------|-----------------------|------------|------------------|----------|
-| Primary Function | Cooking assistant | Post/button creation | Full bot builder | Comment-enabled posts |
-| Button Use | Ingredient selection &amp; navigation | Shareable posts with buttons | Custom &amp; inline keyboards | Comment buttons |
-| Target Audience | Plant-based cooks | General chat users | Bot developers | Channel admins |
-| Complexity | Low | Low | High | Medium |
-| Status | Offline | Offline | Online | Online |
-| Rating/Votes | N/A | 5.0/5 (2.1k votes) | 5.0/5 (16M votes) | 5.0/5 (30k votes) |</p><p>### Recommendations on When to Choose Each Bot</p><ul><li>**Choose @plant_based_food_bot if**: You are a plant-based cook looking for a simple, ingredient-driven recipe tool. However, since it’s offline, consider it only if it becomes active again.</li><li>**Choose PostOffBot if**: You need a straightforward way to create and share posts with buttons in any chat (e.g., polls, menus). It’s offline, but its high rating suggests reliability.</li><li>**Choose Menu Builder Bot if**: You want to build advanced bots with features like captcha, custom keyboards, and variables. It’s online and massively popular.</li><li>**Choose ComenBot if**: You manage a channel and want to add comment sections to your posts, with buttons for engagement.</li><li>**Choose Botoneras if**: You need a simple, offline tool to store and manage keypads (though limited votes and offline status make it risky).</li><li>**Choose Channel Buttons if**: You specifically need reaction, comment, or link buttons for Telegram channels (but offline with low votes).</li></ul><p>### Final Thoughts</p><p>While `@plant_based_food_bot` offers a refreshingly different take on buttons—focusing on a practical, food-related use case—its offline status severely hampers its utility. For general button creation, PostOffBot or ComenBot are more reliable (though offline), while Menu Builder Bot remains the gold standard for advanced bot development. If the plant-based bot returns online, it could fill a unique gap for cooking enthusiasts. Until then, users seeking functional button bots should lean toward the online options like Menu Builder Bot or ComenBot.</p>
+    <h2>Telegram Bots with Buttons: A Comparison of Five Tools</h2>
+
+<p>Telegram bots that utilize buttons (inline keyboards, custom keypads, or reaction buttons) are designed to enhance user interaction by providing clickable options, navigation, or quick actions within chats. These bots are popular for creating polls, menus, automated responses, or even complex bot frameworks. They vary widely in purpose—from simple post creation to full-fledged bot building. Below, we compare five bots in this category, with a focus on the offline but unique <code>@plant_based_food_bot</code>.</p>
+
+<h3>Overview of the Five Bots</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Username</th>
+  <th>Status</th>
+  <th>Description</th>
+  <th>Rating</th>
+  <th>Votes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Plant Based Food Bot</td>
+  <td>@plant_based_food_bot</td>
+  <td>🔴 Offline</td>
+  <td>Helps decide what to cook with available ingredients</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+<tr>
+  <td>PostOffBot</td>
+  <td>@PostOffBot</td>
+  <td>🔴 Offline</td>
+  <td>Create posts with buttons and share in any chat</td>
+  <td>5.0/5</td>
+  <td>2,105</td>
+</tr>
+<tr>
+  <td>Botoneras</td>
+  <td>@AJbuttons_bot</td>
+  <td>🔴 Offline</td>
+  <td>Create and store keypads easily</td>
+  <td>5.0/5</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>Menu Builder Bot</td>
+  <td>@menubuilderbot</td>
+  <td>Online</td>
+  <td>Create advanced bots with captcha, keyboards, variables</td>
+  <td>5.0/5</td>
+  <td>16,132,998</td>
+</tr>
+<tr>
+  <td>Channel Buttons</td>
+  <td>@ChannelButtonsBot</td>
+  <td>🔴 Offline</td>
+  <td>Create buttons for reactions, comments, links in channels</td>
+  <td>5.0/5</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>ComenBot</td>
+  <td>@ComenBot</td>
+  <td>Online</td>
+  <td>Create messages with comments for channels or chats</td>
+  <td>5.0/5</td>
+  <td>30,077</td>
+</tr>
+</tbody>
+</table>
+
+<h3>How @plant_based_food_bot Compares</h3>
+
+<p>Unlike most bots in this category, <code>@plant_based_food_bot</code> is not a general-purpose button creator. Instead, it uses buttons as a means to an end: helping users decide what to cook based on ingredients they have. This makes it a niche tool for plant-based cooking enthusiasts. While other bots focus on building interactive posts, keypads, or complex bot features, this bot applies buttons to a specific real-world problem—meal planning.</p>
+
+<p>The bot is currently flagged as offline, which limits its usefulness. However, its concept stands out because it integrates buttons with a decision-making algorithm, rather than just serving as a template for user-created buttons.</p>
+
+<h3>Key Strengths and Unique Features of @plant_based_food_bot</h3>
+
+<ul>
+<li><strong>Purpose-driven buttons</strong>: Buttons are used to select ingredients or navigate cooking options, not just to create generic posts.</li>
+<li><strong>Niche appeal</strong>: Targets a specific audience (plant-based diet) with a practical utility.</li>
+<li><strong>Simplicity</strong>: Likely easy to use—input ingredients, get recipe suggestions via buttons.</li>
+<li><strong>Potential for personalization</strong>: Could be adapted for different dietary needs or ingredient databases.</li>
+</ul>
+
+<h3>Comparison Table: Core Differences</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@plant_based_food_bot</th>
+  <th>PostOffBot</th>
+  <th>Menu Builder Bot</th>
+  <th>ComenBot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Primary Function</td>
+  <td>Cooking assistant</td>
+  <td>Post/button creation</td>
+  <td>Full bot builder</td>
+  <td>Comment-enabled posts</td>
+</tr>
+<tr>
+  <td>Button Use</td>
+  <td>Ingredient selection &amp; navigation</td>
+  <td>Shareable posts with buttons</td>
+  <td>Custom &amp; inline keyboards</td>
+  <td>Comment buttons</td>
+</tr>
+<tr>
+  <td>Target Audience</td>
+  <td>Plant-based cooks</td>
+  <td>General chat users</td>
+  <td>Bot developers</td>
+  <td>Channel admins</td>
+</tr>
+<tr>
+  <td>Complexity</td>
+  <td>Low</td>
+  <td>Low</td>
+  <td>High</td>
+  <td>Medium</td>
+</tr>
+<tr>
+  <td>Status</td>
+  <td>Offline</td>
+  <td>Offline</td>
+  <td>Online</td>
+  <td>Online</td>
+</tr>
+<tr>
+  <td>Rating/Votes</td>
+  <td>N/A</td>
+  <td>5.0/5 (2.1k votes)</td>
+  <td>5.0/5 (16M votes)</td>
+  <td>5.0/5 (30k votes)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @plant_based_food_bot if</strong>: You are a plant-based cook looking for a simple, ingredient-driven recipe tool. However, since it’s offline, consider it only if it becomes active again.</li>
+<li><strong>Choose PostOffBot if</strong>: You need a straightforward way to create and share posts with buttons in any chat (e.g., polls, menus). It’s offline, but its high rating suggests reliability.</li>
+<li><strong>Choose Menu Builder Bot if</strong>: You want to build advanced bots with features like captcha, custom keyboards, and variables. It’s online and massively popular.</li>
+<li><strong>Choose ComenBot if</strong>: You manage a channel and want to add comment sections to your posts, with buttons for engagement.</li>
+<li><strong>Choose Botoneras if</strong>: You need a simple, offline tool to store and manage keypads (though limited votes and offline status make it risky).</li>
+<li><strong>Choose Channel Buttons if</strong>: You specifically need reaction, comment, or link buttons for Telegram channels (but offline with low votes).</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>While <code>@plant_based_food_bot</code> offers a refreshingly different take on buttons—focusing on a practical, food-related use case—its offline status severely hampers its utility. For general button creation, PostOffBot or ComenBot are more reliable (though offline), while Menu Builder Bot remains the gold standard for advanced bot development. If the plant-based bot returns online, it could fill a unique gap for cooking enthusiasts. Until then, users seeking functional button bots should lean toward the online options like Menu Builder Bot or ComenBot.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-23</div>
 </div>

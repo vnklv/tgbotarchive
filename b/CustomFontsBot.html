@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,12 +130,81 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegram Font Bots: A Comparative Overview</h2><p>Telegram font bots allow users to transform plain text into stylized versions—circled, reversed, small caps, strikethrough, and more—using Unicode characters. These bots work primarily via inline mode, letting you apply fonts directly in any chat without leaving the conversation. While many bots exist, their reliability, features, and user ratings vary significantly. This article compares **CustomFonts Bot** (@CustomFontsBot) with three similar bots in the “fonts” category.</p><p>### The Main Bot: @CustomFontsBot</p><p>**CustomFonts Bot** is described as a simple bot for writing Telegram messages with different fonts. It is currently flagged as offline, which may limit its usefulness. The bot’s core function is straightforward: generate styled text for messages. However, its offline status raises concerns about availability and future support.</p><p>### Comparison with Similar Bots</p><p>Below is a comparison of @CustomFontsBot with three other font bots, based on functionality, user ratings, and unique features.</p><p>| Bot | Rating | Votes | Status | Key Features |
-|-----|--------|-------|--------|--------------|
-| @CustomFontsBot | N/A | N/A | Offline | Simple font generation |
-| @cooltxbot | 5.0/5 | 1 | Online | Inline mode, cool fonts |
-| @EK_Font_Gen_Bot | 5.0/5 | 825M | Offline | Large user base, many fonts |
-| @typerobot | 1.0/5 | 3.2M | Offline | Circled, reversed, small caps, etc. |</p><p>### Key Strengths and Unique Features</p><ul><li>**@CustomFontsBot**: Its simplicity is its main asset—no bloat, just basic font transformation. However, being offline means it offers no current utility.</li><li>**@cooltxbot**: Despite only 1 vote, it boasts a perfect rating and is online. Its inline mode is seamless, making it ideal for quick use.</li><li>**@EK_Font_Gen_Bot**: With over 825 million votes, it has massive popularity and likely a wide font library. Its offline status, however, undermines its reliability.</li><li>**@typerobot**: Offers diverse styles (circled, reversed, strikethrough, small caps) but has a very low rating (1.0/5) and is offline, suggesting poor performance or user experience.</li></ul><p>### Recommendations</p><ul><li>**Choose @cooltxbot** if you need a reliable, online bot with inline support and high user satisfaction (even with few votes). It’s the safest bet for active use.</li><li>**Avoid @CustomFontsBot, @EK_Font_Gen_Bot, and @typerobot** for now, as all are flagged offline. Their features are irrelevant if the bot cannot respond.</li><li>**If offline bots return**, @EK_Font_Gen_Bot would be ideal for volume and variety, while @typerobot suits those needing specific styles like reversed or circled text.</li></ul><p>### Final Thoughts</p><p>The font bot category is dominated by offline bots, making @cooltxbot the only reliable option currently. For users seeking simplicity, @CustomFontsBot could have been a contender, but its offline status renders it useless. Always check a bot’s online status before relying on it, as many promising tools are abandoned. For now, stick with @cooltxbot for consistent font styling on Telegram.</p>
+    <h2>Telegram Font Bots: A Comparative Overview</h2>
+
+<p>Telegram font bots allow users to transform plain text into stylized versions—circled, reversed, small caps, strikethrough, and more—using Unicode characters. These bots work primarily via inline mode, letting you apply fonts directly in any chat without leaving the conversation. While many bots exist, their reliability, features, and user ratings vary significantly. This article compares <strong>CustomFonts Bot</strong> (@CustomFontsBot) with three similar bots in the “fonts” category.</p>
+
+<h3>The Main Bot: @CustomFontsBot</h3>
+
+<p><strong>CustomFonts Bot</strong> is described as a simple bot for writing Telegram messages with different fonts. It is currently flagged as offline, which may limit its usefulness. The bot’s core function is straightforward: generate styled text for messages. However, its offline status raises concerns about availability and future support.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>Below is a comparison of @CustomFontsBot with three other font bots, based on functionality, user ratings, and unique features.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Rating</th>
+  <th>Votes</th>
+  <th>Status</th>
+  <th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@CustomFontsBot</td>
+  <td>N/A</td>
+  <td>N/A</td>
+  <td>Offline</td>
+  <td>Simple font generation</td>
+</tr>
+<tr>
+  <td>@cooltxbot</td>
+  <td>5.0/5</td>
+  <td>1</td>
+  <td>Online</td>
+  <td>Inline mode, cool fonts</td>
+</tr>
+<tr>
+  <td>@EK_Font_Gen_Bot</td>
+  <td>5.0/5</td>
+  <td>825M</td>
+  <td>Offline</td>
+  <td>Large user base, many fonts</td>
+</tr>
+<tr>
+  <td>@typerobot</td>
+  <td>1.0/5</td>
+  <td>3.2M</td>
+  <td>Offline</td>
+  <td>Circled, reversed, small caps, etc.</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths and Unique Features</h3>
+
+<ul>
+<li><strong>@CustomFontsBot</strong>: Its simplicity is its main asset—no bloat, just basic font transformation. However, being offline means it offers no current utility.</li>
+<li><strong>@cooltxbot</strong>: Despite only 1 vote, it boasts a perfect rating and is online. Its inline mode is seamless, making it ideal for quick use.</li>
+<li><strong>@EK_Font_Gen_Bot</strong>: With over 825 million votes, it has massive popularity and likely a wide font library. Its offline status, however, undermines its reliability.</li>
+<li><strong>@typerobot</strong>: Offers diverse styles (circled, reversed, strikethrough, small caps) but has a very low rating (1.0/5) and is offline, suggesting poor performance or user experience.</li>
+</ul>
+
+<h3>Recommendations</h3>
+
+<ul>
+<li><strong>Choose @cooltxbot</strong> if you need a reliable, online bot with inline support and high user satisfaction (even with few votes). It’s the safest bet for active use.</li>
+<li><strong>Avoid @CustomFontsBot, @EK_Font_Gen_Bot, and @typerobot</strong> for now, as all are flagged offline. Their features are irrelevant if the bot cannot respond.</li>
+<li><strong>If offline bots return</strong>, @EK_Font_Gen_Bot would be ideal for volume and variety, while @typerobot suits those needing specific styles like reversed or circled text.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>The font bot category is dominated by offline bots, making @cooltxbot the only reliable option currently. For users seeking simplicity, @CustomFontsBot could have been a contender, but its offline status renders it useless. Always check a bot’s online status before relying on it, as many promising tools are abandoned. For now, stick with @cooltxbot for consistent font styling on Telegram.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-30</div>
 </div>

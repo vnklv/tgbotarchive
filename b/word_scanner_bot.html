@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -124,14 +135,117 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>The Finder Bot Landscape: How word_scanner_bot Stands Out</h2><p>In the bustling ecosystem of Telegram, &quot;finder&quot; bots have carved a niche by helping users locate specific information—from vehicle details and caller identities to media and chat messages. These bots automate the search process, saving time in high-volume environments. Among them, @word_scanner_bot offers a unique twist: instead of searching static databases, it monitors live conversations for keywords you define, then forwards matching messages to you. This sets it apart from most competitors, which focus on querying external data sources.</p><h2>How word_scanner_bot Compares to Similar Bots</h2><p>The finder category is diverse, but @word_scanner_bot occupies a distinct space: real-time chat monitoring. Here’s how it stacks up against peers:</p><ul><li>**@Vechile_Info_Finder_bot** (Rating: 5.0/5, 67,816 votes) – Excels at retrieving vehicle details from registration numbers. It’s a one-query tool, not a monitor.</li><li>**@mysearch** (Rating: 1.0/5, 3,942 votes) – Searches public groups, channels, videos, and music. Broad but poorly rated.</li><li>**@truecaller_legalbot** (Rating: 1.0/5, 321,256 votes) – Fetches caller details for Indian numbers. High usage but low satisfaction.</li><li>**@ShazamioROBOT** (Rating: 1.0/5, 1 vote) – Identifies music tracks. Niche and virtually untested.</li><li>**@TGBMovieSearch_bot** (Rating: 1.0/5, 1 vote) – Provides movie info and facts. Similarly niche.</li></ul><p>Unlike these, @word_scanner_bot doesn’t rely on a pre-built database. It listens to chats you specify and alerts you when a keyword appears—ideal for tracking mentions in busy groups or channels.</p><h2>Key Strengths and Unique Features of word_scanner_bot</h2><ul><li>**Real-time keyword monitoring** – Set multiple keywords and bot will resend any matching message from target chats. No other bot in this list offers live scanning.</li><li>**Customizable chat selection** – You choose which groups or channels to monitor, giving control over noise levels.</li><li>**Forwarding capability** – Instead of just notifications, it resends the exact message, preserving context.</li><li>**Use case focus** – Perfect for moderators, researchers, or anyone tracking discussions in high-activity chats (e.g., crypto groups, support channels, news feeds).</li></ul><p>Its main limitation: it doesn’t search historical data or external sources—only future messages.</p><h2>Comparison Table</h2><p>| Feature | word_scanner_bot | Vechile_Info_Finder_bot | mysearch | truecaller_legalbot | ShazamioROBOT | TGBMovieSearch_bot |
-|---------|------------------|--------------------------|----------|---------------------|---------------|-------------------|
-| **Primary Function** | Monitor chats for keywords | Vehicle info by plate | Search groups/media | Caller ID for India | Music recognition | Movie details |
-| **Real-time Monitoring** | Yes | No | No | No | No | No |
-| **External Database** | No (in-chat only) | Yes | Yes | Yes | Yes | Yes |
-| **Rating** | N/A | 5.0/5 | 1.0/5 | 1.0/5 | 1.0/5 | 1.0/5 |
-| **Votes** | N/A | 67,816 | 3,942 | 321,256 | 1 | 1 |
-| **Unique Strength** | Live keyword alerts | High accuracy &amp; volume | Broad search scope | Large user base | Simple music ID | Niche movie data |</p><h2>When to Choose Each Bot</h2><ul><li>**Choose @word_scanner_bot** if you need to track specific terms in active Telegram chats—for instance, monitoring a support group for “urgent” mentions or following brand discussions in a large community. It’s the only bot that acts as a live filter.</li><li>**Choose @Vechile_Info_Finder_bot** for instant vehicle registration lookups. Its stellar rating and massive vote count make it the go-to for this narrow task.</li><li>**Avoid @mysearch, @truecaller_legalbot, @ShazamioROBOT, and @TGBMovieSearch_bot** unless you have very specific needs—their low ratings suggest poor reliability or user experience. For music or movie searches, dedicated bots like @SongIDBot or @IMDbBot are better alternatives.</li></ul><p>In summary, @word_scanner_bot fills a gap that other finders ignore: proactive, keyword-driven monitoring. While it won’t replace database queries, it’s indispensable for anyone drowning in chat noise who needs to catch critical messages.</p>
+    <h2>The Finder Bot Landscape: How word_scanner_bot Stands Out</h2>
+
+<p>In the bustling ecosystem of Telegram, "finder" bots have carved a niche by helping users locate specific information—from vehicle details and caller identities to media and chat messages. These bots automate the search process, saving time in high-volume environments. Among them, @word_scanner_bot offers a unique twist: instead of searching static databases, it monitors live conversations for keywords you define, then forwards matching messages to you. This sets it apart from most competitors, which focus on querying external data sources.</p>
+
+<h2>How word_scanner_bot Compares to Similar Bots</h2>
+
+<p>The finder category is diverse, but @word_scanner_bot occupies a distinct space: real-time chat monitoring. Here’s how it stacks up against peers:</p>
+
+<ul>
+<li><strong>@Vechile_Info_Finder_bot</strong> (Rating: 5.0/5, 67,816 votes) – Excels at retrieving vehicle details from registration numbers. It’s a one-query tool, not a monitor.</li>
+<li><strong>@mysearch</strong> (Rating: 1.0/5, 3,942 votes) – Searches public groups, channels, videos, and music. Broad but poorly rated.</li>
+<li><strong>@truecaller_legalbot</strong> (Rating: 1.0/5, 321,256 votes) – Fetches caller details for Indian numbers. High usage but low satisfaction.</li>
+<li><strong>@ShazamioROBOT</strong> (Rating: 1.0/5, 1 vote) – Identifies music tracks. Niche and virtually untested.</li>
+<li><strong>@TGBMovieSearch_bot</strong> (Rating: 1.0/5, 1 vote) – Provides movie info and facts. Similarly niche.</li>
+</ul>
+
+<p>Unlike these, @word_scanner_bot doesn’t rely on a pre-built database. It listens to chats you specify and alerts you when a keyword appears—ideal for tracking mentions in busy groups or channels.</p>
+
+<h2>Key Strengths and Unique Features of word_scanner_bot</h2>
+
+<ul>
+<li><strong>Real-time keyword monitoring</strong> – Set multiple keywords and bot will resend any matching message from target chats. No other bot in this list offers live scanning.</li>
+<li><strong>Customizable chat selection</strong> – You choose which groups or channels to monitor, giving control over noise levels.</li>
+<li><strong>Forwarding capability</strong> – Instead of just notifications, it resends the exact message, preserving context.</li>
+<li><strong>Use case focus</strong> – Perfect for moderators, researchers, or anyone tracking discussions in high-activity chats (e.g., crypto groups, support channels, news feeds).</li>
+</ul>
+
+<p>Its main limitation: it doesn’t search historical data or external sources—only future messages.</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>word_scanner_bot</th>
+  <th>Vechile_Info_Finder_bot</th>
+  <th>mysearch</th>
+  <th>truecaller_legalbot</th>
+  <th>ShazamioROBOT</th>
+  <th>TGBMovieSearch_bot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>Monitor chats for keywords</td>
+  <td>Vehicle info by plate</td>
+  <td>Search groups/media</td>
+  <td>Caller ID for India</td>
+  <td>Music recognition</td>
+  <td>Movie details</td>
+</tr>
+<tr>
+  <td><strong>Real-time Monitoring</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>External Database</strong></td>
+  <td>No (in-chat only)</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+</tr>
+<tr>
+  <td><strong>Votes</strong></td>
+  <td>N/A</td>
+  <td>67,816</td>
+  <td>3,942</td>
+  <td>321,256</td>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td><strong>Unique Strength</strong></td>
+  <td>Live keyword alerts</td>
+  <td>High accuracy &amp; volume</td>
+  <td>Broad search scope</td>
+  <td>Large user base</td>
+  <td>Simple music ID</td>
+  <td>Niche movie data</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @word_scanner_bot</strong> if you need to track specific terms in active Telegram chats—for instance, monitoring a support group for “urgent” mentions or following brand discussions in a large community. It’s the only bot that acts as a live filter.</li>
+<li><strong>Choose @Vechile_Info_Finder_bot</strong> for instant vehicle registration lookups. Its stellar rating and massive vote count make it the go-to for this narrow task.</li>
+<li><strong>Avoid @mysearch, @truecaller_legalbot, @ShazamioROBOT, and @TGBMovieSearch_bot</strong> unless you have very specific needs—their low ratings suggest poor reliability or user experience. For music or movie searches, dedicated bots like @SongIDBot or @IMDbBot are better alternatives.</li>
+</ul>
+
+<p>In summary, @word_scanner_bot fills a gap that other finders ignore: proactive, keyword-driven monitoring. While it won’t replace database queries, it’s indispensable for anyone drowning in chat noise who needs to catch critical messages.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-17</div>
 </div>

@@ -29,11 +29,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .tag-intro { color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
 .count { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
-.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-.tag-article h2 { color: #6c63ff; font-size: 1.1rem; margin-bottom: 0.8rem; }
-.tag-article p { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.5rem; }
-.tag-article ul { margin: 0.4rem 0 0.4rem 1.2rem; }
-.tag-article li { color: #c0c0d0; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.tag-layout { display: flex; gap: 1.5rem; align-items: flex-start; }
+.tag-layout-left { flex: 0 0 340px; min-width: 280px; max-width: 100%; }
+.tag-layout-left:empty { display: none; }
+.tag-layout-right { flex: 1; min-width: 0; }
+.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1rem; }
+.tag-article h2 { color: #6c63ff; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tag-article-content { color: #c0c0d0; font-size: 0.85rem; line-height: 1.7; }
+.tag-article-content p { margin-bottom: 0.5rem; }
+.tag-article-content h2 { color: #d0d0e0; font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+.tag-article-content h3 { color: #c8c8d8; font-size: 0.92rem; margin: 0.5rem 0 0.3rem; }
+.tag-article-content ul { margin: 0.3rem 0 0.3rem 1rem; }
+.tag-article-content ol { margin: 0.3rem 0 0.3rem 1.2rem; }
+.tag-article-content li { margin-bottom: 0.15rem; }
+.tag-article-content table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.78rem; }
+.tag-article-content th, .tag-article-content td { border: 1px solid #3a3a5a; padding: 0.3rem 0.4rem; text-align: left; }
+.tag-article-content th { background: #2a2a4a; color: #d0d0e0; font-weight: 600; }
+.tag-article-content tr:nth-child(even) td { background: #1e1e32; }
+.tag-article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.25rem; border-radius: 3px; font-size: 0.85em; }
+.tag-article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.6rem; overflow-x: auto; margin: 0.5rem 0; }
+@media (max-width: 768px) {
+  .tag-layout { flex-direction: column; gap: 1rem; }
+  .tag-layout-left { flex: none; width: 100%; min-width: 0; }
+}
 .bot-item { background: #1a1a2e; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; border: 1px solid #2a2a4a; }
 .bot-item:hover { border-color: #6c63ff; }
 .bot-name { color: #e8e8f0; font-size: 1rem; font-weight: 600; text-decoration: none; }
@@ -49,14 +67,20 @@ a { color: #6c63ff; }
 <h1>🤖 #youtube</h1>
 <div class="tag-intro">Telegram bots related to <strong>youtube</strong>. Browse <strong>83</strong> bots in this category, compare ratings, features, and languages.</div>
 
-
+<div class="tag-layout">
+  <div class="tag-layout-left">
+    
 <div class="tag-article">
   <h2>📖 About youtube Bots</h2>
-  <p>YouTube Telegram bots are specialized tools that allow users to interact with YouTube content directly from the Telegram messaging app, primarily focusing on downloading videos and audio, searching for content, and managing playlists. Their main purpose is to provide a convenient way to access and save YouTube media without needing to visit the YouTube website or use separate downloader apps. These bots work by parsing YouTube URLs or search queries, fetching metadata and media streams, and then delivering the requested content in a format chosen by the user. For example, YtConvertAudioBot can download music from YouTube along with Spotify, Deezer, and SoundCloud, converting videos to audio files. Honest Loader bots support downloading reels, videos, and photos from multiple platforms including YouTube, Instagram, TikTok, Twitter, Threads, and Facebook, with a focus on no ads and scams. Users can perform a wide range of actions: download YouTube videos in various resolutions and formats such as MP4, AVI, or MKV; extract audio tracks as MP3, FLAC, or M4A; search for videos by keyword and get a list of results with thumbnails and descriptions; download entire playlists or channels; convert videos to GIFs or other formats; and sometimes even upload directly to Telegram as files or streaming links. Some bots offer additional features like subtitle downloading, thumbnail extraction, and metadata editing. The category includes several variations. Audio-focused bots prioritize music and podcast downloads, often supporting multiple streaming services. Video downloaders emphasize high-resolution video capture, including 4K and 8K. Multi-platform bots extend support to other social media sites like Instagram, TikTok, and Facebook. Playlist downloaders allow batch processing of entire collections. Search bots help users find content across YouTube without leaving Telegram. Some bots also offer conversion between formats or compression options. When choosing the best YouTube bot, consider the platforms it supports: bots that cover multiple sites offer more versatility. Check the maximum resolution and file size limits. Evaluate the bot&#x27;s download speed and reliability, especially for large files. Look for bots that offer format selection and quality options. Verify that the bot does not contain malware or excessive ads, as some free bots may be monetized. Read user reviews to gauge performance and uptime. Consider privacy: choose bots that do not log your download history or require unnecessary permissions. Test the bot&#x27;s ability to handle playlists and long videos. Finally, ensure the bot is regularly updated to keep up with changes in YouTube&#x27;s API and encoding standards.</p>
-</div>
+  <div class="tag-article-content">
+    <p>YouTube Telegram bots are specialized tools that allow users to interact with YouTube content directly from the Telegram messaging app, primarily focusing on downloading videos and audio, searching for content, and managing playlists. Their main purpose is to provide a convenient way to access and save YouTube media without needing to visit the YouTube website or use separate downloader apps. These bots work by parsing YouTube URLs or search queries, fetching metadata and media streams, and then delivering the requested content in a format chosen by the user. For example, YtConvertAudioBot can download music from YouTube along with Spotify, Deezer, and SoundCloud, converting videos to audio files. Honest Loader bots support downloading reels, videos, and photos from multiple platforms including YouTube, Instagram, TikTok, Twitter, Threads, and Facebook, with a focus on no ads and scams. Users can perform a wide range of actions: download YouTube videos in various resolutions and formats such as MP4, AVI, or MKV; extract audio tracks as MP3, FLAC, or M4A; search for videos by keyword and get a list of results with thumbnails and descriptions; download entire playlists or channels; convert videos to GIFs or other formats; and sometimes even upload directly to Telegram as files or streaming links. Some bots offer additional features like subtitle downloading, thumbnail extraction, and metadata editing. The category includes several variations. Audio-focused bots prioritize music and podcast downloads, often supporting multiple streaming services. Video downloaders emphasize high-resolution video capture, including 4K and 8K. Multi-platform bots extend support to other social media sites like Instagram, TikTok, and Facebook. Playlist downloaders allow batch processing of entire collections. Search bots help users find content across YouTube without leaving Telegram. Some bots also offer conversion between formats or compression options. When choosing the best YouTube bot, consider the platforms it supports: bots that cover multiple sites offer more versatility. Check the maximum resolution and file size limits. Evaluate the bot's download speed and reliability, especially for large files. Look for bots that offer format selection and quality options. Verify that the bot does not contain malware or excessive ads, as some free bots may be monetized. Read user reviews to gauge performance and uptime. Consider privacy: choose bots that do not log your download history or require unnecessary permissions. Test the bot's ability to handle playlists and long videos. Finally, ensure the bot is regularly updated to keep up with changes in YouTube's API and encoding standards.</p>
 
-<div class="count">83 bots tagged #youtube</div>
-<div class="bot-item">
+  </div>
+</div>
+  </div>
+  <div class="tag-layout-right">
+    <div class="count">83 bots tagged #youtube</div>
+    <div class="bot-item">
   <a href="/b/Mostvpnio_bot.html" class="bot-name">🤖 MostVPN — быстрый ВПН для России</a>
   <div class="bot-username">@Mostvpnio_bot</div>
   <div class="bot-desc">Telegram-native VPN service for Russia. VLESS+Reality protocol, 9 servers across Europe and Asia. YouTube, Instagram, Ch</div>
@@ -555,6 +579,8 @@ a { color: #6c63ff; }
   <div class="bot-rating">⭐⭐⭐ 1.0</div>
 </div>
 
+  </div>
+</div>
 <a class="back" href="/">← Back to catalog</a>
 </body>
 </html>

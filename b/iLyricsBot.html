@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -126,14 +137,112 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2><p>Telegram search bots are specialized tools that help users quickly locate specific types of data—from lyrics and music links to user profiles, group activity, and even deleted messages. They operate inline or via commands, making them essential for power users who want to bypass manual searching. This article compares **@iLyricsBot**, an inline lyrics and music link bot currently flagged as offline, with similar bots in the search category, including information retrieval, monitoring, and media search tools.</p><p>### Overview of @iLyricsBot</p><p>**@iLyricsBot** is an inline bot designed to fetch lyrics from multiple sources and provide direct links to YouTube, SoundCloud, and Spotify. Its primary strength lies in combining lyrical content with music streaming access, all within a single inline query. Users can type `@iLyricsBot` followed by a song title or artist name to receive instant results. However, the bot is currently marked as &quot;offline,&quot; which may impact its reliability.</p><p>### Comparison with Similar Bots</p><ul><li>The search category includes bots that serve different purposes:</li><li>**@SpyFreeRobot**: Focuses on monitoring deleted/edited messages and saving self-destructible media.</li><li>**@idstracebot**: Retrieves public Telegram user info like ID, username, and account creation date.</li><li>**@tgdb_search_bot**: Provides data insights on user activity in public groups via the `/Where` command.</li><li>**@Melodinbot**: Combines music search with Instagram downloader functionality.</li></ul><p>Unlike these bots, @iLyricsBot is purely content-oriented—it doesn’t track users or messages. Its offline status, however, makes it less dependable compared to actively maintained alternatives.</p><p>### Key Strengths and Unique Features of @iLyricsBot</p><ul><li>**Inline integration**: Works seamlessly within any chat without switching contexts.</li><li>**Multi-source lyrics**: Aggregates from various lyric databases for higher accuracy.</li><li>**Music platform links**: Directly connects users to YouTube, SoundCloud, and Spotify, saving time.</li><li>**Simple use case**: Ideal for music enthusiasts who want lyrics and streaming options in one place.</li></ul><p>### Comparison Table</p><p>| Feature | @iLyricsBot | @SpyFreeRobot | @idstracebot | @tgdb_search_bot | @Melodinbot |
-|---------|-------------|---------------|--------------|------------------|-------------|
-| **Primary function** | Lyrics + music links | Message monitoring | User info lookup | Group activity data | Music + Instagram |
-| **Inline support** | Yes | No | No | No | No |
-| **Offline status** | 🔴 Flagged offline | ✅ Active | ✅ Active | ✅ Active | ✅ Active |
-| **Rating** | Not rated | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (23 &amp; 18 votes) | 5.0/5 (1 vote) |
-| **Privacy focus** | No user tracking | Monitors messages | Reveals user info | Tracks group membership | Media download |
-| **Unique value** | Lyrics + streaming links | Deleted message recovery | Account age estimation | Group member discovery | Instagram audio |</p><p>### When to Choose Each Bot</p><ul><li>**Choose @iLyricsBot** if you need quick lyrics alongside direct music links, but be cautious of its offline flag—consider alternatives while it’s unavailable.</li><li>**Choose @SpyFreeRobot** for monitoring group chats or recovering deleted content.</li><li>**Choose @idstracebot** to verify user details or estimate account creation dates.</li><li>**Choose @tgdb_search_bot** for advanced group analytics, like finding which public groups a user is active in.</li><li>**Choose @Melodinbot** for music search combined with Instagram media downloading.</li></ul><p>### Final Thoughts</p><p>While @iLyricsBot offers a unique combination of lyrics and music platform links, its offline status is a significant drawback. The other bots in this category are actively maintained and serve distinct needs—from privacy monitoring to data mining. For reliable search functionality, @tgdb_search_bot stands out with over 40 votes and a perfect rating, making it the most trusted option for group-related insights. If lyrics are your priority, consider temporary alternatives like @Melodinbot until @iLyricsBot returns online.</p>
+    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2>
+
+<p>Telegram search bots are specialized tools that help users quickly locate specific types of data—from lyrics and music links to user profiles, group activity, and even deleted messages. They operate inline or via commands, making them essential for power users who want to bypass manual searching. This article compares <strong>@iLyricsBot</strong>, an inline lyrics and music link bot currently flagged as offline, with similar bots in the search category, including information retrieval, monitoring, and media search tools.</p>
+
+<h3>Overview of @iLyricsBot</h3>
+
+<p><strong>@iLyricsBot</strong> is an inline bot designed to fetch lyrics from multiple sources and provide direct links to YouTube, SoundCloud, and Spotify. Its primary strength lies in combining lyrical content with music streaming access, all within a single inline query. Users can type <code>@iLyricsBot</code> followed by a song title or artist name to receive instant results. However, the bot is currently marked as "offline," which may impact its reliability.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The search category includes bots that serve different purposes:<br />
+- <strong>@SpyFreeRobot</strong>: Focuses on monitoring deleted/edited messages and saving self-destructible media.<br />
+- <strong>@idstracebot</strong>: Retrieves public Telegram user info like ID, username, and account creation date.<br />
+- <strong>@tgdb_search_bot</strong>: Provides data insights on user activity in public groups via the <code>/Where</code> command.<br />
+- <strong>@Melodinbot</strong>: Combines music search with Instagram downloader functionality.</p>
+
+<p>Unlike these bots, @iLyricsBot is purely content-oriented—it doesn’t track users or messages. Its offline status, however, makes it less dependable compared to actively maintained alternatives.</p>
+
+<h3>Key Strengths and Unique Features of @iLyricsBot</h3>
+
+<ul>
+<li><strong>Inline integration</strong>: Works seamlessly within any chat without switching contexts.  </li>
+<li><strong>Multi-source lyrics</strong>: Aggregates from various lyric databases for higher accuracy.  </li>
+<li><strong>Music platform links</strong>: Directly connects users to YouTube, SoundCloud, and Spotify, saving time.  </li>
+<li><strong>Simple use case</strong>: Ideal for music enthusiasts who want lyrics and streaming options in one place.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@iLyricsBot</th>
+  <th>@SpyFreeRobot</th>
+  <th>@idstracebot</th>
+  <th>@tgdb_search_bot</th>
+  <th>@Melodinbot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary function</strong></td>
+  <td>Lyrics + music links</td>
+  <td>Message monitoring</td>
+  <td>User info lookup</td>
+  <td>Group activity data</td>
+  <td>Music + Instagram</td>
+</tr>
+<tr>
+  <td><strong>Inline support</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Offline status</strong></td>
+  <td>🔴 Flagged offline</td>
+  <td>✅ Active</td>
+  <td>✅ Active</td>
+  <td>✅ Active</td>
+  <td>✅ Active</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>Not rated</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (23 &amp; 18 votes)</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Privacy focus</strong></td>
+  <td>No user tracking</td>
+  <td>Monitors messages</td>
+  <td>Reveals user info</td>
+  <td>Tracks group membership</td>
+  <td>Media download</td>
+</tr>
+<tr>
+  <td><strong>Unique value</strong></td>
+  <td>Lyrics + streaming links</td>
+  <td>Deleted message recovery</td>
+  <td>Account age estimation</td>
+  <td>Group member discovery</td>
+  <td>Instagram audio</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @iLyricsBot</strong> if you need quick lyrics alongside direct music links, but be cautious of its offline flag—consider alternatives while it’s unavailable.  </li>
+<li><strong>Choose @SpyFreeRobot</strong> for monitoring group chats or recovering deleted content.  </li>
+<li><strong>Choose @idstracebot</strong> to verify user details or estimate account creation dates.  </li>
+<li><strong>Choose @tgdb_search_bot</strong> for advanced group analytics, like finding which public groups a user is active in.  </li>
+<li><strong>Choose @Melodinbot</strong> for music search combined with Instagram media downloading.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>While @iLyricsBot offers a unique combination of lyrics and music platform links, its offline status is a significant drawback. The other bots in this category are actively maintained and serve distinct needs—from privacy monitoring to data mining. For reliable search functionality, @tgdb_search_bot stands out with over 40 votes and a perfect rating, making it the most trusted option for group-related insights. If lyrics are your priority, consider temporary alternatives like @Melodinbot until @iLyricsBot returns online.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-24</div>
 </div>

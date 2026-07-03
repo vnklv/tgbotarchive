@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,14 +130,118 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Weather Bots on Telegram: A Detailed Comparison</h2><p>Weather Telegram bots have become essential tools for quick, location-based forecasts. They range from simple inline bots that reply with text-based data to sophisticated Mini Apps with interactive UIs. This article compares **@WeatherAppRobot** with five other weather-related bots, highlighting their strengths and ideal use cases.</p><p>### Overview of @WeatherAppRobot</p><p>@WeatherAppRobot is a Mini App that provides real-time weather updates for your current location. It focuses on delivering current and hourly weather data through an &quot;amazing UI,&quot; suggesting a visually rich, interactive experience. It does not require manual city input, as it uses location detection.</p><p>### Comparison with Similar Bots</p><p>The following table summarizes key differences:</p><p>| Feature | @WeatherAppRobot | @climatologiabot | @PinWeatherBot (Offline) | @allertameteoidro_bot | @AllDoBot (Offline) | @Roadbike_bot (Offline) |
-|---|---|---|---|---|---|---|
-| **Type** | Mini App (UI) | Inline bot (text) | Bot (text) | Bot (text + alerts) | Multi-purpose bot | Specialized bot |
-| **Weather Scope** | Current + hourly | Forecast for city | Meteorologic info | Weather + flood alerts | Not weather-focused | Cycling-specific weather |
-| **Location Input** | Auto (current location) | City name | City selection | Piemonte, Italy | N/A | N/A |
-| **UI/UX** | High (amazing UI) | Low (text-based) | Low | Low (text + alerts) | Low | Low |
-| **Rating** | N/A (new) | 5.0/5 (1 vote) | 5.0/5 (1 vote) | 5.0/5 (16M+ votes) | 5.0/5 (1 vote) | 5.0/5 (1 vote) |
-| **Status** | Active | Active | Offline | Active | Offline | Offline |</p><p>### Key Strengths of @WeatherAppRobot</p><ul><li>**Visual Experience**: The Mini App format offers a rich, interactive interface, unlike text-only bots.</li><li>**Instant Location Detection**: No need to type city names; weather updates are automatic based on your GPS.</li><li>**Hourly Data**: Provides granular, hour-by-hour forecasts, ideal for planning short-term activities.</li><li>**Simplicity**: Focused solely on weather, avoiding clutter from unrelated features.</li></ul><p>### Unique Features of Other Bots</p><ul><li>**@climatologiabot**: Works as an inline bot, allowing you to get forecasts without leaving a chat (e.g., `@climatologiabot London`).</li><li>**@allertameteoidro_bot**: Specializes in flood and severe weather alerts for the Piemonte region, with an extremely high vote count, indicating reliability for local emergencies.</li><li>**@Roadbike_bot**: Tailored for cyclists, suggesting clothing and routes based on weather (though currently offline).</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose @WeatherAppRobot if**: You want a visually appealing, easy-to-use Mini App for quick current and hourly weather at your location. Ideal for general users who prefer UI over text.</li><li>**Choose @climatologiabot if**: You need a fast, inline weather forecast for a specific city without leaving a chat. Great for text-focused, quick queries.</li><li>**Choose @allertameteoidro_bot if**: You live in or travel to Piemonte, Italy, and need official weather and flood alerts. Its massive user base and high rating make it a trusted source for local emergencies.</li><li>**Avoid offline bots**: @PinWeatherBot, @AllDoBot, and @Roadbike_bot are flagged as offline, so they are not usable.</li></ul><p>### Conclusion</p><p>@WeatherAppRobot stands out for its modern, UI-driven approach to weather, making it a strong choice for users who value visual design and automatic location updates. However, for specific needs like inline queries or regional alerts, other active bots like @climatologiabot and @allertameteoidro_bot offer specialized functionality. Always check bot status before relying on them, as several popular weather bots are currently offline.</p>
+    <h2>Weather Bots on Telegram: A Detailed Comparison</h2>
+
+<p>Weather Telegram bots have become essential tools for quick, location-based forecasts. They range from simple inline bots that reply with text-based data to sophisticated Mini Apps with interactive UIs. This article compares <strong>@WeatherAppRobot</strong> with five other weather-related bots, highlighting their strengths and ideal use cases.</p>
+
+<h3>Overview of @WeatherAppRobot</h3>
+
+<p>@WeatherAppRobot is a Mini App that provides real-time weather updates for your current location. It focuses on delivering current and hourly weather data through an "amazing UI," suggesting a visually rich, interactive experience. It does not require manual city input, as it uses location detection.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The following table summarizes key differences:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@WeatherAppRobot</th>
+  <th>@climatologiabot</th>
+  <th>@PinWeatherBot (Offline)</th>
+  <th>@allertameteoidro_bot</th>
+  <th>@AllDoBot (Offline)</th>
+  <th>@Roadbike_bot (Offline)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Type</strong></td>
+  <td>Mini App (UI)</td>
+  <td>Inline bot (text)</td>
+  <td>Bot (text)</td>
+  <td>Bot (text + alerts)</td>
+  <td>Multi-purpose bot</td>
+  <td>Specialized bot</td>
+</tr>
+<tr>
+  <td><strong>Weather Scope</strong></td>
+  <td>Current + hourly</td>
+  <td>Forecast for city</td>
+  <td>Meteorologic info</td>
+  <td>Weather + flood alerts</td>
+  <td>Not weather-focused</td>
+  <td>Cycling-specific weather</td>
+</tr>
+<tr>
+  <td><strong>Location Input</strong></td>
+  <td>Auto (current location)</td>
+  <td>City name</td>
+  <td>City selection</td>
+  <td>Piemonte, Italy</td>
+  <td>N/A</td>
+  <td>N/A</td>
+</tr>
+<tr>
+  <td><strong>UI/UX</strong></td>
+  <td>High (amazing UI)</td>
+  <td>Low (text-based)</td>
+  <td>Low</td>
+  <td>Low (text + alerts)</td>
+  <td>Low</td>
+  <td>Low</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A (new)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (16M+ votes)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+</tr>
+<tr>
+  <td><strong>Status</strong></td>
+  <td>Active</td>
+  <td>Active</td>
+  <td>Offline</td>
+  <td>Active</td>
+  <td>Offline</td>
+  <td>Offline</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of @WeatherAppRobot</h3>
+
+<ul>
+<li><strong>Visual Experience</strong>: The Mini App format offers a rich, interactive interface, unlike text-only bots.</li>
+<li><strong>Instant Location Detection</strong>: No need to type city names; weather updates are automatic based on your GPS.</li>
+<li><strong>Hourly Data</strong>: Provides granular, hour-by-hour forecasts, ideal for planning short-term activities.</li>
+<li><strong>Simplicity</strong>: Focused solely on weather, avoiding clutter from unrelated features.</li>
+</ul>
+
+<h3>Unique Features of Other Bots</h3>
+
+<ul>
+<li><strong>@climatologiabot</strong>: Works as an inline bot, allowing you to get forecasts without leaving a chat (e.g., <code>@climatologiabot London</code>).</li>
+<li><strong>@allertameteoidro_bot</strong>: Specializes in flood and severe weather alerts for the Piemonte region, with an extremely high vote count, indicating reliability for local emergencies.</li>
+<li><strong>@Roadbike_bot</strong>: Tailored for cyclists, suggesting clothing and routes based on weather (though currently offline).</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @WeatherAppRobot if</strong>: You want a visually appealing, easy-to-use Mini App for quick current and hourly weather at your location. Ideal for general users who prefer UI over text.</li>
+<li><strong>Choose @climatologiabot if</strong>: You need a fast, inline weather forecast for a specific city without leaving a chat. Great for text-focused, quick queries.</li>
+<li><strong>Choose @allertameteoidro_bot if</strong>: You live in or travel to Piemonte, Italy, and need official weather and flood alerts. Its massive user base and high rating make it a trusted source for local emergencies.</li>
+<li><strong>Avoid offline bots</strong>: @PinWeatherBot, @AllDoBot, and @Roadbike_bot are flagged as offline, so they are not usable.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>@WeatherAppRobot stands out for its modern, UI-driven approach to weather, making it a strong choice for users who value visual design and automatic location updates. However, for specific needs like inline queries or regional alerts, other active bots like @climatologiabot and @allertameteoidro_bot offer specialized functionality. Always check bot status before relying on them, as several popular weather bots are currently offline.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-27</div>
 </div>

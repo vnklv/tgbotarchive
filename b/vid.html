@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -118,13 +129,95 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: A Practical Comparison</h2><p>Telegram search bots are specialized tools that help users find content, users, groups, or media directly within the platform. Unlike general web search, these bots operate within Telegram’s ecosystem, offering targeted results for videos, public profiles, group memberships, or even deleted messages. They are typically used via inline mode (typing `@botname query` in any chat) or through direct commands. Below, we compare one notable but currently offline bot—**YouTube Search ~ 🔴Flagged as offline (@vid)**—with other popular search-oriented bots.</p><p>### Overview of @vid (YouTube Search)</p><ul><li>**Username:** @vid</li><li>**Status:** 🔴 Flagged as offline</li><li>**Primary Function:** Inline video search from YouTube. Users type `@vid &lt;query&gt;` in any chat to find and share YouTube videos without leaving the conversation.</li><li>**Key Strength:** Seamless inline integration—no need to add the bot to a group or start a private chat. Results are displayed as inline cards with thumbnails, titles, and direct send options.</li><li>**Limitation:** Currently offline, which means it cannot be tested or used. Its value is historical or conceptual.</li></ul><p>### Comparison with Similar Bots</p><p>The table below highlights core differences across features, purpose, and current status.</p><p>| Bot | Primary Use | Inline Mode | Current Status | Unique Feature |
-|-----|-------------|-------------|---------------|----------------|
-| @vid (YouTube Search) | Search &amp; share YouTube videos | Yes (inline) | Offline | Simple, frictionless video sharing |
-| @SpyFreeRobot | Monitor deleted/edited messages, save self-destructing media | No | Active | Privacy-focused surveillance of chat history |
-| @idstracebot | Retrieve public Telegram user info (ID, username, creation date) | No | Active | Profile lookup via forwarded messages |
-| @tgdb_search_bot (TgDB Search Lite) | Find public groups a user is active in | No | Active | Cross-group user activity tracking |
-| @Melodinbot | Music search &amp; Instagram downloader | No | Active | Dual media source (music + Instagram) |</p><p>### Key Strengths and Unique Features of @vid</p><ul><li>**Inline-first design:** @vid was built entirely around inline queries. Users never had to open a separate chat or learn commands—just type `@vid` followed by keywords. This is rare among search bots, as most require starting a conversation or using slash commands.</li><li>**Lightweight and focused:** Unlike multi-purpose bots (e.g., @Melodinbot), @vid did one thing—YouTube video search—and did it with minimal friction. No account linking, no database of user activity.</li><li>**No setup required:** The bot did not need to be added to groups or granted permissions. It worked instantly in any chat where the user could type inline queries.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose @vid if:** YouTube video sharing is your primary need and the bot returns to service. It’s ideal for casual sharing in group chats or private messages without switching apps.</li><li>**Choose @SpyFreeRobot for:** Monitoring message edits or deletions in groups you manage, or saving media that disappears. Useful for moderation or personal record-keeping.</li><li>**Choose @idstracebot for:** Quick lookup of basic public info about any Telegram user (e.g., verifying account age or ID). Best for user research or safety checks.</li><li>**Choose @tgdb_search_bot for:** Investigating which public groups a user participates in. Valuable for community managers, journalists, or advanced user profiling.</li><li>**Choose @Melodinbot for:** Searching music tracks or downloading Instagram content directly in Telegram. Good for media enthusiasts who want a single bot for multiple sources.</li></ul><p>### Final Thoughts</p><p>While @vid offered a clean, inline-only search experience, its current offline status makes it unusable. Among active competitors, @tgdb_search_bot stands out for its unique “Where” command (revealing group memberships), while @SpyFreeRobot and @idstracebot serve niche privacy and identity needs. For pure video search, users may need to look for alternative YouTube bots or rely on Telegram’s built-in media search. The comparison shows that “search” on Telegram is not monolithic—each bot solves a different problem, from content discovery to user analytics.</p>
+    <h2>Search Bots on Telegram: A Practical Comparison</h2>
+
+<p>Telegram search bots are specialized tools that help users find content, users, groups, or media directly within the platform. Unlike general web search, these bots operate within Telegram’s ecosystem, offering targeted results for videos, public profiles, group memberships, or even deleted messages. They are typically used via inline mode (typing <code>@botname query</code> in any chat) or through direct commands. Below, we compare one notable but currently offline bot—<strong>YouTube Search ~ 🔴Flagged as offline (@vid)</strong>—with other popular search-oriented bots.</p>
+
+<h3>Overview of @vid (YouTube Search)</h3>
+
+<ul>
+<li><strong>Username:</strong> @vid</li>
+<li><strong>Status:</strong> 🔴 Flagged as offline</li>
+<li><strong>Primary Function:</strong> Inline video search from YouTube. Users type <code>@vid &lt;query&gt;</code> in any chat to find and share YouTube videos without leaving the conversation.</li>
+<li><strong>Key Strength:</strong> Seamless inline integration—no need to add the bot to a group or start a private chat. Results are displayed as inline cards with thumbnails, titles, and direct send options.</li>
+<li><strong>Limitation:</strong> Currently offline, which means it cannot be tested or used. Its value is historical or conceptual.</li>
+</ul>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The table below highlights core differences across features, purpose, and current status.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Use</th>
+  <th>Inline Mode</th>
+  <th>Current Status</th>
+  <th>Unique Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@vid (YouTube Search)</td>
+  <td>Search &amp; share YouTube videos</td>
+  <td>Yes (inline)</td>
+  <td>Offline</td>
+  <td>Simple, frictionless video sharing</td>
+</tr>
+<tr>
+  <td>@SpyFreeRobot</td>
+  <td>Monitor deleted/edited messages, save self-destructing media</td>
+  <td>No</td>
+  <td>Active</td>
+  <td>Privacy-focused surveillance of chat history</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>Retrieve public Telegram user info (ID, username, creation date)</td>
+  <td>No</td>
+  <td>Active</td>
+  <td>Profile lookup via forwarded messages</td>
+</tr>
+<tr>
+  <td>@tgdb_search_bot (TgDB Search Lite)</td>
+  <td>Find public groups a user is active in</td>
+  <td>No</td>
+  <td>Active</td>
+  <td>Cross-group user activity tracking</td>
+</tr>
+<tr>
+  <td>@Melodinbot</td>
+  <td>Music search &amp; Instagram downloader</td>
+  <td>No</td>
+  <td>Active</td>
+  <td>Dual media source (music + Instagram)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths and Unique Features of @vid</h3>
+
+<ul>
+<li><strong>Inline-first design:</strong> @vid was built entirely around inline queries. Users never had to open a separate chat or learn commands—just type <code>@vid</code> followed by keywords. This is rare among search bots, as most require starting a conversation or using slash commands.</li>
+<li><strong>Lightweight and focused:</strong> Unlike multi-purpose bots (e.g., @Melodinbot), @vid did one thing—YouTube video search—and did it with minimal friction. No account linking, no database of user activity.</li>
+<li><strong>No setup required:</strong> The bot did not need to be added to groups or granted permissions. It worked instantly in any chat where the user could type inline queries.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @vid if:</strong> YouTube video sharing is your primary need and the bot returns to service. It’s ideal for casual sharing in group chats or private messages without switching apps.</li>
+<li><strong>Choose @SpyFreeRobot for:</strong> Monitoring message edits or deletions in groups you manage, or saving media that disappears. Useful for moderation or personal record-keeping.</li>
+<li><strong>Choose @idstracebot for:</strong> Quick lookup of basic public info about any Telegram user (e.g., verifying account age or ID). Best for user research or safety checks.</li>
+<li><strong>Choose @tgdb_search_bot for:</strong> Investigating which public groups a user participates in. Valuable for community managers, journalists, or advanced user profiling.</li>
+<li><strong>Choose @Melodinbot for:</strong> Searching music tracks or downloading Instagram content directly in Telegram. Good for media enthusiasts who want a single bot for multiple sources.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>While @vid offered a clean, inline-only search experience, its current offline status makes it unusable. Among active competitors, @tgdb_search_bot stands out for its unique “Where” command (revealing group memberships), while @SpyFreeRobot and @idstracebot serve niche privacy and identity needs. For pure video search, users may need to look for alternative YouTube bots or rely on Telegram’s built-in media search. The comparison shows that “search” on Telegram is not monolithic—each bot solves a different problem, from content discovery to user analytics.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-14</div>
 </div>

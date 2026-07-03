@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -126,13 +137,91 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2><p>Search bots on Telegram are specialized tools designed to help users quickly find specific types of information without leaving the app. From movie details and user data to media files and group activity, these bots leverage APIs and databases to deliver instant results. They range from entertainment-focused bots to privacy and monitoring tools, each serving a unique niche. In this article, we compare **IMDb.com** (@imdbot) with five other popular search bots in the same category, highlighting their strengths, weaknesses, and best use cases.</p><h2>How @imdbot Stands Out in the Search Category</h2><p>@imdbot is a dedicated bot for retrieving movie, TV show, and celebrity information directly from IMDb. It excels in providing comprehensive entertainment data, including ratings, plots, cast details, trailers, and user reviews. Unlike other search bots that focus on Telegram-specific data (e.g., user IDs, group activity) or media downloads, @imdbot is purely a content discovery tool for film enthusiasts. Its simplicity and direct integration with IMDb make it a go-to for anyone looking up entertainment facts quickly.</p><p>Compared to bots like @tgdb_search_bot (which reveals group memberships) or @SpyFreeRobot (which monitors edits and deletions), @imdbot operates in a completely different sphere. While the other bots target privacy, investigation, or social insights, @imdbot is purely informational and non-intrusive. This makes it less versatile in a general search context but highly specialized for its niche.</p><h2>Key Strengths and Unique Features of @imdbot</h2><ul><li>**Direct IMDb Integration**: Fetches accurate, up-to-date data from the world’s largest film database.</li><li>**Rich Media Output**: Returns posters, ratings, trailers, and synopses in a clean, formatted message.</li><li>**Quick Commands**: Simple queries like `/movie Inception` or `/actor Tom Hanks` yield instant results.</li><li>**No Registration Required**: Works immediately without any personal data collection or login.</li><li>**Multi-Language Support**: Handles queries in various languages, though results are primarily in English.</li></ul><h2>Comparison Table: @imdbot vs. Similar Search Bots</h2><p>| Bot | Primary Function | Rating | Unique Feature | Best For |
-|-----|------------------|--------|----------------|----------|
-| @imdbot | Movie/TV info from IMDb | N/A (no public rating) | Rich IMDb data with trailers and reviews | Entertainment research |
-| @SpyFreeRobot | Monitor deleted/edited messages | 5.0/5 | Saves self-destructible media | Privacy monitoring |
-| @idstracebot | Retrieve public Telegram user info | 5.0/5 | Shows estimated account creation date | User investigation |
-| @tgdb_search_bot | Find user’s public groups | 5.0/5 (185 votes) | Exclusive /Where command | Social network analysis |
-| @Melodinbot | Music search &amp; Instagram downloads | 5.0/5 | Dual functionality (music + IG) | Media downloading |</p><h2>When to Choose Each Bot</h2><ul><li>**Choose @imdbot** if you frequently need movie or TV show details, ratings, or cast info. It’s ideal for film buffs, content creators, or anyone planning a movie night.</li><li>**Choose @SpyFreeRobot** if you manage groups and need to track deleted or edited messages, especially for security purposes.</li><li>**Choose @idstracebot** if you need to verify a user’s Telegram ID, name, or account age—useful for moderation or safety checks.</li><li>**Choose @tgdb_search_bot** if you want to discover which public groups a user is active in, helpful for community management or research.</li><li>**Choose @Melodinbot** if you need to search for music or download Instagram content (e.g., videos, stories) quickly.</li></ul><h2>Final Thoughts</h2><p>@imdbot is a focused, reliable tool for entertainment search, while the other bots cater to more technical or privacy-oriented needs. None of these bots overlap directly with @imdbot’s function, making it a unique addition to the search category. For general information retrieval, @imdbot is unmatched in its domain, but for Telegram-specific data or media downloads, the other bots are better suited. Choose based on your primary need—whether it’s film trivia, user insights, or content monitoring.</p>
+    <h2>Search Bots on Telegram: Finding Information at Your Fingertips</h2>
+
+<p>Search bots on Telegram are specialized tools designed to help users quickly find specific types of information without leaving the app. From movie details and user data to media files and group activity, these bots leverage APIs and databases to deliver instant results. They range from entertainment-focused bots to privacy and monitoring tools, each serving a unique niche. In this article, we compare <strong>IMDb.com</strong> (@imdbot) with five other popular search bots in the same category, highlighting their strengths, weaknesses, and best use cases.</p>
+
+<h2>How @imdbot Stands Out in the Search Category</h2>
+
+<p>@imdbot is a dedicated bot for retrieving movie, TV show, and celebrity information directly from IMDb. It excels in providing comprehensive entertainment data, including ratings, plots, cast details, trailers, and user reviews. Unlike other search bots that focus on Telegram-specific data (e.g., user IDs, group activity) or media downloads, @imdbot is purely a content discovery tool for film enthusiasts. Its simplicity and direct integration with IMDb make it a go-to for anyone looking up entertainment facts quickly.</p>
+
+<p>Compared to bots like @tgdb_search_bot (which reveals group memberships) or @SpyFreeRobot (which monitors edits and deletions), @imdbot operates in a completely different sphere. While the other bots target privacy, investigation, or social insights, @imdbot is purely informational and non-intrusive. This makes it less versatile in a general search context but highly specialized for its niche.</p>
+
+<h2>Key Strengths and Unique Features of @imdbot</h2>
+
+<ul>
+<li><strong>Direct IMDb Integration</strong>: Fetches accurate, up-to-date data from the world’s largest film database.</li>
+<li><strong>Rich Media Output</strong>: Returns posters, ratings, trailers, and synopses in a clean, formatted message.</li>
+<li><strong>Quick Commands</strong>: Simple queries like <code>/movie Inception</code> or <code>/actor Tom Hanks</code> yield instant results.</li>
+<li><strong>No Registration Required</strong>: Works immediately without any personal data collection or login.</li>
+<li><strong>Multi-Language Support</strong>: Handles queries in various languages, though results are primarily in English.</li>
+</ul>
+
+<h2>Comparison Table: @imdbot vs. Similar Search Bots</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Rating</th>
+  <th>Unique Feature</th>
+  <th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@imdbot</td>
+  <td>Movie/TV info from IMDb</td>
+  <td>N/A (no public rating)</td>
+  <td>Rich IMDb data with trailers and reviews</td>
+  <td>Entertainment research</td>
+</tr>
+<tr>
+  <td>@SpyFreeRobot</td>
+  <td>Monitor deleted/edited messages</td>
+  <td>5.0/5</td>
+  <td>Saves self-destructible media</td>
+  <td>Privacy monitoring</td>
+</tr>
+<tr>
+  <td>@idstracebot</td>
+  <td>Retrieve public Telegram user info</td>
+  <td>5.0/5</td>
+  <td>Shows estimated account creation date</td>
+  <td>User investigation</td>
+</tr>
+<tr>
+  <td>@tgdb_search_bot</td>
+  <td>Find user’s public groups</td>
+  <td>5.0/5 (185 votes)</td>
+  <td>Exclusive /Where command</td>
+  <td>Social network analysis</td>
+</tr>
+<tr>
+  <td>@Melodinbot</td>
+  <td>Music search &amp; Instagram downloads</td>
+  <td>5.0/5</td>
+  <td>Dual functionality (music + IG)</td>
+  <td>Media downloading</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @imdbot</strong> if you frequently need movie or TV show details, ratings, or cast info. It’s ideal for film buffs, content creators, or anyone planning a movie night.</li>
+<li><strong>Choose @SpyFreeRobot</strong> if you manage groups and need to track deleted or edited messages, especially for security purposes.</li>
+<li><strong>Choose @idstracebot</strong> if you need to verify a user’s Telegram ID, name, or account age—useful for moderation or safety checks.</li>
+<li><strong>Choose @tgdb_search_bot</strong> if you want to discover which public groups a user is active in, helpful for community management or research.</li>
+<li><strong>Choose @Melodinbot</strong> if you need to search for music or download Instagram content (e.g., videos, stories) quickly.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>@imdbot is a focused, reliable tool for entertainment search, while the other bots cater to more technical or privacy-oriented needs. None of these bots overlap directly with @imdbot’s function, making it a unique addition to the search category. For general information retrieval, @imdbot is unmatched in its domain, but for Telegram-specific data or media downloads, the other bots are better suited. Choose based on your primary need—whether it’s film trivia, user insights, or content monitoring.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-10</div>
 </div>

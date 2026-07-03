@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -119,14 +130,109 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegraph Bots on Telegram: A Deep Dive into @tgpublish_bot and Its Competitors</h2><p>Telegra.ph is a minimalist publishing tool that allows anyone to create richly formatted articles without an account. Telegram bots in the &quot;telegraph&quot; category simplify uploading content—text, images, videos, or even entire files—directly to Telegra.ph and returning a shareable link. With many bots offering overlapping features, choosing the right one can be tricky. This article compares **@tgpublish_bot** with five notable alternatives: @GetMediaLinkBot, @UploaderTelegraphBot, @LyricsorBot, @TGraphProBot, and @telegraph.</p><p>### What These Bots Do</p><p>All these bots serve a common purpose: they accept media or text input and upload it to Telegra.ph, generating a permanent link. However, they differ in supported formats, additional features, and reliability. Some are specialized (e.g., @LyricsorBot for lyrics), while others are general-purpose uploaders.</p><p>### @tgpublish_bot Overview</p><p>@tgpublish_bot stands out by accepting **text messages**, **.txt files**, and **.html files** for publishing articles, plus **.jpg, .png, .gif, and .mp4** files for media uploads. This dual support for both text-based articles and media makes it versatile. The bot’s description emphasizes simplicity: just send content and receive a link. Its offline status is not flagged, suggesting active maintenance.</p><p>### Comparison with Similar Bots</p><p>Below is a side-by-side comparison of key features:</p><p>| Bot | Supported Formats | Unique Feature | User Rating | Offline Flag |
-|-----|------------------|----------------|-------------|--------------|
-| @tgpublish_bot | Text, .txt, .html, images, GIFs, MP4 | Accepts HTML files for formatted articles | Not rated | No |
-| @GetMediaLinkBot | Media (images, video, GIF) | Fast media-to-link conversion | 5.0 (1 vote) | No |
-| @UploaderTelegraphBot | GIF, photos, videos | Simple media upload | 5.0 (1 vote) | Yes |
-| @LyricsorBot | Text (song lyrics) | Fetches lyrics from web | 5.0 (125k votes) | No |
-| @TGraphProBot | Media (images, video) | &quot;Simple uploader&quot; | 5.0 (1 vote) | Yes |
-| @telegraph | Text, articles | Full Telegra.ph account management | 5.0 (1 vote) | No |</p><p>### Key Strengths of @tgpublish_bot</p><ul><li>**HTML support**: Unlike most competitors, @tgpublish_bot can parse .html files, preserving formatting like headings, links, and images. This is invaluable for writers who draft in HTML editors.</li><li>**Multi-format versatility**: It handles both text (articles) and media (images, videos) in one bot, reducing the need for multiple tools.</li><li>**No account required**: Users don’t need to log in—just send content and get a link.</li><li>**Reliability**: Not flagged as offline, unlike @UploaderTelegraphBot and @TGraphProBot, which may be unreliable.</li></ul><p>### Weaknesses</p><ul><li>**No account integration**: Unlike @telegraph, it doesn’t manage Telegra.ph accounts, so you cannot edit or view statistics of published articles.</li><li>**Limited media types**: It supports .mp4 but not other video formats (e.g., .mov, .avi).</li><li>**No lyrics or web scraping**: For specialized tasks like fetching song lyrics, @LyricsorBot is superior.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose @tgpublish_bot if**: You need to publish formatted articles from HTML or plain text, or want a single bot for both text and media uploads. Ideal for bloggers, journalists, or anyone sharing structured content.</li><li>**Choose @GetMediaLinkBot if**: You only need quick media-to-link conversion (e.g., sharing an image or video) and prefer a no-frills tool.</li><li>**Choose @LyricsorBot if**: Your primary need is fetching and publishing song lyrics as Telegraph articles. Its massive user base indicates reliability.</li><li>**Choose @telegraph if**: You want full control over your Telegra.ph account—edit, delete, and view stats on your articles. Best for frequent publishers.</li><li>**Avoid @UploaderTelegraphBot and @TGraphProBot**: Both are flagged offline, suggesting they may not work reliably.</li></ul><p>### Final Verdict</p><p>@tgpublish_bot fills a unique niche by combining article publishing (with HTML support) and media uploading in one bot. While it lacks account management and specialized features, its versatility and active status make it a strong contender for general-purpose Telegraph uploading. For heavy text publishers, it’s a clear winner; for media-only tasks, @GetMediaLinkBot is simpler. Always check for offline flags before relying on any bot.</p>
+    <h2>Telegraph Bots on Telegram: A Deep Dive into @tgpublish_bot and Its Competitors</h2>
+
+<p>Telegra.ph is a minimalist publishing tool that allows anyone to create richly formatted articles without an account. Telegram bots in the "telegraph" category simplify uploading content—text, images, videos, or even entire files—directly to Telegra.ph and returning a shareable link. With many bots offering overlapping features, choosing the right one can be tricky. This article compares <strong>@tgpublish_bot</strong> with five notable alternatives: @GetMediaLinkBot, @UploaderTelegraphBot, @LyricsorBot, @TGraphProBot, and @telegraph.</p>
+
+<h3>What These Bots Do</h3>
+
+<p>All these bots serve a common purpose: they accept media or text input and upload it to Telegra.ph, generating a permanent link. However, they differ in supported formats, additional features, and reliability. Some are specialized (e.g., @LyricsorBot for lyrics), while others are general-purpose uploaders.</p>
+
+<h3>@tgpublish_bot Overview</h3>
+
+<p>@tgpublish_bot stands out by accepting <strong>text messages</strong>, <strong>.txt files</strong>, and <strong>.html files</strong> for publishing articles, plus <strong>.jpg, .png, .gif, and .mp4</strong> files for media uploads. This dual support for both text-based articles and media makes it versatile. The bot’s description emphasizes simplicity: just send content and receive a link. Its offline status is not flagged, suggesting active maintenance.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>Below is a side-by-side comparison of key features:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Supported Formats</th>
+  <th>Unique Feature</th>
+  <th>User Rating</th>
+  <th>Offline Flag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@tgpublish_bot</td>
+  <td>Text, .txt, .html, images, GIFs, MP4</td>
+  <td>Accepts HTML files for formatted articles</td>
+  <td>Not rated</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@GetMediaLinkBot</td>
+  <td>Media (images, video, GIF)</td>
+  <td>Fast media-to-link conversion</td>
+  <td>5.0 (1 vote)</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@UploaderTelegraphBot</td>
+  <td>GIF, photos, videos</td>
+  <td>Simple media upload</td>
+  <td>5.0 (1 vote)</td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td>@LyricsorBot</td>
+  <td>Text (song lyrics)</td>
+  <td>Fetches lyrics from web</td>
+  <td>5.0 (125k votes)</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td>@TGraphProBot</td>
+  <td>Media (images, video)</td>
+  <td>"Simple uploader"</td>
+  <td>5.0 (1 vote)</td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td>@telegraph</td>
+  <td>Text, articles</td>
+  <td>Full Telegra.ph account management</td>
+  <td>5.0 (1 vote)</td>
+  <td>No</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of @tgpublish_bot</h3>
+
+<ul>
+<li><strong>HTML support</strong>: Unlike most competitors, @tgpublish_bot can parse .html files, preserving formatting like headings, links, and images. This is invaluable for writers who draft in HTML editors.</li>
+<li><strong>Multi-format versatility</strong>: It handles both text (articles) and media (images, videos) in one bot, reducing the need for multiple tools.</li>
+<li><strong>No account required</strong>: Users don’t need to log in—just send content and get a link.</li>
+<li><strong>Reliability</strong>: Not flagged as offline, unlike @UploaderTelegraphBot and @TGraphProBot, which may be unreliable.</li>
+</ul>
+
+<h3>Weaknesses</h3>
+
+<ul>
+<li><strong>No account integration</strong>: Unlike @telegraph, it doesn’t manage Telegra.ph accounts, so you cannot edit or view statistics of published articles.</li>
+<li><strong>Limited media types</strong>: It supports .mp4 but not other video formats (e.g., .mov, .avi).</li>
+<li><strong>No lyrics or web scraping</strong>: For specialized tasks like fetching song lyrics, @LyricsorBot is superior.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @tgpublish_bot if</strong>: You need to publish formatted articles from HTML or plain text, or want a single bot for both text and media uploads. Ideal for bloggers, journalists, or anyone sharing structured content.</li>
+<li><strong>Choose @GetMediaLinkBot if</strong>: You only need quick media-to-link conversion (e.g., sharing an image or video) and prefer a no-frills tool.</li>
+<li><strong>Choose @LyricsorBot if</strong>: Your primary need is fetching and publishing song lyrics as Telegraph articles. Its massive user base indicates reliability.</li>
+<li><strong>Choose @telegraph if</strong>: You want full control over your Telegra.ph account—edit, delete, and view stats on your articles. Best for frequent publishers.</li>
+<li><strong>Avoid @UploaderTelegraphBot and @TGraphProBot</strong>: Both are flagged offline, suggesting they may not work reliably.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>@tgpublish_bot fills a unique niche by combining article publishing (with HTML support) and media uploading in one bot. While it lacks account management and specialized features, its versatility and active status make it a strong contender for general-purpose Telegraph uploading. For heavy text publishers, it’s a clear winner; for media-only tasks, @GetMediaLinkBot is simpler. Always check for offline flags before relying on any bot.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-15</div>
 </div>

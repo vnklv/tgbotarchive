@@ -54,8 +54,19 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
 .article-content p { margin-bottom: 0.6rem; }
 .article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
 .article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
 .article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
 .advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
 .advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
 .reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
@@ -121,13 +132,96 @@ h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 <div class="article-section">
   <div class="section-title">📖 In-Depth Review</div>
   <div class="article-content">
-    <h2>Telegram Votes Bots: Axenia vs. The Competition</h2><p>In the Telegram ecosystem, &quot;votes&quot; bots are designed to facilitate community engagement through polling, feedback collection, karma systems, and leaderboards. These bots help group admins measure sentiment, reward active members, and organize decisions. While many bots focus on creating polls or surveys, some specialize in tracking user reputation over time. This article compares **Axenia (@Axenia_Bot)**—a karma counter for groups—against four other popular bots in the votes category.</p><p>### Overview of Axenia (@Axenia_Bot)</p><p>Axenia is a straightforward karma bot that allows group members to give positive or negative reputation points to each other. It tracks these scores and displays them in a leaderboard, fostering a sense of community and encouraging constructive participation. Unlike complex polling bots, Axenia focuses solely on peer-to-peer reputation.</p><p>### Comparison with Similar Bots</p><p>Below is a detailed comparison of Axenia with four other bots that serve related but distinct purposes.</p><p>| Bot | Primary Function | Rating (Avg) | Votes Count | Key Strength | Limitation |
-|------|------------------|--------------|-------------|--------------|------------|
-| **Axenia (@Axenia_Bot)** | Karma counting for groups | N/A (no public rating) | N/A | Simple reputation tracking, leaderboard | No polling or survey features |
-| **Teleformsbot (@teleformsbot)** | Feedback &amp; survey creation | 5.0/5 | 1 | Supports all media types, inline surveys | Very few votes, likely new or niche |
-| **Dooxbot (@dooxbot)** | Media messages with reactions &amp; inline buttons | 5.0/5 | 321,704 | Highly customizable, reactions, buttons | Not primarily a voting bot; more of a message builder |
-| **Multi Vote Bot (@multi_vote_bot)** | Multiple-choice polls | 1.0/5 | 2,282,320,736 | Allows multiple answers in one poll | Flagged offline; extremely low rating despite high vote count (likely inflated) |
-| **TopSupergroupsBot (@TopSupergroupsBot)** | Statistics &amp; leaderboards for public supergroups | 1.0/5 | 1 | Tracks messages, members, votes | Limited to public groups; low rating |</p><p>### Key Strengths and Unique Features of Axenia</p><ul><li>**Focused Simplicity**: Axenia does one thing—karma tracking—and does it well. It’s easy to set up and use without overwhelming users with options.</li><li>**Community Building**: By rewarding positive contributions (and penalizing negative ones), it encourages healthier group dynamics.</li><li>**Leaderboard**: Displays top contributors, which can motivate members to participate more actively.</li><li>**No Bloat**: Unlike Dooxbot or Multi Vote Bot, Axenia doesn’t require learning complex commands or managing multiple poll types.</li></ul><p>### When to Choose Each Bot</p><ul><li>**Choose Axenia if**: You run a community group (e.g., fan club, support group, hobby community) where you want to encourage helpfulness and discourage spam. It’s ideal for groups that value reputation over formal polls.</li><li>**Choose Teleformsbot if**: You need to collect structured feedback or run surveys with rich media (images, files) without leaving Telegram. Good for product feedback or event planning.</li><li>**Choose Dooxbot if**: You want to create visually engaging messages with reactions, buttons, and media for announcements or interactive posts. Not ideal for strict voting but great for engagement.</li><li>**Avoid Multi Vote Bot**: Despite its massive vote count, it’s flagged as offline and has a terrible rating. Likely unreliable or abandoned.</li><li>**Choose TopSupergroupsBot if**: You manage a large public supergroup and need detailed analytics on member activity, including voting patterns. However, its low rating suggests limited functionality.</li></ul><p>### Final Thoughts</p><p>Axenia fills a specific niche in the votes category: peer-to-peer karma. While bots like Dooxbot offer broader features, Axenia’s simplicity makes it perfect for groups that want a light, reputation-based system without the complexity of polls or surveys. For most community groups, Axenia is a reliable choice, while Teleformsbot or Dooxbot may suit more formal or media-rich needs. Multi Vote Bot and TopSupergroupsBot are best avoided due to reliability issues.</p>
+    <h2>Telegram Votes Bots: Axenia vs. The Competition</h2>
+
+<p>In the Telegram ecosystem, "votes" bots are designed to facilitate community engagement through polling, feedback collection, karma systems, and leaderboards. These bots help group admins measure sentiment, reward active members, and organize decisions. While many bots focus on creating polls or surveys, some specialize in tracking user reputation over time. This article compares <strong>Axenia (@Axenia_Bot)</strong>—a karma counter for groups—against four other popular bots in the votes category.</p>
+
+<h3>Overview of Axenia (@Axenia_Bot)</h3>
+
+<p>Axenia is a straightforward karma bot that allows group members to give positive or negative reputation points to each other. It tracks these scores and displays them in a leaderboard, fostering a sense of community and encouraging constructive participation. Unlike complex polling bots, Axenia focuses solely on peer-to-peer reputation.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>Below is a detailed comparison of Axenia with four other bots that serve related but distinct purposes.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Rating (Avg)</th>
+  <th>Votes Count</th>
+  <th>Key Strength</th>
+  <th>Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Axenia (@Axenia_Bot)</strong></td>
+  <td>Karma counting for groups</td>
+  <td>N/A (no public rating)</td>
+  <td>N/A</td>
+  <td>Simple reputation tracking, leaderboard</td>
+  <td>No polling or survey features</td>
+</tr>
+<tr>
+  <td><strong>Teleformsbot (@teleformsbot)</strong></td>
+  <td>Feedback &amp; survey creation</td>
+  <td>5.0/5</td>
+  <td>1</td>
+  <td>Supports all media types, inline surveys</td>
+  <td>Very few votes, likely new or niche</td>
+</tr>
+<tr>
+  <td><strong>Dooxbot (@dooxbot)</strong></td>
+  <td>Media messages with reactions &amp; inline buttons</td>
+  <td>5.0/5</td>
+  <td>321,704</td>
+  <td>Highly customizable, reactions, buttons</td>
+  <td>Not primarily a voting bot; more of a message builder</td>
+</tr>
+<tr>
+  <td><strong>Multi Vote Bot (@multi_vote_bot)</strong></td>
+  <td>Multiple-choice polls</td>
+  <td>1.0/5</td>
+  <td>2,282,320,736</td>
+  <td>Allows multiple answers in one poll</td>
+  <td>Flagged offline; extremely low rating despite high vote count (likely inflated)</td>
+</tr>
+<tr>
+  <td><strong>TopSupergroupsBot (@TopSupergroupsBot)</strong></td>
+  <td>Statistics &amp; leaderboards for public supergroups</td>
+  <td>1.0/5</td>
+  <td>1</td>
+  <td>Tracks messages, members, votes</td>
+  <td>Limited to public groups; low rating</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths and Unique Features of Axenia</h3>
+
+<ul>
+<li><strong>Focused Simplicity</strong>: Axenia does one thing—karma tracking—and does it well. It’s easy to set up and use without overwhelming users with options.</li>
+<li><strong>Community Building</strong>: By rewarding positive contributions (and penalizing negative ones), it encourages healthier group dynamics.</li>
+<li><strong>Leaderboard</strong>: Displays top contributors, which can motivate members to participate more actively.</li>
+<li><strong>No Bloat</strong>: Unlike Dooxbot or Multi Vote Bot, Axenia doesn’t require learning complex commands or managing multiple poll types.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose Axenia if</strong>: You run a community group (e.g., fan club, support group, hobby community) where you want to encourage helpfulness and discourage spam. It’s ideal for groups that value reputation over formal polls.</li>
+<li><strong>Choose Teleformsbot if</strong>: You need to collect structured feedback or run surveys with rich media (images, files) without leaving Telegram. Good for product feedback or event planning.</li>
+<li><strong>Choose Dooxbot if</strong>: You want to create visually engaging messages with reactions, buttons, and media for announcements or interactive posts. Not ideal for strict voting but great for engagement.</li>
+<li><strong>Avoid Multi Vote Bot</strong>: Despite its massive vote count, it’s flagged as offline and has a terrible rating. Likely unreliable or abandoned.</li>
+<li><strong>Choose TopSupergroupsBot if</strong>: You manage a large public supergroup and need detailed analytics on member activity, including voting patterns. However, its low rating suggests limited functionality.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>Axenia fills a specific niche in the votes category: peer-to-peer karma. While bots like Dooxbot offer broader features, Axenia’s simplicity makes it perfect for groups that want a light, reputation-based system without the complexity of polls or surveys. For most community groups, Axenia is a reliable choice, while Teleformsbot or Dooxbot may suit more formal or media-rich needs. Multi Vote Bot and TopSupergroupsBot are best avoided due to reliability issues.</p>
+
   </div>
   <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-07-02</div>
 </div>

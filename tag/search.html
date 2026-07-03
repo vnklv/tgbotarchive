@@ -29,11 +29,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
 .tag-intro { color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }
 .count { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
-.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1.2rem; margin-bottom: 1.5rem; }
-.tag-article h2 { color: #6c63ff; font-size: 1.1rem; margin-bottom: 0.8rem; }
-.tag-article p { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.5rem; }
-.tag-article ul { margin: 0.4rem 0 0.4rem 1.2rem; }
-.tag-article li { color: #c0c0d0; font-size: 0.9rem; margin-bottom: 0.2rem; }
+.tag-layout { display: flex; gap: 1.5rem; align-items: flex-start; }
+.tag-layout-left { flex: 0 0 340px; min-width: 280px; max-width: 100%; }
+.tag-layout-left:empty { display: none; }
+.tag-layout-right { flex: 1; min-width: 0; }
+.tag-article { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 1rem; }
+.tag-article h2 { color: #6c63ff; font-size: 1.05rem; margin-bottom: 0.6rem; }
+.tag-article-content { color: #c0c0d0; font-size: 0.85rem; line-height: 1.7; }
+.tag-article-content p { margin-bottom: 0.5rem; }
+.tag-article-content h2 { color: #d0d0e0; font-size: 1rem; margin: 0.6rem 0 0.3rem; }
+.tag-article-content h3 { color: #c8c8d8; font-size: 0.92rem; margin: 0.5rem 0 0.3rem; }
+.tag-article-content ul { margin: 0.3rem 0 0.3rem 1rem; }
+.tag-article-content ol { margin: 0.3rem 0 0.3rem 1.2rem; }
+.tag-article-content li { margin-bottom: 0.15rem; }
+.tag-article-content table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.78rem; }
+.tag-article-content th, .tag-article-content td { border: 1px solid #3a3a5a; padding: 0.3rem 0.4rem; text-align: left; }
+.tag-article-content th { background: #2a2a4a; color: #d0d0e0; font-weight: 600; }
+.tag-article-content tr:nth-child(even) td { background: #1e1e32; }
+.tag-article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.25rem; border-radius: 3px; font-size: 0.85em; }
+.tag-article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.6rem; overflow-x: auto; margin: 0.5rem 0; }
+@media (max-width: 768px) {
+  .tag-layout { flex-direction: column; gap: 1rem; }
+  .tag-layout-left { flex: none; width: 100%; min-width: 0; }
+}
 .bot-item { background: #1a1a2e; border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 0.6rem; border: 1px solid #2a2a4a; }
 .bot-item:hover { border-color: #6c63ff; }
 .bot-name { color: #e8e8f0; font-size: 1rem; font-weight: 600; text-decoration: none; }
@@ -49,14 +67,20 @@ a { color: #6c63ff; }
 <h1>🤖 #search</h1>
 <div class="tag-intro">Telegram bots related to <strong>search and discovery</strong>. Browse <strong>123</strong> bots in this category, compare ratings, features, and languages.</div>
 
-
+<div class="tag-layout">
+  <div class="tag-layout-left">
+    
 <div class="tag-article">
   <h2>📖 About search and discovery Bots</h2>
-  <p>Search Telegram bots are specialized tools that enable users to find information, content, or resources within the Telegram ecosystem or across the web, directly from the chat interface. These bots act as powerful query engines, capable of searching through messages, channels, groups, or external databases to deliver relevant results quickly. The core functionality involves a user sending a search query to the bot, which then processes it using indexing algorithms or external search APIs, and returns a list of matches. For example, mysearch bot allows users to search through their own chat history, SpyFreeRobot might search for public information or data leaks, and idstracebot can trace user IDs or other identifiers. The bots work by either maintaining their own indexes of content, as in the case of group search bots, or by querying external services like Google, Wikipedia, or specialized databases. Telegram&#x27;s Bot API facilitates these interactions, allowing bots to receive queries and send results in a structured format, often with clickable links or previews. Common features include full-text search within chats, channel or group discovery, web search integration, and specialized searches for media, files, or contacts. Some search bots also offer advanced filters, such as date ranges, content type, or source restrictions, to narrow down results. Categories within the search tag include chat search bots, web search bots, directory bots, and data lookup bots. Chat search bots help users find past messages or files within their own Telegram chats, which is particularly useful for large groups or channels. Web search bots provide convenience by allowing users to search the internet without leaving Telegram, while directory bots help discover new channels, bots, or groups. Data lookup bots can retrieve information like IP addresses, phone numbers, or cryptocurrency wallet details. When choosing a good search bot, consider the accuracy and speed of its results, the breadth of its search coverage, and any limitations on query volume. Look for bots that respect user privacy by not logging search queries or storing personal data. User feedback and ratings can indicate reliability, and it is beneficial to test the bot with sample queries to assess its performance. Users typically employ these bots for quick research, fact-checking during conversations, or finding specific content within their own messages. For instance, a user might search for a file shared weeks ago or look up a term while discussing a topic in a group. Security and privacy considerations are paramount, as search bots can potentially access sensitive information, especially when searching private chats or databases. Ensure the bot does not share your queries with third parties and has a clear policy on data retention. Avoid bots that require access to your message history or personal data without a valid reason. Additionally, be cautious when using search bots that claim to find leaked data, as they may operate in legal gray areas. Despite these risks, search bots are invaluable for navigating the vast amount of information within Telegram and beyond, making them essential tools for power users and communities alike.</p>
-</div>
+  <div class="tag-article-content">
+    <p>Search Telegram bots are specialized tools that enable users to find information, content, or resources within the Telegram ecosystem or across the web, directly from the chat interface. These bots act as powerful query engines, capable of searching through messages, channels, groups, or external databases to deliver relevant results quickly. The core functionality involves a user sending a search query to the bot, which then processes it using indexing algorithms or external search APIs, and returns a list of matches. For example, mysearch bot allows users to search through their own chat history, SpyFreeRobot might search for public information or data leaks, and idstracebot can trace user IDs or other identifiers. The bots work by either maintaining their own indexes of content, as in the case of group search bots, or by querying external services like Google, Wikipedia, or specialized databases. Telegram's Bot API facilitates these interactions, allowing bots to receive queries and send results in a structured format, often with clickable links or previews. Common features include full-text search within chats, channel or group discovery, web search integration, and specialized searches for media, files, or contacts. Some search bots also offer advanced filters, such as date ranges, content type, or source restrictions, to narrow down results. Categories within the search tag include chat search bots, web search bots, directory bots, and data lookup bots. Chat search bots help users find past messages or files within their own Telegram chats, which is particularly useful for large groups or channels. Web search bots provide convenience by allowing users to search the internet without leaving Telegram, while directory bots help discover new channels, bots, or groups. Data lookup bots can retrieve information like IP addresses, phone numbers, or cryptocurrency wallet details. When choosing a good search bot, consider the accuracy and speed of its results, the breadth of its search coverage, and any limitations on query volume. Look for bots that respect user privacy by not logging search queries or storing personal data. User feedback and ratings can indicate reliability, and it is beneficial to test the bot with sample queries to assess its performance. Users typically employ these bots for quick research, fact-checking during conversations, or finding specific content within their own messages. For instance, a user might search for a file shared weeks ago or look up a term while discussing a topic in a group. Security and privacy considerations are paramount, as search bots can potentially access sensitive information, especially when searching private chats or databases. Ensure the bot does not share your queries with third parties and has a clear policy on data retention. Avoid bots that require access to your message history or personal data without a valid reason. Additionally, be cautious when using search bots that claim to find leaked data, as they may operate in legal gray areas. Despite these risks, search bots are invaluable for navigating the vast amount of information within Telegram and beyond, making them essential tools for power users and communities alike.</p>
 
-<div class="count">123 bots tagged #search</div>
-<div class="bot-item">
+  </div>
+</div>
+  </div>
+  <div class="tag-layout-right">
+    <div class="count">123 bots tagged #search</div>
+    <div class="bot-item">
   <a href="/b/mysearch.html" class="bot-name">🤖 mysearch</a>
   <div class="bot-username">@mysearch</div>
   <div class="bot-desc">MySearch is a Telegram-based search bot designed to help users find public groups, channels, videos, and music. It provi</div>
@@ -795,6 +819,8 @@ a { color: #6c63ff; }
   <div class="bot-rating">⭐⭐⭐ 1.0</div>
 </div>
 
+  </div>
+</div>
 <a class="back" href="/">← Back to catalog</a>
 </body>
 </html>
