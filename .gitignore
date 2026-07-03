@@ -1,0 +1,17 @@
+# Generated site files
+b/
+tag/
+index.html
+sitemap.xml
+robots.txt
+404.html
+data.json
+tags.json
+*.txt
+.vs/
+
+# Keep these
+!.nojekyll
+!CNAME
+!.gitignore
+!.github/
