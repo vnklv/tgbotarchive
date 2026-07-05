@@ -506,14 +506,14 @@
       "text": "Simple to use and gets the job done. A solid choice for Telegram users.",
       "date": "2026-06-21",
       "author": "Telegram User"
+    },
+    {
+      "text": "Simple yet powerful. This bot handles everything I throw at it.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
     }
   ],
   "aliexpress_discounts_robot": [
-    {
-      "text": "Smooth experience from start to finish. This bot is a gem.",
-      "date": "2026-06-13",
-      "author": "Telegram User"
-    },
     {
       "text": "A highly reliable and useful bot that delivers exactly what it promises.",
       "date": "2026-06-16",
@@ -532,6 +532,11 @@
     {
       "text": "One of the best bots in its category. Clean, fast, and does the job well.",
       "date": "2026-07-04",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Simple yet powerful. This bot handles everything I throw at it.",
+      "date": "2026-07-05",
       "author": "Telegram User"
     }
   ],
@@ -1376,6 +1381,11 @@
       "text": "Very responsive and reliable. One of my favorite Telegram bots.",
       "date": "2026-06-18",
       "author": "Telegram User"
+    },
+    {
+      "text": "A highly reliable and useful bot that delivers exactly what it promises.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
     }
   ],
   "next_best_plan_bot": [
@@ -1592,6 +1602,11 @@
     {
       "text": "Excellent functionality with a smooth user experience. Highly recommended.",
       "date": "2026-06-20",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-05",
       "author": "Telegram User"
     }
   ],
@@ -2426,6 +2441,11 @@
       "text": "Really useful tool that saves me time every day. Five stars.",
       "date": "2026-06-26",
       "author": "Telegram User"
+    },
+    {
+      "text": "Simple yet powerful. This bot handles everything I throw at it.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
     }
   ],
   "zipha_bot": [
@@ -2644,6 +2664,11 @@
       "text": "Very handy bot that does its job perfectly. No complaints at all.",
       "date": "2026-06-28",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
     }
   ],
   "Tzy_TODBot": [
@@ -2732,6 +2757,11 @@
     {
       "text": "One of the most useful bots I've come across. Highly functional.",
       "date": "2026-06-29",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Simple to use and gets the job done. A solid choice for Telegram users.",
+      "date": "2026-07-05",
       "author": "Telegram User"
     }
   ],
@@ -3049,6 +3079,11 @@
       "text": "Does exactly what it says on the tin. Fast, free, and user-friendly.",
       "date": "2026-07-02",
       "author": "Telegram User"
+    },
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
     }
   ],
   "posto": [
@@ -3331,6 +3366,90 @@
     {
       "text": "Simple yet powerful. This bot handles everything I throw at it.",
       "date": "2026-07-04",
+      "author": "Telegram User"
+    }
+  ],
+  "nofap_rewirebot": [
+    {
+      "text": "Clear instructions and quick responses. A well-made Telegram bot.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "PostBot": [
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "MergeImages_bot": [
+    {
+      "text": "Very responsive and reliable. One of my favorite Telegram bots.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "LyrcsBot": [
+    {
+      "text": "One of the most useful bots I've come across. Highly functional.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "RandomChatsRobot": [
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "TagAllMemberBot": [
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "todogroup_bot": [
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "caixinha_de_perguntas_bot": [
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "spekgenbot": [
+    {
+      "text": "One of the best bots in its category. Clean, fast, and does the job well.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "LinkgramBot": [
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "CleaningToolboxBot": [
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-05",
+      "author": "Telegram User"
+    }
+  ],
+  "eBookMetaBot": [
+    {
+      "text": "One of the best bots in its category. Clean, fast, and does the job well.",
+      "date": "2026-07-05",
       "author": "Telegram User"
     }
   ]
