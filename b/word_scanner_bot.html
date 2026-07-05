@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>word_scanner_bot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It i Categories: notifications, monitor, keywords, mon">
+<link rel="canonical" href="https://tgbotarchive.com/b/word_scanner_bot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/word_scanner_bot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/word_scanner_bot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/word_scanner_bot.html?lang=fa">
+<meta property="og:title" content="word_scanner_bot">
+<meta property="og:description" content="This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It i Categories: notifications, monitor, keywords, mon">
+<meta property="og:url" content="https://tgbotarchive.com/b/word_scanner_bot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "word_scanner_bot", "url": "https://t.me/word_scanner_bot", "applicationUrl": "https://t.me/word_scanner_bot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It is useful for chats with high activity where you are not able to read everything by yourself", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "word_scanner_bot", "item": "https://tgbotarchive.com/b/word_scanner_bot.html"}]}, "applicationSubCategory": "notifications and alerts, monitor, keywords, system and service monitoring, find", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 1.0, "ratingCount": 7670363, "bestRating": 5}, "availableLanguage": ["English", "Russian"], "featureList": "group chat support"}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/word_scanner_bot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 word_scanner_bot</h1>
+<div class="username">@word_scanner_bot — <a href="https://t.me/word_scanner_bot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 1.0 · 7670363 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It is useful for chats with high activity where you are not able to read everything by yourself</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Этот бот позволяет настроить ключевые слова и чаты для мониторинга. Если ваше ключевое слово найдено в чате, бот перешлет вам целевое сообщение. Полезно для чатов с высокой активностью, где вы не можете прочитать все самостоятельно.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">این ربات به شما امکان می‌دهد کلمات کلیدی و چت‌هایی را برای نظارت تنظیم کنید. در صورت یافتن کلمه کلیدی شما در یک چت، ربات پیام مورد نظر را برای شما ارسال می‌کند. این برای چت‌هایی با فعالیت بالا که نمی‌توانید همه چیز را خودتان بخوانید مفید است.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>notifications and alerts, monitor, keywords</strong> and more.</p>
+<ul class="feature-list">
+<li>This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It is useful for chats with high activity where you ar</li>
+<li>🌐 Supports <strong>2</strong> languages</li>
+<li>⚡ Works via group chat mode</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>English Russian</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>yes</span></div>
+  <div>👁 Views: <span>👁 10</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/notifications.html" class="tag-card" title="Browse notifications and alerts bots"><span class="tag-name">#notifications</span><span class="tag-desc">notifications and alerts</span></a>
+<a href="/tag/monitor.html" class="tag-card" title="Browse monitor bots"><span class="tag-name">#monitor</span><span class="tag-desc">monitor</span></a>
+<a href="/tag/keywords.html" class="tag-card" title="Browse keywords bots"><span class="tag-name">#keywords</span><span class="tag-desc">keywords</span></a>
+<a href="/tag/monitoring.html" class="tag-card" title="Browse system and service monitoring bots"><span class="tag-name">#monitoring</span><span class="tag-desc">system and service monitoring</span></a>
+<a href="/tag/find.html" class="tag-card" title="Browse find bots"><span class="tag-name">#find</span><span class="tag-desc">find</span></a>
+<a href="/tag/finder.html" class="tag-card" title="Browse finder bots"><span class="tag-name">#finder</span><span class="tag-desc">finder</span></a>
+<a href="/tag/alerts.html" class="tag-card" title="Browse alerts bots"><span class="tag-name">#alerts</span><span class="tag-desc">alerts</span></a>
+<a href="/tag/warn.html" class="tag-card" title="Browse warn bots"><span class="tag-name">#warn</span><span class="tag-desc">warn</span></a>
+<a href="/tag/notify.html" class="tag-card" title="Browse notify bots"><span class="tag-name">#notify</span><span class="tag-desc">notify</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>The Finder Bot Landscape: How word_scanner_bot Stands Out</h2>
+
+<p>In the bustling ecosystem of Telegram, "finder" bots have carved a niche by helping users locate specific information—from vehicle details and caller identities to media and chat messages. These bots automate the search process, saving time in high-volume environments. Among them, @word_scanner_bot offers a unique twist: instead of searching static databases, it monitors live conversations for keywords you define, then forwards matching messages to you. This sets it apart from most competitors, which focus on querying external data sources.</p>
+
+<h2>How word_scanner_bot Compares to Similar Bots</h2>
+
+<p>The finder category is diverse, but @word_scanner_bot occupies a distinct space: real-time chat monitoring. Here’s how it stacks up against peers:</p>
+
+<ul>
+<li><strong>@Vechile_Info_Finder_bot</strong> (Rating: 5.0/5, 67,816 votes) – Excels at retrieving vehicle details from registration numbers. It’s a one-query tool, not a monitor.</li>
+<li><strong>@mysearch</strong> (Rating: 1.0/5, 3,942 votes) – Searches public groups, channels, videos, and music. Broad but poorly rated.</li>
+<li><strong>@truecaller_legalbot</strong> (Rating: 1.0/5, 321,256 votes) – Fetches caller details for Indian numbers. High usage but low satisfaction.</li>
+<li><strong>@ShazamioROBOT</strong> (Rating: 1.0/5, 1 vote) – Identifies music tracks. Niche and virtually untested.</li>
+<li><strong>@TGBMovieSearch_bot</strong> (Rating: 1.0/5, 1 vote) – Provides movie info and facts. Similarly niche.</li>
+</ul>
+
+<p>Unlike these, @word_scanner_bot doesn’t rely on a pre-built database. It listens to chats you specify and alerts you when a keyword appears—ideal for tracking mentions in busy groups or channels.</p>
+
+<h2>Key Strengths and Unique Features of word_scanner_bot</h2>
+
+<ul>
+<li><strong>Real-time keyword monitoring</strong> – Set multiple keywords and bot will resend any matching message from target chats. No other bot in this list offers live scanning.</li>
+<li><strong>Customizable chat selection</strong> – You choose which groups or channels to monitor, giving control over noise levels.</li>
+<li><strong>Forwarding capability</strong> – Instead of just notifications, it resends the exact message, preserving context.</li>
+<li><strong>Use case focus</strong> – Perfect for moderators, researchers, or anyone tracking discussions in high-activity chats (e.g., crypto groups, support channels, news feeds).</li>
+</ul>
+
+<p>Its main limitation: it doesn’t search historical data or external sources—only future messages.</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>word_scanner_bot</th>
+  <th>Vechile_Info_Finder_bot</th>
+  <th>mysearch</th>
+  <th>truecaller_legalbot</th>
+  <th>ShazamioROBOT</th>
+  <th>TGBMovieSearch_bot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>Monitor chats for keywords</td>
+  <td>Vehicle info by plate</td>
+  <td>Search groups/media</td>
+  <td>Caller ID for India</td>
+  <td>Music recognition</td>
+  <td>Movie details</td>
+</tr>
+<tr>
+  <td><strong>Real-time Monitoring</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>External Database</strong></td>
+  <td>No (in-chat only)</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+  <td>1.0/5</td>
+</tr>
+<tr>
+  <td><strong>Votes</strong></td>
+  <td>N/A</td>
+  <td>67,816</td>
+  <td>3,942</td>
+  <td>321,256</td>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td><strong>Unique Strength</strong></td>
+  <td>Live keyword alerts</td>
+  <td>High accuracy &amp; volume</td>
+  <td>Broad search scope</td>
+  <td>Large user base</td>
+  <td>Simple music ID</td>
+  <td>Niche movie data</td>
+</tr>
+</tbody>
+</table>
+
+<h2>When to Choose Each Bot</h2>
+
+<ul>
+<li><strong>Choose @word_scanner_bot</strong> if you need to track specific terms in active Telegram chats—for instance, monitoring a support group for “urgent” mentions or following brand discussions in a large community. It’s the only bot that acts as a live filter.</li>
+<li><strong>Choose @Vechile_Info_Finder_bot</strong> for instant vehicle registration lookups. Its stellar rating and massive vote count make it the go-to for this narrow task.</li>
+<li><strong>Avoid @mysearch, @truecaller_legalbot, @ShazamioROBOT, and @TGBMovieSearch_bot</strong> unless you have very specific needs—their low ratings suggest poor reliability or user experience. For music or movie searches, dedicated bots like @SongIDBot or @IMDbBot are better alternatives.</li>
+</ul>
+
+<p>In summary, @word_scanner_bot fills a gap that other finders ignore: proactive, keyword-driven monitoring. While it won’t replace database queries, it’s indispensable for anyone drowning in chat noise who needs to catch critical messages.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-17</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose word_scanner_bot</div>
+  <div class="article-content">
+    <p>This bot allows you to set up keywords and chats to monitor. In case your keyword is found in a chat, the bot will resend you the target message. It is useful for chats with high activity where you are not able to read everything by yourself</p>
+    <ul class="advantage-list">
+      <li>👥 Fully compatible with group chats</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="reviews-section">
+  <div class="section-title">💬 User Reviews</div>
+  <div class="review-item"><span class="review-text">Really useful tool that saves me time every day. Five stars.</span> <span class="review-date">— 2026-06-30</span></div>
+</div>
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/MyWalletAlertsBot.html" class="rel-item"><div class="rel-name">🤖 MyWalletAlertsBot</div><div class="rel-desc">Monitor public cryptocurrency wallet addresses and receive Telegram alerts after</div></a><a href="/b/MonitorBot_bot.html" class="rel-item"><div class="rel-name">🤖 MonitorBot</div><div class="rel-desc">MonitorBot monitors the availability of URL.</div></a><a href="/b/LinuxMonitorBot.html" class="rel-item"><div class="rel-name">🤖 Linux server monitor</div><div class="rel-desc">Linux server monitor on Telegram</div></a><a href="/b/iNotifyBot.html" class="rel-item"><div class="rel-name">🤖 Notify Me ~  🔴Flagged as offline</div><div class="rel-desc">With this bot you can set alarms and save your clipboard. If you add the bot in </div></a><a href="/b/mysearch.html" class="rel-item"><div class="rel-name">🤖 mysearch</div><div class="rel-desc">MySearch is a Telegram-based search bot designed to help users find public group</div></a>
+</div>
+
+<a class="btn" href="https://t.me/word_scanner_bot" target="_blank">🤖 Open @word_scanner_bot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

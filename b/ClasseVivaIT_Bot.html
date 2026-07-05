@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClasseViva Bot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the websit Categories: school, classeviva, utilities.">
+<link rel="canonical" href="https://tgbotarchive.com/b/ClasseVivaIT_Bot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/ClasseVivaIT_Bot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/ClasseVivaIT_Bot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/ClasseVivaIT_Bot.html?lang=fa">
+<meta property="og:title" content="ClasseViva Bot">
+<meta property="og:description" content="A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the websit Categories: school, classeviva, utilities.">
+<meta property="og:url" content="https://tgbotarchive.com/b/ClasseVivaIT_Bot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ClasseViva Bot", "url": "https://t.me/ClasseVivaIT_Bot", "applicationUrl": "https://t.me/ClasseVivaIT_Bot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the next day and what has been done in the morning.", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "ClasseViva Bot", "item": "https://tgbotarchive.com/b/ClasseVivaIT_Bot.html"}]}, "applicationSubCategory": "school, classeviva, utilities", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "ratingCount": 206199570, "bestRating": 5}, "availableLanguage": ["Italian"]}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/ClasseVivaIT_Bot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 ClasseViva Bot</h1>
+<div class="username">@ClasseVivaIT_Bot — <a href="https://t.me/ClasseVivaIT_Bot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 5.0 · 206199570 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the next day and what has been done in the morning.</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Бот для итальянского электронного журнала школы ClasseViva. Он заменяет официальное приложение, так как отправляет почасовые уведомления обо всем на сайте и ежедневные напоминания о том, что нужно сделать на следующий день и что было сделано утром.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">رباتی برای دفتر ثبت الکترونیکی مدرسه ایتالیایی ClasseViva. این ربات جایگزین برنامه رسمی می‌شود، زیرا اعلان‌های ساعتی درباره همه چیز در وب‌سایت و یادآوری‌های روزانه درباره کارهای روز بعد و کارهای انجام‌شده در صبح را ارائه می‌دهد.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot specializes in <strong>school, classeviva</strong> and <strong>utilities</strong>.</p>
+<ul class="feature-list">
+<li>A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the ne</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>Italian</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>no</span></div>
+  <div>👁 Views: <span>👁 10</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/school.html" class="tag-card" title="Browse school bots"><span class="tag-name">#school</span><span class="tag-desc">school</span></a>
+<a href="/tag/classeviva.html" class="tag-card" title="Browse classeviva bots"><span class="tag-name">#classeviva</span><span class="tag-desc">classeviva</span></a>
+<a href="/tag/utilities.html" class="tag-card" title="Browse utilities bots"><span class="tag-name">#utilities</span><span class="tag-desc">utilities</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>School Telegram Bots: A Comparison of ClasseViva Bot and Its Peers</h2>
+
+<p>School Telegram bots have become essential tools for students and parents, automating tasks like checking grades, managing schedules, setting reminders, and even summarizing notes. They reduce the need to manually visit school portals or juggle multiple apps, offering convenience directly in Telegram. Among these, ClasseViva Bot (@ClasseVivaIT_Bot) stands out for its focus on the Italian ClasseViva E-Register system, but how does it compare to other bots in the same category? This article provides an overview, key comparisons, and recommendations.</p>
+
+<h3>Overview of @ClasseVivaIT_Bot</h3>
+
+<p>ClasseViva Bot is designed specifically for the ClasseViva school electronic register used widely in Italian schools. It replaces the official app by offering hourly notifications about any updates on the website (e.g., new grades, absences, notes) and daily reminders about pending tasks. Its core strength lies in real-time monitoring and proactive alerts, ensuring users never miss important school updates. The bot is tailored for students and parents who rely on the ClasseViva platform.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The landscape of school Telegram bots includes a mix of specialized and general-purpose tools. Below is a comparison table highlighting key features, ratings, and status.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Primary Function</th>
+  <th>Rating (out of 5)</th>
+  <th>User Votes</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@ClasseVivaIT_Bot</td>
+  <td>ClasseViva E-Register notifications &amp; reminders</td>
+  <td>Not available</td>
+  <td>Not available</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@ArgoFamigliabot</td>
+  <td>Argo Electronic Log grades/absences</td>
+  <td>5.0</td>
+  <td>12,694</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@MyScheduleRobot</td>
+  <td>Timetable and task organization</td>
+  <td>4.2</td>
+  <td>29,613,406</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@DiarioScuola_bot</td>
+  <td>Homework and test reminders</td>
+  <td>3.47</td>
+  <td>1,546,059</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@SummaryRobot</td>
+  <td>Text/photo summarization</td>
+  <td>2.9</td>
+  <td>1</td>
+  <td>Offline</td>
+</tr>
+<tr>
+  <td>@Rajinnulis_bot</td>
+  <td>Human-like handwriting generation</td>
+  <td>1.0</td>
+  <td>1</td>
+  <td>Offline</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of @ClasseVivaIT_Bot</h3>
+
+<ul>
+<li><strong>Real-time hourly notifications:</strong> Unlike many bots that only send updates on demand, ClasseViva Bot pushes notifications every hour, keeping users instantly informed about grade changes, new assignments, or attendance updates.</li>
+<li><strong>Daily reminders:</strong> It proactively reminds users of pending tasks (e.g., homework, upcoming tests), reducing the chance of forgetfulness.</li>
+<li><strong>Specialized for ClasseViva:</strong> It directly integrates with the Italian school system, eliminating the need for manual checks. Other bots like @DiarioScuola_bot require manual input for reminders, while @ArgoFamigliabot (now offline) served a different register.</li>
+<li><strong>Replaces official app:</strong> It offers a streamlined alternative to the ClasseViva mobile app, often with faster notifications and lower resource usage.</li>
+</ul>
+
+<h3>Unique Features vs. Competitors</h3>
+
+<ul>
+<li><strong>Vs. @ArgoFamigliabot:</strong> Both target Italian school registers, but ClasseViva Bot remains active, while ArgoFamigliabot is offline. ClasseViva Bot’s hourly push notifications are more proactive than Argo’s on-demand queries.</li>
+<li><strong>Vs. @MyScheduleRobot:</strong> MyScheduleRobot focuses on timetable planning and task organization but is now offline. ClasseViva Bot’s niche is real-time school data monitoring, not general scheduling.</li>
+<li><strong>Vs. @DiarioScuola_bot:</strong> DiarioScuola_bot requires users to manually set reminders for homework and tests. ClasseViva Bot automates this based on the ClasseViva register, making it more hands-off.</li>
+<li><strong>Vs. @SummaryRobot and @Rajinnulis_bot:</strong> These bots are for study aids (summarization, handwriting) rather than school management. ClasseViva Bot is purely for register notifications.</li>
+</ul>
+
+<h3>Recommendations on When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @ClasseVivaIT_Bot if:</strong> You are a student or parent using the ClasseViva E-Register in Italy and want automated, real-time updates on grades, absences, and tasks without manual input. It’s ideal for those who need constant awareness of school changes.</li>
+<li><strong>Choose @DiarioScuola_bot if:</strong> You don’t use ClasseViva or prefer a manual reminder system for homework and tests. It’s flexible for any school but requires effort to set up.</li>
+<li><strong>Avoid offline bots:</strong> @ArgoFamigliabot, @MyScheduleRobot, @SummaryRobot, and @Rajinnulis_bot are flagged as offline, so they are not usable. If they were active, @ArgoFamigliabot would be a good alternative for Argo users, and @MyScheduleRobot for timetable planning.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>ClasseViva Bot excels in its specific niche—providing automated, real-time notifications for the ClasseViva school register. While other bots offer general scheduling or manual reminders, ClasseViva Bot’s hourly updates and daily task reminders make it a powerful tool for Italian students and parents. However, its usefulness is limited to ClasseViva users. For those outside this system, @DiarioScuola_bot remains a viable active option for basic reminders. Always verify bot status before relying on them, as many in this category have gone offline.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-20</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose ClasseViva Bot</div>
+  <div class="article-content">
+    <p>A bot for the Italian ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the next day and what has been done in the morning.</p>
+    <ul class="advantage-list">
+      <li>⭐ High rating: 5.0/5 from 206199570 users</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/K_vp_robot.html" class="rel-item"><div class="rel-name">🤖 Generative AI</div><div class="rel-desc">What can I do for you? -Create &amp; Edit Photos - Transform your ideas into stunnin</div></a><a href="/b/UtAZBot.html" class="rel-item"><div class="rel-name">🤖 UtAZBot</div><div class="rel-desc">Inline Utility Bot, built with Rust offers powerful features: removing tracking </div></a><a href="/b/ntosbot.html" class="rel-item"><div class="rel-name">🤖 ntosbot</div><div class="rel-desc">This bot allows you to save messages and send them to any chat room via Inline M</div></a><a href="/b/INOTAROBOT.html" class="rel-item"><div class="rel-name">🤖 INOTAROBOT</div><div class="rel-desc">Bot for protection, cleaning and analysis of chats, necessary for every admin.</div></a><a href="/b/GuardifyBot.html" class="rel-item"><div class="rel-name">🤖 GuardifyBot</div><div class="rel-desc">Powerful AI-driven Group Manager. Your must have for safe, engaged and growing c</div></a>
+</div>
+
+<a class="btn" href="https://t.me/ClasseVivaIT_Bot" target="_blank">🤖 Open @ClasseVivaIT_Bot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

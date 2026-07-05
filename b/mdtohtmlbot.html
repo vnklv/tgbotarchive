@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown to HTML — Telegram Bot | BotsArchive</title>
+<meta name="description" content="Send to this bot a Text formatted in Markdown and it will convert it in HTML Categories: formatting, text, html, markdown, markup, converter.">
+<link rel="canonical" href="https://tgbotarchive.com/b/mdtohtmlbot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/mdtohtmlbot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/mdtohtmlbot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/mdtohtmlbot.html?lang=fa">
+<meta property="og:title" content="Markdown to HTML">
+<meta property="og:description" content="Send to this bot a Text formatted in Markdown and it will convert it in HTML Categories: formatting, text, html, markdown, markup, converter.">
+<meta property="og:url" content="https://tgbotarchive.com/b/mdtohtmlbot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Markdown to HTML", "url": "https://t.me/mdtohtmlbot", "applicationUrl": "https://t.me/mdtohtmlbot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "Send to this bot a Text formatted in Markdown and it will convert it in HTML", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "Markdown to HTML", "item": "https://tgbotarchive.com/b/mdtohtmlbot.html"}]}, "applicationSubCategory": "formatting, text processing and manipulation, html, markdown, markup", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "ratingCount": 6069, "bestRating": 5}, "availableLanguage": ["Italian"]}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/mdtohtmlbot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 Markdown to HTML</h1>
+<div class="username">@mdtohtmlbot — <a href="https://t.me/mdtohtmlbot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 5.0 · 6069 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">Send to this bot a Text formatted in Markdown and it will convert it in HTML</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Отправьте этому боту текст, отформатированный в Markdown, и он преобразует его в HTML.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">متنی که با Markdown فرمت شده است به این ربات بفرستید تا آن را به HTML تبدیل کند.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>formatting, text processing and manipulation, html</strong> and more.</p>
+<ul class="feature-list">
+<li>Send to this bot a Text formatted in Markdown and it will convert it in HTML</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>Italian</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>no</span></div>
+  <div>👁 Views: <span>👁 17,671,187</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/formatting.html" class="tag-card" title="Browse formatting bots"><span class="tag-name">#formatting</span><span class="tag-desc">formatting</span></a>
+<a href="/tag/text.html" class="tag-card" title="Browse text processing and manipulation bots"><span class="tag-name">#text</span><span class="tag-desc">text processing and manipulation</span></a>
+<a href="/tag/html.html" class="tag-card" title="Browse html bots"><span class="tag-name">#html</span><span class="tag-desc">html</span></a>
+<a href="/tag/markdown.html" class="tag-card" title="Browse markdown bots"><span class="tag-name">#markdown</span><span class="tag-desc">markdown</span></a>
+<a href="/tag/markup.html" class="tag-card" title="Browse markup bots"><span class="tag-name">#markup</span><span class="tag-desc">markup</span></a>
+<a href="/tag/converter.html" class="tag-card" title="Browse file and format conversion bots"><span class="tag-name">#converter</span><span class="tag-desc">file and format conversion</span></a>
+<a href="/tag/conversion.html" class="tag-card" title="Browse conversion bots"><span class="tag-name">#conversion</span><span class="tag-desc">conversion</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>HTML Telegram Bots: From Markdown Conversion to Web Scraping and Games</h2>
+
+<p>Telegram bots in the "html" category serve a surprisingly diverse range of functions. While many focus on converting text formats like Markdown to HTML, others use HTML5 technologies to deliver interactive games, scrape web content, or test code. This article compares five such bots, with a spotlight on <strong>Markdown to HTML</strong> (@mdtohtmlbot), a specialized tool for developers and content creators who need quick format conversion.</p>
+
+<h3>How @mdtohtmlbot Works</h3>
+
+<p>@mdtohtmlbot is straightforward: you send it any text formatted in Markdown, and it returns the equivalent HTML. It supports common Markdown syntax—headings, lists, bold, italic, code blocks, links, and images—converting them into clean, valid HTML tags. There are no extra features or commands; it’s a one-trick pony, but it does that trick reliably.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>The other bots in this category have very different purposes, making direct comparison tricky. Here’s a quick overview:</p>
+
+<ul>
+<li><strong>@WebScrapperRoBot</strong> – Scrapes website content. Currently flagged as offline, with a high rating (5.0/5, 150 votes). Useful for extracting data from URLs.</li>
+<li><strong>@markdownbot</strong> – Converts text <em>to</em> Markdown style, the opposite of @mdtohtmlbot. Also allows posting formatted text to channels. Highly popular (5.0/5, 1038 votes).</li>
+<li><strong>@inlinegamesbot</strong> – Offers five HTML5 multiplayer games (TicTacToe, Russian Roulette, etc.). Fun for groups, but unrelated to text conversion.</li>
+<li><strong>@awesomebot</strong> – Provides three HTML5 single-player games (Angry Birds, 2048, Hextris). Also not a text tool.</li>
+<li><strong>@HTMLTesterbot</strong> – Sends back formatted HTML for testing. Currently offline, with a mediocre rating (4.34/5, 1 vote).</li>
+</ul>
+
+<h3>Key Strengths of @mdtohtmlbot</h3>
+
+<ul>
+<li><strong>Simplicity</strong>: No learning curve—just send Markdown, get HTML back.</li>
+<li><strong>Reliability</strong>: As of this writing, it’s online and responsive, unlike @WebScrapperRoBot and @HTMLTesterbot.</li>
+<li><strong>Developer-friendly</strong>: Ideal for quick conversions when writing blog posts, documentation, or email templates.</li>
+<li><strong>No clutter</strong>: No games, scraping, or channel posting features—just the core function.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Status</th>
+  <th>Rating</th>
+  <th>Unique Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@mdtohtmlbot</td>
+  <td>Markdown → HTML</td>
+  <td>Online</td>
+  <td>N/A</td>
+  <td>Pure conversion, no extras</td>
+</tr>
+<tr>
+  <td>@WebScrapperRoBot</td>
+  <td>Web scraping</td>
+  <td>Offline</td>
+  <td>5.0/5 (150 votes)</td>
+  <td>Extracts data from URLs</td>
+</tr>
+<tr>
+  <td>@markdownbot</td>
+  <td>Text → Markdown</td>
+  <td>Online</td>
+  <td>5.0/5 (1038 votes)</td>
+  <td>Channel posting support</td>
+</tr>
+<tr>
+  <td>@inlinegamesbot</td>
+  <td>HTML5 multiplayer games</td>
+  <td>Online</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Five games in one bot</td>
+</tr>
+<tr>
+  <td>@awesomebot</td>
+  <td>HTML5 single-player games</td>
+  <td>Online</td>
+  <td>5.0/5 (28 votes)</td>
+  <td>Popular games like Angry Birds</td>
+</tr>
+<tr>
+  <td>@HTMLTesterbot</td>
+  <td>HTML formatting test</td>
+  <td>Offline</td>
+  <td>4.34/5 (1 vote)</td>
+  <td>Returns formatted HTML</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @mdtohtmlbot</strong> if you need quick, reliable Markdown-to-HTML conversion for technical writing or web development. It’s the best choice for that specific task.</li>
+<li><strong>Choose @markdownbot</strong> if you need the reverse (HTML or plain text to Markdown) and want to post formatted content to Telegram channels.</li>
+<li><strong>Choose @WebScrapperRoBot</strong> (if it returns online) for extracting structured data from websites.</li>
+<li><strong>Choose @inlinegamesbot or @awesomebot</strong> if you want to play HTML5 games with friends or solo—completely unrelated to text conversion.</li>
+<li><strong>Choose @HTMLTesterbot</strong> (if it returns online) for testing how HTML renders in Telegram.</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@mdtohtmlbot excels by focusing on a single, well-executed function. While it lacks the popularity of @markdownbot or the entertainment value of game bots, it fills a genuine need for developers and writers. The other text-related bots (@WebScrapperRoBot and @HTMLTesterbot) are currently offline, which further strengthens @mdtohtmlbot’s position as the go-to choice for format conversion in this category. If you work with Markdown and HTML regularly, this bot is a handy addition to your toolkit.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-10</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose Markdown to HTML</div>
+  <div class="article-content">
+    <p>Send to this bot a Text formatted in Markdown and it will convert it in HTML</p>
+    <ul class="advantage-list">
+      <li>⭐ High rating: 5.0/5 from 6069 users</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/markdownbot.html" class="rel-item"><div class="rel-name">🤖 Markdown</div><div class="rel-desc">Translates text to markdown style. It has a function for the post to channels.</div></a><a href="/b/htmlconv_bot.html" class="rel-item"><div class="rel-name">🤖 htmlconv_bot</div><div class="rel-desc">Bot to convert telegram formatted text to HTML paring language</div></a><a href="/b/bold.html" class="rel-item"><div class="rel-name">🤖 Markdown bot</div><div class="rel-desc">formatting your text if you are not able to do it by yourself via context menu</div></a><a href="/b/TgTextBot.html" class="rel-item"><div class="rel-name">🤖 Super Markdown Bot</div><div class="rel-desc">With this bot you can format text in many modes using markdown: Underlined, uppe</div></a><a href="/b/HTMLTesterbot.html" class="rel-item"><div class="rel-name">🤖 HTML Tester ~  🔴Flagged as offline</div><div class="rel-desc">Send an HTML text and it will send it formatted</div></a>
+</div>
+
+<a class="btn" href="https://t.me/mdtohtmlbot" target="_blank">🤖 Open @mdtohtmlbot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

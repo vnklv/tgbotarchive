@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContestManager Bot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner. Categories: contest, inline, winner, draw, easytouse.">
+<link rel="canonical" href="https://tgbotarchive.com/b/ContestManagerBot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/ContestManagerBot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/ContestManagerBot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/ContestManagerBot.html?lang=fa">
+<meta property="og:title" content="ContestManager Bot">
+<meta property="og:description" content="With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner. Categories: contest, inline, winner, draw, easytouse.">
+<meta property="og:url" content="https://tgbotarchive.com/b/ContestManagerBot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ContestManager Bot", "url": "https://t.me/ContestManagerBot", "applicationUrl": "https://t.me/ContestManagerBot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner.", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "ContestManager Bot", "item": "https://tgbotarchive.com/b/ContestManagerBot.html"}]}, "applicationSubCategory": "contest, inline query functionality, winner, draw, easytouse", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "ratingCount": 1, "bestRating": 5}, "availableLanguage": ["Italian", "English", "Spanish", "Francais", "Russian", "Romanian"], "featureList": "inline mode, group chat support"}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/ContestManagerBot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 ContestManager Bot</h1>
+<div class="username">@ContestManagerBot — <a href="https://t.me/ContestManagerBot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 5.0 · 1 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner.</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">С помощью этого бота вы можете создать собственный конкурс и затем выбрать победителя. Создайте конкурс, поделитесь через инлайн и выберите победителя.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">با این ربات می‌توانید مسابقه سفارشی ایجاد کنید و سپس یک برنده را استخراج کنید. مسابقه خود را بسازید، از طریق اینلاین به اشتراک بگذارید و یک برنده را قرعه‌کشی کنید.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>contest, inline query functionality, winner</strong> and more.</p>
+<ul class="feature-list">
+<li>With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner.</li>
+<li>🌐 Supports <strong>6</strong> languages</li>
+<li>⚡ Works via inline mode (type @bot in any chat) and group chat mode</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>Italian English Spanish Francais Russian Romanian</span></div>
+  <div>💬 Inline: <span>yes</span></div>
+  <div>👥 Groups: <span>yes</span></div>
+  <div>👁 Views: <span>👁 10</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/contest.html" class="tag-card" title="Browse contest bots"><span class="tag-name">#contest</span><span class="tag-desc">contest</span></a>
+<a href="/tag/inline.html" class="tag-card" title="Browse inline query functionality bots"><span class="tag-name">#inline</span><span class="tag-desc">inline query functionality</span></a>
+<a href="/tag/winner.html" class="tag-card" title="Browse winner bots"><span class="tag-name">#winner</span><span class="tag-desc">winner</span></a>
+<a href="/tag/draw.html" class="tag-card" title="Browse draw bots"><span class="tag-name">#draw</span><span class="tag-desc">draw</span></a>
+<a href="/tag/easytouse.html" class="tag-card" title="Browse easytouse bots"><span class="tag-name">#easytouse</span><span class="tag-desc">easytouse</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>Contest Manager Bots: Finding the Right Tool for Your Giveaways</h2>
+
+<p>Running contests on Telegram is a popular way to boost engagement, grow channels, or reward subscribers. A dedicated contest bot automates the process of setting up rules, collecting participants, and randomly selecting winners. While many bots offer similar core functionality, they differ significantly in features, reliability, and user experience. Here, we compare <strong>ContestManager Bot</strong> (@ContestManagerBot) with three other notable bots in this category.</p>
+
+<h3>What Contest Bots Offer</h3>
+
+<p>Most contest bots allow channel admins to:
+- Create a contest with custom parameters (duration, number of winners, join conditions).
+- Share the contest via an inline link or button.
+- Automatically pick a winner (or multiple winners) from eligible participants.
+- Optionally require participants to join the channel or forward the post.</p>
+
+<h3>@ContestManagerBot: A Closer Look</h3>
+
+<p><strong>ContestManager Bot</strong> positions itself as a straightforward, no-fuss tool. Its description emphasizes simplicity: create a contest, share it via inline, and draw a winner. It does not overload users with complex settings, making it ideal for quick giveaways.</p>
+
+<p><strong>Key strengths:</strong>
+- <strong>Simplicity:</strong> The bot focuses on the essential flow – create, share, draw. No unnecessary steps.
+- <strong>Inline sharing:</strong> The bot supports inline mode, allowing you to insert contest information directly into any chat or channel.
+- <strong>Reliability:</strong> Being actively maintained (no flagged offline status), it offers a stable experience for basic contests.</p>
+
+<h3>Comparing the Contenders</h3>
+
+<p>Here’s how @ContestManagerBot stacks up against its alternatives:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Rating</th>
+  <th>Key Features</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@ContestManagerBot</td>
+  <td>N/A</td>
+  <td>Simple creation, inline sharing, winner draw</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@EasyContestBot</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>Many options, easy setup</td>
+  <td>🔴 Flagged as offline</td>
+</tr>
+<tr>
+  <td>@ContestMasterBot</td>
+  <td>3.22/5 (38 votes)</td>
+  <td>Large number of functions, Russian interface</td>
+  <td>Active</td>
+</tr>
+<tr>
+  <td>@EzContestBot</td>
+  <td>2.13/5 (19 votes)</td>
+  <td>Organize contests in channels</td>
+  <td>Active</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Detailed Differences</h3>
+
+<p><strong>@EasyContestBot</strong> boasts a perfect rating but with only one vote – and it is flagged as offline, making it unusable. <strong>@ContestMasterBot</strong> offers extensive customization (multiple winners, subscription checks, timed contests) but has a lower rating and a Russian-language interface, which may limit non-Russian users. <strong>@EzContestBot</strong> has the lowest rating and appears to be less feature-rich, possibly lacking inline support.</p>
+
+<p><strong>@ContestManagerBot</strong> stands out for its:
+- <strong>English-friendly interface</strong> (unlike ContestMasterBot).
+- <strong>Active status</strong> (unlike EasyContestBot).
+- <strong>Simplicity</strong> – it does not require learning complex menus or settings.
+- <strong>Inline functionality</strong> – a modern way to embed contests without leaving the chat.</p>
+
+<h3>When to Choose Which Bot</h3>
+
+<ul>
+<li><strong>Choose @ContestManagerBot if:</strong> You need a quick, reliable, and straightforward contest tool. Ideal for small channels or one-off giveaways where you don’t need advanced conditions. Its inline sharing is a plus for seamless integration.</li>
+<li><strong>Choose @ContestMasterBot if:</strong> You require advanced features like multiple winners, timed contests, or subscription checks, and you are comfortable with a Russian interface. It has a larger user base and more feedback.</li>
+<li><strong>Avoid @EasyContestBot</strong> – it is offline and cannot be used.</li>
+<li><strong>Avoid @EzContestBot</strong> – low rating and limited features make it a poor choice for most users.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>For most Telegram channel admins looking for a dependable, easy-to-use contest bot, <strong>@ContestManagerBot</strong> is the best balance of functionality and simplicity. It may lack the advanced options of ContestMasterBot, but its active development, English interface, and inline support make it a solid choice for everyday giveaways. If you need complex automation, ContestMasterBot remains a viable alternative, but be prepared for a steeper learning curve. In a category where reliability and ease of use matter most, @ContestManagerBot delivers.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-11</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose ContestManager Bot</div>
+  <div class="article-content">
+    <p>With this bot you can create custom contest and then extract a winner. Create your contest, share via inline and draw a winner.</p>
+    <ul class="advantage-list">
+      <li>⭐ High rating: 5.0/5 from 1 users</li><li>🌐 Supports 6 languages, accessible globally</li><li>⚡ Works in inline mode — use @ContestManagerBot in any chat</li><li>👥 Fully compatible with group chats</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/qingqiubot.html" class="rel-item"><div class="rel-name">🤖 qingqiubot</div><div class="rel-desc">Fast and low-cost TRX energy rental service. • Save up to 70% on USDT transactio</div></a><a href="/b/MetaphoreBot.html" class="rel-item"><div class="rel-name">🤖 MetaphoreBot</div><div class="rel-desc">Turns any technical concept into a clear human story. Audience-aware explanation</div></a><a href="/b/gift_rental_robot.html" class="rel-item"><div class="rel-name">🤖 gift_rental_robot</div><div class="rel-desc">This bot lets you rent Telegram Gifts using Telegram Stars and offers very user-</div></a><a href="/b/BotsReviewerBot.html" class="rel-item"><div class="rel-name">🤖 BotsReviewerBot</div><div class="rel-desc">Hi! I&#x27;m the first bot to review other bots Easy search Ratings and real reviews </div></a><a href="/b/TGCreationDateBot.html" class="rel-item"><div class="rel-name">🤖 TGCreationDateBot</div><div class="rel-desc">With this bot you can know the Creation Date of Telegram accounts. Important: Re</div></a>
+</div>
+
+<a class="btn" href="https://t.me/ContestManagerBot" target="_blank">🤖 Open @ContestManagerBot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

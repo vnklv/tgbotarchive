@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>foodometer_bot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="Simple bot to get information about the calories content of products. Categories: food, calories, calory, nutrition, health, lifestyle.">
+<link rel="canonical" href="https://tgbotarchive.com/b/foodometer_bot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/foodometer_bot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/foodometer_bot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/foodometer_bot.html?lang=fa">
+<meta property="og:title" content="foodometer_bot">
+<meta property="og:description" content="Simple bot to get information about the calories content of products. Categories: food, calories, calory, nutrition, health, lifestyle.">
+<meta property="og:url" content="https://tgbotarchive.com/b/foodometer_bot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "foodometer_bot", "url": "https://t.me/foodometer_bot", "applicationUrl": "https://t.me/foodometer_bot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "Simple bot to get information about the calories content of products.", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "foodometer_bot", "item": "https://tgbotarchive.com/b/foodometer_bot.html"}]}, "applicationSubCategory": "food, recipes, and nutrition, calories, calory, nutrition, health, fitness, and wellness", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "ratingCount": 13071, "bestRating": 5}, "availableLanguage": ["English"]}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/foodometer_bot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 foodometer_bot</h1>
+<div class="username">@foodometer_bot — <a href="https://t.me/foodometer_bot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 5.0 · 13071 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">Simple bot to get information about the calories content of products.</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Простой бот для получения информации о калорийности продуктов.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">ربات ساده برای دریافت اطلاعات درباره کالری محصولات.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>food, recipes, and nutrition, calories, calory</strong> and more.</p>
+<ul class="feature-list">
+<li>Simple bot to get information about the calories content of products.</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>English</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>no</span></div>
+  <div>👁 Views: <span>👁 49,524,852</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/food.html" class="tag-card" title="Browse food, recipes, and nutrition bots"><span class="tag-name">#food</span><span class="tag-desc">food, recipes, and nutrition</span></a>
+<a href="/tag/calories.html" class="tag-card" title="Browse calories bots"><span class="tag-name">#calories</span><span class="tag-desc">calories</span></a>
+<a href="/tag/calory.html" class="tag-card" title="Browse calory bots"><span class="tag-name">#calory</span><span class="tag-desc">calory</span></a>
+<a href="/tag/nutrition.html" class="tag-card" title="Browse nutrition bots"><span class="tag-name">#nutrition</span><span class="tag-desc">nutrition</span></a>
+<a href="/tag/health.html" class="tag-card" title="Browse health, fitness, and wellness bots"><span class="tag-name">#health</span><span class="tag-desc">health, fitness, and wellness</span></a>
+<a href="/tag/lifestyle.html" class="tag-card" title="Browse lifestyle bots"><span class="tag-name">#lifestyle</span><span class="tag-desc">lifestyle</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>Food Telegram Bots: A Comprehensive Comparison</h2>
+
+<p>Food-related Telegram bots have become essential tools for meal planning, nutrition tracking, and discovering new recipes. From simple calorie counters to AI-powered meal analyzers, these bots cater to various needs. This article compares <strong>@foodometer_bot</strong> with five other popular food bots, highlighting their strengths and ideal use cases.</p>
+
+<h3>Overview of Food Telegram Bots</h3>
+
+<p>Telegram bots in the food category typically offer one or more of the following features:
+- Calorie and nutrition information for foods
+- Recipe suggestions and storage
+- Meal photo analysis for macronutrients
+- Deals and discounts at nearby restaurants
+- Ingredient-based cooking recommendations</p>
+
+<h3>@foodometer_bot: Simple Calorie Lookup</h3>
+
+<p><strong>@foodometer_bot</strong> is a straightforward tool designed to provide calorie content for various food products. Its simplicity makes it ideal for quick checks without unnecessary complexity. Users can send a product name and receive instant calorie data, making it perfect for those who need fast, reliable information without extra features.</p>
+
+<h3>Comparison with Similar Bots</h3>
+
+<p>Below is a comparison of key features across the bots:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Bot Name</th>
+  <th>Primary Function</th>
+  <th>Rating</th>
+  <th>Key Strength</th>
+  <th>Unique Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@foodometer_bot</td>
+  <td>Calorie lookup</td>
+  <td>N/A</td>
+  <td>Simplicity</td>
+  <td>Direct product calorie queries</td>
+</tr>
+<tr>
+  <td>@useslashbot</td>
+  <td>Local deals</td>
+  <td>5.0/5</td>
+  <td>Restaurant discounts</td>
+  <td>/food command for nearby deals</td>
+</tr>
+<tr>
+  <td>@plant_based_food_bot</td>
+  <td>Ingredient-based cooking</td>
+  <td>5.0/5</td>
+  <td>Plant-based recipes</td>
+  <td>Suggests dishes from available ingredients</td>
+</tr>
+<tr>
+  <td>@NutritionCheckerBot</td>
+  <td>AI meal analysis</td>
+  <td>1.0/5</td>
+  <td>Photo recognition</td>
+  <td>Sends photo → gets macros</td>
+</tr>
+<tr>
+  <td>@my_recipesBot</td>
+  <td>Recipe storage</td>
+  <td>1.0/5</td>
+  <td>Recipe sharing</td>
+  <td>Stores and shares recipes</td>
+</tr>
+<tr>
+  <td>@foodrecipe_bot</td>
+  <td>Recipe delivery</td>
+  <td>1.0/5</td>
+  <td>Large recipe database</td>
+  <td>Sends recipes on request</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Strengths of @foodometer_bot</h3>
+
+<ul>
+<li><strong>Minimalist Design</strong>: No registration, no AI, no complex commands – just send a product name and get calorie info.</li>
+<li><strong>Speed</strong>: Instant responses without image processing or location sharing.</li>
+<li><strong>Focus</strong>: Dedicated solely to calorie lookup, avoiding feature bloat.</li>
+<li><strong>Reliability</strong>: Works consistently without requiring permissions or subscriptions.</li>
+</ul>
+
+<h3>Weaknesses Compared to Alternatives</h3>
+
+<ul>
+<li><strong>Limited Scope</strong>: Only provides calorie data, not full macros or recipes.</li>
+<li><strong>No Visual Recognition</strong>: Unlike NutritionCheckerBot, cannot analyze meal photos.</li>
+<li><strong>No Social Features</strong>: Lacks recipe sharing or community aspects found in my_recipesBot.</li>
+</ul>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @foodometer_bot</strong> if: You need quick, no-frills calorie information for common foods without extra features.</li>
+<li><strong>Choose @useslashbot</strong> if: You're looking for local restaurant deals and want to find cheap eats near you.</li>
+<li><strong>Choose @plant_based_food_bot</strong> if: You follow a plant-based diet and want to cook with ingredients you already have at home.</li>
+<li><strong>Choose @NutritionCheckerBot</strong> if: You want AI-powered meal analysis from photos (though low ratings suggest reliability issues).</li>
+<li><strong>Choose @my_recipesBot</strong> if: You want to store and share your own recipes with others.</li>
+<li><strong>Choose @foodrecipe_bot</strong> if: You want access to a large database of recipes for inspiration.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>@foodometer_bot excels in its simplicity and focus. While it lacks the advanced features of AI-powered bots or the social aspects of recipe-sharing bots, it serves a specific niche perfectly: quick calorie lookups. For users who just want to check how many calories are in an apple or a sandwich without navigating complex interfaces, it's the ideal choice. However, if you need comprehensive nutrition tracking, meal planning, or recipe discovery, consider one of the more feature-rich alternatives despite their mixed ratings.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-13</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose foodometer_bot</div>
+  <div class="article-content">
+    <p>Simple bot to get information about the calories content of products.</p>
+    <ul class="advantage-list">
+      <li>⭐ High rating: 5.0/5 from 13071 users</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="reviews-section">
+  <div class="section-title">💬 User Reviews</div>
+  <div class="review-item"><span class="review-text">Works great, never had any issues with it. Definitely worth trying.</span> <span class="review-date">— 2026-06-12</span></div>
+</div>
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/NutritionCheckerBot.html" class="rel-item"><div class="rel-name">🤖 NutritionCheckerBot</div><div class="rel-desc">AI nutrition tracker bot. Send a photo of your meal – get calories, protein, fat</div></a><a href="/b/PranaBreathBot.html" class="rel-item"><div class="rel-name">🤖 PranaBreathBot</div><div class="rel-desc">Personalized breathwork assistant using machine learning and insights from milli</div></a><a href="/b/useslashbot.html" class="rel-item"><div class="rel-name">🤖 useslashbot</div><div class="rel-desc">Find deals near you in seconds. Right inside your group chat. Type /food in Tele</div></a><a href="/b/weight_trackerbot.html" class="rel-item"><div class="rel-name">🤖 weight_trackerbot</div><div class="rel-desc">Track your weight effortlessly right in Telegram. Log daily numbers, see progres</div></a><a href="/b/vitacodebot.html" class="rel-item"><div class="rel-name">🤖 vitacodebot</div><div class="rel-desc">VitaCode — great free AI health assistant. Supports: Photo • PDF file • Text • V</div></a>
+</div>
+
+<a class="btn" href="https://t.me/foodometer_bot" target="_blank">🤖 Open @foodometer_bot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

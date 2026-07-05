@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authorized Join — Telegram Bot | BotsArchive</title>
+<meta name="description" content="This bot allows you to let only the people you authorize into your group Categories: join, authorized, groups, administration, security.">
+<link rel="canonical" href="https://tgbotarchive.com/b/AuthorizedJoinBot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/AuthorizedJoinBot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/AuthorizedJoinBot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/AuthorizedJoinBot.html?lang=fa">
+<meta property="og:title" content="Authorized Join">
+<meta property="og:description" content="This bot allows you to let only the people you authorize into your group Categories: join, authorized, groups, administration, security.">
+<meta property="og:url" content="https://tgbotarchive.com/b/AuthorizedJoinBot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Authorized Join", "url": "https://t.me/AuthorizedJoinBot", "applicationUrl": "https://t.me/AuthorizedJoinBot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "This bot allows you to let only the people you authorize into your group", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "Authorized Join", "item": "https://tgbotarchive.com/b/AuthorizedJoinBot.html"}]}, "applicationSubCategory": "join, authorized, group management features, administration, security and privacy protection", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 1.0, "ratingCount": 702228, "bestRating": 5}, "availableLanguage": ["Italian", "English"], "featureList": "group chat support"}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/AuthorizedJoinBot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 Authorized Join</h1>
+<div class="username">@AuthorizedJoinBot — <a href="https://t.me/AuthorizedJoinBot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 1.0 · 702228 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">This bot allows you to let only the people you authorize into your group</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Этот бот позволяет пускать в вашу группу только тех людей, которых вы авторизовали.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">این ربات به شما امکان می‌دهد فقط افرادی را که مجاز می‌دانید وارد گروه شما شوند.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>join, authorized, group management features</strong> and more.</p>
+<ul class="feature-list">
+<li>This bot allows you to let only the people you authorize into your group</li>
+<li>🌐 Supports <strong>2</strong> languages</li>
+<li>⚡ Works via group chat mode</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>Italian English</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>yes</span></div>
+  <div>👁 Views: <span>👁 10</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/join.html" class="tag-card" title="Browse join bots"><span class="tag-name">#join</span><span class="tag-desc">join</span></a>
+<a href="/tag/authorized.html" class="tag-card" title="Browse authorized bots"><span class="tag-name">#authorized</span><span class="tag-desc">authorized</span></a>
+<a href="/tag/groups.html" class="tag-card" title="Browse group management features bots"><span class="tag-name">#groups</span><span class="tag-desc">group management features</span></a>
+<a href="/tag/administration.html" class="tag-card" title="Browse administration bots"><span class="tag-name">#administration</span><span class="tag-desc">administration</span></a>
+<a href="/tag/security.html" class="tag-card" title="Browse security and privacy protection bots"><span class="tag-name">#security</span><span class="tag-desc">security and privacy protection</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>Joining Forces: A Comparison of Telegram Join Management Bots</h2>
+
+<p>Managing who enters your Telegram group or channel is crucial for maintaining security, reducing spam, and ensuring a quality community. A category of bots known as "join bots" helps automate this process, from automatically approving requests to blocking specific user types. Among them, <strong>Authorized Join</strong> (@AuthorizedJoinBot) offers a unique take on access control. This article compares it with several competitors to help you choose the right tool for your needs.</p>
+
+<h3>What Join Bots Do</h3>
+
+<p>Join bots handle the entry process for Telegram groups and channels. Their core functions include:
+- Automatically approving or rejecting join requests.
+- Removing service messages (like "User joined" notifications).
+- Filtering users based on criteria (e.g., Premium status, custom rules).
+- Allowing manual approval workflows for admins.</p>
+
+<p>The goal is to give group owners granular control over membership without constant manual oversight.</p>
+
+<h3>How @AuthorizedJoinBot Stands Out</h3>
+
+<p>Authorized Join takes a <strong>whitelist approach</strong>: only users you explicitly authorize can join your group. This is fundamentally different from most bots that either auto-accept all requests or reject certain categories. Instead of reacting to requests, it proactively controls access based on a preset list.</p>
+
+<p>Compared to bots like @AcceptRequestBot (which auto-accepts everyone) or @PremiumKickBot (which blocks Premium users), Authorized Join is ideal for private, curated communities where every member must be vetted individually. It does not rely on voting or popularity metrics—its rating is not listed, suggesting a newer or less-reviewed tool, but its simplicity is its strength.</p>
+
+<h3>Key Strengths of Authorized Join</h3>
+
+<ul>
+<li><strong>Explicit Authorization:</strong> Only pre-approved users can enter, offering maximum security for sensitive groups.</li>
+<li><strong>No Spam or Unwanted Members:</strong> Since no one can join without your approval, bots, trolls, and random users are blocked by default.</li>
+<li><strong>Simple Setup:</strong> The bot likely requires adding authorized user IDs or usernames, then handling join requests manually or automatically.</li>
+<li><strong>Privacy Focus:</strong> Ideal for groups where membership must be tightly controlled, such as family circles, paid communities, or internal teams.</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Core Function</th>
+  <th>Unique Feature</th>
+  <th>Rating</th>
+  <th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>@AuthorizedJoinBot</td>
+  <td>Whitelist-based join approval</td>
+  <td>Only authorized users can join</td>
+  <td>N/A (new)</td>
+  <td>Private, curated groups</td>
+</tr>
+<tr>
+  <td>@AntiServiceMessage_Bot</td>
+  <td>Removes join/leave messages</td>
+  <td>Cleans up group chat</td>
+  <td>5.0 (2k+ votes)</td>
+  <td>Groups with high member churn</td>
+</tr>
+<tr>
+  <td>@ChatReqBot</td>
+  <td>Approves join requests via button</td>
+  <td>Direct approval for channels</td>
+  <td>5.0 (182k votes)</td>
+  <td>Large channels needing quick approvals</td>
+</tr>
+<tr>
+  <td>@PressCodeBot</td>
+  <td>Delayed posting &amp; channel management</td>
+  <td>Post scheduling &amp; buttons</td>
+  <td>5.0 (1.3k votes)</td>
+  <td>Content-focused channels</td>
+</tr>
+<tr>
+  <td>@PremiumKickBot</td>
+  <td>Rejects Premium user requests</td>
+  <td>Blocks Telegram Premium users</td>
+  <td>5.0 (1 vote)</td>
+  <td>Groups wanting to avoid paid accounts</td>
+</tr>
+<tr>
+  <td>@AcceptRequestBot</td>
+  <td>Auto-accepts all join requests</td>
+  <td>Zero manual work</td>
+  <td>5.0 (1 vote)</td>
+  <td>Open, public channels</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Recommendations: When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @AuthorizedJoinBot if:</strong> You run a closed, invitation-only group where every member must be pre-approved. Examples: family groups, private clubs, or beta testers. Its whitelist model ensures no unauthorized entry.</li>
+<li><strong>Choose @AntiServiceMessage_Bot if:</strong> You want a clean chat history without "X joined" clutter, especially in large groups with frequent member changes.</li>
+<li><strong>Choose @ChatReqBot if:</strong> You manage a high-volume channel and need a simple, click-to-approve system. Its massive user base proves reliability.</li>
+<li><strong>Choose @PressCodeBot if:</strong> You need both join management and content scheduling, making it a Swiss Army knife for channel admins.</li>
+<li><strong>Choose @PremiumKickBot if:</strong> You want to exclude Telegram Premium users for any reason (e.g., to avoid paid accounts in a free community).</li>
+<li><strong>Choose @AcceptRequestBot if:</strong> Your channel is fully public and you want zero friction for new members.</li>
+</ul>
+
+<h3>Final Verdict</h3>
+
+<p>Authorized Join fills a niche that other bots ignore: <strong>total control over membership</strong>. While bots like @ChatReqBot or @AcceptRequestBot focus on speed and automation, Authorized Join prioritizes security and curation. Its lack of reviews suggests it's a newer player, but its concept is solid. For groups where trust is paramount, it's the best choice. For open communities or those needing advanced features, the more popular alternatives offer proven solutions.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-20</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose Authorized Join</div>
+  <div class="article-content">
+    <p>This bot allows you to let only the people you authorize into your group</p>
+    <ul class="advantage-list">
+      <li>👥 Fully compatible with group chats</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/EmojiCaptchaBot.html" class="rel-item"><div class="rel-name">🤖 Emoji Captcha ✅ ~  🔴Flagged as offline</div><div class="rel-desc">Protect your group with Emoji Captcha.</div></a><a href="/b/RUTotalSecurityBot.html" class="rel-item"><div class="rel-name">🤖 RUTotalSecurityBot</div><div class="rel-desc">Keep your groups safe and secure from users reported as &quot;dangerous&quot; on Telegram.</div></a><a href="/b/PremiumJoinBot.html" class="rel-item"><div class="rel-name">🤖 Premium Join Bot</div><div class="rel-desc">Add this bot as an admin to a group or a channel that has join requests turned o</div></a><a href="/b/AntiJoinMessageBot.html" class="rel-item"><div class="rel-name">🤖 Auto Delete Join Message</div><div class="rel-desc">Bot to remove messages about user joined or left chatroom.</div></a><a href="/b/MuteAllGroupsBot.html" class="rel-item"><div class="rel-name">🤖 Mute Your Groups</div><div class="rel-desc">Mute All Groups is a bot that helps you tu manage your groups, with the simple f</div></a>
+</div>
+
+<a class="btn" href="https://t.me/AuthorizedJoinBot" target="_blank">🤖 Open @AuthorizedJoinBot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

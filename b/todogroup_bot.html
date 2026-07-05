@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>todobot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Man Categories: todo, todogroup, hashtag, list, lists">
+<link rel="canonical" href="https://tgbotarchive.com/b/todogroup_bot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/todogroup_bot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/todogroup_bot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/todogroup_bot.html?lang=fa">
+<meta property="og:title" content="todobot">
+<meta property="og:description" content="Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Man Categories: todo, todogroup, hashtag, list, lists">
+<meta property="og:url" content="https://tgbotarchive.com/b/todogroup_bot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "todobot", "url": "https://t.me/todogroup_bot", "applicationUrl": "https://t.me/todogroup_bot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Manage lists in groups or in private chat. Use inline to access personal lists quickly.", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "todobot", "item": "https://tgbotarchive.com/b/todogroup_bot.html"}]}, "applicationSubCategory": "task management and to-do lists, todogroup, hashtag, list, lists", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5.0, "ratingCount": 9821852953, "bestRating": 5}, "availableLanguage": ["English"], "featureList": "inline mode, group chat support"}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/todogroup_bot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 todobot</h1>
+<div class="username">@todogroup_bot — <a href="https://t.me/todogroup_bot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐ 5.0 · 9821852953 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Manage lists in groups or in private chat. Use inline to access personal lists quickly.</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Автоматически создавайте разные списки из сообщений, содержащих определенные хэштеги, например bugs, movies и т.д. Также можно создать индивидуальный список. Управляйте списками в группах или в личном чате. Используйте inline для быстрого доступа к личным спискам.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">به طور خودکار لیست‌های مختلفی از پیام‌های حاوی هشتگ‌های خاص مانند bugs، movies و غیره ایجاد کنید. همچنین می‌توان یک لیست سفارشی ایجاد کرد. لیست‌ها را در گروه‌ها یا چت خصوصی مدیریت کنید. برای دسترسی سریع به لیست‌های شخصی از inline استفاده کنید.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>task management and to-do lists, todogroup, hashtag</strong> and more.</p>
+<ul class="feature-list">
+<li>Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Manage lists in groups or in private chat. Use inline</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+<li>⚡ Works via inline mode (type @bot in any chat) and group chat mode</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>English</span></div>
+  <div>💬 Inline: <span>yes</span></div>
+  <div>👥 Groups: <span>yes</span></div>
+  <div>👁 Views: <span>👁 9,298,700</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/todo.html" class="tag-card" title="Browse task management and to-do lists bots"><span class="tag-name">#todo</span><span class="tag-desc">task management and to-do lists</span></a>
+<a href="/tag/todogroup.html" class="tag-card" title="Browse todogroup bots"><span class="tag-name">#todogroup</span><span class="tag-desc">todogroup</span></a>
+<a href="/tag/hashtag.html" class="tag-card" title="Browse hashtag bots"><span class="tag-name">#hashtag</span><span class="tag-desc">hashtag</span></a>
+<a href="/tag/list.html" class="tag-card" title="Browse list bots"><span class="tag-name">#list</span><span class="tag-desc">list</span></a>
+<a href="/tag/lists.html" class="tag-card" title="Browse lists bots"><span class="tag-name">#lists</span><span class="tag-desc">lists</span></a>
+<a href="/tag/todolist.html" class="tag-card" title="Browse todolist bots"><span class="tag-name">#todolist</span><span class="tag-desc">todolist</span></a>
+<a href="/tag/track.html" class="tag-card" title="Browse track bots"><span class="tag-name">#track</span><span class="tag-desc">track</span></a>
+<a href="/tag/task.html" class="tag-card" title="Browse task bots"><span class="tag-name">#task</span><span class="tag-desc">task</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>Todo Bots on Telegram: A Comparative Guide</h2>
+
+<p>Telegram bots in the "todo" category help users manage tasks, reminders, and lists directly within the chat interface. They range from simple reminder tools to advanced list managers that integrate with hashtags and inline mode. The key is finding a bot that matches your workflow—whether you need cross-device sync, group collaboration, or automated list creation from messages.</p>
+
+<h3>Overview of @todogroup_bot</h3>
+
+<p><strong>todobot</strong> (@todogroup_bot) stands out for its hashtag-driven list management. It automatically creates separate lists based on hashtags like <code>#bugs</code>, <code>#movies</code>, or any custom tag you define. You can manage these lists in private chats or groups, and use inline mode to quickly add items. This makes it ideal for users who want to organize messages without manually sorting them.</p>
+
+<h3>How @todogroup_bot Compares to Competitors</h3>
+
+<p>While most todo bots focus on simple task entry or reminders, todobot excels at <strong>automated categorization</strong>. For example, if you forward a message with <code>#shopping</code> to the bot, it instantly adds it to your shopping list. Other bots require you to manually type tasks or set reminders, which can be slower for high-volume organization.</p>
+
+<p>However, todobot lacks built-in reminder features (like daily or recurring alerts) that competitors such as @daily_remind_me_bot or @yastabot offer. It also doesn’t support cross-device synchronization out-of-box like @sp_adv_reminder_bot does, though Telegram’s cloud sync applies to all bots.</p>
+
+<h3>Key Strengths and Unique Features of @todogroup_bot</h3>
+
+<ul>
+<li><strong>Hashtag-based list creation</strong>: Automatically sorts tasks into lists based on hashtags—no manual sorting needed.</li>
+<li><strong>Group and private chat support</strong>: Manage lists in both contexts, useful for teams or personal use.</li>
+<li><strong>Inline mode</strong>: Quickly add items without opening the bot chat.</li>
+<li><strong>Custom lists</strong>: Create any list you want beyond predefined categories.</li>
+<li><strong>Zero learning curve</strong>: Works naturally with how you already use Telegram (e.g., tagging messages).</li>
+</ul>
+
+<h3>Comparison Table</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>@todogroup_bot</th>
+  <th>@sp_adv_reminder_bot</th>
+  <th>@ntosbot</th>
+  <th>@daily_remind_me_bot</th>
+  <th>@yastabot</th>
+  <th>@do2bot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>Hashtag-based list management</td>
+  <td>Simple todo with reminders</td>
+  <td>Save &amp; forward messages via inline</td>
+  <td>Recurring/single reminders</td>
+  <td>Set future reminders</td>
+  <td>Create &amp; share todo lists</td>
+</tr>
+<tr>
+  <td><strong>Hashtag Sorting</strong></td>
+  <td><strong>Yes</strong> (automatic)</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Reminders</strong></td>
+  <td>No</td>
+  <td>Yes</td>
+  <td>No</td>
+  <td>Yes (recurring)</td>
+  <td>Yes</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Cross-Device Sync</strong></td>
+  <td>Telegram cloud</td>
+  <td><strong>Out-of-box sync</strong></td>
+  <td>Telegram cloud</td>
+  <td>Telegram cloud</td>
+  <td>Telegram cloud</td>
+  <td>Telegram cloud</td>
+</tr>
+<tr>
+  <td><strong>Group Support</strong></td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes</td>
+  <td>Yes (sharing)</td>
+</tr>
+<tr>
+  <td><strong>Inline Mode</strong></td>
+  <td>Yes</td>
+  <td>No</td>
+  <td><strong>Yes</strong></td>
+  <td>No</td>
+  <td>No</td>
+  <td>No</td>
+</tr>
+<tr>
+  <td><strong>Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>4.0/5 (27.6M votes)</td>
+</tr>
+<tr>
+  <td><strong>Best For</strong></td>
+  <td>Automated task sorting</td>
+  <td>Simple reminders with sync</td>
+  <td>Quick message forwarding</td>
+  <td>Recurring tasks</td>
+  <td>One-time future reminders</td>
+  <td>Collaborative lists</td>
+</tr>
+</tbody>
+</table>
+
+<h3>When to Choose Each Bot</h3>
+
+<ul>
+<li><strong>Choose @todogroup_bot if</strong>: You frequently organize messages by topic (e.g., work, personal, projects) and want automatic list creation. Ideal for power users who hashtag everything.</li>
+<li><strong>Choose @sp_adv_reminder_bot if</strong>: You need reliable cross-device sync and simple reminders without hashtags.</li>
+<li><strong>Choose @ntosbot if</strong>: Your primary need is to save and forward messages (including media) to other chats via inline.</li>
+<li><strong>Choose @daily_remind_me_bot or @yastabot if</strong>: You need recurring or one-time reminders with notifications (e.g., daily standups, birthdays).</li>
+<li><strong>Choose @do2bot if</strong>: You want to create and share todo lists with others, and prefer a widely-used bot (27M+ votes).</li>
+</ul>
+
+<h3>Final Thoughts</h3>
+
+<p>@todogroup_bot fills a unique niche for hashtag-driven organization, making it a standout choice for users who already use tags in Telegram. It complements rather than replaces other bots—use todobot for list creation, and pair it with @daily_remind_me_bot for reminders if needed. For most users, the best approach is to try todobot for automatic sorting and add a dedicated reminder bot for time-based tasks.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-07-04</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose todobot</div>
+  <div class="article-content">
+    <p>Automatically create different lists from messages containing certain hashtags like bugs,movies,etc. A individual custom list can also be created. Manage lists in groups or in private chat. Use inline to access personal lists quickly.</p>
+    <ul class="advantage-list">
+      <li>⭐ High rating: 5.0/5 from 9821852953 users</li><li>⚡ Works in inline mode — use @todogroup_bot in any chat</li><li>👥 Fully compatible with group chats</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="reviews-section">
+  <div class="section-title">💬 User Reviews</div>
+  <div class="review-item"><span class="review-text">A solid bot that I use regularly. Never let me down.</span> <span class="review-date">— 2026-07-05</span></div>
+</div>
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/tenvsten_bot.html" class="rel-item"><div class="rel-name">🤖 MyCloudStore</div><div class="rel-desc">Create comfortable lists, notes, tasks and sort them into folders. Separate list</div></a><a href="/b/sp_adv_reminder_bot.html" class="rel-item"><div class="rel-name">🤖 sp_adv_reminder_bot</div><div class="rel-desc">A simple TODO list, actually, but with some comfortable features, like synchroni</div></a><a href="/b/checklibot.html" class="rel-item"><div class="rel-name">🤖 checklibot</div><div class="rel-desc">Create completely private checklists to track your TODOs, shopping lists, and mo</div></a><a href="/b/ntosbot.html" class="rel-item"><div class="rel-name">🤖 ntosbot</div><div class="rel-desc">This bot allows you to save messages and send them to any chat room via Inline M</div></a><a href="/b/todoeasybot.html" class="rel-item"><div class="rel-name">🤖 Todo Bot ~  🔴Flagged as offline</div><div class="rel-desc">With this bot you can create To Do lists inside a channel</div></a>
+</div>
+
+<a class="btn" href="https://t.me/todogroup_bot" target="_blank">🤖 Open @todogroup_bot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SangMata — Telegram Bot | BotsArchive</title>
+<meta name="description" content="This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat Categories: telegram, tracker, groups, notifications, name, username.">
+<link rel="canonical" href="https://tgbotarchive.com/b/SangMata_Bot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/SangMata_Bot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/SangMata_Bot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/SangMata_Bot.html?lang=fa">
+<meta property="og:title" content="SangMata">
+<meta property="og:description" content="This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat Categories: telegram, tracker, groups, notifications, name, username.">
+<meta property="og:url" content="https://tgbotarchive.com/b/SangMata_Bot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SangMata", "url": "https://t.me/SangMata_Bot", "applicationUrl": "https://t.me/SangMata_Bot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "SangMata", "item": "https://tgbotarchive.com/b/SangMata_Bot.html"}]}, "applicationSubCategory": "Telegram platform utilities, tracking and monitoring, group management features, notifications and alerts, name", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 1.0, "ratingCount": 1609508, "bestRating": 5}, "availableLanguage": ["English"], "featureList": "group chat support"}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/SangMata_Bot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 SangMata</h1>
+<div class="username">@SangMata_Bot — <a href="https://t.me/SangMata_Bot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 1.0 · 1609508 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Этот бот отслеживает изменения имени пользователя и имени в Telegram, отправляя уведомление об изменении каждый раз в чат группы.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">این ربات تغییرات نام کاربری و نام در تلگرام را ردیابی کرده و هر بار هشدار تغییر را در چت گروه ارسال می‌کند.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>Telegram platform utilities, tracking and monitoring, group management features</strong> and more.</p>
+<ul class="feature-list">
+<li>This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+<li>⚡ Works via group chat mode</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>English</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>yes</span></div>
+  <div>👁 Views: <span>👁 21,883,591,753</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/telegram.html" class="tag-card" title="Browse Telegram platform utilities bots"><span class="tag-name">#telegram</span><span class="tag-desc">Telegram platform utilities</span></a>
+<a href="/tag/tracker.html" class="tag-card" title="Browse tracking and monitoring bots"><span class="tag-name">#tracker</span><span class="tag-desc">tracking and monitoring</span></a>
+<a href="/tag/groups.html" class="tag-card" title="Browse group management features bots"><span class="tag-name">#groups</span><span class="tag-desc">group management features</span></a>
+<a href="/tag/notifications.html" class="tag-card" title="Browse notifications and alerts bots"><span class="tag-name">#notifications</span><span class="tag-desc">notifications and alerts</span></a>
+<a href="/tag/name.html" class="tag-card" title="Browse name bots"><span class="tag-name">#name</span><span class="tag-desc">name</span></a>
+<a href="/tag/username.html" class="tag-card" title="Browse username bots"><span class="tag-name">#username</span><span class="tag-desc">username</span></a>
+<a href="/tag/information.html" class="tag-card" title="Browse information bots"><span class="tag-name">#information</span><span class="tag-desc">information</span></a>
+<a href="/tag/users.html" class="tag-card" title="Browse users bots"><span class="tag-name">#users</span><span class="tag-desc">users</span></a>
+<a href="/tag/changes.html" class="tag-card" title="Browse changes bots"><span class="tag-name">#changes</span><span class="tag-desc">changes</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>Telegram Bots: The Silent Guardians of Group Chats</h2>
+
+<p>Telegram bots have become essential tools for managing group dynamics, enhancing security, and adding functionality beyond the platform's native features. Among the most intriguing categories are "spy" or "tracking" bots that monitor activities like message edits, deletions, and user profile changes. This article compares <strong>SangMata</strong> (@SangMata_Bot) with five other popular bots in the same space, focusing on their unique capabilities and use cases.</p>
+
+<h2>SangMata: The Name and Username Historian</h2>
+
+<p>SangMata is a specialized bot that tracks username and name changes across Telegram. When a group member modifies their display name or username, SangMata instantly alerts the group, showing the old and new values. This is particularly useful for:
+- Monitoring suspicious account changes in community groups
+- Tracking identity shifts in support or trading channels
+- Maintaining accountability in private or semi-public groups</p>
+
+<p>Unlike bots that focus on message content, SangMata zeroes in on profile metadata, making it ideal for communities where user identity consistency matters.</p>
+
+<h2>Comparison with Similar Bots</h2>
+
+<h3>Key Differences at a Glance</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Primary Function</th>
+  <th>Unique Strength</th>
+  <th>Rating (Votes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>SangMata</strong></td>
+  <td>Tracks name/username changes</td>
+  <td>Profile history alerts</td>
+  <td>Not listed</td>
+</tr>
+<tr>
+  <td>SpyTrackedBot</td>
+  <td>Recovers deleted/edited messages</td>
+  <td>View-once photo interception</td>
+  <td>5.0/5 (11)</td>
+</tr>
+<tr>
+  <td>TGivo_bot</td>
+  <td>Buys Stars, gifts, usernames</td>
+  <td>Telegram economy tool</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td>SpyFreeRobot</td>
+  <td>Free deleted message monitor</td>
+  <td>Self-destructible media save</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td>Manageil_bot</td>
+  <td>Channel/group management</td>
+  <td>Auto boost + admin panel</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td>FREE_Proxy_MTProto_bot</td>
+  <td>Provides free MTProto proxy</td>
+  <td>Bypass restrictions</td>
+  <td>5.0/5 (150)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Detailed Comparison</h3>
+
+<p><strong>SpyTrackedBot</strong> and <strong>SpyFreeRobot</strong> are SangMata's closest competitors in the "spy" category. While SangMata monitors profile changes, these two focus on message content:
+- SpyTrackedBot saves deleted messages and shows edit history, plus intercepts view-once photos
+- SpyFreeRobot offers similar features completely free</p>
+
+<p>SangMata's advantage is its focus on <strong>identity tracking</strong> rather than content recovery. For groups where impersonation or account hopping is a concern, SangMata is uniquely valuable.</p>
+
+<p><strong>TGivo_bot</strong> and <strong>Manageil_bot</strong> serve entirely different purposes:
+- TGivo facilitates buying/selling Telegram Stars, gifts, and usernames
+- Manageil offers full group management with auto-boost features</p>
+
+<p>These bots complement rather than compete with SangMata, as they address economy and administration needs.</p>
+
+<p><strong>FREE_Proxy_MTProto_bot</strong> is a networking tool, not a monitoring bot. Its high rating (150 votes) reflects demand for unrestricted access, but it has no overlap with SangMata's function.</p>
+
+<h2>Strengths of SangMata</h2>
+
+<ul>
+<li><strong>Real-time alerts</strong>: Instant notifications for name/username changes in groups</li>
+<li><strong>Simple interface</strong>: No complex commands – just add to group and it works</li>
+<li><strong>Privacy-focused</strong>: Only tracks metadata, not message content</li>
+<li><strong>Lightweight</strong>: Minimal resource usage compared to full management bots</li>
+</ul>
+
+<h2>Weaknesses</h2>
+
+<ul>
+<li><strong>Limited scope</strong>: Cannot recover deleted messages or monitor edits</li>
+<li><strong>No free version</strong>: Unlike SpyFreeRobot, may require premium access</li>
+<li><strong>Group-only</strong>: Works only in groups, not private chats</li>
+</ul>
+
+<h2>Recommendations</h2>
+
+<p><strong>Choose SangMata when:</strong>
+- You run a community where identity verification is critical (e.g., trading groups, support channels)
+- You need to track profile changes without message monitoring
+- You want a simple, specialized tool without extra features</p>
+
+<p><strong>Choose SpyTrackedBot or SpyFreeRobot when:</strong>
+- You need to recover deleted messages or show edit history
+- View-once photo interception is required
+- You prefer a free solution (SpyFreeRobot)</p>
+
+<p><strong>Choose TGivo_bot for:</strong>
+- Buying Telegram Stars or gifts
+- Renting usernames or phone numbers
+- Creating giveaways</p>
+
+<p><strong>Choose Manageil_bot for:</strong>
+- Full group management with auto-boost
+- Admin tools like kick, ban, and broadcast</p>
+
+<p><strong>Choose FREE_Proxy_MTProto_bot for:</strong>
+- Bypassing regional restrictions
+- Stable, unlimited proxy connections</p>
+
+<h2>Final Verdict</h2>
+
+<p>SangMata fills a specific niche that no other bot in this comparison covers: tracking profile changes. While spy bots like SpyTrackedBot excel at content recovery, and management bots like Manageil offer broader controls, SangMata is the go-to for communities that prioritize identity consistency. Its simplicity and focused functionality make it a valuable addition to any group where names and usernames matter more than messages.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-06-10</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose SangMata</div>
+  <div class="article-content">
+    <p>This bot keeps track of username and name changes on telegram, sending the change alert every time in the group chat</p>
+    <ul class="advantage-list">
+      <li>👥 Fully compatible with group chats</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/keepa_bot.html" class="rel-item"><div class="rel-name">🤖 Keepa</div><div class="rel-desc">Price Tracker for Amazon and Ebay</div></a><a href="/b/mysearch.html" class="rel-item"><div class="rel-name">🤖 mysearch</div><div class="rel-desc">MySearch is a Telegram-based search bot designed to help users find public group</div></a><a href="/b/SpyFreeRobot.html" class="rel-item"><div class="rel-name">🤖 SpyFreeRobot</div><div class="rel-desc">Completely free Spy Bot for Telegram. Monitor deleted and edited messages. Save </div></a><a href="/b/idstracebot.html" class="rel-item"><div class="rel-name">🤖 idstracebot</div><div class="rel-desc">IDsTrace Bot lets you retrieve public Telegram info about any user: ID, name, us</div></a><a href="/b/idstracebot.html" class="rel-item"><div class="rel-name">🤖 idstracebot</div><div class="rel-desc">IDsTrace Bot lets you retrieve public Telegram info about any user: ID, name, us</div></a>
+</div>
+
+<a class="btn" href="https://t.me/SangMata_Bot" target="_blank">🤖 Open @SangMata_Bot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>

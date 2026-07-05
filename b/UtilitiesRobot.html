@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utilities Bot — Telegram Bot | BotsArchive</title>
+<meta name="description" content="A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more. Categories: utilities, tts, pdf2img, conpressor, toolsbot, toolsbot.">
+<link rel="canonical" href="https://tgbotarchive.com/b/UtilitiesRobot.html">
+<link rel="alternate" hreflang="en" href="https://tgbotarchive.com/b/UtilitiesRobot.html">
+<link rel="alternate" hreflang="ru" href="https://tgbotarchive.com/b/UtilitiesRobot.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="https://tgbotarchive.com/b/UtilitiesRobot.html?lang=fa">
+<meta property="og:title" content="Utilities Bot">
+<meta property="og:description" content="A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more. Categories: utilities, tts, pdf2img, conpressor, toolsbot, toolsbot.">
+<meta property="og:url" content="https://tgbotarchive.com/b/UtilitiesRobot.html">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Utilities Bot", "url": "https://t.me/UtilitiesRobot", "applicationUrl": "https://t.me/UtilitiesRobot", "operatingSystem": "Telegram (cross-platform)", "applicationCategory": "TelegramBot", "description": "A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more.", "inLanguage": ["en", "ru", "fa"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": "https://tgbotarchive.com"}, {"@type": "ListItem", "position": 2, "name": "Utilities Bot", "item": "https://tgbotarchive.com/b/UtilitiesRobot.html"}]}, "applicationSubCategory": "utilities, tts, pdf2img, conpressor, toolsbot", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 1.0, "ratingCount": 34908961777, "bestRating": 5}, "availableLanguage": ["English"]}
+</script>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }
+h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+.username { color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }
+.rating { color: #ffd700; margin-bottom: 0.5rem; }
+.desc { color: #aaa; margin: 1rem 0; }
+.desc-block { border-left: 2px solid #2a2a4a; padding-left: 0.8rem; margin: 0.6rem 0; }
+.desc-label { color: #6c63ff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.2rem; }
+.info { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin: 1rem 0; color: #888; font-size: 0.85rem; }
+.info span { color: #e8e8f0; font-weight: 500; }
+.tags { margin: 0.8rem 0; }
+.tag { display: inline-block; padding: 0.15rem 0.5rem; background: #2a2a4a; color: #8888aa; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; text-decoration: none; }
+.tag:hover { background: #6c63ff; color: #fff; }
+.btn { display: inline-block; padding: 0.6rem 1.5rem; background: #6c63ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.95rem; text-align: center; width: 100%; }
+.btn:hover { background: #7c73ff; }
+.about-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.section-title { color: #6c63ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+.about-section p { color: #aaa; font-size: 0.9rem; margin: 0.3rem 0; }
+.feature-list { margin: 0.4rem 0 0 1.2rem; color: #aaa; font-size: 0.88rem; }
+.feature-list li { margin-bottom: 0.2rem; }
+.tags-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.tag-grid { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-card { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 0.3rem 0.6rem; text-decoration: none; border: 1px solid #3a3a5a; }
+.tag-card:hover { border-color: #6c63ff; background: #23234a; }
+.tag-name { color: #e8e8f0; font-size: 0.8rem; display: block; }
+.tag-desc { color: #8888aa; font-size: 0.7rem; display: block; }
+.article-section { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.article-content { color: #c0c0d0; font-size: 0.9rem; line-height: 1.8; }
+.article-content p { margin-bottom: 0.6rem; }
+.article-content h2 { color: #e8e8f0; font-size: 1.2rem; margin: 1rem 0 0.5rem; }
+.article-content h3 { color: #d0d0e0; font-size: 1.05rem; margin: 0.8rem 0 0.4rem; }
+.article-content h4 { color: #c8c8d8; font-size: 0.95rem; margin: 0.6rem 0 0.3rem; }
+.article-content ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+.article-content ol { margin: 0.4rem 0 0.4rem 1.4rem; }
+.article-content li { margin-bottom: 0.2rem; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.82rem; }
+.article-content th, .article-content td { border: 1px solid #3a3a5a; padding: 0.4rem 0.6rem; text-align: left; }
+.article-content th { background: #2a2a4a; color: #e8e8f0; font-weight: 600; }
+.article-content td { color: #c0c0d0; }
+.article-content tr:nth-child(even) td { background: #1e1e32; }
+.article-content code { background: #2a2a4a; color: #ff79c6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+.article-content pre { background: #12121e; border: 1px solid #2a2a4a; border-radius: 6px; padding: 0.8rem; overflow-x: auto; margin: 0.6rem 0; }
+.article-content pre code { background: none; padding: 0; color: #c0c0d0; }
+.advantage-list { list-style: none; padding: 0; margin: 0.5rem 0 0 0; }
+.advantage-list li { padding: 0.2rem 0; color: #a0a0b8; font-size: 0.88rem; }
+.reviews-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+.review-item { padding: 0.4rem 0; border-bottom: 1px solid #2a2a4a; }
+.review-item:last-child { border-bottom: none; }
+.review-text { color: #d0d0e0; font-size: 0.9rem; font-style: italic; }
+.review-date { color: #666; font-size: 0.75rem; }
+.related { margin: 1.5rem 0; padding-top: 0.5rem; border-top: 1px solid #2a2a4a; }
+.rel-label { color: #6c63ff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+.rel-item { display: block; background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; text-decoration: none; }
+.rel-item:hover { background: #23234a; border-color: #6c63ff; }
+.rel-name { color: #e8e8f0; font-size: 0.9rem; font-weight: 600; }
+.rel-desc { color: #8888aa; font-size: 0.8rem; margin-top: 0.1rem; }
+.back { display: block; margin-top: 1rem; color: #6c63ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
+<a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
+<img src="https://t.me/i/userpic/320/UtilitiesRobot.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
+<h1>🤖 Utilities Bot</h1>
+<div class="username">@UtilitiesRobot — <a href="https://t.me/UtilitiesRobot" style="color:#6c63ff;">Open in Telegram</a></div>
+<div class="rating">⭐⭐⭐⭐ 1.0 · 34908961777 votes</div>
+
+<div class="desc">
+  <div class="desc-label">🇬🇧 English</div>
+  <div class="desc-block">A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more.</div>
+  <div class="desc-label">🇷🇺 Русский</div>
+  <div class="desc-block">Простой и бесплатный утилитарный Telegram-бот, который может преобразовывать текст в речь, PDF в изображения, сжимать изображения и многое другое.</div>
+  <div class="desc-label">🇮🇷 فارسی</div>
+  <div class="desc-block" dir="rtl">یک ربات تلگرامی کاربردی ساده و رایگان که می‌تواند متن را به گفتار تبدیل کند، PDF را به تصویر تبدیل کند، تصویر را فشرده کند و کارهای بیشتری انجام دهد.</div>
+</div>
+
+<div class="about-section">
+<div class="section-title">📋 About This Bot</div>
+<p>This bot covers <strong>utilities, tts, pdf2img</strong> and more.</p>
+<ul class="feature-list">
+<li>A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more.</li>
+<li>🌐 Supports <strong>1</strong> language</li>
+</ul>
+</div>
+
+<div class="info">
+  <div>🌐 Languages: <span>English</span></div>
+  <div>💬 Inline: <span>no</span></div>
+  <div>👥 Groups: <span>no</span></div>
+  <div>👁 Views: <span>👁 6,684,854,670,181</span></div>
+</div>
+
+<div class="tags-section">
+<div class="section-title">🏷️ Categories & Tags</div>
+<div class="tag-grid">
+<a href="/tag/utilities.html" class="tag-card" title="Browse utilities bots"><span class="tag-name">#utilities</span><span class="tag-desc">utilities</span></a>
+<a href="/tag/tts.html" class="tag-card" title="Browse tts bots"><span class="tag-name">#tts</span><span class="tag-desc">tts</span></a>
+<a href="/tag/pdf2img.html" class="tag-card" title="Browse pdf2img bots"><span class="tag-name">#pdf2img</span><span class="tag-desc">pdf2img</span></a>
+<a href="/tag/conpressor.html" class="tag-card" title="Browse conpressor bots"><span class="tag-name">#conpressor</span><span class="tag-desc">conpressor</span></a>
+<a href="/tag/toolsbot.html" class="tag-card" title="Browse toolsbot bots"><span class="tag-name">#toolsbot</span><span class="tag-desc">toolsbot</span></a>
+<a href="/tag/toolsbot.html" class="tag-card" title="Browse toolsbot bots"><span class="tag-name">#toolsbot</span><span class="tag-desc">toolsbot</span></a>
+<a href="/tag/tools.html" class="tag-card" title="Browse productivity tools and utilities bots"><span class="tag-name">#tools</span><span class="tag-desc">productivity tools and utilities</span></a>
+<a href="/tag/multiuse.html" class="tag-card" title="Browse multiuse bots"><span class="tag-name">#multiuse</span><span class="tag-desc">multiuse</span></a>
+</div></div>
+
+
+<div class="article-section">
+  <div class="section-title">📖 In-Depth Review</div>
+  <div class="article-content">
+    <h2>TTS Telegram Bots Compared: Utilities Bot vs. the Competition</h2>
+
+<p>Text-to-speech (TTS) Telegram bots have become indispensable tools for users who need quick audio versions of written content—whether for accessibility, language learning, or multitasking. These bots convert typed text into natural-sounding speech, often supporting multiple languages, voices, and audio formats. In this article, we compare <strong>Utilities Bot</strong> (@UtilitiesRobot) with five other popular TTS-focused bots, highlighting strengths, weaknesses, and ideal use cases.</p>
+
+<hr />
+
+<h2>Overview of Utilities Bot (@UtilitiesRobot)</h2>
+
+<p>Utilities Bot is a <strong>free, multi-purpose Telegram robot</strong> that goes beyond TTS. While its core TTS function is straightforward, it also offers:
+- PDF-to-image conversion
+- Image compression
+- Basic file utilities</p>
+
+<p>This makes it a <strong>Swiss Army knife</strong> for users who need occasional TTS alongside other quick file tasks. Its TTS output is reliable but lacks advanced features like voice selection or language variety.</p>
+
+<hr />
+
+<h2>How Utilities Bot Compares to Other TTS Bots</h2>
+
+<h3>Direct TTS Competitors</h3>
+
+<table>
+<thead>
+<tr>
+  <th>Bot</th>
+  <th>Username</th>
+  <th>Key Strength</th>
+  <th>TTS Voices/Languages</th>
+  <th>Additional Features</th>
+  <th>Rating (Votes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Utilities Bot</strong></td>
+  <td>@UtilitiesRobot</td>
+  <td>Multi-utility (TTS + PDF/img tools)</td>
+  <td>Basic (limited languages)</td>
+  <td>PDF-to-img, image compression</td>
+  <td>Not rated</td>
+</tr>
+<tr>
+  <td><strong>TTTextToSpeechBot</strong></td>
+  <td>@TTTextToSpeechBot</td>
+  <td>High-quality voices</td>
+  <td>Up to 45 voices</td>
+  <td>None</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td><strong>text_tomp3_bot</strong></td>
+  <td>@text_tomp3_bot</td>
+  <td>Simple MP3 output</td>
+  <td>Basic (limited)</td>
+  <td>None</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td><strong>betterTTSbot</strong></td>
+  <td>@betterTTSbot</td>
+  <td>Extensive language support</td>
+  <td>Over 78 languages</td>
+  <td>None</td>
+  <td>5.0/5 (97,529)</td>
+</tr>
+<tr>
+  <td><strong>Miss YurikoBot</strong></td>
+  <td>@MissYurikoBot</td>
+  <td>Multi-purpose with plugins</td>
+  <td>Basic</td>
+  <td>Many plugins (offline)</td>
+  <td>5.0/5 (1)</td>
+</tr>
+<tr>
+  <td><strong>Lingvanex Translator</strong></td>
+  <td>@lingvanexbot</td>
+  <td>Translation + TTS</td>
+  <td>Multiple languages</td>
+  <td>Translation, definitions</td>
+  <td>5.0/5 (4,812,484)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Key Observations</h3>
+
+<ul>
+<li><strong>Utilities Bot</strong> is the only bot that offers <strong>non-TTS utilities</strong>—a major advantage for users who need quick file conversions alongside speech.</li>
+<li><strong>betterTTSbot</strong> dominates in TTS-specific features with <strong>78+ languages</strong> and nearly 100,000 votes, making it the most trusted for pure TTS.</li>
+<li><strong>Lingvanex Translator</strong> is a powerhouse for translation + TTS, with over 4.8 million votes, ideal for multilingual users.</li>
+<li><strong>Miss YurikoBot</strong> is flagged as offline, so it’s unreliable for current use.</li>
+</ul>
+
+<hr />
+
+<h2>Strengths and Unique Features of Utilities Bot</h2>
+
+<h3>Strengths</h3>
+
+<ul>
+<li><strong>All-in-one utility</strong>: Combines TTS with PDF-to-image and image compression—saves switching between bots.</li>
+<li><strong>Free and simple</strong>: No registration or premium tiers; just send text and get audio.</li>
+<li><strong>Lightweight</strong>: Works fast for basic TTS tasks without bloat.</li>
+</ul>
+
+<h3>Weaknesses</h3>
+
+<ul>
+<li><strong>Limited TTS customization</strong>: No voice selection, language options, or speed control.</li>
+<li><strong>No language variety</strong>: Likely supports only English and a few major languages, unlike betterTTSbot’s 78+.</li>
+<li><strong>No rating data</strong>: Lacks user feedback compared to competitors with thousands of votes.</li>
+</ul>
+
+<hr />
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Feature</th>
+  <th>Utilities Bot</th>
+  <th>TTTextToSpeechBot</th>
+  <th>text_tomp3_bot</th>
+  <th>betterTTSbot</th>
+  <th>Lingvanex Translator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Primary Function</strong></td>
+  <td>Multi-utility</td>
+  <td>TTS only</td>
+  <td>TTS only</td>
+  <td>TTS only</td>
+  <td>Translation + TTS</td>
+</tr>
+<tr>
+  <td><strong>TTS Voices</strong></td>
+  <td>Basic</td>
+  <td>45 voices</td>
+  <td>Basic</td>
+  <td>78+ languages</td>
+  <td>Multiple languages</td>
+</tr>
+<tr>
+  <td><strong>Audio Format</strong></td>
+  <td>MP3</td>
+  <td>MP3</td>
+  <td>MP3</td>
+  <td>MP3</td>
+  <td>MP3</td>
+</tr>
+<tr>
+  <td><strong>Additional Tools</strong></td>
+  <td>PDF-to-img, compress</td>
+  <td>None</td>
+  <td>None</td>
+  <td>None</td>
+  <td>Translation, definitions</td>
+</tr>
+<tr>
+  <td><strong>Ease of Use</strong></td>
+  <td>Very easy</td>
+  <td>Easy</td>
+  <td>Very easy</td>
+  <td>Easy</td>
+  <td>Easy</td>
+</tr>
+<tr>
+  <td><strong>Reliability</strong></td>
+  <td>High (online)</td>
+  <td>High</td>
+  <td>High</td>
+  <td>High</td>
+  <td>High</td>
+</tr>
+<tr>
+  <td><strong>User Rating</strong></td>
+  <td>N/A</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (1 vote)</td>
+  <td>5.0/5 (97,529)</td>
+  <td>5.0/5 (4,812,484)</td>
+</tr>
+<tr>
+  <td><strong>Best For</strong></td>
+  <td>Quick TTS + file tasks</td>
+  <td>High-quality voices</td>
+  <td>Simple MP3 conversion</td>
+  <td>Multilingual TTS</td>
+  <td>Translation + TTS</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2>Recommendations: When to Choose Each Bot</h2>
+
+<h3>Choose <strong>Utilities Bot</strong> when:</h3>
+
+<ul>
+<li>You need <strong>quick TTS</strong> alongside PDF-to-image or image compression.</li>
+<li>You prefer a <strong>single bot</strong> for multiple basic tasks.</li>
+<li>You don’t require advanced TTS customization.</li>
+</ul>
+
+<h3>Choose <strong>betterTTSbot</strong> when:</h3>
+
+<ul>
+<li>You need <strong>extensive language support</strong> (78+ languages).</li>
+<li>You want a <strong>proven, highly-rated</strong> TTS bot.</li>
+<li>Voice quality and variety are priorities.</li>
+</ul>
+
+<h3>Choose <strong>Lingvanex Translator</strong> when:</h3>
+
+<ul>
+<li>You need <strong>translation</strong> plus TTS in one bot.</li>
+<li>You work with <strong>multiple languages</strong> and need definitions.</li>
+<li>You trust bots with massive user bases (4.8M votes).</li>
+</ul>
+
+<h3>Choose <strong>TTTextToSpeechBot</strong> when:</h3>
+
+<ul>
+<li>You want <strong>up to 45 voices</strong> for creative projects.</li>
+<li>Voice selection matters more than extra features.</li>
+</ul>
+
+<h3>Choose <strong>text_tomp3_bot</strong> when:</h3>
+
+<ul>
+<li>You need the <strong>simplest possible</strong> text-to-MP3 conversion.</li>
+<li>No extras are required.</li>
+</ul>
+
+<h3>Avoid <strong>Miss YurikoBot</strong> due to its offline status.</h3>
+
+<hr />
+
+<h2>Final Verdict</h2>
+
+<p><strong>Utilities Bot</strong> is a solid choice for users who value <strong>convenience over specialization</strong>. It’s not the best pure TTS bot—that title goes to <strong>betterTTSbot</strong> for language variety or <strong>Lingvanex Translator</strong> for multilingual needs. However, if you frequently juggle between text-to-speech and file utilities, Utilities Bot streamlines your workflow without extra bots. For TTS purists, stick with the specialists.</p>
+
+  </div>
+  <div class="review-date" style="margin-top:0.5rem;">Article generated: 2026-07-05</div>
+</div>
+
+
+<div class="article-section">
+  <div class="section-title">✨ Why Choose Utilities Bot</div>
+  <div class="article-content">
+    <p>A simple and free to use Utilities Telegram Robot, can convert text to speech, convert pdf to img, compress an image and lots more.</p>
+    <ul class="advantage-list">
+      <li>🤖 A dedicated bot focused on Telegram tasks</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="reviews-section">
+  <div class="section-title">💬 User Reviews</div>
+  <div class="review-item"><span class="review-text">Excellent functionality with a smooth user experience. Highly recommended.</span> <span class="review-date">— 2026-06-25</span></div>
+</div>
+
+
+<div class="related">
+  <div class="rel-label">🔗 Similar Bots</div>
+  <a href="/b/UtAZBot.html" class="rel-item"><div class="rel-name">🤖 UtAZBot</div><div class="rel-desc">Inline Utility Bot, built with Rust offers powerful features: removing tracking </div></a><a href="/b/ntosbot.html" class="rel-item"><div class="rel-name">🤖 ntosbot</div><div class="rel-desc">This bot allows you to save messages and send them to any chat room via Inline M</div></a><a href="/b/INOTAROBOT.html" class="rel-item"><div class="rel-name">🤖 INOTAROBOT</div><div class="rel-desc">Bot for protection, cleaning and analysis of chats, necessary for every admin.</div></a><a href="/b/GuardifyBot.html" class="rel-item"><div class="rel-name">🤖 GuardifyBot</div><div class="rel-desc">Powerful AI-driven Group Manager. Your must have for safe, engaged and growing c</div></a><a href="/b/nedzbot.html" class="rel-item"><div class="rel-name">🤖 nedzbot</div><div class="rel-desc">Hey! I am Xenovia X. I have some handy features, such as translator, play store </div></a>
+</div>
+
+<a class="btn" href="https://t.me/UtilitiesRobot" target="_blank">🤖 Open @UtilitiesRobot</a>
+<a class="back" href="/">← Back to catalog</a>
+</body>
+</html>
