@@ -2,13 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V2Q3J579VZ');
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BotsArchive — 2101 Telegram Bots Catalog | Search by Tags, Rating, Languages</title>
 <meta name="description" content="The most powerful archive of Telegram bots. Browse 2101 bots in English, Russian and Persian. Search by tags, rating, languages, and category.">
@@ -22,9 +15,25 @@
 <meta property="og:url" content="https://tgbotarchive.com/">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
+
+<!-- Preconnect for Google Analytics -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2Q3J579VZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V2Q3J579VZ');
+</script>
+
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "BotsArchive", "url": "https://tgbotarchive.com", "description": "Catalog of 2101 Telegram bots with multilingual descriptions, ratings, and tags.", "potentialAction": {"@type": "SearchAction", "target": "https://tgbotarchive.com/?search={search_term_string}", "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "name": "BotsArchive — Telegram Bots Catalog", "url": "https://tgbotarchive.com", "inLanguage": ["en", "ru", "fa"], "about": {"@type": "Thing", "name": "Telegram Bots"}, "dateModified": "2026-07-07"}]}
-</script><style>
+</script>
+
+<style>
 :root {
     --bg: #0f0f1a;
     --card: #1a1a2e;
@@ -47,7 +56,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    font-display: swap;
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
@@ -214,6 +222,7 @@ header p { color: var(--text-dim); font-size: 0.9rem; }
     max-width: 1100px;
     margin: 1rem auto;
     padding: 0 1rem 3rem;
+    min-height: 50vh;
 }
 @media (max-width: 700px) {
     .grid { grid-template-columns: 1fr; }
@@ -461,21 +470,22 @@ footer a { color: var(--accent); }
 
 <script>
 // ── Data ──
+const PAGE_SIZE = 60;
 let data = [];
 let filteredData = [];
 let lang = localStorage.getItem('botsarchive-lang') || 'en';
 let activeTag = null;
+let loadQueue = [];
 
 // ── Load ──
 async function loadData() {
     try {
         const resp = await fetch('data.json');
         data = await resp.json();
-        // Try loading tags separately
-        try {
-            const tagResp = await fetch('tags.json');
-            window.allTags = await tagResp.json();
-        } catch(e) { window.allTags = []; }
+        
+        fetch('tags.json').then(r => r.json()).then(t => {
+            window.allTags = t;
+        }).catch(() => { window.allTags = []; });
         
         document.getElementById('stats').textContent = `${data.length} bots cataloged`;
         renderTags();
@@ -484,6 +494,18 @@ async function loadData() {
     } catch(e) {
         document.getElementById('grid').innerHTML = '<div class="loading">Failed to load data. <a href="https://t.me/BotsArchive">Open in Telegram</a></div>';
     }
+}
+
+// ── Chunked rendering ──
+function renderChunked(items, cb, chunkSize) {
+    const chunk = chunkSize || 12;
+    let i = 0;
+    function next() {
+        const end = Math.min(i + chunk, items.length);
+        for (; i < end; i++) cb(items[i], i);
+        if (i < items.length) requestAnimationFrame(next);
+    }
+    requestAnimationFrame(next);
 }
 
 // ── Language ──
@@ -498,14 +520,12 @@ function switchLang(l) {
 
 // ── Tag Search ──
 function renderTags() {
-    // Build tag frequency map
     window.tagFreq = {};
     for (const bot of data) {
         for (const t of (bot.t || [])) {
             window.tagFreq[t] = (window.tagFreq[t] || 0) + 1;
         }
     }
-    // Show active tag label if one is set
     updateTagLabel();
 }
 
@@ -520,10 +540,7 @@ function searchTag() {
         .filter(([tag]) => tag.toLowerCase().includes(q))
         .sort((a, b) => b[1] - a[1])
         .slice(0, 12);
-    if (matches.length === 0) {
-        suggestions.style.display = 'none';
-        return;
-    }
+    if (matches.length === 0) { suggestions.style.display = 'none'; return; }
     suggestions.style.display = 'block';
     suggestions.innerHTML = matches.map(([tag, count]) =>
         `<div class="tag-suggestion-item" onclick="selectTag('${esc(tag)}')">
@@ -534,10 +551,8 @@ function searchTag() {
 }
 
 function selectTag(tag) {
-    // Toggle: if already active, clear
-    if (activeTag === tag) {
-        clearTag();
-    } else {
+    if (activeTag === tag) { clearTag(); }
+    else {
         activeTag = tag;
         document.getElementById('tagSearch').value = '#' + tag;
         updateTagLabel();
@@ -558,13 +573,8 @@ function updateTagLabel() {
     }
 }
 
-function clearTag() {
-    activeTag = null;
-    updateTagLabel();
-    filterBots();
-}
+function clearTag() { activeTag = null; updateTagLabel(); filterBots(); }
 
-// ── Get description for current language ──
 function getDesc(bot) {
     if (lang === 'ru') return bot.dr || bot.d;
     if (lang === 'fa') return bot.df || bot.d;
@@ -577,30 +587,21 @@ function filterBots() {
     const sort = document.getElementById('sort').value;
     
     let visible = data.filter(bot => {
-        // Text search across all fields
         if (q) {
-            const searchable = [
-                bot.u, bot.n, bot.d, bot.dr, bot.df,
-                ...(bot.t || []),
-                bot.l,
-            ].join(' ').toLowerCase();
+            const searchable = [bot.u, bot.n, bot.d, bot.dr, bot.df, ...(bot.t || []), bot.l].join(' ').toLowerCase();
             if (!searchable.includes(q)) return false;
         }
-        // Tag filter
-        if (activeTag) {
-            if (!bot.t || !bot.t.includes(activeTag)) return false;
-        }
+        if (activeTag && (!bot.t || !bot.t.includes(activeTag))) return false;
         return true;
     });
     
-    // Sort
     visible.sort((a, b) => {
         switch(sort) {
             case 'rating': return (b.r || 0) - (a.r || 0);
             case 'votes': return (b.v || 0) - (a.v || 0);
             case 'views': return (b.w || 0) - (a.w || 0);
             case 'name': return (a.n || '').localeCompare(b.n || '');
-            default: return (b.dt || '').localeCompare(a.dt || ''); // date
+            default: return (b.dt || '').localeCompare(a.dt || '');
         }
     });
     
@@ -609,12 +610,9 @@ function filterBots() {
     renderGrid(visible);
 }
 
-// ── Stars rendering ──
-function renderStars(n) {
-    return '⭐'.repeat(Math.min(Math.round(n), 5));
-}
+function renderStars(n) { return '⭐'.repeat(Math.min(Math.round(n), 5)); }
 
-// ── Render Grid ──
+// ── Render Grid (chunked) ──
 function renderGrid(bots) {
     const grid = document.getElementById('grid');
     if (bots.length === 0) {
@@ -622,40 +620,52 @@ function renderGrid(bots) {
         return;
     }
     
-    grid.innerHTML = bots.map(bot => {
-        const desc = getDesc(bot);
-        const shortDesc = desc.length > 150 ? desc.slice(0, 150) + '...' : desc;
-        const tags = (bot.t || []).slice(0, 5);
-        
-        return `<div class="card" onclick="window.location.href='/b/${bot.u}.html'">
-            <div class="card-header">
-                <div>
-                    <div class="card-name">${esc(bot.n)}</div>
-                    <div class="card-username">@${esc(bot.u)}</div>
-                </div>
-                <div class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : '—'}</div>
+    const firstBatch = bots.slice(0, PAGE_SIZE);
+    const rest = bots.slice(PAGE_SIZE);
+    
+    grid.innerHTML = firstBatch.map(bot => buildCard(bot)).join('');
+    
+    if (rest.length > 0) {
+        renderChunked(rest, (bot) => {
+            grid.appendChild(botToElement(bot));
+        });
+    }
+}
+
+function buildCard(bot) {
+    const desc = getDesc(bot);
+    const shortDesc = desc.length > 150 ? desc.slice(0, 150) + '...' : desc;
+    const tags = (bot.t || []).slice(0, 5);
+    
+    return `<div class="card" onclick="window.location.href='/b/${bot.u}.html'">
+        <div class="card-header">
+            <div>
+                <div class="card-name">${esc(bot.n)}</div>
+                <div class="card-username">@${esc(bot.u)}</div>
             </div>
-            <div class="card-desc">${esc(shortDesc)}</div>
-            ${tags.length ? '<div class="card-tags">' + tags.map(t => '<span class="card-tag" onclick="event.stopPropagation();selectTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
-            <div class="card-meta">
-                ${bot.v ? `🗳 ${bot.v} votes` : ''}
-                ${bot.w ? `👁 ${bot.w.toLocaleString()}` : ''}
-                ${bot.l ? `🌐 ${bot.l.split(' ')[0]}${bot.l.includes(' ') ? ' +' + (bot.l.split(' ').length-1) : ''}` : ''}
-                ${dateAgo(bot.dt)}
-            </div>
-        </div>`;
-    }).join('');
+            <div class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : '—'}</div>
+        </div>
+        <div class="card-desc">${esc(shortDesc)}</div>
+        ${tags.length ? '<div class="card-tags">' + tags.map(t => '<span class="card-tag" onclick="event.stopPropagation();selectTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
+        <div class="card-meta">
+            ${bot.v ? '🗳 ' + bot.v + ' votes' : ''}
+            ${bot.w ? '👁 ' + bot.w.toLocaleString() : ''}
+            ${bot.l ? '🌐 ' + bot.l.split(' ')[0] + (bot.l.includes(' ') ? ' +' + (bot.l.split(' ').length-1) : '') : ''}
+            ${dateAgo(bot.dt)}
+        </div>
+    </div>`;
+}
+
+function botToElement(bot) {
+    const div = document.createElement('div');
+    div.innerHTML = buildCard(bot);
+    return div.firstElementChild;
 }
 
 // ── Detail View ──
 function showDetail(username) {
     const bot = data.find(b => b.u === username);
     if (!bot) return;
-    
-    const desc = getDesc(bot);
-    const descRu = getLangDesc(bot, 'ru');
-    const descFa = getLangDesc(bot, 'fa');
-    const descEn = getLangDesc(bot, 'en');
     
     const overlay = document.getElementById('detailOverlay');
     overlay.classList.add('open');
@@ -666,30 +676,22 @@ function showDetail(username) {
         <div class="card-username">@${esc(bot.u)}</div>
         <div style="display:flex;gap:0.5rem;margin:0.3rem 0;">
             <span class="card-rating">${renderStars(bot.s)} ${bot.r ? bot.r.toFixed(1) : ''}</span>
-            ${bot.v ? `<span style="color:var(--text-dim);font-size:0.85rem;">🗳 ${bot.v} votes</span>` : ''}
+            ${bot.v ? '<span style="color:var(--text-dim);font-size:0.85rem;">🗳 ' + bot.v + ' votes</span>' : ''}
         </div>
-        
         <div class="detail-lang-label">🇬🇧 English</div>
-        <div class="card-desc">${esc(descEn)}</div>
-        
+        <div class="card-desc">${esc(getLangDesc(bot, 'en'))}</div>
         <div class="detail-lang-label">🇷🇺 Русский</div>
-        <div class="card-desc">${esc(descRu)}</div>
-        
+        <div class="card-desc">${esc(getLangDesc(bot, 'ru'))}</div>
         <div class="detail-lang-label">🇮🇷 فارسی</div>
-        <div class="card-desc" dir="rtl">${esc(descFa)}</div>
-        
+        <div class="card-desc" dir="rtl">${esc(getLangDesc(bot, 'fa'))}</div>
         <div class="detail-info">
             <div>🌐 Languages: <span>${esc(bot.l || '—')}</span></div>
             <div>💬 Inline: <span>${bot.i || 'no'}</span></div>
             <div>👥 Groups: <span>${bot.g || 'no'}</span></div>
             <div>👁 Views: <span>${bot.w ? bot.w.toLocaleString() : '—'}</span></div>
         </div>
-        
         ${(bot.t || []).length ? '<div class="card-tags" style="margin:0.5rem 0;">' + bot.t.map(t => '<span class="card-tag" onclick="event.stopPropagation();closeDetail();selectTag(\'' + esc(t) + '\')">#' + esc(t) + '</span>').join('') + '</div>' : ''}
-        
-        <a class="open-bot-btn" href="https://t.me/${esc(bot.u)}" target="_blank">
-            🤖 Open @${esc(bot.u)}
-        </a>
+        <a class="open-bot-btn" href="https://t.me/${esc(bot.u)}" target="_blank">🤖 Open @${esc(bot.u)}</a>
     `;
 }
 
@@ -704,29 +706,21 @@ function closeDetail(e) {
     document.getElementById('detailOverlay').classList.remove('open');
 }
 
-// ── Date helper ──
 function dateAgo(iso) {
     if (!iso) return '';
     const d = new Date(iso);
-    const now = new Date();
-    const diff = (now - d) / (1000 * 86400);
+    const diff = (Date.now() - d) / 86400000;
     if (diff < 1) return 'today';
     if (diff < 30) return Math.round(diff) + 'd ago';
     if (diff < 365) return Math.round(diff / 30) + 'mo ago';
     return Math.round(diff / 365) + 'y ago';
 }
 
-// ── Escape HTML ──
-function esc(s) {
-    if (!s) return '';
-    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+function esc(s) { if (!s) return ''; return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
-// ── ESC key to close detail ──
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') { closeDetail(); document.getElementById('tagSuggestions').style.display = 'none'; }
 });
-// ── Close tag suggestions on outside click ──
 document.addEventListener('click', function(e) {
     const s = document.getElementById('tagSuggestions');
     if (s && !e.target.closest('.tag-search-wrap')) s.style.display = 'none';
