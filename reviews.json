@@ -1122,6 +1122,11 @@
       "text": "A solid bot that I use regularly. Never let me down.",
       "date": "2026-06-16",
       "author": "Telegram User"
+    },
+    {
+      "text": "Excellent functionality with a smooth user experience. Highly recommended.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
     }
   ],
   "ReceiveSMSRobot": [
@@ -1315,6 +1320,11 @@
     {
       "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
       "date": "2026-06-17",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Top-notch bot that works perfectly every time. Highly satisfied.",
+      "date": "2026-07-11",
       "author": "Telegram User"
     }
   ],
@@ -2092,6 +2102,11 @@
       "text": "Clear instructions and quick responses. A well-made Telegram bot.",
       "date": "2026-06-24",
       "author": "Telegram User"
+    },
+    {
+      "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
     }
   ],
   "notcoin_trackerbot": [
@@ -2213,6 +2228,11 @@
     {
       "text": "Perfect for what I need. Easy to set up and use right away.",
       "date": "2026-06-23",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Very responsive and reliable. One of my favorite Telegram bots.",
+      "date": "2026-07-11",
       "author": "Telegram User"
     }
   ],
@@ -2714,6 +2734,11 @@
     {
       "text": "Really useful tool that saves me time every day. Five stars.",
       "date": "2026-07-01",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-11",
       "author": "Telegram User"
     }
   ],
@@ -3270,6 +3295,11 @@
       "text": "Simple yet powerful. This bot handles everything I throw at it.",
       "date": "2026-07-02",
       "author": "Telegram User"
+    },
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
     }
   ],
   "MyPrivSaveREContent_Bot": [
@@ -3591,6 +3621,11 @@
       "text": "A solid bot that I use regularly. Never let me down.",
       "date": "2026-07-05",
       "author": "Telegram User"
+    },
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
     }
   ],
   "caixinha_de_perguntas_bot": [
@@ -3797,6 +3832,11 @@
       "text": "Impressive functionality packed into a simple chat interface. Love it.",
       "date": "2026-07-07",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
     }
   ],
   "GenixAIStudioBot": [
@@ -3852,6 +3892,11 @@
     {
       "text": "Really useful tool that saves me time every day. Five stars.",
       "date": "2026-07-08",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-11",
       "author": "Telegram User"
     }
   ],
@@ -4076,6 +4121,83 @@
     {
       "text": "One of the best bots in its category. Clean, fast, and does the job well.",
       "date": "2026-07-10",
+      "author": "Telegram User"
+    }
+  ],
+  "iumiva_bot": [
+    {
+      "text": "Very responsive and reliable. One of my favorite Telegram bots.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "EmailGateBot": [
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "ChatChallengeBot": [
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "masa_gp_bot": [
+    {
+      "text": "Perfect for what I need. Easy to set up and use right away.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "TON_Soundbot": [
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "AuthorizedJoinBot": [
+    {
+      "text": "Reliable performance and great features. A must-have bot for Telegram.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "traccia_prezzo_bot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "passport_photo_generator_bot": [
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "JsonDumpBot": [
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "Manageil_bot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "bajardeinstagrambot": [
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-11",
       "author": "Telegram User"
     }
   ]
