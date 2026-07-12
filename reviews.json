@@ -656,6 +656,11 @@
       "text": "Perfect for what I need. Easy to set up and use right away.",
       "date": "2026-06-21",
       "author": "Telegram User"
+    },
+    {
+      "text": "A highly reliable and useful bot that delivers exactly what it promises.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
     }
   ],
   "VoiceNXT_bot": [
@@ -1282,6 +1287,11 @@
     {
       "text": "Very responsive and reliable. One of my favorite Telegram bots.",
       "date": "2026-06-17",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Simple yet powerful. This bot handles everything I throw at it.",
+      "date": "2026-07-12",
       "author": "Telegram User"
     }
   ],
@@ -1977,6 +1987,11 @@
       "text": "Works without any hiccups. Clean interface and fast response times.",
       "date": "2026-06-26",
       "author": "Telegram User"
+    },
+    {
+      "text": "Excellent functionality with a smooth user experience. Highly recommended.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
     }
   ],
   "LinkSpyRobot": [
@@ -2009,6 +2024,11 @@
     {
       "text": "Works flawlessly — fast responses and intuitive interface. Highly recommended.",
       "date": "2026-07-08",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Simple to use and gets the job done. A solid choice for Telegram users.",
+      "date": "2026-07-12",
       "author": "Telegram User"
     }
   ],
@@ -3865,6 +3885,11 @@
       "text": "Excellent functionality with a smooth user experience. Highly recommended.",
       "date": "2026-07-08",
       "author": "Telegram User"
+    },
+    {
+      "text": "Top-notch bot that works perfectly every time. Highly satisfied.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
     }
   ],
   "weight_trackerbot": [
@@ -3912,6 +3937,11 @@
       "text": "One of the most useful bots I've come across. Highly functional.",
       "date": "2026-07-08",
       "author": "Telegram User"
+    },
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
     }
   ],
   "bing": [
@@ -3932,6 +3962,11 @@
     {
       "text": "Top-notch bot that works perfectly every time. Highly satisfied.",
       "date": "2026-07-09",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Perfect for what I need. Easy to set up and use right away.",
+      "date": "2026-07-12",
       "author": "Telegram User"
     }
   ],
@@ -4198,6 +4233,97 @@
     {
       "text": "Great bot with consistent performance. Perfect for daily use.",
       "date": "2026-07-11",
+      "author": "Telegram User"
+    }
+  ],
+  "AudioEditor_Robot": [
+    {
+      "text": "One of the best bots in its category. Clean, fast, and does the job well.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "JioDLBot": [
+    {
+      "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "rockstargamesbot": [
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "SocialExchangerBot": [
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "TypingGameBot": [
+    {
+      "text": "Does exactly what it says on the tin. Fast, free, and user-friendly.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "GalaxySlackersGameBot": [
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "terarealbot": [
+    {
+      "text": "Works flawlessly — fast responses and intuitive interface. Highly recommended.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "junction_bot": [
+    {
+      "text": "Smooth experience from start to finish. This bot is a gem.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "MyOwnPassphrase_bot": [
+    {
+      "text": "Perfect for what I need. Easy to set up and use right away.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "Logo_MakerXbot": [
+    {
+      "text": "Simple to use and gets the job done. A solid choice for Telegram users.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "K_vp_robot": [
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "mystaro_bot": [
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "ArbitrageCoinDataBot": [
+    {
+      "text": "Very handy bot that does its job perfectly. No complaints at all.",
+      "date": "2026-07-12",
       "author": "Telegram User"
     }
   ]
