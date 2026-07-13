@@ -275,6 +275,11 @@
       "text": "One of the most useful bots I've come across. Highly functional.",
       "date": "2026-06-21",
       "author": "Telegram User"
+    },
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "Melodinbot": [
@@ -1324,6 +1329,11 @@
       "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
       "date": "2026-07-03",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works flawlessly — fast responses and intuitive interface. Highly recommended.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "ArtMatcherBot": [
@@ -1360,12 +1370,22 @@
       "text": "Reliable performance and great features. A must-have bot for Telegram.",
       "date": "2026-07-06",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "QrCodeMakerRobot": [
     {
       "text": "Great bot with consistent performance. Perfect for daily use.",
       "date": "2026-06-17",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-13",
       "author": "Telegram User"
     }
   ],
@@ -1961,6 +1981,11 @@
       "text": "Impressive functionality packed into a simple chat interface. Love it.",
       "date": "2026-06-21",
       "author": "Telegram User"
+    },
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "Repleo_bot": [
@@ -2397,6 +2422,11 @@
       "text": "Simple yet powerful. This bot handles everything I throw at it.",
       "date": "2026-06-25",
       "author": "Telegram User"
+    },
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "RizzOfficialBot": [
@@ -2799,6 +2829,11 @@
     {
       "text": "Impressive functionality packed into a simple chat interface. Love it.",
       "date": "2026-06-27",
+      "author": "Telegram User"
+    },
+    {
+      "text": "One of the best bots in its category. Clean, fast, and does the job well.",
+      "date": "2026-07-13",
       "author": "Telegram User"
     }
   ],
@@ -3353,6 +3388,11 @@
       "text": "Very handy bot that does its job perfectly. No complaints at all.",
       "date": "2026-07-02",
       "author": "Telegram User"
+    },
+    {
+      "text": "Top-notch bot that works perfectly every time. Highly satisfied.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
     }
   ],
   "transcriber_bot": [
@@ -3760,6 +3800,11 @@
     {
       "text": "Very well designed bot. The features are thoughtful and useful.",
       "date": "2026-07-06",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Excellent functionality with a smooth user experience. Highly recommended.",
+      "date": "2026-07-13",
       "author": "Telegram User"
     }
   ],
@@ -4324,6 +4369,83 @@
     {
       "text": "Very handy bot that does its job perfectly. No complaints at all.",
       "date": "2026-07-12",
+      "author": "Telegram User"
+    }
+  ],
+  "PyroApprovalBot": [
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "MediaTranscribeBot": [
+    {
+      "text": "Very responsive and reliable. One of my favorite Telegram bots.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "lybot": [
+    {
+      "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "cloudgram_betabot": [
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "PlanetDPBot": [
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "WebSrcBot": [
+    {
+      "text": "A highly reliable and useful bot that delivers exactly what it promises.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "TheLairBot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "lystaria_bot": [
+    {
+      "text": "Perfect for what I need. Easy to set up and use right away.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "VisionScriptbot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "talktoreal_bot": [
+    {
+      "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
+      "date": "2026-07-13",
+      "author": "Telegram User"
+    }
+  ],
+  "anime_for_streaming_bot": [
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-13",
       "author": "Telegram User"
     }
   ]
