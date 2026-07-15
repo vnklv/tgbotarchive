@@ -1,0 +1,20 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+    paths: ["data.json"]
+  schedule:
+    - cron: "0 */6 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install markdown2
+      - run: python build_seo.py
+      - run: |
+          git config user.email "bot@tgbotarchive.com"
+          git config user.name "BotsArchive Bot"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto rebuild"
+          git push
