@@ -1,18 +1,28 @@
 name: Build and Deploy
+
 on:
   push:
     branches: [main]
     paths: ["data.json"]
   schedule:
     - cron: "0 */6 * * *"
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install markdown2
-      - run: python build_seo.py
-      - run: |
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install
+        run: pip install markdown2
+      - name: Build
+        run: python build_seo.py
+      - name: Commit
+        run: |
           git config user.email "bot@tgbotarchive.com"
           git config user.name "BotsArchive Bot"
           git add -A
