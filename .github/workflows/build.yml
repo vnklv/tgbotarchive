@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,4 +22,4 @@ jobs:
           git config user.email "bot@tgbotarchive.com"
           git config user.name "BotsArchive Bot"
           git add -A
-          if git diff --quiet && git diff --cached --quiet; then echo "No changes"; else git commit -m "Auto rebuild"; git push; fi
+          git diff --quiet && git diff --cached --quiet || (git commit -m "Auto rebuild" && git push)
