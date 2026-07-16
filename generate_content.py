@@ -222,11 +222,13 @@ def ask_deepseek(prompt, max_retries=2):
 
 # ── Generate SEO content for a bot ──
 def generate_bot_content(bot, existing_articles):
-    bot_id = bot.get("id", "") or bot.get("name", "")
-    if bot_id in existing_articles and existing_articles[bot_id].get("combined"):
+    username = bot.get("username", "")
+    if not username:
+        return None
+    if username in existing_articles and existing_articles[username].get("combined"):
         return None  # already has full content
     
-    name = bot.get("name", bot_id)
+    name = bot.get("name", username)
     desc = bot.get("description", "")[:500]
     tags_list = bot.get("tags", [])
     tags = ", ".join(tags_list[:10])
@@ -285,10 +287,10 @@ if __name__ == "__main__":
     # Find bots without full content
     to_generate = []
     for bot in bots:
-        bot_id = bot.get("id", "") or bot.get("name", "")
-        if not bot_id:
+        username = bot.get("username", "")
+        if not username:
             continue
-        if bot_id not in bot_articles or not bot_articles[bot_id].get("combined"):
+        if username not in bot_articles or not bot_articles[username].get("combined"):
             to_generate.append(bot)
     
     print(f"Bots total: {len(bots)}, need content: {len(to_generate)}")
@@ -300,13 +302,13 @@ if __name__ == "__main__":
     # Generate for new bots (limit 5 per run to save tokens)
     generated = 0
     for bot in to_generate[:5]:
-        bot_id = bot.get("id", "") or bot.get("name", "")
-        name = bot.get("name", bot_id)
+        username = bot.get("username", "")
+        name = bot.get("name", username)
         print(f"\n📄 Generating for {name}...")
         
         result = generate_bot_content(bot, bot_articles)
         if result:
-            bot_articles[bot_id] = result
+            bot_articles[username] = result
             generated += 1
             chars = result["word_count"]
             articles_count = len(result["articles"])
