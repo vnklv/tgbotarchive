@@ -22,6 +22,13 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       - run: pip install markdown2 httpx
       - run: python build_seo.py
+      - name: Ping search engines
+        run: |
+          SITEMAP="https://tgbotarchive.com/sitemap.xml"
+          curl -s "https://www.google.com/ping?sitemap=$SITEMAP" -o /dev/null -w "Google: %{http_code}\n"
+          curl -s "https://www.bing.com/indexnow?url=$SITEMAP&key=spnvi" -o /dev/null -w "Bing: %{http_code}\n"
+          curl -s "https://yandex.com/indexnow?url=$SITEMAP" -o /dev/null -w "Yandex: %{http_code}\n"
+          curl -s "https://indexnow.ru/IndexNow?url=$SITEMAP" -o /dev/null -w "IndexNow.ru: %{http_code}\n"
       - run: |
           git config user.email "bot@tgbotarchive.com"
           git config user.name "BotsArchive Bot"
