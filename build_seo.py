@@ -150,6 +150,18 @@ def esc(s):
     if not s: return ""
     return html.escape(str(s), quote=True)
 
+def slugify(s):
+    """Create a safe filesystem/URL slug from a tag name."""
+    if not s: return ""
+    # Remove leading # and special chars, replace spaces with -
+    slug = s.lstrip("#!@$%^&*").strip()
+    slug = re.sub(r'[^a-zA-Z0-9_\-]', '', slug.replace(' ', '-'))
+    # Remove leading/trailing dashes
+    slug = slug.strip('-').lower()
+    if not slug or len(slug) < 1:
+        return None
+    return slug
+
 def star_str(n):
     return "⭐" * min(max(round(n or 0), 0), 5)
 
@@ -939,7 +951,9 @@ for b in bots:
 
 tag_count = 0
 for tag_name, tag_freq_val in sorted(tag_counter.items()):
-    tag_slug = esc(tag_name)
+    tag_slug = slugify(tag_name)
+    if not tag_slug:
+        continue
     filepath = os.path.join(TAGS_DIR, f"{tag_slug}.html")
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(tag_page_html(tag_name, tag_freq_val, tag_bots.get(tag_name, [])))
@@ -975,7 +989,7 @@ sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
 sitemap += f'  <url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>\n'
 
 for tag_name in sorted(tag_counter.keys()):
-    sitemap += f'  <url><loc>{SITE_URL}/tag/{esc(tag_name)}.html</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>\n'
+    sitemap += f'  <url><loc>{SITE_URL}/tag/{slugify(tag_name)}.html</loc><lastmod>{today}</lastmod><priority>0.8</priority></url>\n'
 
 for bot in bots:
     if not bot.get("username"):
