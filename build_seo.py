@@ -410,13 +410,13 @@ def jsonld_tag(tag_name, count):
         "@type": "CollectionPage",
         "name": f"#{tag_name} — {count} Telegram Bots",
         "description": f"Browse {count} Telegram bots related to {label}. Find the best {tag_name} bots with ratings, features, and descriptions.",
-        "url": f"{SITE_URL}/tag/{esc(tag_name)}.html",
+        "url": f"{SITE_URL}/tag/{slugify(tag_name)}.html",
         "about": {"@type": "Thing", "name": f"Telegram {tag_name} bots"},
         "numberOfItems": count,
         "inLanguage": ["en", "ru", "fa"],
         "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": SITE_URL},
-            {"@type": "ListItem", "position": 2, "name": f"#{tag_name}", "item": f"{SITE_URL}/tag/{esc(tag_name)}.html"}
+            {"@type": "ListItem", "position": 2, "name": f"#{tag_name}", "item": f"{SITE_URL}/tag/{slugify(tag_name)}.html"}
         ]}
     }
 
@@ -654,7 +654,7 @@ def bot_page_html(bot, all_bots):
     desc_ru = bot.get("desc_ru", desc_en)
     desc_fa = bot.get("desc_fa", desc_en)
     bot_url = f"https://t.me/{bot['username']}"
-    tags_html = " ".join(f'<a href="/tag/{esc(t)}.html" class="tag">#{esc(t)}</a>' for t in (bot.get("tags") or []))
+    tags_html = " ".join(f'<a href="/tag/{slugify(t)}.html" class="tag">#{esc(t)}</a>' for t in (bot.get("tags") or []))
 
     about_html = generate_bot_about(bot)
     tags_section_html = generate_bot_tags_section(bot)
@@ -1076,7 +1076,7 @@ def submit_indexnow():
     # Collect all site URLs
     urls = [f"{SITE_URL}/"]
     for tag_name in tag_counter:
-        urls.append(f"{SITE_URL}/tag/{esc(tag_name)}.html")
+        urls.append(f"{SITE_URL}/tag/{slugify(tag_name)}.html")
     for bot in bots:
         if bot.get("username"):
             urls.append(f"{SITE_URL}/b/{esc(bot['username'])}.html")
