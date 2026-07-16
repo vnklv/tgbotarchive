@@ -524,7 +524,7 @@ def generate_bot_tags_section(bot):
         label = tag_category(t)
         slug = esc(t)
         parts.append(
-            f'<a href="/tag/{slug}.html" class="tag-card" title="Browse {label} bots">'
+            f'<a href="/tag/{slugify(slug)}.html" class="tag-card" title="Browse {label} bots">'
             f'<span class="tag-name">#{esc(t)}</span>'
             f'<span class="tag-desc">{esc(label)}</span></a>'
         )
