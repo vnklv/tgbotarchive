@@ -13,8 +13,10 @@ from collections import Counter
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR = SCRIPT_DIR
 BOTS_DIR = os.path.join(OUTPUT_DIR, "b")
+BOT_DIR = os.path.join(OUTPUT_DIR, "bot")
 TAGS_DIR = os.path.join(OUTPUT_DIR, "tag")
 os.makedirs(BOTS_DIR, exist_ok=True)
+os.makedirs(BOT_DIR, exist_ok=True)
 os.makedirs(TAGS_DIR, exist_ok=True)
 
 bots = json.load(open(os.path.join(SCRIPT_DIR, "botsarchive_enriched.json")))
@@ -445,7 +447,7 @@ def jsonld_bot(bot):
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "BotsArchive", "item": SITE_URL},
-            {"@type": "ListItem", "position": 2, "name": name, "item": f"{SITE_URL}/b/{esc(bot['username'])}.html"}
+            {"@type": "ListItem", "position": 2, "name": name, "item": f"{SITE_URL}/bot/{esc(bot['username'])}.html"}
         ]}
     }
     if categories:
@@ -638,7 +640,7 @@ def related_html(bot, all_bots):
         username = esc(r["username"])
         desc = esc((r.get("description", "") or "")[:80])
         items.append(
-            f'<a href="/b/{username}.html" class="rel-item">'
+            f'<a href="/bot/{username}.html" class="rel-item">'
             f'<div class="rel-name">🤖 {name}</div>'
             f'<div class="rel-desc">{desc}</div></a>'
         )
@@ -682,13 +684,13 @@ def bot_page_html(bot, all_bots):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(bot.get("name", bot["username"]))} — Telegram Bot | BotsArchive</title>
 <meta name="description" content="{esc(meta_desc[:200])}">
-<link rel="canonical" href="{SITE_URL}/b/{esc(bot["username"])}.html">
-<link rel="alternate" hreflang="en" href="{SITE_URL}/b/{esc(bot["username"])}.html">
-<link rel="alternate" hreflang="ru" href="{SITE_URL}/b/{esc(bot["username"])}.html?lang=ru">
-<link rel="alternate" hreflang="fa" href="{SITE_URL}/b/{esc(bot["username"])}.html?lang=fa">
+<link rel="canonical" href="{SITE_URL}/bot/{esc(bot["username"])}.html">
+<link rel="alternate" hreflang="en" href="{SITE_URL}/bot/{esc(bot["username"])}.html">
+<link rel="alternate" hreflang="ru" href="{SITE_URL}/bot/{esc(bot["username"])}.html?lang=ru">
+<link rel="alternate" hreflang="fa" href="{SITE_URL}/bot/{esc(bot["username"])}.html?lang=fa">
 <meta property="og:title" content="{esc(bot.get("name", bot["username"]))}">
 <meta property="og:description" content="{esc(meta_desc[:200])}">
-<meta property="og:url" content="{SITE_URL}/b/{esc(bot["username"])}.html">
+<meta property="og:url" content="{SITE_URL}/bot/{esc(bot["username"])}.html">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
 <script type="application/ld+json">
@@ -825,7 +827,7 @@ def tag_page_html(tag, count, bots_with_tag):
         rating = b.get("rating_score", 0)
         stars = star_str(b.get("stars", 0))
         bot_list += f'''<div class="bot-item">
-  <a href="/b/{esc(username)}.html" class="bot-name">🤖 {esc(name)}</a>
+  <a href="/bot/{esc(username)}.html" class="bot-name">🤖 {esc(name)}</a>
   <div class="bot-username">@{esc(username)}</div>
   <div class="bot-desc">{esc(desc)}</div>
   {f'<div class="bot-rating">{stars} {rating}</div>' if rating else ''}
@@ -995,7 +997,7 @@ for bot in bots:
     if not bot.get("username"):
         continue
     p = bot_priority(bot)
-    sitemap += f'  <url><loc>{SITE_URL}/b/{esc(bot["username"])}.html</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>\n'
+    sitemap += f'  <url><loc>{SITE_URL}/bot/{esc(bot["username"])}.html</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>\n'
 
 sitemap += '</urlset>'
 
@@ -1079,7 +1081,7 @@ def submit_indexnow():
         urls.append(f"{SITE_URL}/tag/{slugify(tag_name)}.html")
     for bot in bots:
         if bot.get("username"):
-            urls.append(f"{SITE_URL}/b/{esc(bot['username'])}.html")
+            urls.append(f"{SITE_URL}/bot/{esc(bot['username'])}.html")
 
     key = get_or_create_indexnow_key()
 
