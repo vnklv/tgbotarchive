@@ -196,7 +196,7 @@ if __name__ == "__main__":
     
     generated_articles = 0
     generated_reviews = 0
-    for bot in to_generate[:8]:  # 8 per run to save tokens
+    for bot in to_generate[:50]:  # 50 per run
         username = bot.get("username", "")
         name = bot.get("name", username)
         print(f"\n📄 {name} (@{username})...")
