@@ -697,6 +697,11 @@ def bot_page_html(bot, all_bots):
 {json.dumps(jsonld_bot(bot), ensure_ascii=False)}
 </script>
 <style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }}
 h1 {{ font-size: 1.6rem; margin-bottom: 0.2rem; }}
 .username {{ color: #6c63ff; font-size: 1rem; margin-bottom: 0.5rem; }}
@@ -756,6 +761,7 @@ h1 {{ font-size: 1.6rem; margin-bottom: 0.2rem; }}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:8px 16px;background:#000;color:#fff;text-decoration:none;font-size:14px" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <a href="/" style="color:#6c63ff;text-decoration:none;font-size:0.85rem;">← BotsArchive</a>
 <a href="https://t.me/tgbotarchivesupportbot" target="_blank" style="float:right;color:#6c63ff;font-size:0.82rem;text-decoration:none;">💬 Feedback</a>
 <img src="https://t.me/i/userpic/320/{esc(bot['username'])}.jpg" alt="" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0.5rem 0;background:#2a2a4a;" onerror="this.style.display='none'">
@@ -861,6 +867,11 @@ def tag_page_html(tag, count, bots_with_tag):
 {json.dumps(jsonld_tag(tag, count), ensure_ascii=False)}
 </script>
 <style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }}
 h1 {{ font-size: 1.6rem; margin-bottom: 0.2rem; }}
 .tag-intro {{ color: #8888aa; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5; }}
@@ -900,6 +911,7 @@ a {{ color: #6c63ff; }}
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:8px 16px;background:#000;color:#fff;text-decoration:none;font-size:14px" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <h1>🤖 #{esc(tag)}</h1>
 <div class="tag-intro">Telegram bots related to <strong>{esc(tag_label)}</strong>. Browse <strong>{count}</strong> bot{"s" if count != 1 else ""} in this category, compare ratings, features, and languages.</div>
 
@@ -926,6 +938,11 @@ def page_404_html():
 <title>Page Not Found — BotsArchive</title>
 <meta name="robots" content="noindex, follow">
 <style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 500px; margin: 0 auto; padding: 4rem 1rem; text-align: center; line-height: 1.7; }
 h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #6c63ff; }
 p { color: #8888aa; }
@@ -934,6 +951,7 @@ a { color: #6c63ff; }
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:8px 16px;background:#000;color:#fff;text-decoration:none;font-size:14px" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <h1>404</h1>
 <p>This page doesn't exist in our archive.</p>
 <a class="btn" href="/">← Browse BotsArchive</a>
@@ -1037,10 +1055,25 @@ seo_meta = f'''<meta charset="UTF-8">
 {json.dumps(jsonld_website(), ensure_ascii=False)}
 </script>'''
 
-if '<style>' in existing_index:
+if '<style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+' in existing_index:
     existing_index = re.sub(
-        r'<meta charset="UTF-8">.*?<style>',
-        seo_meta + '<style>',
+        r'<meta charset="UTF-8">.*?<style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+',
+        seo_meta + '<style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+',
         existing_index, flags=re.DOTALL
     )
 else:
