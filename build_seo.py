@@ -1055,25 +1055,10 @@ seo_meta = f'''<meta charset="UTF-8">
 {json.dumps(jsonld_website(), ensure_ascii=False)}
 </script>'''
 
-if '<style>
-/* Critical CSS - inline for fast LCP */
-html { font-display: swap; }
-img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
-* { box-sizing: border-box; }
-' in existing_index:
+if '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n' in existing_index:
     existing_index = re.sub(
-        r'<meta charset="UTF-8">.*?<style>
-/* Critical CSS - inline for fast LCP */
-html { font-display: swap; }
-img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
-* { box-sizing: border-box; }
-',
-        seo_meta + '<style>
-/* Critical CSS - inline for fast LCP */
-html { font-display: swap; }
-img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
-* { box-sizing: border-box; }
-',
+        r'<meta charset="UTF-8">.*?<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n',
+        seo_meta + '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n',
         existing_index, flags=re.DOTALL
     )
 else:
