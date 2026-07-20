@@ -6,6 +6,11 @@
 <title>Page Not Found — BotsArchive</title>
 <meta name="robots" content="noindex, follow">
 <style>
+/* Critical CSS - inline for fast LCP */
+html { font-display: swap; }
+img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
+* { box-sizing: border-box; }
+
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 500px; margin: 0 auto; padding: 4rem 1rem; text-align: center; line-height: 1.7; }
 h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #6c63ff; }
 p { color: #8888aa; }
@@ -14,6 +19,7 @@ a { color: #6c63ff; }
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;z-index:9999;padding:8px 16px;background:#000;color:#fff;text-decoration:none;font-size:14px" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to main content</a>
 <h1>404</h1>
 <p>This page doesn't exist in our archive.</p>
 <a class="btn" href="/">← Browse BotsArchive</a>
