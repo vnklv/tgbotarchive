@@ -698,9 +698,9 @@ def bot_page_html(bot, all_bots):
 </script>
 <style>
 /* Critical CSS - inline for fast LCP */
-html { font-display: swap; }
-img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
-* { box-sizing: border-box; }
+html {{ font-display: swap; }}
+img, video {{ max-width: 100%; height: auto; aspect-ratio: auto; }}
+* {{ box-sizing: border-box; }}
 
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }}
 h1 {{ font-size: 1.6rem; margin-bottom: 0.2rem; }}
@@ -868,9 +868,9 @@ def tag_page_html(tag, count, bots_with_tag):
 </script>
 <style>
 /* Critical CSS - inline for fast LCP */
-html { font-display: swap; }
-img, video { max-width: 100%; height: auto; aspect-ratio: auto; }
-* { box-sizing: border-box; }
+html {{ font-display: swap; }}
+img, video {{ max-width: 100%; height: auto; aspect-ratio: auto; }}
+* {{ box-sizing: border-box; }}
 
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e8e8f0; max-width: 720px; margin: 0 auto; padding: 2rem 1rem; line-height: 1.7; }}
 h1 {{ font-size: 1.6rem; margin-bottom: 0.2rem; }}
@@ -1055,10 +1055,10 @@ seo_meta = f'''<meta charset="UTF-8">
 {json.dumps(jsonld_website(), ensure_ascii=False)}
 </script>'''
 
-if '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n' in existing_index:
+if '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video {{ max-width: 100%; height: auto; aspect-ratio: auto; }}\n* { box-sizing: border-box; }\n' in existing_index:
     existing_index = re.sub(
-        r'<meta charset="UTF-8">.*?<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n',
-        seo_meta + '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video { max-width: 100%; height: auto; aspect-ratio: auto; }\n* { box-sizing: border-box; }\n',
+        r'<meta charset="UTF-8">.*?<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video {{ max-width: 100%; height: auto; aspect-ratio: auto; }}\n* { box-sizing: border-box; }\n',
+        seo_meta + '<style>/* Critical CSS - inline for fast LCP */\nhtml { font-display: swap; }\nimg, video {{ max-width: 100%; height: auto; aspect-ratio: auto; }}\n* { box-sizing: border-box; }\n',
         existing_index, flags=re.DOTALL
     )
 else:
