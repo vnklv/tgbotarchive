@@ -78,12 +78,22 @@
       "text": "Perfect for what I need. Easy to set up and use right away.",
       "date": "2026-06-21",
       "author": "Telegram User"
+    },
+    {
+      "text": "Reliable performance and great features. A must-have bot for Telegram.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
     }
   ],
   "Meeting_summarizer_bot": [
     {
       "text": "One of the best bots in its category. Clean, fast, and does the job well.",
       "date": "2026-06-10",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Does exactly what it says on the tin. Fast, free, and user-friendly.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ],
@@ -119,6 +129,11 @@
     {
       "text": "Very handy bot that does its job perfectly. No complaints at all.",
       "date": "2026-06-10",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-22",
       "author": "Telegram User"
     }
   ],
@@ -641,6 +656,11 @@
       "text": "Really useful tool that saves me time every day. Five stars.",
       "date": "2026-07-19",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
     }
   ],
   "VoicySounds_bot": [
@@ -1071,6 +1091,11 @@
     {
       "text": "Very handy bot that does its job perfectly. No complaints at all.",
       "date": "2026-07-17",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ],
@@ -1951,6 +1976,11 @@
       "text": "One of the most useful bots I've come across. Highly functional.",
       "date": "2026-06-20",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
     }
   ],
   "audiocutterbot": [
@@ -2689,6 +2719,11 @@
       "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
       "date": "2026-06-25",
       "author": "Telegram User"
+    },
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
     }
   ],
   "UtilitiesRobot": [
@@ -2771,6 +2806,11 @@
     {
       "text": "One of the most useful bots I've come across. Highly functional.",
       "date": "2026-07-02",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Works great, never had any issues with it. Definitely worth trying.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ],
@@ -3399,6 +3439,11 @@
       "text": "Very well designed bot. The features are thoughtful and useful.",
       "date": "2026-06-30",
       "author": "Telegram User"
+    },
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
     }
   ],
   "TriviaBot": [
@@ -3645,6 +3690,11 @@
       "text": "Smooth experience from start to finish. This bot is a gem.",
       "date": "2026-07-11",
       "author": "Telegram User"
+    },
+    {
+      "text": "Perfect for what I need. Easy to set up and use right away.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
     }
   ],
   "MyPrivSaveREContent_Bot": [
@@ -3708,6 +3758,11 @@
     {
       "text": "Great addition to any Telegram chat. Works seamlessly and reliably.",
       "date": "2026-07-02",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Impressive functionality packed into a simple chat interface. Love it.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ],
@@ -4039,6 +4094,11 @@
       "text": "Works without any hiccups. Clean interface and fast response times.",
       "date": "2026-07-05",
       "author": "Telegram User"
+    },
+    {
+      "text": "Very responsive and reliable. One of my favorite Telegram bots.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
     }
   ],
   "eBookMetaBot": [
@@ -4238,6 +4298,11 @@
     {
       "text": "Reliable performance and great features. A must-have bot for Telegram.",
       "date": "2026-07-07",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Excellent functionality with a smooth user experience. Highly recommended.",
+      "date": "2026-07-22",
       "author": "Telegram User"
     }
   ],
@@ -5003,6 +5068,11 @@
       "text": "Very well designed bot. The features are thoughtful and useful.",
       "date": "2026-07-16",
       "author": "Telegram User"
+    },
+    {
+      "text": "Works flawlessly — fast responses and intuitive interface. Highly recommended.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
     }
   ],
   "KelanmaBot": [
@@ -5121,6 +5191,11 @@
     {
       "text": "Reliable performance and great features. A must-have bot for Telegram.",
       "date": "2026-07-17",
+      "author": "Telegram User"
+    },
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ],
@@ -5390,6 +5465,181 @@
     {
       "text": "Simple to use and gets the job done. A solid choice for Telegram users.",
       "date": "2026-07-21",
+      "author": "Telegram User"
+    }
+  ],
+  "sobertbot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "jobs_bot": [
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "Language_Blockbot": [
+    {
+      "text": "Simple yet powerful. This bot handles everything I throw at it.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "SpotSeekBot": [
+    {
+      "text": "One of the best bots in its category. Clean, fast, and does the job well.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "mysearch": [
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "qrgenerobot": [
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "clean_forward_bot": [
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "Surveyshare_eng_bot": [
+    {
+      "text": "Great bot with consistent performance. Perfect for daily use.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "RingtoneRobot": [
+    {
+      "text": "Does exactly what it says on the tin. Fast, free, and user-friendly.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "Naruto_X_Boruto_Bot": [
+    {
+      "text": "One of the most useful bots I've come across. Highly functional.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "nimBot": [
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "qrcrbot": [
+    {
+      "text": "Excellent bot with great features. The developer keeps improving it.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "memingbot": [
+    {
+      "text": "Really useful tool that saves me time every day. Five stars.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "zeeqrux_bot": [
+    {
+      "text": "Works flawlessly — fast responses and intuitive interface. Highly recommended.",
+      "date": "2026-07-22",
+      "author": "Telegram User"
+    }
+  ],
+  "ModularBot": [
+    {
+      "text": "One of the most useful bots I've come across. Highly functional.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "terabestbot": [
+    {
+      "text": "Top-notch bot that works perfectly every time. Highly satisfied.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "GeminiWRBot": [
+    {
+      "text": "Fast, intuitive, and reliable. Exactly what a Telegram bot should be.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "BlurrryBot": [
+    {
+      "text": "Very well designed bot. The features are thoughtful and useful.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "egsnotifier_bot": [
+    {
+      "text": "Impressive functionality packed into a simple chat interface. Love it.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "gptcube_bot": [
+    {
+      "text": "A solid bot that I use regularly. Never let me down.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "picaibot": [
+    {
+      "text": "Impressive functionality packed into a simple chat interface. Love it.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "TicTacToes_Bot": [
+    {
+      "text": "Works without any hiccups. Clean interface and fast response times.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "compexbot": [
+    {
+      "text": "Clear instructions and quick responses. A well-made Telegram bot.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "CheckOTTBot": [
+    {
+      "text": "Very handy bot that does its job perfectly. No complaints at all.",
+      "date": "2026-07-23",
+      "author": "Telegram User"
+    }
+  ],
+  "OfficialUptimeRobot": [
+    {
+      "text": "One of the most useful bots I've come across. Highly functional.",
+      "date": "2026-07-23",
       "author": "Telegram User"
     }
   ]
